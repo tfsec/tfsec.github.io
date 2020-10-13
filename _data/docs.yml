@@ -1,0 +1,20 @@
+- title: Getting Started
+  docs:
+  - home
+
+- title: AWS Checks
+  docs:
+  - aws/home
+
+- title: GCP Checks
+  docs:
+  - aws/home
+
+- title: Azure Checks
+  docs:
+  - aws/home
+
+- title: Generic Checks
+  docs:
+  - aws/home
+
