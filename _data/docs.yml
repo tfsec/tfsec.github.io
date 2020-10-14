@@ -1,20 +1,82 @@
+
 - title: Getting Started
   docs:
   - home
 
+
+
 - title: AWS Checks
   docs:
   - aws/home
+  - aws/AWS001
+  - aws/AWS002
+  - aws/AWS003
+  - aws/AWS004
+  - aws/AWS005
+  - aws/AWS006
+  - aws/AWS007
+  - aws/AWS008
+  - aws/AWS009
+  - aws/AWS010
+  - aws/AWS011
+  - aws/AWS012
+  - aws/AWS013
+  - aws/AWS014
+  - aws/AWS015
+  - aws/AWS016
+  - aws/AWS017
+  - aws/AWS018
+  - aws/AWS019
+  - aws/AWS020
+  - aws/AWS021
+  - aws/AWS022
+  - aws/AWS023
+  - aws/AWS024
+  - aws/AWS025
+  - aws/AWS031
+  - aws/AWS032
+  - aws/AWS033
+  - aws/AWS034
+  - aws/AWS035
+  - aws/AWS036
+  - aws/AWS037
+  - aws/AWS038
+  - aws/AWS039
+  - aws/AWS040
+  - aws/AWS041
+  - aws/AWS042
+  - aws/AWS043
+  - aws/AWS044
+  - aws/AWS045
+  - aws/AWS046
 
-- title: GCP Checks
+- title: AZURE Checks
   docs:
-  - aws/home
+  - azure/home
+  - azure/AZU001
+  - azure/AZU002
+  - azure/AZU003
+  - azure/AZU004
+  - azure/AZU005
 
-- title: Azure Checks
+- title: GENERAL Checks
   docs:
-  - aws/home
+  - general/home
+  - general/GEN001
+  - general/GEN002
+  - general/GEN003
 
-- title: Generic Checks
+- title: GOOGLE Checks
   docs:
-  - aws/home
-
+  - google/home
+  - google/GCP001
+  - google/GCP002
+  - google/GCP003
+  - google/GCP004
+  - google/GCP005
+  - google/GCP006
+  - google/GCP007
+  - google/GCP008
+  - google/GCP009
+  - google/GCP010
+  - google/GCP011
