@@ -58,13 +58,6 @@
   - azure/AZU004
   - azure/AZU005
 
-- title: GENERAL Checks
-  docs:
-  - general/home
-  - general/GEN001
-  - general/GEN002
-  - general/GEN003
-
 - title: GOOGLE Checks
   docs:
   - google/home
@@ -79,3 +72,10 @@
   - google/GCP009
   - google/GCP010
   - google/GCP011
+
+- title: GENERAL Checks
+  docs:
+  - general/home
+  - general/GEN001
+  - general/GEN002
+  - general/GEN003
