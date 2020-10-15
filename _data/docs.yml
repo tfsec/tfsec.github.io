@@ -4,6 +4,37 @@
   - home
 
 
+- title: AZURE Checks
+  docs:
+  - azure/home
+  - azure/AZU001
+  - azure/AZU002
+  - azure/AZU003
+  - azure/AZU004
+  - azure/AZU005
+
+- title: GOOGLE Checks
+  docs:
+  - google/home
+  - google/GCP001
+  - google/GCP002
+  - google/GCP003
+  - google/GCP004
+  - google/GCP005
+  - google/GCP006
+  - google/GCP007
+  - google/GCP008
+  - google/GCP009
+  - google/GCP010
+  - google/GCP011
+
+- title: GENERAL Checks
+  docs:
+  - general/home
+  - general/GEN001
+  - general/GEN002
+  - general/GEN003
+
 - title: AWS Checks
   docs:
   - aws/home
@@ -48,34 +79,3 @@
   - aws/AWS044
   - aws/AWS045
   - aws/AWS046
-
-- title: AZURE Checks
-  docs:
-  - azure/home
-  - azure/AZU001
-  - azure/AZU002
-  - azure/AZU003
-  - azure/AZU004
-  - azure/AZU005
-
-- title: GOOGLE Checks
-  docs:
-  - google/home
-  - google/GCP001
-  - google/GCP002
-  - google/GCP003
-  - google/GCP004
-  - google/GCP005
-  - google/GCP006
-  - google/GCP007
-  - google/GCP008
-  - google/GCP009
-  - google/GCP010
-  - google/GCP011
-
-- title: GENERAL Checks
-  docs:
-  - general/home
-  - general/GEN001
-  - general/GEN002
-  - general/GEN003
