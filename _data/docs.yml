@@ -4,6 +4,21 @@
   - home
 
 
+- title: GOOGLE Checks
+  docs:
+  - google/home
+  - google/GCP001
+  - google/GCP002
+  - google/GCP003
+  - google/GCP004
+  - google/GCP005
+  - google/GCP006
+  - google/GCP007
+  - google/GCP008
+  - google/GCP009
+  - google/GCP010
+  - google/GCP011
+
 - title: AWS Checks
   docs:
   - aws/home
@@ -64,18 +79,3 @@
   - general/GEN001
   - general/GEN002
   - general/GEN003
-
-- title: GOOGLE Checks
-  docs:
-  - google/home
-  - google/GCP001
-  - google/GCP002
-  - google/GCP003
-  - google/GCP004
-  - google/GCP005
-  - google/GCP006
-  - google/GCP007
-  - google/GCP008
-  - google/GCP009
-  - google/GCP010
-  - google/GCP011

@@ -38,7 +38,7 @@ The included AWS checks are listed below. For more information about each check,
 |AWS035|Unencrypted Elasticache Replication Group.|[AWS035](/docs/aws/AWS035)|
 |AWS036|Elasticache Replication Group uses unencrypted traffic.|[AWS036](/docs/aws/AWS036)|
 |AWS037|IAM Password policy should prevent password reuse.|[AWS037](/docs/aws/AWS037)|
-|AWS038|IAM Password policy should have expiry greater than or equal to 90 days.|[AWS038](/docs/aws/AWS038)|
+|AWS038|IAM Password policy should have expiry less than or equal to 90 days.|[AWS038](/docs/aws/AWS038)|
 |AWS039|IAM Password policy should have minimum password length of 14 or more characters.|[AWS039](/docs/aws/AWS039)|
 |AWS040|IAM Password policy should have requirement for at least one symbol in the password.|[AWS040](/docs/aws/AWS040)|
 |AWS041|IAM Password policy should have requirement for at least one number in the password.|[AWS041](/docs/aws/AWS041)|
