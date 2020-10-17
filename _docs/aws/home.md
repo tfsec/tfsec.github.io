@@ -47,4 +47,5 @@ The included AWS checks are listed below. For more information about each check,
 |AWS044|AWS provider has access credentials specified.|[AWS044](/docs/aws/AWS044)|
 |AWS045|CloudFront distribution does not have a WAF in front.|[AWS045](/docs/aws/AWS045)|
 |AWS046|AWS IAM policy document has wildcard action statement.|[AWS046](/docs/aws/AWS046)|
+|AWS047|AWS SQS policy document has wildcard action statement.|[AWS047](/docs/aws/AWS047)|
 
