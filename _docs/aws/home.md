@@ -26,7 +26,7 @@ The included AWS checks are listed below. For more information about each check,
 |AWS018|Missing description for security group/security group rule.|[AWS018](/docs/aws/AWS018)|
 |AWS019|A KMS key is not configured to auto-rotate.|[AWS019](/docs/aws/AWS019)|
 |AWS020|CloudFront distribution allows unencrypted (HTTP) communications.|[AWS020](/docs/aws/AWS020)|
-|AWS021|CloudFront distribution uses outdated SSL/TSL protocols.|[AWS021](/docs/aws/AWS021)|
+|AWS021|CloudFront distribution uses outdated SSL/TLS protocols.|[AWS021](/docs/aws/AWS021)|
 |AWS022|A MSK cluster allows unencrypted data in transit.|[AWS022](/docs/aws/AWS022)|
 |AWS023|ECR repository has image scans disabled.|[AWS023](/docs/aws/AWS023)|
 |AWS024|Kinesis stream is unencrypted.|[AWS024](/docs/aws/AWS024)|
