@@ -1,10 +1,9 @@
 
 - title: Getting Started
   docs:
-  - custom_checks
   - home
-
-
+  - custom_checks
+ 
 - title: AWS Checks
   docs:
   - aws/home
