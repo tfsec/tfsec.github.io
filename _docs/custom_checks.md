@@ -117,7 +117,7 @@ The `startsWith` check action passes if the checked attribute string starts with
 ```
 
 ##### endsWith
-The `endsWith` check action passes if the checked attribute string ends with the specified value. For example, to check that `acl` begins with `public` you could use the following `MatchSpec`;
+The `endsWith` check action passes if the checked attribute string ends with the specified value. For example, to check that `acl` ends with `read` you could use the following `MatchSpec`;
 
 ```json
 "matchSpec" : {
