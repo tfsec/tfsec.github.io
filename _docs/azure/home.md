@@ -11,4 +11,5 @@ The included AZURE checks are listed below. For more information about each chec
 |AZU003|Unencrypted managed disk.|[AZU003](/docs/azure/AZU003)|
 |AZU004|Unencrypted data lake storage.|[AZU004](/docs/azure/AZU004)|
 |AZU005|Password authentication in use instead of SSH keys.|[AZU005](/docs/azure/AZU005)|
+|AZU006|Ensure AKS cluster has Network Policy configured|[AZU006](/docs/azure/AZU006)|
 
