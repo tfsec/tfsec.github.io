@@ -3,6 +3,7 @@
   docs:
   - home
   - custom_checks
+  - github_security_alerts
 
 
 - title: AWS Checks
