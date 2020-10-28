@@ -13,5 +13,6 @@ The included AZURE checks are listed below. For more information about each chec
 |AZU005|Password authentication in use instead of SSH keys.|[AZU005](/docs/azure/AZU005)|
 |AZU006|Ensure AKS cluster has Network Policy configured|[AZU006](/docs/azure/AZU006)|
 |AZU007|Ensure RBAC is enabled on AKS clusters|[AZU007](/docs/azure/AZU007)|
+|AZU008|Ensure AKS has an API Server Authorized IP Ranges enabled|[AZU008](/docs/azure/AZU008)|
 |AZU009|Ensure AKS logging to Azure Monitoring is Configured|[AZU009](/docs/azure/AZU009)|
 
