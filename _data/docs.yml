@@ -86,3 +86,9 @@
   - google/GCP009
   - google/GCP010
   - google/GCP011
+
+	
+- title: Custom Check Library	
+  docs:
+  - checkLibrary/custom_check_library
+
