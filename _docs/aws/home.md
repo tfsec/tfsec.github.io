@@ -49,4 +49,6 @@ The included AWS checks are listed below. For more information about each check,
 |AWS046|AWS IAM policy document has wildcard action statement.|[AWS046](/docs/aws/AWS046)|
 |AWS047|AWS SQS policy document has wildcard action statement.|[AWS047](/docs/aws/AWS047)|
 |AWS048|EFS Encryption has not been enabled|[AWS048](/docs/aws/AWS048)|
+|AWS049|An ingress Network ACL rule allows specific ports from `/0`.|[AWS049](/docs/aws/AWS049)|
+|AWS050|An ingress Network ACL rule allows ALL ports from `/0`.|[AWS050](/docs/aws/AWS050)|
 

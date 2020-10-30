@@ -46,6 +46,8 @@
   - aws/AWS046
   - aws/AWS047
   - aws/AWS048
+  - aws/AWS049
+  - aws/AWS050
 
 - title: AZURE Checks
   docs:
