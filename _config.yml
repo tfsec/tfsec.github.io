@@ -29,7 +29,7 @@ github_username:  tfsec
 markdown: kramdown
 
 # Build settings
-remote_theme: tfsec/jekyll-doc-theme@wip
+remote_theme: tfsec/jekyll-doc-theme@gh-pages
 
 bootwatch: simplex
 
