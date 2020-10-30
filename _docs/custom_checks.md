@@ -212,3 +212,15 @@ In the future, `tfsec-checkgen` will facilitate the creation of new check files 
 At the moment, check `MatchSpec` is limited in the number of check types it can perform, these are as shown in the previous table.
 
 Custom defined checks also don't come with the comprehensive tests that the built in ones have. This will be addressed in future releases.
+
+## Custom Check Library
+
+The custom check library is a growing collection of checks definitions that can be used and modified as required.
+
+More checks will be added to the library - please feel free to create new checks and submit them as issues to the [tfsec project](https://github.com/tfsec/tfsec/issues)
+
+|Check|Description|
+|:----|:----------|
+|[tag checking](/docs/check_library/tagged)|Check that required tags are present on specific resources |
+|[in module checking](/docs/check_library/in_module)|Check that the resource being created is a component of a module|
+|[acl checking](/docs/check_library/acls)|Check that acl value is not one of the prohibited values|
