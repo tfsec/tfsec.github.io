@@ -46,4 +46,3 @@ The comment will only be added once per transgression.
 The screenshot below demonstrates the comments that can be expected when using the action
 
 ![PR Commenter Example](/docs/pr_commenter.png)
-

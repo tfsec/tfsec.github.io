@@ -1,5 +1,6 @@
 
-- title: AWS
+
+- title: AWS Checks
   docs:
   - aws/home
   - aws/AWS001
@@ -46,7 +47,7 @@
   - aws/AWS047
   - aws/AWS048
 
-- title: AZURE
+- title: AZURE Checks
   docs:
   - azure/home
   - azure/AZU001
@@ -59,14 +60,14 @@
   - azure/AZU008
   - azure/AZU009
 
-- title: GENERAL
+- title: GENERAL Checks
   docs:
   - general/home
   - general/GEN001
   - general/GEN002
   - general/GEN003
 
-- title: GOOGLE
+- title: GOOGLE Checks
   docs:
   - google/home
   - google/GCP001
