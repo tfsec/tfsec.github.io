@@ -15,4 +15,5 @@ The included AZURE checks are listed below. For more information about each chec
 |AZU007|Ensure RBAC is enabled on AKS clusters|[AZU007](/docs/azure/AZU007)|
 |AZU008|Ensure AKS has an API Server Authorized IP Ranges enabled|[AZU008](/docs/azure/AZU008)|
 |AZU009|Ensure AKS logging to Azure Monitoring is Configured|[AZU009](/docs/azure/AZU009)|
+|AZU010|Ensure HTTPS is enabled on Azure Storage Account|[AZU010](/docs/azure/AZU010)|
 
