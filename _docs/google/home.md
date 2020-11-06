@@ -17,4 +17,5 @@ The included GOOGLE checks are listed below. For more information about each che
 |GCP009|Pod security policy enforcement not defined.|[GCP009](/docs/google/GCP009)|
 |GCP010|Shielded GKE nodes not enabled.|[GCP010](/docs/google/GCP010)|
 |GCP011|IAM granted directly to user.|[GCP011](/docs/google/GCP011)|
+|GCP012|Checks for service account defined for GKE nodes|[GCP012](/docs/google/GCP012)|
 
