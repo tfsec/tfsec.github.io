@@ -53,4 +53,5 @@ The included AWS checks are listed below. For more information about each check,
 |AWS050|An ingress Network ACL rule allows ALL ports from `/0`.|[AWS050](/docs/aws/AWS050)|
 |AWS051|There is no encryption specified or encryption is disabled on the RDS Cluster.|[AWS051](/docs/aws/AWS051)|
 |AWS052|RDS encryption has not been enabled at a DB Instance level.|[AWS052](/docs/aws/AWS052)|
+|AWS053|Encryption for RDS Perfomance Insights should be enabled.|[AWS053](/docs/aws/AWS053)|
 
