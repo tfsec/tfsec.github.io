@@ -16,4 +16,6 @@ The included AZURE checks are listed below. For more information about each chec
 |AZU008|Ensure AKS has an API Server Authorized IP Ranges enabled|[AZU008](/docs/azure/AZU008)|
 |AZU009|Ensure AKS logging to Azure Monitoring is Configured|[AZU009](/docs/azure/AZU009)|
 |AZU010|Ensure HTTPS is enabled on Azure Storage Account|[AZU010](/docs/azure/AZU010)|
+|AZU011|Storage containers in blob storage mode should not have public access|[AZU011](/docs/azure/AZU011)|
+|AZU012|The default action on Network Rules should be set to deny|[AZU012](/docs/azure/AZU012)|
 
