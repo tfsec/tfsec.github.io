@@ -67,6 +67,8 @@
   - azure/AZU010
   - azure/AZU011
   - azure/AZU012
+  - azure/AZU013
+  - azure/AZU014
 
 - title: GENERAL Checks
   docs:
