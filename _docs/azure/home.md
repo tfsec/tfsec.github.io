@@ -20,4 +20,6 @@ The included AZURE checks are listed below. For more information about each chec
 |AZU012|The default action on Storage account network rules should be set to deny|[AZU012](/docs/azure/AZU012)|
 |AZU013|Trusted Microsoft Services should have bypass access to Storage accounts|[AZU013](/docs/azure/AZU013)|
 |AZU014|Storage accounts should be configured to only accept transfers that are over secure connections|[AZU014](/docs/azure/AZU014)|
+|AZU015|The minimum TLS version for Storage Accounts should be TLS1_2|[AZU015](/docs/azure/AZU015)|
+|AZU016|When using Queue Services for a storage account, logging should be enabled.|[AZU016](/docs/azure/AZU016)|
 
