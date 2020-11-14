@@ -23,4 +23,6 @@ The included AZURE checks are listed below. For more information about each chec
 |AZU015|The minimum TLS version for Storage Accounts should be TLS1_2|[AZU015](/docs/azure/AZU015)|
 |AZU016|When using Queue Services for a storage account, logging should be enabled.|[AZU016](/docs/azure/AZU016)|
 |AZU017|SSH access should not be accessible from the Internet, should be blocked on port 22|[AZU017](/docs/azure/AZU017)|
+|AZU018|Auditing should be enabled on Azure SQL Databases|[AZU018](/docs/azure/AZU018)|
+|AZU019|Database auditing rentention period should be longer than 90 days|[AZU019](/docs/azure/AZU019)|
 
