@@ -56,6 +56,5 @@ The included AWS checks are listed below. For more information about each check,
 |AWS053|Encryption for RDS Perfomance Insights should be enabled.|[AWS053](/docs/aws/AWS053)|
 |AWS054|ElasticSearch domains should enforce HTTPS|[AWS054](/docs/aws/AWS054)|
 |AWS055|ElasticSearch nodes should communicate with node to node encryption enabled.|[AWS055](/docs/aws/AWS055)|
-|AWS056|ElasticSearch data stores should be encrypted at rest.|[AWS056](/docs/aws/AWS056)|
 |AWS057|Domain logging should be enabled for Elastic Search domains|[AWS057](/docs/aws/AWS057)|
 
