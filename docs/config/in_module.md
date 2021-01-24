@@ -1,8 +1,10 @@
 ---
-title: Custom - In Module Checking
+title: Example - In Module Checking
 permalink: /docs/check_library/in_module/
 parent: Config
 ---
+
+## Custom Check Example - In Module Checking
 
 In module check is useful if you want to ensure that a resource is in a module.
 

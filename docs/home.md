@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Getting Started
 permalink: /docs/home/
 nav_order: 0

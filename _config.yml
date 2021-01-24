@@ -14,6 +14,7 @@ remote_theme: pmarsceill/just-the-docs
 logo: "assets/img/logonav.png"
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 
 search:

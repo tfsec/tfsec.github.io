@@ -4,7 +4,7 @@ permalink: /docs/check_library/acls/
 parent: Config
 ---
 
-## Custom Check Example  
+## Custom Check Example - ACL Checking
 
 This check is useful when there are specific ACLs on `aws_s3_buckets` that you absolutely don't want to be used.
 

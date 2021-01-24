@@ -1,8 +1,10 @@
 ---
-title: Custom - Tag Checking
+title: Example - Tag Checking
 permalink: /docs/check_library/tagged/
 parent: Config
 ---
+
+## Custom Check Example - Tag Checking
 
 Tag checking allows us to ensure that Terraform confirms to company compliance requirements.
 
