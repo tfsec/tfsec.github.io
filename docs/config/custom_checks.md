@@ -1,10 +1,11 @@
 ---
-title: Custom Checks
+title: Config - Custom Checks
 permalink: /docs/custom_checks/
 layout: default
-nav_order: 1
-parent: Config Home
+parent: Config
 ---
+
+
 
 ## What is it?
 tfsec comes with an ever growing number of built in checks, these cover standard AWS, Azure and GCP provider checks, plus several more.

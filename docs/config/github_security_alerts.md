@@ -1,9 +1,8 @@
 ---
-title: Github Security Checks
+title: Config - Github Security Checks
 permalink: /docs/github_security_alerts/
 layout: default
-nav_order: 1
-parent: Config Home
+parent: Config
 ---
 
 ## What is it?

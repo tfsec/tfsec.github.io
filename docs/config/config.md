@@ -1,9 +1,10 @@
 ---
+layout: default
 title: Config
 permalink: /docs/config/
-layout: default
-nav_order: 1
-parent: Config Home
+has_children: true
+has_toc: no
+nav_order: 10
 ---
 
 ## Severity Overrides
