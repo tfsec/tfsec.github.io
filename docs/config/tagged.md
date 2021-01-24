@@ -1,7 +1,6 @@
 ---
 title: Custom - Tag Checking
 permalink: /docs/check_library/tagged/
-layout: default
 parent: Config
 ---
 

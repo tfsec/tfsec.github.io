@@ -1,5 +1,4 @@
 ---
-layout: default
 title: AWS Checks
 permalink: /docs/aws/home/
 has_children: true

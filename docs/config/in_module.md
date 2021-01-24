@@ -1,7 +1,6 @@
 ---
 title: Custom - In Module Checking
 permalink: /docs/check_library/in_module/
-layout: default
 parent: Config
 ---
 

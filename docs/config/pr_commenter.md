@@ -1,7 +1,6 @@
 ---
 title: PR Commenter Action
 permalink: /docs/pr_commenter/
-layout: default
 parent: Config
 ---
 

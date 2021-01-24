@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Config
 permalink: /docs/config/
 has_children: true

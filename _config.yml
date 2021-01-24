@@ -10,7 +10,7 @@ github_username:  tfsec
 markdown: kramdown
 
 # Build settings
-theme: "just-the-docs"
+remote_theme: pmarsceill/just-the-docs
 logo: "assets/img/logonav.png"
 plugins:
   - jekyll-feed

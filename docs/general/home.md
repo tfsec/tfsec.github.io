@@ -1,5 +1,4 @@
 ---
-layout: default
 title: GENERAL Checks
 permalink: /docs/general/home/
 has_children: true

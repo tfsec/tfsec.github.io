@@ -1,5 +1,4 @@
 ---
-layout: default
 title: GOOGLE Checks
 permalink: /docs/google/home/
 has_children: true

@@ -1,7 +1,6 @@
 ---
 title: Example - ACL Checking
 permalink: /docs/check_library/acls/
-layout: default
 parent: Config
 ---
 

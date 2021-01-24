@@ -1,5 +1,4 @@
 ---
-layout: default
 title: AZURE Checks
 permalink: /docs/azure/home/
 has_children: true

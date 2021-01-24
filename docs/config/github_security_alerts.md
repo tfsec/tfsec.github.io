@@ -1,7 +1,6 @@
 ---
 title: Config - Github Security Checks
 permalink: /docs/github_security_alerts/
-layout: default
 parent: Config
 ---
 

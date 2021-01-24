@@ -1,7 +1,6 @@
 ---
 title: Config - Custom Checks
 permalink: /docs/custom_checks/
-layout: default
 parent: Config
 ---
 
