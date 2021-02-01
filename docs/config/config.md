@@ -32,6 +32,46 @@ severity_overrides:
   AWS025: INFO
 ```
 
+## Ignoring warnings
+
+You may wish to ignore some warnings. If you'd like to do so, you can
+simply add a comment containing `tfsec:ignore:<RULE>` to the offending
+line in your templates. If the problem refers to a block of code, such
+as a multiline string, you can add the comment on the line above the
+block, by itself.
+
+For example, to ignore an open security group rule:
+
+```hcl
+resource "aws_security_group_rule" "my-rule" {
+    type = "ingress"
+    cidr_blocks = ["0.0.0.0/0"] #tfsec:ignore:AWS006
+}
+```
+
+or
+
+```hcl
+resource "aws_security_group_rule" "my-rule" {
+    type = "ingress"
+    #tfsec:ignore:AWS006
+    cidr_blocks = ["0.0.0.0/0"]
+}
+```
+
+If you're not sure which line to add the comment on, just check the
+tfsec output for the line number of the discovered problem.
+
+You can ignore multiple rules by concatenating the rules on a single line:
+
+```hcl
+#tfsec:ignore:AWS017 tfsec:ignore:AWS002
+resource "aws_s3_bucket" "my-bucket" {
+  bucket = "foobar"
+  acl    = "private"
+}
+```
+
 ## Excluding checks
 
 There are moments where the list of checks you'd want to exclude becomes larger and larger.
