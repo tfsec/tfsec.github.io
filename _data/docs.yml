@@ -55,6 +55,8 @@
   - aws/AWS055
   - aws/AWS057
   - aws/AWS058
+  - aws/AWS059
+  - aws/AWS060
 
 - title: AZURE Checks
   docs:

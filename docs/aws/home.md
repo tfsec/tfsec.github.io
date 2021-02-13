@@ -61,4 +61,6 @@ The included AWS checks are listed below. For more information about each check,
 |[AWS055](/docs/aws/AWS055)|ElasticSearch nodes should communicate with node to node encryption enabled.|
 |[AWS057](/docs/aws/AWS057)|Domain logging should be enabled for Elastic Search domains|
 |[AWS058](/docs/aws/AWS058)|Ensure that lambda function permission has a source arn specified|
+|[AWS059](/docs/aws/AWS059)|Athena databases and workgroup configurations are created unencrypted at rest by default, they should be encrypted|
+|[AWS060](/docs/aws/AWS060)|Athena workgroups should enforce configuration to prevent client disabling encryption|
 
