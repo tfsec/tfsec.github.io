@@ -64,4 +64,5 @@ The included AWS checks are listed below. For more information about each check,
 |[AWS059](/docs/aws/AWS059)|Athena databases and workgroup configurations are created unencrypted at rest by default, they should be encrypted|
 |[AWS060](/docs/aws/AWS060)|Athena workgroups should enforce configuration to prevent client disabling encryption|
 |[AWS061](/docs/aws/AWS061)|API Gateway stages for V1 and V2 should have access logging enabled|
+|[AWS062](/docs/aws/AWS062)|User data for EC2 instances must not contain sensitive AWS keys|
 
