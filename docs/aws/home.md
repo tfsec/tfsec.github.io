@@ -63,4 +63,5 @@ The included AWS checks are listed below. For more information about each check,
 |[AWS058](/docs/aws/AWS058)|Ensure that lambda function permission has a source arn specified|
 |[AWS059](/docs/aws/AWS059)|Athena databases and workgroup configurations are created unencrypted at rest by default, they should be encrypted|
 |[AWS060](/docs/aws/AWS060)|Athena workgroups should enforce configuration to prevent client disabling encryption|
+|[AWS061](/docs/aws/AWS061)|API Gateway stages for V1 and V2 should have access logging enabled|
 
