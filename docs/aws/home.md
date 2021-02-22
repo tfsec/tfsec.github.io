@@ -65,4 +65,11 @@ The included AWS checks are listed below. For more information about each check,
 |[AWS060](/docs/aws/AWS060)|Athena workgroups should enforce configuration to prevent client disabling encryption|
 |[AWS061](/docs/aws/AWS061)|API Gateway stages for V1 and V2 should have access logging enabled|
 |[AWS062](/docs/aws/AWS062)|User data for EC2 instances must not contain sensitive AWS keys|
+|[AWS063](/docs/aws/AWS063)|Cloudtrail should be enabled in all regions regardless of where your AWS resources are generally homed|
+|[AWS064](/docs/aws/AWS064)|Cloudtrail log validation should be enabled to prevent tampering of log data|
+|[AWS065](/docs/aws/AWS065)|Cloudtrail should be encrypted at rest to secure access to sensitive trail data|
+|[AWS066](/docs/aws/AWS066)|EKS should have the encryption of secrets enabled|
+|[AWS067](/docs/aws/AWS067)|EKS Clusters should have cluster control plane logging turned on|
+|[AWS068](/docs/aws/AWS068)|EKS cluster should not have open CIDR range for public access|
+|[AWS069](/docs/aws/AWS069)|EKS Clusters should have the public access disabled|
 
