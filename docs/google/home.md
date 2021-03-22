@@ -10,6 +10,7 @@ The included GOOGLE checks are listed below. For more information about each che
 | Code  | Summary |
 |:-------|:-------------|
 |[GCP001](/docs/google/GCP001)|Unencrypted compute disk.|
+|[GCP002](/docs/google/GCP002)|Unencrypted storage bucket.|
 |[GCP003](/docs/google/GCP003)|An inbound firewall rule allows traffic from `/0`.|
 |[GCP004](/docs/google/GCP004)|An outbound firewall rule allows traffic to `/0`.|
 |[GCP005](/docs/google/GCP005)|Legacy ABAC permissions are enabled.|
