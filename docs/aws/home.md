@@ -72,4 +72,12 @@ The included AWS checks are listed below. For more information about each check,
 |[AWS067](/docs/aws/AWS067)|EKS Clusters should have cluster control plane logging turned on|
 |[AWS068](/docs/aws/AWS068)|EKS cluster should not have open CIDR range for public access|
 |[AWS069](/docs/aws/AWS069)|EKS Clusters should have the public access disabled|
+|[AWS070](/docs/aws/AWS070)|AWS ES Domain should have logging enabled|
+|[AWS071](/docs/aws/AWS071)|Cloudfront distribution should have Access Logging configured|
+|[AWS072](/docs/aws/AWS072)|Viewer Protocol Policy in Cloudfront Distribution Cache should always be set to HTTPS|
+|[AWS073](/docs/aws/AWS073)|S3 Access Block should Ignore Public Acl|
+|[AWS074](/docs/aws/AWS074)|S3 Access block should block public ACL|
+|[AWS075](/docs/aws/AWS075)|S3 Access block should restrict public bucket to limit access|
+|[AWS076](/docs/aws/AWS076)|S3 Access block should block public policy|
+|[AWS077](/docs/aws/AWS077)|S3 Data should be versioned|
 

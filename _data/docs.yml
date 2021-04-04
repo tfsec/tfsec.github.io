@@ -66,6 +66,14 @@
   - aws/AWS067
   - aws/AWS068
   - aws/AWS069
+  - aws/AWS070
+  - aws/AWS071
+  - aws/AWS072
+  - aws/AWS073
+  - aws/AWS074
+  - aws/AWS075
+  - aws/AWS076
+  - aws/AWS077
 
 - title: AZURE Checks
   docs:
