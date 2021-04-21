@@ -80,4 +80,8 @@ The included AWS checks are listed below. For more information about each check,
 |[AWS075](/docs/aws/AWS075)|S3 Access block should restrict public bucket to limit access|
 |[AWS076](/docs/aws/AWS076)|S3 Access block should block public policy|
 |[AWS077](/docs/aws/AWS077)|S3 Data should be versioned|
+|[AWS078](/docs/aws/AWS078)|ECR images tags shouldn't be mutable.|
+|[AWS079](/docs/aws/AWS079)|aws_instance should activate session tokens for Instance Metadata Service.|
+|[AWS080](/docs/aws/AWS080)|CodeBuild Project artifacts encryption should not be disabled|
+|[AWS081](/docs/aws/AWS081)|DAX Cluster should always encrypt data at rest|
 

@@ -29,4 +29,5 @@ The included AZURE checks are listed below. For more information about each chec
 |[AZU018](/docs/azure/AZU018)|Auditing should be enabled on Azure SQL Databases|
 |[AZU019](/docs/azure/AZU019)|Database auditing rentention period should be longer than 90 days|
 |[AZU020](/docs/azure/AZU020)|Key vault should have the network acl block specified|
+|[AZU021](/docs/azure/AZU021)|Key vault should have purge protection enabled|
 
