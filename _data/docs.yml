@@ -104,6 +104,9 @@
   - azure/AZU020
   - azure/AZU021
   - azure/AZU022
+  - azure/AZU023
+  - azure/AZU024
+  - azure/AZU025
 
 - title: GENERAL Checks
   docs:
