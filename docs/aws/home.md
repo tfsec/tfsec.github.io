@@ -19,7 +19,7 @@ The included AWS checks are listed below. For more information about each check,
 |[AWS008](/docs/aws/AWS008)|An inline ingress security group rule allows traffic from `/0`.|
 |[AWS009](/docs/aws/AWS009)|An inline egress security group rule allows traffic to `/0`.|
 |[AWS010](/docs/aws/AWS010)|An outdated SSL policy is in use by a load balancer.|
-|[AWS011](/docs/aws/AWS011)|A resource is marked as publicly accessible.|
+|[AWS011](/docs/aws/AWS011)|A database resource is marked as publicly accessible.|
 |[AWS012](/docs/aws/AWS012)|A resource has a public IP address.|
 |[AWS013](/docs/aws/AWS013)|Task definition defines sensitive environment variable(s).|
 |[AWS014](/docs/aws/AWS014)|Launch configuration with unencrypted block device.|
@@ -57,8 +57,6 @@ The included AWS checks are listed below. For more information about each check,
 |[AWS051](/docs/aws/AWS051)|There is no encryption specified or encryption is disabled on the RDS Cluster.|
 |[AWS052](/docs/aws/AWS052)|RDS encryption has not been enabled at a DB Instance level.|
 |[AWS053](/docs/aws/AWS053)|Encryption for RDS Perfomance Insights should be enabled.|
-|[AWS054](/docs/aws/AWS054)|ElasticSearch domains should enforce HTTPS|
-|[AWS055](/docs/aws/AWS055)|ElasticSearch nodes should communicate with node to node encryption enabled.|
 |[AWS057](/docs/aws/AWS057)|Domain logging should be enabled for Elastic Search domains|
 |[AWS058](/docs/aws/AWS058)|Ensure that lambda function permission has a source arn specified|
 |[AWS059](/docs/aws/AWS059)|Athena databases and workgroup configurations are created unencrypted at rest by default, they should be encrypted|
