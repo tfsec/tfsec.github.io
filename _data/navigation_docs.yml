@@ -1,0 +1,22 @@
+- title: Getting Started
+  docs:
+    - installation
+
+
+- title: Checks
+  docs:
+    - aws/home
+    - azure/home
+    - google/home
+    - general/home
+    
+
+- title: Config
+  docs:
+    - config
+    - custom-checks
+    
+- title: GitHub Actions
+  docs:
+    - github-action
+    - pr-commenter

@@ -1,0 +1,16 @@
+# Boxes include navigation
+
+- title: AWS
+  desc: Browse checks for the AWS provider
+  icon: aws
+  doc: aws/home
+
+- title: Azure
+  desc: Browse checks for the Azure provider
+  icon: azure
+  doc: azure/home
+
+- title: GCP
+  desc: Browse checks for the Google Cloud provider
+  icon: gcp
+  doc: google/home  
