@@ -35,4 +35,5 @@ The included AZURE checks are listed below. For more information about each chec
 |[AZU024](/docs/azure/AZU024)|RDP access should not be accessible from the Internet, should be blocked on port 3389|
 |[AZU025](/docs/azure/AZU025)|Data Factory should have public access disabled, the default is enabled.|
 |[AZU026](/docs/azure/AZU026)|Ensure that the expiration date is set on all keys|
+|[AZU027](/docs/azure/AZU027)|Synapse Workspace should have managed virtual network enabled, the default is disabled.|
 
