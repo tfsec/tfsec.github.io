@@ -36,4 +36,5 @@ The included AZURE checks are listed below. For more information about each chec
 |[AZU025](/docs/azure/AZU025)|Data Factory should have public access disabled, the default is enabled.|
 |[AZU026](/docs/azure/AZU026)|Ensure that the expiration date is set on all keys|
 |[AZU027](/docs/azure/AZU027)|Synapse Workspace should have managed virtual network enabled, the default is disabled.|
+|[AZU028](/docs/azure/AZU028)|Ensure the Function App can only be accessed via HTTPS. The default is false.|
 
