@@ -14,10 +14,10 @@ The included AWS checks are listed below. For more information about each check,
 |[AWS003](/docs/aws/AWS003)|AWS Classic resource usage.|
 |[AWS004](/docs/aws/AWS004)|Use of plain HTTP.|
 |[AWS005](/docs/aws/AWS005)|Load balancer is exposed to the internet.|
-|[AWS006](/docs/aws/AWS006)|An ingress security group rule allows traffic from `/0`.|
-|[AWS007](/docs/aws/AWS007)|An egress security group rule allows traffic to `/0`.|
-|[AWS008](/docs/aws/AWS008)|An inline ingress security group rule allows traffic from `/0`.|
-|[AWS009](/docs/aws/AWS009)|An inline egress security group rule allows traffic to `/0`.|
+|[AWS006](/docs/aws/AWS006)|An ingress security group rule allows traffic from /0.|
+|[AWS007](/docs/aws/AWS007)|An egress security group rule allows traffic to /0.|
+|[AWS008](/docs/aws/AWS008)|An inline ingress security group rule allows traffic from /0.|
+|[AWS009](/docs/aws/AWS009)|An inline egress security group rule allows traffic to /0.|
 |[AWS010](/docs/aws/AWS010)|An outdated SSL policy is in use by a load balancer.|
 |[AWS011](/docs/aws/AWS011)|A database resource is marked as publicly accessible.|
 |[AWS012](/docs/aws/AWS012)|A resource has a public IP address.|
@@ -52,8 +52,8 @@ The included AWS checks are listed below. For more information about each check,
 |[AWS046](/docs/aws/AWS046)|AWS IAM policy document has wildcard action statement.|
 |[AWS047](/docs/aws/AWS047)|AWS SQS policy document has wildcard action statement.|
 |[AWS048](/docs/aws/AWS048)|EFS Encryption has not been enabled|
-|[AWS049](/docs/aws/AWS049)|An ingress Network ACL rule allows specific ports from `/0`.|
-|[AWS050](/docs/aws/AWS050)|An ingress Network ACL rule allows ALL ports from `/0`.|
+|[AWS049](/docs/aws/AWS049)|An ingress Network ACL rule allows specific ports from /0.|
+|[AWS050](/docs/aws/AWS050)|An ingress Network ACL rule allows ALL ports from /0.|
 |[AWS051](/docs/aws/AWS051)|There is no encryption specified or encryption is disabled on the RDS Cluster.|
 |[AWS052](/docs/aws/AWS052)|RDS encryption has not been enabled at a DB Instance level.|
 |[AWS053](/docs/aws/AWS053)|Encryption for RDS Perfomance Insights should be enabled.|
