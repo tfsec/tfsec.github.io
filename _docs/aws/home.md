@@ -82,4 +82,6 @@ The included AWS checks are listed below. For more information about each check,
 |[AWS079](/docs/aws/AWS079)|aws_instance should activate session tokens for Instance Metadata Service.|
 |[AWS080](/docs/aws/AWS080)|CodeBuild Project artifacts encryption should not be disabled|
 |[AWS081](/docs/aws/AWS081)|DAX Cluster should always encrypt data at rest|
+|[AWS082](/docs/aws/AWS082)|It is AWS best practice to not use the default VPC for workflows|
+|[AWS083](/docs/aws/AWS083)|Load balancers should drop invalid headers|
 
