@@ -84,4 +84,5 @@ The included AWS checks are listed below. For more information about each check,
 |[AWS081](/docs/aws/AWS081)|DAX Cluster should always encrypt data at rest|
 |[AWS082](/docs/aws/AWS082)|It is AWS best practice to not use the default VPC for workflows|
 |[AWS083](/docs/aws/AWS083)|Load balancers should drop invalid headers|
+|[AWS084](/docs/aws/AWS084)|Root and user volumes on Workspaces should be encrypted|
 
