@@ -85,4 +85,8 @@ The included AWS checks are listed below. For more information about each check,
 |[AWS082](/docs/aws/AWS082)|It is AWS best practice to not use the default VPC for workflows|
 |[AWS083](/docs/aws/AWS083)|Load balancers should drop invalid headers|
 |[AWS084](/docs/aws/AWS084)|Root and user volumes on Workspaces should be encrypted|
+|[AWS085](/docs/aws/AWS085)|Config configuration aggregator should be using all regions for source|
+|[AWS086](/docs/aws/AWS086)|Point in time recovery should be enabled to protect DynamoDB table|
+|[AWS087](/docs/aws/AWS087)|Redshift cluster should be deployed into a specific VPC|
+|[AWS088](/docs/aws/AWS088)|Redis cluster should be backup retention turned on|
 
