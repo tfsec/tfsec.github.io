@@ -6,7 +6,7 @@ categories: [news, release, vscode]
 
 Announcing the tfsec Visual Studio Code plugin!
 
-![VSCode Plugin](https://github.com/tfsec/vscode-tfsec/raw/HEAD/tfsec-explorer.gif)
+![VSCode Plugin](hhttps://raw.githubusercontent.com/tfsec/vscode-tfsec/master/tfsec-explorer-usage.gif)
 
 The plugin provides an easy way to run tfsec and display the current issues in any easy to navigate view.
 
