@@ -89,4 +89,6 @@ The included AWS checks are listed below. For more information about each check,
 |[AWS086](/docs/aws/AWS086)|Point in time recovery should be enabled to protect DynamoDB table|
 |[AWS087](/docs/aws/AWS087)|Redshift cluster should be deployed into a specific VPC|
 |[AWS088](/docs/aws/AWS088)|Redis cluster should be backup retention turned on|
+|[AWS089](/docs/aws/AWS089)|CloudWatch log groups should be encrypted|
+|[AWS090](/docs/aws/AWS090)|ECS clusters should have container insights enabled|
 
