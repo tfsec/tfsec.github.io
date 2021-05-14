@@ -91,4 +91,10 @@ The included AWS checks are listed below. For more information about each check,
 |[AWS088](/docs/aws/AWS088)|Redis cluster should be backup retention turned on|
 |[AWS089](/docs/aws/AWS089)|CloudWatch log groups should be encrypted|
 |[AWS090](/docs/aws/AWS090)|ECS clusters should have container insights enabled|
+|[AWS091](/docs/aws/AWS091)|RDS Cluster and RDS instance should have backup retention longer than default 1 day|
+|[AWS092](/docs/aws/AWS092)|DynamoDB tables should use at rest encyption with a Customer Managed Key|
+|[AWS093](/docs/aws/AWS093)|ECR Repository should use customer managed keys to allow more control|
+|[AWS094](/docs/aws/AWS094)|Redshift clusters should use at rest encryption|
+|[AWS095](/docs/aws/AWS095)|Secrets Manager should use customer managed keys|
+|[AWS096](/docs/aws/AWS096)|ECS Task Definitions with EFS volumes should use in-transit encryption|
 
