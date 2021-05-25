@@ -31,6 +31,8 @@ Taking the previous example of a required cost centre, the check file might look
     {
       "code": "CUS001",
       "description": "Custom check to ensure the CostCentre tag is applied to EC2 instances",
+      "impact": "By not having CostCentre we can't keep track of billing",
+      "resolution": "Add the CostCentre tag",
       "requiredTypes": [
         "resource"
       ],
@@ -59,6 +61,8 @@ or
 checks:
 - code: CUS001
   description: Custom check to ensure the CostCentre tag is applied to EC2 instances
+  impact: By not having CostCentre we can't keep track of billing
+  resolution: Add the CostCentre tag
   requiredTypes:
   - resource
   requiredLabels:
@@ -80,6 +84,8 @@ The check contains up of the following attributes;
 |:-----------|:-------------|
 | code | The custom code that your check will be known as |
 | description | A description for the code that will be included in the output|
+| impact | An optional detail about the consequences of not passing the check |
+| resolution | An optional brief description of how to satisfy the check |
 |requiredTypes | The block types to apply the check to - resource, data, module, variable |
 |requiredLabels | The resource type - aws_ec2_instance for example. This also supports wildcards using `*`, e.g. `aws_*` |
 |severity | How severe is the check |
