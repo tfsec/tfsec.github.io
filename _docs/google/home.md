@@ -7,7 +7,7 @@ has_toc: false
 
 The included GOOGLE checks are listed below. For more information about each check, see the link provided.
 
-| Code  | Summary |
+| ID  | Summary |
 |:-------|:-------------|
 |[GCP001](/docs/google/GCP001)|Unencrypted compute disk.|
 |[GCP003](/docs/google/GCP003)|An inbound firewall rule allows traffic from /0.|

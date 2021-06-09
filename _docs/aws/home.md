@@ -7,7 +7,7 @@ has_toc: false
 
 The included AWS checks are listed below. For more information about each check, see the link provided.
 
-| Code  | Summary |
+| ID  | Summary |
 |:-------|:-------------|
 |[AWS001](/docs/aws/AWS001)|S3 Bucket has an ACL defined which allows public access.|
 |[AWS002](/docs/aws/AWS002)|S3 Bucket does not have logging enabled.|
@@ -97,4 +97,5 @@ The included AWS checks are listed below. For more information about each check,
 |[AWS094](/docs/aws/AWS094)|Redshift clusters should use at rest encryption|
 |[AWS095](/docs/aws/AWS095)|Secrets Manager should use customer managed keys|
 |[AWS096](/docs/aws/AWS096)|ECS Task Definitions with EFS volumes should use in-transit encryption|
+|[AWS097](/docs/aws/AWS097)|IAM customer managed policies should not allow decryption actions on all KMS keys|
 

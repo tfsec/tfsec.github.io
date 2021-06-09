@@ -7,7 +7,7 @@ has_toc: false
 
 The included AZURE checks are listed below. For more information about each check, see the link provided.
 
-| Code  | Summary |
+| ID  | Summary |
 |:-------|:-------------|
 |[AZU001](/docs/azure/AZU001)|An inbound network security rule allows traffic from /0.|
 |[AZU002](/docs/azure/AZU002)|An outbound network security rule allows traffic to /0.|
