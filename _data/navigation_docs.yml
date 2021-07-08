@@ -7,9 +7,10 @@
   docs:
     - aws/home
     - azure/home
+    - digitalocean/home
     - google/home
     - general/home
-    
+    - oracle/home
 
 - title: Config
   docs:
