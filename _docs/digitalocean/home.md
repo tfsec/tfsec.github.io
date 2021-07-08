@@ -11,4 +11,5 @@ The included DIGITALOCEAN checks are listed below. For more information about ea
 |:-------|:-------------|
 |[DIG001](/docs/digitalocean/DIG001)|The firewall has an inbound rule with open access|
 |[DIG002](/docs/digitalocean/DIG002)|The firewall has an outbound rule with open access|
+|[DIG003](/docs/digitalocean/DIG003)|SSH Keys are the preferred way to connect to your droplet, no keys are supplied|
 
