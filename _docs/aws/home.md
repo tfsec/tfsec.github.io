@@ -98,4 +98,5 @@ The included AWS checks are listed below. For more information about each check,
 |[AWS095](/docs/aws/AWS095)|Secrets Manager should use customer managed keys|
 |[AWS096](/docs/aws/AWS096)|ECS Task Definitions with EFS volumes should use in-transit encryption|
 |[AWS097](/docs/aws/AWS097)|IAM customer managed policies should not allow decryption actions on all KMS keys|
+|[AWS098](/docs/aws/AWS098)|S3 buckets should each define an aws_s3_bucket_public_access_block|
 
