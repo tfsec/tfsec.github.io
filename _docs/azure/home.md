@@ -1,11 +1,11 @@
 ---
-title: AZURE Checks
+title: Azure Checks
 permalink: /docs/azure/home/
 has_children: true
 has_toc: false
 ---
 
-The included AZURE checks are listed below. For more information about each check, see the link provided.
+The included Azure checks are listed below. For more information about each check, see the link provided.
 
 | ID  | Summary |
 |:-------|:-------------|

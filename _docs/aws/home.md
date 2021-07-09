@@ -56,7 +56,7 @@ The included AWS checks are listed below. For more information about each check,
 |[AWS050](/docs/aws/AWS050)|An ingress Network ACL rule allows ALL ports from /0.|
 |[AWS051](/docs/aws/AWS051)|There is no encryption specified or encryption is disabled on the RDS Cluster.|
 |[AWS052](/docs/aws/AWS052)|RDS encryption has not been enabled at a DB Instance level.|
-|[AWS053](/docs/aws/AWS053)|Encryption for RDS Perfomance Insights should be enabled.|
+|[AWS053](/docs/aws/AWS053)|Encryption for RDS Performance Insights should be enabled.|
 |[AWS057](/docs/aws/AWS057)|Domain logging should be enabled for Elastic Search domains|
 |[AWS058](/docs/aws/AWS058)|Ensure that lambda function permission has a source arn specified|
 |[AWS059](/docs/aws/AWS059)|Athena databases and workgroup configurations are created unencrypted at rest by default, they should be encrypted|

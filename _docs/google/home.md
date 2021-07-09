@@ -1,11 +1,11 @@
 ---
-title: GOOGLE Checks
+title: Google Checks
 permalink: /docs/google/home/
 has_children: true
 has_toc: false
 ---
 
-The included GOOGLE checks are listed below. For more information about each check, see the link provided.
+The included Google checks are listed below. For more information about each check, see the link provided.
 
 | ID  | Summary |
 |:-------|:-------------|

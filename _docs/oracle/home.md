@@ -1,11 +1,11 @@
 ---
-title: ORACLE Checks
+title: Oracle Checks
 permalink: /docs/oracle/home/
 has_children: true
 has_toc: false
 ---
 
-The included ORACLE checks are listed below. For more information about each check, see the link provided.
+The included Oracle checks are listed below. For more information about each check, see the link provided.
 
 | ID  | Summary |
 |:-------|:-------------|
