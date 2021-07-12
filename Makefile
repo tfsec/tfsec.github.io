@@ -50,3 +50,11 @@ help: Makefile
 	@sed -n 's/^##//p' $< | column -t -s ':' |  sed -e 's/^/ /'
 	@echo
 	@echo "$(GREEN) > ready: $(BLUE)$(PROJECTNAME)$(RESET) $(YELLOW)$(BRANCHENAME)$(RESET)"
+
+.PHONY: typos
+typos:
+	./scripts/typos.sh
+
+.PHONY: fix-typos
+fix-typos:
+	./scripts/typos.sh fix

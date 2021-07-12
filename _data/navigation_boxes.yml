@@ -14,3 +14,13 @@
   desc: Browse checks for the Google Cloud provider
   icon: gcp
   doc: google/home  
+
+- title: Digital Ocean
+  desc: Browse checks for the Digital Ocean provider
+  icon: digitalocean
+  doc: digitalocean/home  
+
+# - title: Oracle
+#   desc: Browse checks for the Oracle Cloud provider
+#   icon: oci
+#   doc: google/home  

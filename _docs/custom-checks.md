@@ -350,7 +350,7 @@ matchSpec:
 ##### regexMatches
 The `regexMatches` check action passes when the regex is matched to the pattern passed in the value. This is check would generally be used as a top level check to filter whether or not to apply a check.
 
-For example, this check will ensure that the source attribute of a module matches the supplied regex before continuing with the subMatches. This can be used to ensure that checks are targetted to specific modules.
+For example, this check will ensure that the source attribute of a module matches the supplied regex before continuing with the subMatches. This can be used to ensure that checks are targeted to specific modules.
 
 When tackling this specific use case of filtering module blocks by source, the `requiredLabels` should be set to `"*"`
 
