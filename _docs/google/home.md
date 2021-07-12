@@ -9,7 +9,7 @@ The included Google checks are listed below. For more information about each che
 
 | ID  | Summary |
 |:-------|:-------------|
-|[GCP001](/docs/google/GCP001)|Unencrypted compute disk.|
+|[GCP001](/docs/google/GCP001)|Encrypted compute disk with unmanaged keys.|
 |[GCP003](/docs/google/GCP003)|An inbound firewall rule allows traffic from /0.|
 |[GCP004](/docs/google/GCP004)|An outbound firewall rule allows traffic to /0.|
 |[GCP005](/docs/google/GCP005)|Legacy ABAC permissions are enabled.|
@@ -20,4 +20,5 @@ The included Google checks are listed below. For more information about each che
 |[GCP010](/docs/google/GCP010)|Shielded GKE nodes not enabled.|
 |[GCP011](/docs/google/GCP011)|IAM granted directly to user.|
 |[GCP012](/docs/google/GCP012)|Checks for service account defined for GKE nodes|
+|[GCP013](/docs/google/GCP013)|The encryption key used to encrypt a compute disk has been specified in plaintext.|
 

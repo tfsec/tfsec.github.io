@@ -13,4 +13,5 @@ The included General checks are listed below. For more information about each ch
 |[GEN002](/docs/general/GEN002)|Potentially sensitive data stored in local value.|
 |[GEN003](/docs/general/GEN003)|Potentially sensitive data stored in block attribute.|
 |[GEN004](/docs/general/GEN004)|Github repository shouldn't be public.|
+|[GEN005](/docs/general/GEN005)|The attribute has potentially sensitive data, passwords, tokens or keys in it|
 
