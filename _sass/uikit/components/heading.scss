@@ -13,6 +13,7 @@
 // Variables
 // ========================================================================
 
+$heading-primary-font-family:                     'Inter', sans-sarif;
 $heading-primary-font-size:                      $global-xxlarge-font-size !default;
 $heading-primary-line-height:                    1.2 !default;
 
@@ -55,6 +56,7 @@ $heading-line-margin-horizontal:                 0.6em !default;
  ========================================================================== */
 
 .uk-heading-primary {
+    font-family: $heading-primary-font-family;
     font-size: $heading-primary-font-size;
     line-height: $heading-primary-line-height;
     @if(mixin-exists(hook-heading-primary)) {@include hook-heading-primary();}
