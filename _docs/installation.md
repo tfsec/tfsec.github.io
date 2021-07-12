@@ -17,12 +17,12 @@ Install with Chocolatey:
 choco install tfsec
 ```
 
-You can also grab the binary for your system from the [releases page](https://github.com/tfsec/tfsec/releases).
+You can also grab the binary for your system from the [releases page](https://github.com/aquasecurity/tfsec/releases).
 
 Alternatively, install with Go:
 
 ```bash
-go get -u github.com/tfsec/tfsec/cmd/tfsec
+go install github.com/aquasecurity/tfsec/cmd/tfsec@latest
 ```
 
 ### Verifying signed binaries
