@@ -671,8 +671,8 @@
     function ajax(url, options) {
         return new Promise(function (resolve, reject) {
             var env = assign({
-                data: null, http://localhost:4000/
-                    method: "GET",
+                data: null,
+                method: "GET",
                 headers: {},
                 xhr: new XMLHttpRequest(),
                 beforeSend: noop,
