@@ -82,17 +82,17 @@ The included AWS checks are listed below. For more information about each check,
 |[AWS079](/docs/aws/AWS079)|aws_instance should activate session tokens for Instance Metadata Service.|
 |[AWS080](/docs/aws/AWS080)|CodeBuild Project artifacts encryption should not be disabled|
 |[AWS081](/docs/aws/AWS081)|DAX Cluster should always encrypt data at rest|
-|[AWS082](/docs/aws/AWS082)|It is AWS best practice to not use the default VPC for workflows|
+|[AWS082](/docs/aws/AWS082)|AWS best practice to not use the default VPC for workflows|
 |[AWS083](/docs/aws/AWS083)|Load balancers should drop invalid headers|
 |[AWS084](/docs/aws/AWS084)|Root and user volumes on Workspaces should be encrypted|
 |[AWS085](/docs/aws/AWS085)|Config configuration aggregator should be using all regions for source|
 |[AWS086](/docs/aws/AWS086)|Point in time recovery should be enabled to protect DynamoDB table|
 |[AWS087](/docs/aws/AWS087)|Redshift cluster should be deployed into a specific VPC|
-|[AWS088](/docs/aws/AWS088)|Redis cluster should be backup retention turned on|
+|[AWS088](/docs/aws/AWS088)|Redis cluster should have backup retention turned on|
 |[AWS089](/docs/aws/AWS089)|CloudWatch log groups should be encrypted using CMK|
 |[AWS090](/docs/aws/AWS090)|ECS clusters should have container insights enabled|
 |[AWS091](/docs/aws/AWS091)|RDS Cluster and RDS instance should have backup retention longer than default 1 day|
-|[AWS092](/docs/aws/AWS092)|DynamoDB tables should use at rest encyption with a Customer Managed Key|
+|[AWS092](/docs/aws/AWS092)|DynamoDB tables should use at rest encryption with a Customer Managed Key|
 |[AWS093](/docs/aws/AWS093)|ECR Repository should use customer managed keys to allow more control|
 |[AWS094](/docs/aws/AWS094)|Redshift clusters should use at rest encryption|
 |[AWS095](/docs/aws/AWS095)|Secrets Manager should use customer managed keys|
