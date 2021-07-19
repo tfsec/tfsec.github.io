@@ -51,7 +51,7 @@ jobs:
 
 ## What is this doing?
 
-Basically, this action is starting a new `ubuntu` github action container and chcking out the code for either the pull request or the push to [master/main](https://github.com/github/renaming).
+Basically, this action is starting a new `ubuntu` github action container and checking out the code for either the pull request or the push to [master/main](https://github.com/github/renaming).
 
 Once the code has been checked out, `tfsec` with process everything in the local path and generate a sarif report.
 
