@@ -9,11 +9,11 @@ The included Digital Ocean checks are listed below. For more information about e
 
 | ID  | Summary |
 |:-------|:-------------|
-|[digitalocean-compute-no-public-egress](/docs/digitalocean/digitalocean-compute-no-public-egress)|The firewall has an outbound rule with open access|
-|[digitalocean-compute-no-public-ingress](/docs/digitalocean/digitalocean-compute-no-public-ingress)|The firewall has an inbound rule with open access|
-|[digitalocean-droplet-use-ssh-keys](/docs/digitalocean/digitalocean-droplet-use-ssh-keys)|SSH Keys are the preferred way to connect to your droplet, no keys are supplied|
-|[digitalocean-loadbalancing-enforce-https](/docs/digitalocean/digitalocean-loadbalancing-enforce-https)|The load balancer forwarding rule is using an insecure protocol as an entrypoint|
-|[digitalocean-spaces-acl-no-public-read](/docs/digitalocean/digitalocean-spaces-acl-no-public-read)|Spaces bucket or bucket object has public read acl set|
-|[digitalocean-spaces-disable-force-destroy](/docs/digitalocean/digitalocean-spaces-disable-force-destroy)|Force destroy is enabled on Spaces bucket which is dangerous|
-|[digitalocean-spaces-versioning-enabled](/docs/digitalocean/digitalocean-spaces-versioning-enabled)|Spaces buckets should have versioning enabled|
+|[digitalocean-compute-no-public-egress](/docs/digitalocean/compute/no-public-egress)|The firewall has an outbound rule with open access|
+|[digitalocean-compute-no-public-ingress](/docs/digitalocean/compute/no-public-ingress)|The firewall has an inbound rule with open access|
+|[digitalocean-droplet-use-ssh-keys](/docs/digitalocean/droplet/use-ssh-keys)|SSH Keys are the preferred way to connect to your droplet, no keys are supplied|
+|[digitalocean-loadbalancing-enforce-https](/docs/digitalocean/loadbalancing/enforce-https)|The load balancer forwarding rule is using an insecure protocol as an entrypoint|
+|[digitalocean-spaces-acl-no-public-read](/docs/digitalocean/spaces/acl-no-public-read)|Spaces bucket or bucket object has public read acl set|
+|[digitalocean-spaces-disable-force-destroy](/docs/digitalocean/spaces/disable-force-destroy)|Force destroy is enabled on Spaces bucket which is dangerous|
+|[digitalocean-spaces-versioning-enabled](/docs/digitalocean/spaces/versioning-enabled)|Spaces buckets should have versioning enabled|
 

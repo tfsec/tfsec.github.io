@@ -9,5 +9,5 @@ The included Oracle checks are listed below. For more information about each che
 
 | ID  | Summary |
 |:-------|:-------------|
-|[oracle-compute-no-public-ip](/docs/oracle/oracle-compute-no-public-ip)|Compute instance requests an IP reservation from a public pool|
+|[oracle-compute-no-public-ip](/docs/oracle/compute/no-public-ip)|Compute instance requests an IP reservation from a public pool|
 
