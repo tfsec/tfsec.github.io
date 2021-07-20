@@ -1,9 +1,14 @@
 ---
-title: aws-elasticache-enable-in-transit-encryption - Elasticache Replication Group uses unencrypted traffic.
+title: Elasticache Replication Group uses unencrypted traffic.
+shortcode: aws-elasticache-enable-in-transit-encryption
+legacy: AWS036
 summary: Elasticache Replication Group uses unencrypted traffic. 
 resources: [aws_elasticache_replication_group] 
-permalink: /docs/aws/aws-elasticache-enable-in-transit-encryption/
+permalink: /docs/aws/elasticache/enable-in-transit-encryption/
+redirect_from: 
+  - /docs/aws/AWS036/
 ---
+
 ### Explanation
 
 

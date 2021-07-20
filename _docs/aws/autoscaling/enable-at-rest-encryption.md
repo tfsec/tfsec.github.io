@@ -1,9 +1,14 @@
 ---
-title: aws-autoscaling-enable-at-rest-encryption - Launch configuration with unencrypted block device.
+title: Launch configuration with unencrypted block device.
+shortcode: aws-autoscaling-enable-at-rest-encryption
+legacy: AWS014
 summary: Launch configuration with unencrypted block device. 
 resources: [aws_launch_configuration] 
-permalink: /docs/aws/aws-autoscaling-enable-at-rest-encryption/
+permalink: /docs/aws/autoscaling/enable-at-rest-encryption/
+redirect_from: 
+  - /docs/aws/AWS014/
 ---
+
 ### Explanation
 
 

@@ -1,9 +1,14 @@
 ---
-title: aws-workspace-enable-disk-encryption - Root and user volumes on Workspaces should be encrypted
+title: Root and user volumes on Workspaces should be encrypted
+shortcode: aws-workspace-enable-disk-encryption
+legacy: AWS084
 summary: Root and user volumes on Workspaces should be encrypted 
 resources: [aws_workspaces_workspace] 
-permalink: /docs/aws/aws-workspace-enable-disk-encryption/
+permalink: /docs/aws/workspace/enable-disk-encryption/
+redirect_from: 
+  - /docs/aws/AWS084/
 ---
+
 ### Explanation
 
 

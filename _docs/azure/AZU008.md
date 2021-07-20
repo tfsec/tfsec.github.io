@@ -1,9 +1,14 @@
 ---
-title: azure-container-limit-authorized-ips - Ensure AKS has an API Server Authorized IP Ranges enabled
+title: Ensure AKS has an API Server Authorized IP Ranges enabled
+shortcode: azure-container-limit-authorized-ips
+legacy: AZU008
 summary: Ensure AKS has an API Server Authorized IP Ranges enabled 
 resources: [azurerm_kubernetes_cluster] 
-permalink: /docs/azure/azure-container-limit-authorized-ips/
+permalink: /docs/azure/container/limit-authorized-ips/
+redirect_from: 
+  - /docs/azure/AZU008/
 ---
+
 ### Explanation
 
 

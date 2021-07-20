@@ -1,9 +1,14 @@
 ---
-title: aws-iam-no-policy-wildcards - IAM policy should avoid use of wildcards and instead apply the principle of least privilege
+title: IAM policy should avoid use of wildcards and instead apply the principle of least privilege
+shortcode: aws-iam-no-policy-wildcards
+legacy: AWS099
 summary: IAM policy should avoid use of wildcards and instead apply the principle of least privilege 
 resources: [aws_iam_policy aws_iam_user_policy aws_iam_group_policy aws_iam_role_policy] 
-permalink: /docs/aws/aws-iam-no-policy-wildcards/
+permalink: /docs/aws/iam/no-policy-wildcards/
+redirect_from: 
+  - /docs/aws/AWS099/
 ---
+
 ### Explanation
 
 

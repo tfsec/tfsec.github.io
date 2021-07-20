@@ -1,9 +1,14 @@
 ---
-title: aws-cloudfront-enable-logging - Cloudfront distribution should have Access Logging configured
+title: Cloudfront distribution should have Access Logging configured
+shortcode: aws-cloudfront-enable-logging
+legacy: AWS071
 summary: Cloudfront distribution should have Access Logging configured 
 resources: [aws_cloudfront_distribution] 
-permalink: /docs/aws/aws-cloudfront-enable-logging/
+permalink: /docs/aws/cloudfront/enable-logging/
+redirect_from: 
+  - /docs/aws/AWS071/
 ---
+
 ### Explanation
 
 

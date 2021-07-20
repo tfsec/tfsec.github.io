@@ -1,9 +1,14 @@
 ---
-title: azure-datalake-enable-at-rest-encryption - Unencrypted data lake storage.
+title: Unencrypted data lake storage.
+shortcode: azure-datalake-enable-at-rest-encryption
+legacy: AZU004
 summary: Unencrypted data lake storage. 
 resources: [azurerm_data_lake_store] 
-permalink: /docs/azure/azure-datalake-enable-at-rest-encryption/
+permalink: /docs/azure/datalake/enable-at-rest-encryption/
+redirect_from: 
+  - /docs/azure/AZU004/
 ---
+
 ### Explanation
 
 

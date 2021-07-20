@@ -1,9 +1,14 @@
 ---
-title: general-secrets-sensitive-in-attribute - Potentially sensitive data stored in block attribute.
+title: Potentially sensitive data stored in block attribute.
+shortcode: general-secrets-sensitive-in-attribute
+legacy: GEN003
 summary: Potentially sensitive data stored in block attribute. 
 resources: [] 
-permalink: /docs/general/general-secrets-sensitive-in-attribute/
+permalink: /docs/general/secrets/sensitive-in-attribute/
+redirect_from: 
+  - /docs/general/GEN003/
 ---
+
 ### Explanation
 
 

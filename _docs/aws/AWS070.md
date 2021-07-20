@@ -1,9 +1,14 @@
 ---
-title: aws-elastic-search-enable-logging - AWS ES Domain should have logging enabled
+title: AWS ES Domain should have logging enabled
+shortcode: aws-elastic-search-enable-logging
+legacy: AWS070
 summary: AWS ES Domain should have logging enabled 
 resources: [aws_elasticsearch_domain] 
-permalink: /docs/aws/aws-elastic-search-enable-logging/
+permalink: /docs/aws/elastic-search/enable-logging/
+redirect_from: 
+  - /docs/aws/AWS070/
 ---
+
 ### Explanation
 
 

@@ -1,9 +1,14 @@
 ---
-title: azure-appservice-enforce-https - Ensure the Function App can only be accessed via HTTPS. The default is false.
+title: Ensure the Function App can only be accessed via HTTPS. The default is false.
+shortcode: azure-appservice-enforce-https
+legacy: AZU028
 summary: Ensure the Function App can only be accessed via HTTPS. The default is false. 
 resources: [azurerm_function_app] 
-permalink: /docs/azure/azure-appservice-enforce-https/
+permalink: /docs/azure/appservice/enforce-https/
+redirect_from: 
+  - /docs/azure/AZU028/
 ---
+
 ### Explanation
 
 

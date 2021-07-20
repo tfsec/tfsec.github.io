@@ -1,9 +1,14 @@
 ---
-title: azure-compute-no-secrets-in-custom-data - Custom data for virtual machines must not contain sensitive data
+title: Custom data for virtual machines must not contain sensitive data
+shortcode: azure-compute-no-secrets-in-custom-data
+legacy: 
 summary: Custom data for virtual machines must not contain sensitive data 
 resources: [azurerm_virtual_machine] 
-permalink: /docs/azure/azure-compute-no-secrets-in-custom-data/
+permalink: /docs/azure/compute/no-secrets-in-custom-data/
+redirect_from: 
+  - /docs/azure//
 ---
+
 ### Explanation
 
 	

@@ -1,9 +1,14 @@
 ---
-title: azure-storage-queue-services-logging-enabled - When using Queue Services for a storage account, logging should be enabled.
+title: When using Queue Services for a storage account, logging should be enabled.
+shortcode: azure-storage-queue-services-logging-enabled
+legacy: AZU016
 summary: When using Queue Services for a storage account, logging should be enabled. 
 resources: [azurerm_storage_account] 
-permalink: /docs/azure/azure-storage-queue-services-logging-enabled/
+permalink: /docs/azure/storage/queue-services-logging-enabled/
+redirect_from: 
+  - /docs/azure/AZU016/
 ---
+
 ### Explanation
 
 

@@ -1,9 +1,14 @@
 ---
-title: aws-athena-no-encryption-override - Athena workgroups should enforce configuration to prevent client disabling encryption
+title: Athena workgroups should enforce configuration to prevent client disabling encryption
+shortcode: aws-athena-no-encryption-override
+legacy: AWS060
 summary: Athena workgroups should enforce configuration to prevent client disabling encryption 
 resources: [aws_athena_workgroup] 
-permalink: /docs/aws/aws-athena-no-encryption-override/
+permalink: /docs/aws/athena/no-encryption-override/
+redirect_from: 
+  - /docs/aws/AWS060/
 ---
+
 ### Explanation
 
 

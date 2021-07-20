@@ -1,9 +1,14 @@
 ---
-title: google-compute-disk-encryption-required - The encryption key used to encrypt a compute disk has been specified in plaintext.
+title: The encryption key used to encrypt a compute disk has been specified in plaintext.
+shortcode: google-compute-disk-encryption-required
+legacy: GCP013
 summary: The encryption key used to encrypt a compute disk has been specified in plaintext. 
 resources: [google_compute_disk] 
-permalink: /docs/google/google-compute-disk-encryption-required/
+permalink: /docs/google/compute/disk-encryption-required/
+redirect_from: 
+  - /docs/google/GCP013/
 ---
+
 ### Explanation
 
 

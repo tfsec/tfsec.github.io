@@ -1,9 +1,14 @@
 ---
-title: aws-iam-set-max-password-age - IAM Password policy should have expiry less than or equal to 90 days.
+title: IAM Password policy should have expiry less than or equal to 90 days.
+shortcode: aws-iam-set-max-password-age
+legacy: AWS038
 summary: IAM Password policy should have expiry less than or equal to 90 days. 
 resources: [aws_iam_account_password_policy] 
-permalink: /docs/aws/aws-iam-set-max-password-age/
+permalink: /docs/aws/iam/set-max-password-age/
+redirect_from: 
+  - /docs/aws/AWS038/
 ---
+
 ### Explanation
 
 IAM account password policies should have a maximum age specified. 

@@ -1,9 +1,14 @@
 ---
-title: azure-container-logging - Ensure AKS logging to Azure Monitoring is Configured
+title: Ensure AKS logging to Azure Monitoring is Configured
+shortcode: azure-container-logging
+legacy: AZU009
 summary: Ensure AKS logging to Azure Monitoring is Configured 
 resources: [azurerm_kubernetes_cluster] 
-permalink: /docs/azure/azure-container-logging/
+permalink: /docs/azure/container/logging/
+redirect_from: 
+  - /docs/azure/AZU009/
 ---
+
 ### Explanation
 
 

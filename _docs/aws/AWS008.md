@@ -1,9 +1,14 @@
 ---
-title: aws-vpc-no-public-ingress-sg - An inline ingress security group rule allows traffic from /0.
+title: An inline ingress security group rule allows traffic from /0.
+shortcode: aws-vpc-no-public-ingress-sg
+legacy: AWS008
 summary: An inline ingress security group rule allows traffic from /0. 
 resources: [aws_security_group] 
-permalink: /docs/aws/aws-vpc-no-public-ingress-sg/
+permalink: /docs/aws/vpc/no-public-ingress-sg/
+redirect_from: 
+  - /docs/aws/AWS008/
 ---
+
 ### Explanation
 
 

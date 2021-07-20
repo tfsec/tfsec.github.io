@@ -1,9 +1,14 @@
 ---
-title: digitalocean-compute-no-public-egress - The firewall has an outbound rule with open access
+title: The firewall has an outbound rule with open access
+shortcode: digitalocean-compute-no-public-egress
+legacy: DIG002
 summary: The firewall has an outbound rule with open access 
 resources: [digitalocean_firewall] 
-permalink: /docs/digitalocean/digitalocean-compute-no-public-egress/
+permalink: /docs/digitalocean/compute/no-public-egress/
+redirect_from: 
+  - /docs/digitalocean/DIG002/
 ---
+
 ### Explanation
 
 

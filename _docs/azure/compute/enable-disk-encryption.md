@@ -1,9 +1,14 @@
 ---
-title: azure-compute-enable-disk-encryption - Unencrypted managed disk.
+title: Unencrypted managed disk.
+shortcode: azure-compute-enable-disk-encryption
+legacy: AZU003
 summary: Unencrypted managed disk. 
 resources: [azurerm_managed_disk] 
-permalink: /docs/azure/azure-compute-enable-disk-encryption/
+permalink: /docs/azure/compute/enable-disk-encryption/
+redirect_from: 
+  - /docs/azure/AZU003/
 ---
+
 ### Explanation
 
 

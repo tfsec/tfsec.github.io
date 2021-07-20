@@ -1,9 +1,14 @@
 ---
-title: aws-elastic-service-enable-domain-encryption - Elasticsearch domain isn't encrypted at rest.
+title: Elasticsearch domain isn't encrypted at rest.
+shortcode: aws-elastic-service-enable-domain-encryption
+legacy: AWS031
 summary: Elasticsearch domain isn't encrypted at rest. 
 resources: [aws_elasticsearch_domain] 
-permalink: /docs/aws/aws-elastic-service-enable-domain-encryption/
+permalink: /docs/aws/elastic-service/enable-domain-encryption/
+redirect_from: 
+  - /docs/aws/AWS031/
 ---
+
 ### Explanation
 
 

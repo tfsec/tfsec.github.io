@@ -1,9 +1,14 @@
 ---
-title: aws-sqs-enable-queue-encryption - Unencrypted SQS queue.
+title: Unencrypted SQS queue.
+shortcode: aws-sqs-enable-queue-encryption
+legacy: AWS015
 summary: Unencrypted SQS queue. 
 resources: [aws_sqs_queue] 
-permalink: /docs/aws/aws-sqs-enable-queue-encryption/
+permalink: /docs/aws/sqs/enable-queue-encryption/
+redirect_from: 
+  - /docs/aws/AWS015/
 ---
+
 ### Explanation
 
 

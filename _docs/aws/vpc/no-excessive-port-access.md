@@ -1,9 +1,14 @@
 ---
-title: aws-vpc-no-excessive-port-access - An ingress Network ACL rule allows ALL ports.
+title: An ingress Network ACL rule allows ALL ports.
+shortcode: aws-vpc-no-excessive-port-access
+legacy: AWS050
 summary: An ingress Network ACL rule allows ALL ports. 
 resources: [aws_network_acl_rule] 
-permalink: /docs/aws/aws-vpc-no-excessive-port-access/
+permalink: /docs/aws/vpc/no-excessive-port-access/
+redirect_from: 
+  - /docs/aws/AWS050/
 ---
+
 ### Explanation
 
 

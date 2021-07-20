@@ -1,9 +1,14 @@
 ---
-title: digitalocean-loadbalancing-enforce-https - The load balancer forwarding rule is using an insecure protocol as an entrypoint
+title: The load balancer forwarding rule is using an insecure protocol as an entrypoint
+shortcode: digitalocean-loadbalancing-enforce-https
+legacy: DIG004
 summary: The load balancer forwarding rule is using an insecure protocol as an entrypoint 
 resources: [digitalocean_loadbalancer] 
-permalink: /docs/digitalocean/digitalocean-loadbalancing-enforce-https/
+permalink: /docs/digitalocean/loadbalancing/enforce-https/
+redirect_from: 
+  - /docs/digitalocean/DIG004/
 ---
+
 ### Explanation
 
 

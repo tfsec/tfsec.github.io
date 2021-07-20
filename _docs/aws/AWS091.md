@@ -1,9 +1,14 @@
 ---
-title: aws-rds-backup-retention-specified - RDS Cluster and RDS instance should have backup retention longer than default 1 day
+title: RDS Cluster and RDS instance should have backup retention longer than default 1 day
+shortcode: aws-rds-backup-retention-specified
+legacy: AWS091
 summary: RDS Cluster and RDS instance should have backup retention longer than default 1 day 
 resources: [aws_rds_cluster aws_db_instance] 
-permalink: /docs/aws/aws-rds-backup-retention-specified/
+permalink: /docs/aws/rds/backup-retention-specified/
+redirect_from: 
+  - /docs/aws/AWS091/
 ---
+
 ### Explanation
 
 

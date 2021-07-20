@@ -1,9 +1,14 @@
 ---
-title: aws-cloudfront-enable-waf - CloudFront distribution does not have a WAF in front.
+title: CloudFront distribution does not have a WAF in front.
+shortcode: aws-cloudfront-enable-waf
+legacy: AWS045
 summary: CloudFront distribution does not have a WAF in front. 
 resources: [aws_cloudfront_distribution] 
-permalink: /docs/aws/aws-cloudfront-enable-waf/
+permalink: /docs/aws/cloudfront/enable-waf/
+redirect_from: 
+  - /docs/aws/AWS045/
 ---
+
 ### Explanation
 
 

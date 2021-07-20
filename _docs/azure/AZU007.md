@@ -1,9 +1,14 @@
 ---
-title: azure-container-use-rbac-permissions - Ensure RBAC is enabled on AKS clusters
+title: Ensure RBAC is enabled on AKS clusters
+shortcode: azure-container-use-rbac-permissions
+legacy: AZU007
 summary: Ensure RBAC is enabled on AKS clusters 
 resources: [azurerm_kubernetes_cluster role_based_access_control] 
-permalink: /docs/azure/azure-container-use-rbac-permissions/
+permalink: /docs/azure/container/use-rbac-permissions/
+redirect_from: 
+  - /docs/azure/AZU007/
 ---
+
 ### Explanation
 
 

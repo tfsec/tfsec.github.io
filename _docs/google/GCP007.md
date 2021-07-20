@@ -1,9 +1,14 @@
 ---
-title: google-gke-metadata-endpoints-disabled - Legacy metadata endpoints enabled.
+title: Legacy metadata endpoints enabled.
+shortcode: google-gke-metadata-endpoints-disabled
+legacy: GCP007
 summary: Legacy metadata endpoints enabled. 
 resources: [google_container_cluster] 
-permalink: /docs/google/google-gke-metadata-endpoints-disabled/
+permalink: /docs/google/gke/metadata-endpoints-disabled/
+redirect_from: 
+  - /docs/google/GCP007/
 ---
+
 ### Explanation
 
 

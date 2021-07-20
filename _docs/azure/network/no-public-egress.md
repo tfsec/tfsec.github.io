@@ -1,9 +1,14 @@
 ---
-title: azure-network-no-public-egress - An outbound network security rule allows traffic to /0.
+title: An outbound network security rule allows traffic to /0.
+shortcode: azure-network-no-public-egress
+legacy: AZU002
 summary: An outbound network security rule allows traffic to /0. 
 resources: [azurerm_network_security_rule] 
-permalink: /docs/azure/azure-network-no-public-egress/
+permalink: /docs/azure/network/no-public-egress/
+redirect_from: 
+  - /docs/azure/AZU002/
 ---
+
 ### Explanation
 
 

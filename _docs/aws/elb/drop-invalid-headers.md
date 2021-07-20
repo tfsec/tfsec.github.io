@@ -1,9 +1,14 @@
 ---
-title: aws-elb-drop-invalid-headers - Load balancers should drop invalid headers
+title: Load balancers should drop invalid headers
+shortcode: aws-elb-drop-invalid-headers
+legacy: AWS083
 summary: Load balancers should drop invalid headers 
 resources: [aws_alb aws_lb] 
-permalink: /docs/aws/aws-elb-drop-invalid-headers/
+permalink: /docs/aws/elb/drop-invalid-headers/
+redirect_from: 
+  - /docs/aws/AWS083/
 ---
+
 ### Explanation
 
 

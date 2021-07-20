@@ -1,9 +1,14 @@
 ---
-title: aws-ecs-enable-container-insight - ECS clusters should have container insights enabled
+title: ECS clusters should have container insights enabled
+shortcode: aws-ecs-enable-container-insight
+legacy: AWS090
 summary: ECS clusters should have container insights enabled 
 resources: [aws_ecs_cluster] 
-permalink: /docs/aws/aws-ecs-enable-container-insight/
+permalink: /docs/aws/ecs/enable-container-insight/
+redirect_from: 
+  - /docs/aws/AWS090/
 ---
+
 ### Explanation
 
 

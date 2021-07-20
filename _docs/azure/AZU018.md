@@ -1,9 +1,14 @@
 ---
-title: azure-database-enable-audit - Auditing should be enabled on Azure SQL Databases
+title: Auditing should be enabled on Azure SQL Databases
+shortcode: azure-database-enable-audit
+legacy: AZU018
 summary: Auditing should be enabled on Azure SQL Databases 
 resources: [azurerm_sql_server azurerm_mssql_server] 
-permalink: /docs/azure/azure-database-enable-audit/
+permalink: /docs/azure/database/enable-audit/
+redirect_from: 
+  - /docs/azure/AZU018/
 ---
+
 ### Explanation
 
 

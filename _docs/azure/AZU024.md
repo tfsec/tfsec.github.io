@@ -1,9 +1,14 @@
 ---
-title: azure-network-disable-rdp-from-internet - RDP access should not be accessible from the Internet, should be blocked on port 3389
+title: RDP access should not be accessible from the Internet, should be blocked on port 3389
+shortcode: azure-network-disable-rdp-from-internet
+legacy: AZU024
 summary: RDP access should not be accessible from the Internet, should be blocked on port 3389 
 resources: [azurerm_network_security_group azurerm_network_security_rule] 
-permalink: /docs/azure/azure-network-disable-rdp-from-internet/
+permalink: /docs/azure/network/disable-rdp-from-internet/
+redirect_from: 
+  - /docs/azure/AZU024/
 ---
+
 ### Explanation
 
 

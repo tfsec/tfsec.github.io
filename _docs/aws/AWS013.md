@@ -1,9 +1,14 @@
 ---
-title: aws-ecs-no-plaintext-secrets - Task definition defines sensitive environment variable(s).
+title: Task definition defines sensitive environment variable(s).
+shortcode: aws-ecs-no-plaintext-secrets
+legacy: AWS013
 summary: Task definition defines sensitive environment variable(s). 
 resources: [aws_ecs_task_definition] 
-permalink: /docs/aws/aws-ecs-no-plaintext-secrets/
+permalink: /docs/aws/ecs/no-plaintext-secrets/
+redirect_from: 
+  - /docs/aws/AWS013/
 ---
+
 ### Explanation
 
 

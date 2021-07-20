@@ -1,9 +1,14 @@
 ---
-title: google-compute-no-public-egress - An outbound firewall rule allows traffic to /0.
+title: An outbound firewall rule allows traffic to /0.
+shortcode: google-compute-no-public-egress
+legacy: GCP004
 summary: An outbound firewall rule allows traffic to /0. 
 resources: [google_compute_firewall] 
-permalink: /docs/google/google-compute-no-public-egress/
+permalink: /docs/google/compute/no-public-egress/
+redirect_from: 
+  - /docs/google/GCP004/
 ---
+
 ### Explanation
 
 

@@ -1,9 +1,14 @@
 ---
-title: azure-keyvault-specify-network-acl - Key vault should have the network acl block specified
+title: Key vault should have the network acl block specified
+shortcode: azure-keyvault-specify-network-acl
+legacy: AZU020
 summary: Key vault should have the network acl block specified 
 resources: [azurerm_key_vault] 
-permalink: /docs/azure/azure-keyvault-specify-network-acl/
+permalink: /docs/azure/keyvault/specify-network-acl/
+redirect_from: 
+  - /docs/azure/AZU020/
 ---
+
 ### Explanation
 
 

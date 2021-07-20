@@ -1,9 +1,14 @@
 ---
-title: aws-autoscaling-no-public-ip - A resource has a public IP address.
+title: A resource has a public IP address.
+shortcode: aws-autoscaling-no-public-ip
+legacy: AWS012
 summary: A resource has a public IP address. 
 resources: [aws_launch_configuration aws_instance] 
-permalink: /docs/aws/aws-autoscaling-no-public-ip/
+permalink: /docs/aws/autoscaling/no-public-ip/
+redirect_from: 
+  - /docs/aws/AWS012/
 ---
+
 ### Explanation
 
 

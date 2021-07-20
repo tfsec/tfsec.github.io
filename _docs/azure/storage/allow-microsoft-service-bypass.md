@@ -1,9 +1,14 @@
 ---
-title: azure-storage-allow-microsoft-service-bypass - Trusted Microsoft Services should have bypass access to Storage accounts
+title: Trusted Microsoft Services should have bypass access to Storage accounts
+shortcode: azure-storage-allow-microsoft-service-bypass
+legacy: AZU013
 summary: Trusted Microsoft Services should have bypass access to Storage accounts 
 resources: [azurerm_storage_account_network_rules azurerm_storage_account] 
-permalink: /docs/azure/azure-storage-allow-microsoft-service-bypass/
+permalink: /docs/azure/storage/allow-microsoft-service-bypass/
+redirect_from: 
+  - /docs/azure/AZU013/
 ---
+
 ### Explanation
 
 

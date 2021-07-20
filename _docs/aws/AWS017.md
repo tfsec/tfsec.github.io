@@ -1,9 +1,14 @@
 ---
-title: aws-s3-enable-bucket-encryption - Unencrypted S3 bucket.
+title: Unencrypted S3 bucket.
+shortcode: aws-s3-enable-bucket-encryption
+legacy: AWS017
 summary: Unencrypted S3 bucket. 
 resources: [aws_s3_bucket] 
-permalink: /docs/aws/aws-s3-enable-bucket-encryption/
+permalink: /docs/aws/s3/enable-bucket-encryption/
+redirect_from: 
+  - /docs/aws/AWS017/
 ---
+
 ### Explanation
 
 

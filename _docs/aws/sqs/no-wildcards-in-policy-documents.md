@@ -1,9 +1,14 @@
 ---
-title: aws-sqs-no-wildcards-in-policy-documents - AWS SQS policy document has wildcard action statement.
+title: AWS SQS policy document has wildcard action statement.
+shortcode: aws-sqs-no-wildcards-in-policy-documents
+legacy: AWS047
 summary: AWS SQS policy document has wildcard action statement. 
 resources: [aws_sqs_queue_policy] 
-permalink: /docs/aws/aws-sqs-no-wildcards-in-policy-documents/
+permalink: /docs/aws/sqs/no-wildcards-in-policy-documents/
+redirect_from: 
+  - /docs/aws/AWS047/
 ---
+
 ### Explanation
 
 

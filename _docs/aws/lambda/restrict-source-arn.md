@@ -1,9 +1,14 @@
 ---
-title: aws-lambda-restrict-source-arn - Ensure that lambda function permission has a source arn specified
+title: Ensure that lambda function permission has a source arn specified
+shortcode: aws-lambda-restrict-source-arn
+legacy: AWS058
 summary: Ensure that lambda function permission has a source arn specified 
 resources: [aws_lambda_permission] 
-permalink: /docs/aws/aws-lambda-restrict-source-arn/
+permalink: /docs/aws/lambda/restrict-source-arn/
+redirect_from: 
+  - /docs/aws/AWS058/
 ---
+
 ### Explanation
 
 When the principal is an AWS service, the ARN of the specific resource within that service to grant permission to. 

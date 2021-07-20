@@ -1,9 +1,14 @@
 ---
-title: azure-container-configured-network-policy - Ensure AKS cluster has Network Policy configured
+title: Ensure AKS cluster has Network Policy configured
+shortcode: azure-container-configured-network-policy
+legacy: AZU006
 summary: Ensure AKS cluster has Network Policy configured 
 resources: [azurerm_kubernetes_cluster] 
-permalink: /docs/azure/azure-container-configured-network-policy/
+permalink: /docs/azure/container/configured-network-policy/
+redirect_from: 
+  - /docs/azure/AZU006/
 ---
+
 ### Explanation
 
 

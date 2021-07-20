@@ -1,9 +1,14 @@
 ---
-title: aws-cloudwatch-log-group-customer-key - CloudWatch log groups should be encrypted using CMK
+title: CloudWatch log groups should be encrypted using CMK
+shortcode: aws-cloudwatch-log-group-customer-key
+legacy: AWS089
 summary: CloudWatch log groups should be encrypted using CMK 
 resources: [aws_cloudwatch_log_group] 
-permalink: /docs/aws/aws-cloudwatch-log-group-customer-key/
+permalink: /docs/aws/cloudwatch/log-group-customer-key/
+redirect_from: 
+  - /docs/aws/AWS089/
 ---
+
 ### Explanation
 
 

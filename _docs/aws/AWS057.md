@@ -1,9 +1,14 @@
 ---
-title: aws-elastic-search-enable-domain-logging - Domain logging should be enabled for Elastic Search domains
+title: Domain logging should be enabled for Elastic Search domains
+shortcode: aws-elastic-search-enable-domain-logging
+legacy: AWS057
 summary: Domain logging should be enabled for Elastic Search domains 
 resources: [aws_elasticsearch_domain] 
-permalink: /docs/aws/aws-elastic-search-enable-domain-logging/
+permalink: /docs/aws/elastic-search/enable-domain-logging/
+redirect_from: 
+  - /docs/aws/AWS057/
 ---
+
 ### Explanation
 
 

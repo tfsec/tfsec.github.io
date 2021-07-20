@@ -1,9 +1,14 @@
 ---
-title: digitalocean-spaces-acl-no-public-read - Spaces bucket or bucket object has public read acl set
+title: Spaces bucket or bucket object has public read acl set
+shortcode: digitalocean-spaces-acl-no-public-read
+legacy: DIG005
 summary: Spaces bucket or bucket object has public read acl set 
 resources: [digitalocean_spaces_bucket digitalocean_spaces_bucket_object] 
-permalink: /docs/digitalocean/digitalocean-spaces-acl-no-public-read/
+permalink: /docs/digitalocean/spaces/acl-no-public-read/
+redirect_from: 
+  - /docs/digitalocean/DIG005/
 ---
+
 ### Explanation
 
 

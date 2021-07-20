@@ -1,9 +1,14 @@
 ---
-title: google-gke-use-rbac-permissions - Legacy ABAC permissions are enabled.
+title: Legacy ABAC permissions are enabled.
+shortcode: google-gke-use-rbac-permissions
+legacy: GCP005
 summary: Legacy ABAC permissions are enabled. 
 resources: [google_container_cluster] 
-permalink: /docs/google/google-gke-use-rbac-permissions/
+permalink: /docs/google/gke/use-rbac-permissions/
+redirect_from: 
+  - /docs/google/GCP005/
 ---
+
 ### Explanation
 
 

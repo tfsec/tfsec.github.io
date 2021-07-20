@@ -1,9 +1,14 @@
 ---
-title: google-gke-use-service-account - Checks for service account defined for GKE nodes
+title: Checks for service account defined for GKE nodes
+shortcode: google-gke-use-service-account
+legacy: GCP012
 summary: Checks for service account defined for GKE nodes 
 resources: [google_container_cluster google_container_node_pool] 
-permalink: /docs/google/google-gke-use-service-account/
+permalink: /docs/google/gke/use-service-account/
+redirect_from: 
+  - /docs/google/GCP012/
 ---
+
 ### Explanation
 
 

@@ -1,9 +1,14 @@
 ---
-title: aws-vpc-no-default-vpc - AWS best practice to not use the default VPC for workflows
+title: AWS best practice to not use the default VPC for workflows
+shortcode: aws-vpc-no-default-vpc
+legacy: AWS082
 summary: AWS best practice to not use the default VPC for workflows 
 resources: [aws_default_vpc] 
-permalink: /docs/aws/aws-vpc-no-default-vpc/
+permalink: /docs/aws/vpc/no-default-vpc/
+redirect_from: 
+  - /docs/aws/AWS082/
 ---
+
 ### Explanation
 
 

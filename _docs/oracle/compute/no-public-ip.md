@@ -1,9 +1,14 @@
 ---
-title: oracle-compute-no-public-ip - Compute instance requests an IP reservation from a public pool
+title: Compute instance requests an IP reservation from a public pool
+shortcode: oracle-compute-no-public-ip
+legacy: OCI001
 summary: Compute instance requests an IP reservation from a public pool 
 resources: [opc_compute_ip_address_reservation] 
-permalink: /docs/oracle/oracle-compute-no-public-ip/
+permalink: /docs/oracle/compute/no-public-ip/
+redirect_from: 
+  - /docs/oracle/OCI001/
 ---
+
 ### Explanation
 
 

@@ -1,9 +1,14 @@
 ---
-title: google-gke-node-metadata-security - Node metadata value disables metadata concealment.
+title: Node metadata value disables metadata concealment.
+shortcode: google-gke-node-metadata-security
+legacy: GCP006
 summary: Node metadata value disables metadata concealment. 
 resources: [google_container_cluster google_container_node_pool] 
-permalink: /docs/google/google-gke-node-metadata-security/
+permalink: /docs/google/gke/node-metadata-security/
+redirect_from: 
+  - /docs/google/GCP006/
 ---
+
 ### Explanation
 
 

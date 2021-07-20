@@ -1,9 +1,14 @@
 ---
-title: aws-eks-encrypt-secrets - EKS should have the encryption of secrets enabled
+title: EKS should have the encryption of secrets enabled
+shortcode: aws-eks-encrypt-secrets
+legacy: AWS066
 summary: EKS should have the encryption of secrets enabled 
 resources: [aws_eks_cluster] 
-permalink: /docs/aws/aws-eks-encrypt-secrets/
+permalink: /docs/aws/eks/encrypt-secrets/
+redirect_from: 
+  - /docs/aws/AWS066/
 ---
+
 ### Explanation
 
 

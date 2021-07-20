@@ -1,9 +1,14 @@
 ---
-title: aws-s3-block-public-acls - S3 Access block should block public ACL
+title: S3 Access block should block public ACL
+shortcode: aws-s3-block-public-acls
+legacy: AWS074
 summary: S3 Access block should block public ACL 
 resources: [aws_s3_bucket_public_access_block] 
-permalink: /docs/aws/aws-s3-block-public-acls/
+permalink: /docs/aws/s3/block-public-acls/
+redirect_from: 
+  - /docs/aws/AWS074/
 ---
+
 ### Explanation
 
 

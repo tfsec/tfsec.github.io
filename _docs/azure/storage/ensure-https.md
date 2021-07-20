@@ -1,9 +1,14 @@
 ---
-title: azure-storage-ensure-https - Ensure HTTPS is enabled on Azure Storage Account
+title: Ensure HTTPS is enabled on Azure Storage Account
+shortcode: azure-storage-ensure-https
+legacy: AZU010
 summary: Ensure HTTPS is enabled on Azure Storage Account 
 resources: [azurerm_storage_account enable_https_traffic_only] 
-permalink: /docs/azure/azure-storage-ensure-https/
+permalink: /docs/azure/storage/ensure-https/
+redirect_from: 
+  - /docs/azure/AZU010/
 ---
+
 ### Explanation
 
 

@@ -1,9 +1,14 @@
 ---
-title: general-secrets-sensitive-in-local - Potentially sensitive data stored in local value.
+title: Potentially sensitive data stored in local value.
+shortcode: general-secrets-sensitive-in-local
+legacy: GEN002
 summary: Potentially sensitive data stored in local value. 
 resources: [] 
-permalink: /docs/general/general-secrets-sensitive-in-local/
+permalink: /docs/general/secrets/sensitive-in-local/
+redirect_from: 
+  - /docs/general/GEN002/
 ---
+
 ### Explanation
 
 

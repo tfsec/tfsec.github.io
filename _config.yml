@@ -76,7 +76,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-gist
   - jekyll-avatar
-
+  - jekyll-redirect-from
 exclude:
   - Gemfile
   - Gemfile.lock

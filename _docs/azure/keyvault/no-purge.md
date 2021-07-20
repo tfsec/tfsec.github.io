@@ -1,9 +1,14 @@
 ---
-title: azure-keyvault-no-purge - Key vault should have purge protection enabled
+title: Key vault should have purge protection enabled
+shortcode: azure-keyvault-no-purge
+legacy: AZU021
 summary: Key vault should have purge protection enabled 
 resources: [azurerm_key_vault] 
-permalink: /docs/azure/azure-keyvault-no-purge/
+permalink: /docs/azure/keyvault/no-purge/
+redirect_from: 
+  - /docs/azure/AZU021/
 ---
+
 ### Explanation
 
 

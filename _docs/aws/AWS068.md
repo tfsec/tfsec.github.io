@@ -1,9 +1,14 @@
 ---
-title: aws-eks-no-public-cluster-access-to-cidr - EKS cluster should not have open CIDR range for public access
+title: EKS cluster should not have open CIDR range for public access
+shortcode: aws-eks-no-public-cluster-access-to-cidr
+legacy: AWS068
 summary: EKS cluster should not have open CIDR range for public access 
 resources: [aws_eks_cluster] 
-permalink: /docs/aws/aws-eks-no-public-cluster-access-to-cidr/
+permalink: /docs/aws/eks/no-public-cluster-access-to-cidr/
+redirect_from: 
+  - /docs/aws/AWS068/
 ---
+
 ### Explanation
 
 

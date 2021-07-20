@@ -1,9 +1,14 @@
 ---
-title: azure-keyvault-ensure-secret-expiry - Key Vault Secret should have an expiration date set
+title: Key Vault Secret should have an expiration date set
+shortcode: azure-keyvault-ensure-secret-expiry
+legacy: AZU023
 summary: Key Vault Secret should have an expiration date set 
 resources: [azurerm_key_vault_secret] 
-permalink: /docs/azure/azure-keyvault-ensure-secret-expiry/
+permalink: /docs/azure/keyvault/ensure-secret-expiry/
+redirect_from: 
+  - /docs/azure/AZU023/
 ---
+
 ### Explanation
 
 

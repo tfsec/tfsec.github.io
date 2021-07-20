@@ -1,9 +1,14 @@
 ---
-title: aws-msk-enable-in-transit-encryption - A MSK cluster allows unencrypted data in transit.
+title: A MSK cluster allows unencrypted data in transit.
+shortcode: aws-msk-enable-in-transit-encryption
+legacy: AWS022
 summary: A MSK cluster allows unencrypted data in transit. 
 resources: [aws_msk_cluster] 
-permalink: /docs/aws/aws-msk-enable-in-transit-encryption/
+permalink: /docs/aws/msk/enable-in-transit-encryption/
+redirect_from: 
+  - /docs/aws/AWS022/
 ---
+
 ### Explanation
 
 

@@ -9131,9 +9131,13 @@
             if (len === 0) {
                 return appendToResultsContainer(options.noResultsText);
             }
+            dedupeResults(results);
             for (var i = 0; i < len; i++) {
                 appendToResultsContainer(_$Templater_7.compile(results[i]));
             }
+        }
+        function dedupeResults(results) {
+            return [...new Set(results)];
         }
         function isValidQuery(query) {
             return query && query.length > 0;

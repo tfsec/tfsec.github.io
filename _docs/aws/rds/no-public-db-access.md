@@ -1,9 +1,14 @@
 ---
-title: aws-rds-no-public-db-access - A database resource is marked as publicly accessible.
+title: A database resource is marked as publicly accessible.
+shortcode: aws-rds-no-public-db-access
+legacy: AWS011
 summary: A database resource is marked as publicly accessible. 
 resources: [aws_db_instance aws_dms_replication_instance aws_rds_cluster_instance aws_redshift_cluster] 
-permalink: /docs/aws/aws-rds-no-public-db-access/
+permalink: /docs/aws/rds/no-public-db-access/
+redirect_from: 
+  - /docs/aws/AWS011/
 ---
+
 ### Explanation
 
 

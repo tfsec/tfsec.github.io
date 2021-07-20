@@ -1,9 +1,14 @@
 ---
-title: google-gke-enforce-pod-security-policy - Pod security policy enforcement not defined.
+title: Pod security policy enforcement not defined.
+shortcode: google-gke-enforce-pod-security-policy
+legacy: GCP009
 summary: Pod security policy enforcement not defined. 
 resources: [google_container_cluster] 
-permalink: /docs/google/google-gke-enforce-pod-security-policy/
+permalink: /docs/google/gke/enforce-pod-security-policy/
+redirect_from: 
+  - /docs/google/GCP009/
 ---
+
 ### Explanation
 
 

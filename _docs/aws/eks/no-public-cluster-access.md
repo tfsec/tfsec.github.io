@@ -1,9 +1,14 @@
 ---
-title: aws-eks-no-public-cluster-access - EKS Clusters should have the public access disabled
+title: EKS Clusters should have the public access disabled
+shortcode: aws-eks-no-public-cluster-access
+legacy: AWS069
 summary: EKS Clusters should have the public access disabled 
 resources: [aws_eks_cluster] 
-permalink: /docs/aws/aws-eks-no-public-cluster-access/
+permalink: /docs/aws/eks/no-public-cluster-access/
+redirect_from: 
+  - /docs/aws/AWS069/
 ---
+
 ### Explanation
 
 

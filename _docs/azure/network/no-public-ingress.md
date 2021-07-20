@@ -1,9 +1,14 @@
 ---
-title: azure-network-no-public-ingress - An inbound network security rule allows traffic from /0.
+title: An inbound network security rule allows traffic from /0.
+shortcode: azure-network-no-public-ingress
+legacy: AZU001
 summary: An inbound network security rule allows traffic from /0. 
 resources: [azurerm_network_security_rule] 
-permalink: /docs/azure/azure-network-no-public-ingress/
+permalink: /docs/azure/network/no-public-ingress/
+redirect_from: 
+  - /docs/azure/AZU001/
 ---
+
 ### Explanation
 
 

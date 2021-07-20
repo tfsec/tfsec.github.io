@@ -1,9 +1,14 @@
 ---
-title: aws-cloudtrail-enable-all-regions - Cloudtrail should be enabled in all regions regardless of where your AWS resources are generally homed
+title: Cloudtrail should be enabled in all regions regardless of where your AWS resources are generally homed
+shortcode: aws-cloudtrail-enable-all-regions
+legacy: AWS063
 summary: Cloudtrail should be enabled in all regions regardless of where your AWS resources are generally homed 
 resources: [aws_cloudtrail] 
-permalink: /docs/aws/aws-cloudtrail-enable-all-regions/
+permalink: /docs/aws/cloudtrail/enable-all-regions/
+redirect_from: 
+  - /docs/aws/AWS063/
 ---
+
 ### Explanation
 
 

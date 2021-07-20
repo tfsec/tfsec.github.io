@@ -1,9 +1,14 @@
 ---
-title: digitalocean-spaces-disable-force-destroy - Force destroy is enabled on Spaces bucket which is dangerous
+title: Force destroy is enabled on Spaces bucket which is dangerous
+shortcode: digitalocean-spaces-disable-force-destroy
+legacy: DIG007
 summary: Force destroy is enabled on Spaces bucket which is dangerous 
 resources: [digitalocean_spaces_bucket] 
-permalink: /docs/digitalocean/digitalocean-spaces-disable-force-destroy/
+permalink: /docs/digitalocean/spaces/disable-force-destroy/
+redirect_from: 
+  - /docs/digitalocean/DIG007/
 ---
+
 ### Explanation
 
 

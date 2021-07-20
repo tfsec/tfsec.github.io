@@ -1,9 +1,14 @@
 ---
-title: aws-elastic-search-encrypt-replication-group - Unencrypted Elasticache Replication Group.
+title: Unencrypted Elasticache Replication Group.
+shortcode: aws-elastic-search-encrypt-replication-group
+legacy: AWS035
 summary: Unencrypted Elasticache Replication Group. 
 resources: [aws_elasticache_replication_group] 
-permalink: /docs/aws/aws-elastic-search-encrypt-replication-group/
+permalink: /docs/aws/elastic-search/encrypt-replication-group/
+redirect_from: 
+  - /docs/aws/AWS035/
 ---
+
 ### Explanation
 
 

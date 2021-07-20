@@ -1,9 +1,14 @@
 ---
-title: aws-vpc-no-public-ingress - An ingress Network ACL rule allows specific ports from /0.
+title: An ingress Network ACL rule allows specific ports from /0.
+shortcode: aws-vpc-no-public-ingress
+legacy: AWS049
 summary: An ingress Network ACL rule allows specific ports from /0. 
 resources: [aws_network_acl_rule] 
-permalink: /docs/aws/aws-vpc-no-public-ingress/
+permalink: /docs/aws/vpc/no-public-ingress/
+redirect_from: 
+  - /docs/aws/AWS049/
 ---
+
 ### Explanation
 
 

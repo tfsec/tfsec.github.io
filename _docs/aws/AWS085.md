@@ -1,9 +1,14 @@
 ---
-title: aws-config-aggregate-all-regions - Config configuration aggregator should be using all regions for source
+title: Config configuration aggregator should be using all regions for source
+shortcode: aws-config-aggregate-all-regions
+legacy: AWS085
 summary: Config configuration aggregator should be using all regions for source 
 resources: [aws_config_configuration_aggregator] 
-permalink: /docs/aws/aws-config-aggregate-all-regions/
+permalink: /docs/aws/config/aggregate-all-regions/
+redirect_from: 
+  - /docs/aws/AWS085/
 ---
+
 ### Explanation
 
 

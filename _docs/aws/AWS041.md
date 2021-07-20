@@ -1,9 +1,14 @@
 ---
-title: aws-iam-require-numbers-in-passwords - IAM Password policy should have requirement for at least one number in the password.
+title: IAM Password policy should have requirement for at least one number in the password.
+shortcode: aws-iam-require-numbers-in-passwords
+legacy: AWS041
 summary: IAM Password policy should have requirement for at least one number in the password. 
 resources: [aws_iam_account_password_policy] 
-permalink: /docs/aws/aws-iam-require-numbers-in-passwords/
+permalink: /docs/aws/iam/require-numbers-in-passwords/
+redirect_from: 
+  - /docs/aws/AWS041/
 ---
+
 ### Explanation
 
 IAM account password policies should ensure that passwords content including at least one number.

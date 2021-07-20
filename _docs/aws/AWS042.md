@@ -1,9 +1,14 @@
 ---
-title: aws-iam-require-lowercase-in-passwords - IAM Password policy should have requirement for at least one lowercase character.
+title: IAM Password policy should have requirement for at least one lowercase character.
+shortcode: aws-iam-require-lowercase-in-passwords
+legacy: AWS042
 summary: IAM Password policy should have requirement for at least one lowercase character. 
 resources: [aws_iam_account_password_policy] 
-permalink: /docs/aws/aws-iam-require-lowercase-in-passwords/
+permalink: /docs/aws/iam/require-lowercase-in-passwords/
+redirect_from: 
+  - /docs/aws/AWS042/
 ---
+
 ### Explanation
 
 IAM account password policies should ensure that passwords content including at least one lowercase character.

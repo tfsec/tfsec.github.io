@@ -1,9 +1,14 @@
 ---
-title: aws-athena-enable-at-rest-encryption - Athena databases and workgroup configurations are created unencrypted at rest by default, they should be encrypted
+title: Athena databases and workgroup configurations are created unencrypted at rest by default, they should be encrypted
+shortcode: aws-athena-enable-at-rest-encryption
+legacy: AWS059
 summary: Athena databases and workgroup configurations are created unencrypted at rest by default, they should be encrypted 
 resources: [aws_athena_database aws_athena_workgroup] 
-permalink: /docs/aws/aws-athena-enable-at-rest-encryption/
+permalink: /docs/aws/athena/enable-at-rest-encryption/
+redirect_from: 
+  - /docs/aws/AWS059/
 ---
+
 ### Explanation
 
 

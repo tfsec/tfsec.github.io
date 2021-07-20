@@ -1,9 +1,14 @@
 ---
-title: azure-datafactory-no-public-access - Data Factory should have public access disabled, the default is enabled.
+title: Data Factory should have public access disabled, the default is enabled.
+shortcode: azure-datafactory-no-public-access
+legacy: AZU025
 summary: Data Factory should have public access disabled, the default is enabled. 
 resources: [azurerm_data_factory] 
-permalink: /docs/azure/azure-datafactory-no-public-access/
+permalink: /docs/azure/datafactory/no-public-access/
+redirect_from: 
+  - /docs/azure/AZU025/
 ---
+
 ### Explanation
 
 

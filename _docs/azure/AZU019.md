@@ -1,9 +1,14 @@
 ---
-title: azure-database-retention-period-set - Database auditing rentention period should be longer than 90 days
+title: Database auditing rentention period should be longer than 90 days
+shortcode: azure-database-retention-period-set
+legacy: AZU019
 summary: Database auditing rentention period should be longer than 90 days 
 resources: [azurerm_sql_server azurerm_sql_server azurerm_mssql_database_extended_auditing_policy] 
-permalink: /docs/azure/azure-database-retention-period-set/
+permalink: /docs/azure/database/retention-period-set/
+redirect_from: 
+  - /docs/azure/AZU019/
 ---
+
 ### Explanation
 
 

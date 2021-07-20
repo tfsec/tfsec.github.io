@@ -1,9 +1,14 @@
 ---
-title: azure-storage-default-action-deny - The default action on Storage account network rules should be set to deny
+title: The default action on Storage account network rules should be set to deny
+shortcode: azure-storage-default-action-deny
+legacy: AZU012
 summary: The default action on Storage account network rules should be set to deny 
 resources: [azurerm_storage_account azurerm_storage_account_network_rules] 
-permalink: /docs/azure/azure-storage-default-action-deny/
+permalink: /docs/azure/storage/default-action-deny/
+redirect_from: 
+  - /docs/azure/AZU012/
 ---
+
 ### Explanation
 
 

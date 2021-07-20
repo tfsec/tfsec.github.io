@@ -1,9 +1,14 @@
 ---
-title: aws-elbv2-http-not-used - Use of plain HTTP.
+title: Use of plain HTTP.
+shortcode: aws-elbv2-http-not-used
+legacy: AWS004
 summary: Use of plain HTTP. 
 resources: [aws_lb_listener aws_alb_listener] 
-permalink: /docs/aws/aws-elbv2-http-not-used/
+permalink: /docs/aws/elbv2/http-not-used/
+redirect_from: 
+  - /docs/aws/AWS004/
 ---
+
 ### Explanation
 
 

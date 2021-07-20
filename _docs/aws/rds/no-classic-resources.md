@@ -1,9 +1,14 @@
 ---
-title: aws-rds-no-classic-resources - AWS Classic resource usage.
+title: AWS Classic resource usage.
+shortcode: aws-rds-no-classic-resources
+legacy: AWS003
 summary: AWS Classic resource usage. 
 resources: [aws_db_security_group aws_redshift_security_group aws_elasticache_security_group] 
-permalink: /docs/aws/aws-rds-no-classic-resources/
+permalink: /docs/aws/rds/no-classic-resources/
+redirect_from: 
+  - /docs/aws/AWS003/
 ---
+
 ### Explanation
 
 

@@ -1,9 +1,14 @@
 ---
-title: aws-iam-require-uppercase-in-passwords - IAM Password policy should have requirement for at least one uppercase character.
+title: IAM Password policy should have requirement for at least one uppercase character.
+shortcode: aws-iam-require-uppercase-in-passwords
+legacy: AWS043
 summary: IAM Password policy should have requirement for at least one uppercase character. 
 resources: [aws_iam_account_password_policy] 
-permalink: /docs/aws/aws-iam-require-uppercase-in-passwords/
+permalink: /docs/aws/iam/require-uppercase-in-passwords/
+redirect_from: 
+  - /docs/aws/AWS043/
 ---
+
 ### Explanation
 
 ,
