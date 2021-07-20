@@ -22,3 +22,4 @@ The included Google checks are listed below. For more information about each che
 |[google-gke-use-service-account](/docs/google/gke/use-service-account)<br>Checks for service account defined for GKE nodes|
 |[google-iam-no-user-granted-permissions](/docs/google/iam/no-user-granted-permissions)<br>IAM granted directly to user.|
 |[google-storage-enable-ubla](/docs/google/storage/enable-ubla)<br>Ensure that Cloud Storage buckets have uniform bucket-level access enabled|
+|[google-storage-no-public-access](/docs/google/storage/no-public-access)<br>Ensure that Cloud Storage bucket is not anonymously or publicly accessible.|

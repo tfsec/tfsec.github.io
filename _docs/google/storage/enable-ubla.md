@@ -83,4 +83,6 @@ resource "google_storage_bucket" "static-site" {
 
 - [https://cloud.google.com/storage/docs/uniform-bucket-level-access](https://cloud.google.com/storage/docs/uniform-bucket-level-access){:target="_blank" rel="nofollow noreferrer noopener"}
 
+- [https://jbrojbrojbro.medium.com/you-make-the-rules-with-authentication-controls-for-cloud-storage-53c32543747b](https://jbrojbrojbro.medium.com/you-make-the-rules-with-authentication-controls-for-cloud-storage-53c32543747b){:target="_blank" rel="nofollow noreferrer noopener"}
+
 
