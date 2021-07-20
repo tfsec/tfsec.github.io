@@ -9,16 +9,17 @@ The included Google checks are listed below. For more information about each che
 
 | ID  | Summary |
 |:-------|:-------------|
-|[GCP001](/docs/google/GCP001)|Encrypted compute disk with unmanaged keys.|
-|[GCP003](/docs/google/GCP003)|An inbound firewall rule allows traffic from /0.|
-|[GCP004](/docs/google/GCP004)|An outbound firewall rule allows traffic to /0.|
-|[GCP005](/docs/google/GCP005)|Legacy ABAC permissions are enabled.|
-|[GCP006](/docs/google/GCP006)|Node metadata value disables metadata concealment.|
-|[GCP007](/docs/google/GCP007)|Legacy metadata endpoints enabled.|
-|[GCP008](/docs/google/GCP008)|Legacy client authentication methods utilized.|
-|[GCP009](/docs/google/GCP009)|Pod security policy enforcement not defined.|
-|[GCP010](/docs/google/GCP010)|Shielded GKE nodes not enabled.|
-|[GCP011](/docs/google/GCP011)|IAM granted directly to user.|
-|[GCP012](/docs/google/GCP012)|Checks for service account defined for GKE nodes|
-|[GCP013](/docs/google/GCP013)|The encryption key used to encrypt a compute disk has been specified in plaintext.|
+|[google-compute-disk-encryption-customer-keys](/docs/google/google-compute-disk-encryption-customer-keys)|Encrypted compute disk with unmanaged keys.|
+|[google-compute-disk-encryption-required](/docs/google/google-compute-disk-encryption-required)|The encryption key used to encrypt a compute disk has been specified in plaintext.|
+|[google-compute-no-public-egress](/docs/google/google-compute-no-public-egress)|An outbound firewall rule allows traffic to /0.|
+|[google-compute-no-public-ingress](/docs/google/google-compute-no-public-ingress)|An inbound firewall rule allows traffic from /0.|
+|[google-gke-enforce-pod-security-policy](/docs/google/google-gke-enforce-pod-security-policy)|Pod security policy enforcement not defined.|
+|[google-gke-metadata-endpoints-disabled](/docs/google/google-gke-metadata-endpoints-disabled)|Legacy metadata endpoints enabled.|
+|[google-gke-no-legacy-authentication](/docs/google/google-gke-no-legacy-authentication)|Legacy client authentication methods utilized.|
+|[google-gke-node-metadata-security](/docs/google/google-gke-node-metadata-security)|Node metadata value disables metadata concealment.|
+|[google-gke-node-shielding-enabled](/docs/google/google-gke-node-shielding-enabled)|Shielded GKE nodes not enabled.|
+|[google-gke-use-rbac-permissions](/docs/google/google-gke-use-rbac-permissions)|Legacy ABAC permissions are enabled.|
+|[google-gke-use-service-account](/docs/google/google-gke-use-service-account)|Checks for service account defined for GKE nodes|
+|[google-iam-no-user-granted-permissions](/docs/google/google-iam-no-user-granted-permissions)|IAM granted directly to user.|
+|[google-storage-enable-ubla](/docs/google/google-storage-enable-ubla)|Ensure that Cloud Storage buckets have uniform bucket-level access enabled|
 
