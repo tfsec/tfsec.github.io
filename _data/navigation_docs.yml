@@ -8,8 +8,9 @@
     - aws/home
     - azure/home
     - digitalocean/home
-    - google/home
     - general/home
+    - github/home
+    - google/home
     - oracle/home
 
 - title: Config
