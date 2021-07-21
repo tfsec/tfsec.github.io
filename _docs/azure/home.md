@@ -10,7 +10,9 @@ The included Azure checks are listed below. For more information about each chec
 |  Azure Checks |
 |:------------|
 |[azure-appservice-enforce-https](/docs/azure/appservice/enforce-https)<br>Ensure the Function App can only be accessed via HTTPS. The default is false.|
+|[azure-compute-diable-password-authentication](/docs/azure/compute/diable-password-authentication)<br>Password authentication should be disabled on Azure virtual machines|
 |[azure-compute-enable-disk-encryption](/docs/azure/compute/enable-disk-encryption)<br>Unencrypted managed disk.|
+|[azure-compute-no-secrets-in-custom-data](/docs/azure/compute/no-secrets-in-custom-data)<br>Ensure that no sensitive credentials are exposed in VM custom_data|
 |[azure-compute-ssh-authentication](/docs/azure/compute/ssh-authentication)<br>Password authentication in use instead of SSH keys.|
 |[azure-container-configured-network-policy](/docs/azure/container/configured-network-policy)<br>Ensure AKS cluster has Network Policy configured|
 |[azure-container-limit-authorized-ips](/docs/azure/container/limit-authorized-ips)<br>Ensure AKS has an API Server Authorized IP Ranges enabled|

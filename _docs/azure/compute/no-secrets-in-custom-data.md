@@ -1,9 +1,9 @@
 ---
-title: Custom data for virtual machines must not contain sensitive data
+title: Ensure that no sensitive credentials are exposed in VM custom_data
 shortcode: azure-compute-no-secrets-in-custom-data
 legacy: 
-summary: Custom data for virtual machines must not contain sensitive data 
-resources: [azurerm_virtual_machine] 
+summary: Ensure that no sensitive credentials are exposed in VM custom_data 
+resources: [azurerm_virtual_machine azurerm_linux_virtual_machine azurerm_windows_virtual_machine] 
 permalink: /docs/azure/compute/no-secrets-in-custom-data/
 redirect_from: 
   - /docs/azure//
@@ -11,13 +11,13 @@ redirect_from:
 
 ### Explanation
 
-	
+When creating Azure Virtual Machines, custom_data is used to pass start up information into the EC2 instance. This custom_dat must not contain access key credentials.
 
 ### Possible Impact
- Custom data with secrets can lead to compomised credentials
+Sensitive credentials in custom_data can be leaked
 
 ### Suggested Resolution
-Remove sensitive data from custom data
+Don't use sensitive credentials in the VM custom_data
 
 
 ### Insecure Example
@@ -26,8 +26,13 @@ The following example will fail the azure-compute-no-secrets-in-custom-data chec
 
 {% highlight terraform %}
 
-			// bad example code here
-			
+resource "azurerm_virtual_machine" "bad_example" {
+	name = "bad_example"
+	custom_data =<<EOF
+export DATABASE_PASSWORD=\"SomeSortOfPassword\"
+EOF
+}
+
 {% endhighlight %}
 
 
@@ -38,9 +43,20 @@ The following example will pass the azure-compute-no-secrets-in-custom-data chec
 
 {% highlight terraform %}
 
-			// good example code here
-			
+resource "azurerm_virtual_machine" "good_example" {
+	name = "good_example"
+	custom_data =<<EOF
+export GREETING="Hello there"
+EOF
+}
+
 {% endhighlight %}
 
+
+
+### Related Links
+
+
+- [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_machine#custom_data](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_machine#custom_data){:target="_blank" rel="nofollow noreferrer noopener"}
 
 
