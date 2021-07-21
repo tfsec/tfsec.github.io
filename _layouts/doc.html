@@ -11,11 +11,14 @@ layout: default
                     {% for section in site.data.navigation_docs %}
                     <h5>{{ section.title }}</h5>
                     <ul class="uk-nav uk-nav-default doc-nav">
-                        {% for service in section.services %}
+                        {% for provider in section.providers %}
+                        <details {% if page.url contains provider.provider %}open{% endif %}>
+                        <summary><h6 class="uk-nav uk-nav-default doc-nav">{{ provider.title }}</h6></summary>
+                        {% for service in provider.services %}
                         {% assign doc_url = service.service | prepend:"/docs/" | append:"/" %}
                         {% assign p = site.docs | where:"url", doc_url | first %}
                         
-                        <details {% if page.url contains service.service %}open{% endif %}>
+                        <details class="uk-nav-indented" {% if page.url contains service.service %}open{% endif %}>
                         <summary>
                             <li id="{{ service.service }}" class="{% if doc_url == page.url %}uk-active{% endif %}">{{ service.title }}</li>
                         </summary>
@@ -28,7 +31,10 @@ layout: default
                           </ul>
                           </details>
                       {% endfor %}
-                    {% for doc in section.docs %}
+                      </details>
+                      {% endfor %}
+    
+                      {% for doc in section.docs %}
                       {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
                       {% assign p = site.docs | where:"url", doc_url | first %}
                       <li class="{% if doc_url == page.url %}uk-active{% endif %}"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>

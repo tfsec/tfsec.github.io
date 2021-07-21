@@ -45,6 +45,11 @@
 }
 
 @mixin hook-navbar-misc() {
+  .uk-nav-indented {
+    margin-left: 10px;
+    padding-top: 5px;
+  }
+
   .uk-navbar-item .uk-button {
     padding: 0 22px;
     line-height: 34px;
