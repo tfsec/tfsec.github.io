@@ -55,8 +55,8 @@ resource "aws_alb_listener" "good_example" {
 ### Related Links
 
 
-- [https://www.cloudflare.com/en-gb/learning/ssl/why-is-http-not-secure/](https://www.cloudflare.com/en-gb/learning/ssl/why-is-http-not-secure/){:target="_blank" rel="nofollow noreferrer noopener"}
-
 - [https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener){:target="_blank" rel="nofollow noreferrer noopener"}
+
+- [https://www.cloudflare.com/en-gb/learning/ssl/why-is-http-not-secure/](https://www.cloudflare.com/en-gb/learning/ssl/why-is-http-not-secure/){:target="_blank" rel="nofollow noreferrer noopener"}
 
 

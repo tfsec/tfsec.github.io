@@ -1,8 +1,8 @@
 ---
-title: Unencrypted managed disk.
+title: Enable disk encryption on managed disk
 shortcode: azure-compute-enable-disk-encryption
 legacy: AZU003
-summary: Unencrypted managed disk. 
+summary: Enable disk encryption on managed disk 
 resources: [azurerm_managed_disk] 
 permalink: /docs/azure/compute/enable-disk-encryption/
 redirect_from: 
@@ -55,8 +55,8 @@ resource "azurerm_managed_disk" "good_example" {
 ### Related Links
 
 
-- [https://docs.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption){:target="_blank" rel="nofollow noreferrer noopener"}
+- [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/managed_disk](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/managed_disk){:target="_blank" rel="nofollow noreferrer noopener"}
 
-- [https://www.terraform.io/docs/providers/azurerm/r/managed_disk.html](https://www.terraform.io/docs/providers/azurerm/r/managed_disk.html){:target="_blank" rel="nofollow noreferrer noopener"}
+- [https://docs.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption){:target="_blank" rel="nofollow noreferrer noopener"}
 
 

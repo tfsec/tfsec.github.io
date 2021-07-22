@@ -57,8 +57,8 @@ resource "google_container_cluster" "good_example" {
 ### Related Links
 
 
-- [https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster#leave_abac_disabled_default_for_110](https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster#leave_abac_disabled_default_for_110){:target="_blank" rel="nofollow noreferrer noopener"}
+- [https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/container_cluster#enable_legacy_abac](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/container_cluster#enable_legacy_abac){:target="_blank" rel="nofollow noreferrer noopener"}
 
-- [https://www.terraform.io/docs/providers/google/r/container_cluster.html#enable_legacy_abac](https://www.terraform.io/docs/providers/google/r/container_cluster.html#enable_legacy_abac){:target="_blank" rel="nofollow noreferrer noopener"}
+- [https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster#leave_abac_disabled_default_for_110](https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster#leave_abac_disabled_default_for_110){:target="_blank" rel="nofollow noreferrer noopener"}
 
 

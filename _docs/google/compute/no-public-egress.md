@@ -53,8 +53,8 @@ resource "google_compute_firewall" "good_example" {
 ### Related Links
 
 
-- [https://cloud.google.com/vpc/docs/using-firewalls](https://cloud.google.com/vpc/docs/using-firewalls){:target="_blank" rel="nofollow noreferrer noopener"}
+- [https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_firewall](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_firewall){:target="_blank" rel="nofollow noreferrer noopener"}
 
-- [https://www.terraform.io/docs/providers/google/r/compute_firewall.html](https://www.terraform.io/docs/providers/google/r/compute_firewall.html){:target="_blank" rel="nofollow noreferrer noopener"}
+- [https://cloud.google.com/vpc/docs/using-firewalls](https://cloud.google.com/vpc/docs/using-firewalls){:target="_blank" rel="nofollow noreferrer noopener"}
 
 

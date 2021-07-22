@@ -61,8 +61,8 @@ resource "google_container_cluster" "good_example" {
 ### Related Links
 
 
-- [https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster#admission_controllers](https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster#admission_controllers){:target="_blank" rel="nofollow noreferrer noopener"}
+- [https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/container_cluster#pod_security_policy_config](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/container_cluster#pod_security_policy_config){:target="_blank" rel="nofollow noreferrer noopener"}
 
-- [https://www.terraform.io/docs/providers/google/r/container_cluster.html#pod_security_policy_config](https://www.terraform.io/docs/providers/google/r/container_cluster.html#pod_security_policy_config){:target="_blank" rel="nofollow noreferrer noopener"}
+- [https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster#admission_controllers](https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster#admission_controllers){:target="_blank" rel="nofollow noreferrer noopener"}
 
 

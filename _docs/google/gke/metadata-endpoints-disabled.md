@@ -61,8 +61,8 @@ resource "google_container_cluster" "good_example" {
 ### Related Links
 
 
-- [https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster#protect_node_metadata_default_for_112](https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster#protect_node_metadata_default_for_112){:target="_blank" rel="nofollow noreferrer noopener"}
+- [https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/container_cluster#metadata](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/container_cluster#metadata){:target="_blank" rel="nofollow noreferrer noopener"}
 
-- [https://www.terraform.io/docs/providers/google/r/container_cluster.html#metadata](https://www.terraform.io/docs/providers/google/r/container_cluster.html#metadata){:target="_blank" rel="nofollow noreferrer noopener"}
+- [https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster#protect_node_metadata_default_for_112](https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster#protect_node_metadata_default_for_112){:target="_blank" rel="nofollow noreferrer noopener"}
 
 

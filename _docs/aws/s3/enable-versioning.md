@@ -58,8 +58,8 @@ resource "aws_s3_bucket" "good_example" {
 ### Related Links
 
 
-- [https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html){:target="_blank" rel="nofollow noreferrer noopener"}
-
 - [https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket#versioning](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket#versioning){:target="_blank" rel="nofollow noreferrer noopener"}
+
+- [https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html){:target="_blank" rel="nofollow noreferrer noopener"}
 
 

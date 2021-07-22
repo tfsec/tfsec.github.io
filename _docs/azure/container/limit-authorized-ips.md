@@ -55,8 +55,8 @@ resource "azurerm_kubernetes_cluster" "good_example" {
 ### Related Links
 
 
-- [https://docs.microsoft.com/en-us/azure/aks/api-server-authorized-ip-ranges](https://docs.microsoft.com/en-us/azure/aks/api-server-authorized-ip-ranges){:target="_blank" rel="nofollow noreferrer noopener"}
+- [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/kubernetes_cluster#api_server_authorized_ip_ranges](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/kubernetes_cluster#api_server_authorized_ip_ranges){:target="_blank" rel="nofollow noreferrer noopener"}
 
-- [https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster.html#api_server_authorized_ip_ranges](https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster.html#api_server_authorized_ip_ranges){:target="_blank" rel="nofollow noreferrer noopener"}
+- [https://docs.microsoft.com/en-us/azure/aks/api-server-authorized-ip-ranges](https://docs.microsoft.com/en-us/azure/aks/api-server-authorized-ip-ranges){:target="_blank" rel="nofollow noreferrer noopener"}
 
 

@@ -65,8 +65,8 @@ resource "aws_ecr_repository" "good_example" {
 ### Related Links
 
 
-- [https://sysdig.com/blog/toctou-tag-mutability/](https://sysdig.com/blog/toctou-tag-mutability/){:target="_blank" rel="nofollow noreferrer noopener"}
-
 - [https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecr_repository](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecr_repository){:target="_blank" rel="nofollow noreferrer noopener"}
+
+- [https://sysdig.com/blog/toctou-tag-mutability/](https://sysdig.com/blog/toctou-tag-mutability/){:target="_blank" rel="nofollow noreferrer noopener"}
 
 

@@ -56,8 +56,8 @@ resource "aws_efs_file_system" "good_example" {
 ### Related Links
 
 
-- [https://docs.aws.amazon.com/efs/latest/ug/encryption.html](https://docs.aws.amazon.com/efs/latest/ug/encryption.html){:target="_blank" rel="nofollow noreferrer noopener"}
-
 - [https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/efs_file_system](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/efs_file_system){:target="_blank" rel="nofollow noreferrer noopener"}
+
+- [https://docs.aws.amazon.com/efs/latest/ug/encryption.html](https://docs.aws.amazon.com/efs/latest/ug/encryption.html){:target="_blank" rel="nofollow noreferrer noopener"}
 
 

@@ -54,6 +54,8 @@ resource "aws_security_group" "good_example" {
 ### Related Links
 
 
+- [https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_security_group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_security_group){:target="_blank" rel="nofollow noreferrer noopener"}
+
 - [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-classic-platform.html](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-classic-platform.html){:target="_blank" rel="nofollow noreferrer noopener"}
 
 

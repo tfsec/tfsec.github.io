@@ -57,8 +57,8 @@ resource "azurerm_network_security_rule" "good_example" {
 ### Related Links
 
 
-- [https://docs.microsoft.com/en-us/azure/security/fundamentals/network-best-practices](https://docs.microsoft.com/en-us/azure/security/fundamentals/network-best-practices){:target="_blank" rel="nofollow noreferrer noopener"}
+- [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_rule](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_rule){:target="_blank" rel="nofollow noreferrer noopener"}
 
-- [https://www.terraform.io/docs/providers/azurerm/r/network_security_rule.html](https://www.terraform.io/docs/providers/azurerm/r/network_security_rule.html){:target="_blank" rel="nofollow noreferrer noopener"}
+- [https://docs.microsoft.com/en-us/azure/security/fundamentals/network-best-practices](https://docs.microsoft.com/en-us/azure/security/fundamentals/network-best-practices){:target="_blank" rel="nofollow noreferrer noopener"}
 
 

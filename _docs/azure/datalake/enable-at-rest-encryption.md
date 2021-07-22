@@ -51,8 +51,8 @@ resource "azurerm_data_lake_store" "good_example" {
 ### Related Links
 
 
-- [https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-security-overview](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-security-overview){:target="_blank" rel="nofollow noreferrer noopener"}
+- [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/data_lake_store](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/data_lake_store){:target="_blank" rel="nofollow noreferrer noopener"}
 
-- [https://www.terraform.io/docs/providers/azurerm/r/data_lake_store.html](https://www.terraform.io/docs/providers/azurerm/r/data_lake_store.html){:target="_blank" rel="nofollow noreferrer noopener"}
+- [https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-security-overview](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-security-overview){:target="_blank" rel="nofollow noreferrer noopener"}
 
 

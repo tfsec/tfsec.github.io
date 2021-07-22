@@ -10,8 +10,8 @@ The included Azure checks are listed below. For more information about each chec
 | Checks |
 |:------------|
 |[azure-appservice-enforce-https](/docs/azure/appservice/enforce-https)<br>Ensure the Function App can only be accessed via HTTPS. The default is false.|
-|[azure-compute-diable-password-authentication](/docs/azure/compute/diable-password-authentication)<br>Password authentication should be disabled on Azure virtual machines|
-|[azure-compute-enable-disk-encryption](/docs/azure/compute/enable-disk-encryption)<br>Unencrypted managed disk.|
+|[azure-compute-disable-password-authentication](/docs/azure/compute/disable-password-authentication)<br>Password authentication should be disabled on Azure virtual machines|
+|[azure-compute-enable-disk-encryption](/docs/azure/compute/enable-disk-encryption)<br>Enable disk encryption on managed disk|
 |[azure-compute-no-secrets-in-custom-data](/docs/azure/compute/no-secrets-in-custom-data)<br>Ensure that no sensitive credentials are exposed in VM custom_data|
 |[azure-compute-ssh-authentication](/docs/azure/compute/ssh-authentication)<br>Password authentication in use instead of SSH keys.|
 |[azure-container-configured-network-policy](/docs/azure/container/configured-network-policy)<br>Ensure AKS cluster has Network Policy configured|
@@ -30,7 +30,11 @@ The included Azure checks are listed below. For more information about each chec
 |[azure-network-disable-rdp-from-internet](/docs/azure/network/disable-rdp-from-internet)<br>RDP access should not be accessible from the Internet, should be blocked on port 3389|
 |[azure-network-no-public-egress](/docs/azure/network/no-public-egress)<br>An outbound network security rule allows traffic to /0.|
 |[azure-network-no-public-ingress](/docs/azure/network/no-public-ingress)<br>An inbound network security rule allows traffic from /0.|
+|[azure-network-retention-policy-set](/docs/azure/network/retention-policy-set)<br>Retention policy for flow logs should be enabled and set to greater than 90 days|
 |[azure-network-ssh-blocked-from-internet](/docs/azure/network/ssh-blocked-from-internet)<br>SSH access should not be accessible from the Internet, should be blocked on port 22|
+|[azure-security-center-alert-on-severe-notifications](/docs/azure/security-center/alert-on-severe-notifications)<br>Send notification emails for high severity alerts|
+|[azure-security-center-enable-standard-subscription](/docs/azure/security-center/enable-standard-subscription)<br>Enable the standard security center subscription tier|
+|[azure-security-center-set-required-contact-details](/docs/azure/security-center/set-required-contact-details)<br>The required contact details should be set for security center|
 |[azure-storage-allow-microsoft-service-bypass](/docs/azure/storage/allow-microsoft-service-bypass)<br>Trusted Microsoft Services should have bypass access to Storage accounts|
 |[azure-storage-default-action-deny](/docs/azure/storage/default-action-deny)<br>The default action on Storage account network rules should be set to deny|
 |[azure-storage-enforce-https](/docs/azure/storage/enforce-https)<br>Storage accounts should be configured to only accept transfers that are over secure connections|

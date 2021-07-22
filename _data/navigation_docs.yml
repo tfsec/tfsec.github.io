@@ -207,7 +207,7 @@
     - title: compute
       service: azure/compute
       docs:
-      - azure/compute/diable-password-authentication
+      - azure/compute/disable-password-authentication
       - azure/compute/enable-disk-encryption
       - azure/compute/no-secrets-in-custom-data
       - azure/compute/ssh-authentication
@@ -245,7 +245,14 @@
       - azure/network/disable-rdp-from-internet
       - azure/network/no-public-egress
       - azure/network/no-public-ingress
+      - azure/network/retention-policy-set
       - azure/network/ssh-blocked-from-internet
+    - title: security-center
+      service: azure/security-center
+      docs:
+      - azure/security-center/alert-on-severe-notifications
+      - azure/security-center/enable-standard-subscription
+      - azure/security-center/set-required-contact-details
     - title: storage
       service: azure/storage
       docs:
@@ -328,6 +335,17 @@
       docs:
       - google/storage/enable-ubla
       - google/storage/no-public-access
+  - title: Openstack
+    provider: openstack/
+    services:
+    - title: compute
+      service: openstack/compute
+      docs:
+      - openstack/compute/no-plaintext-password
+    - title: fw
+      service: openstack/fw
+      docs:
+      - openstack/fw/no-public-access
   - title: Oracle
     provider: oracle/
     services:
@@ -348,3 +366,4 @@
   docs:
     - github-action
     - pr-commenter
+	

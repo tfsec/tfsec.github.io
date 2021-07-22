@@ -56,9 +56,7 @@ resource "azurerm_kubernetes_cluster" "good_example" {
 ### Related Links
 
 
-- [https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster.html#network_policy](https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster.html#network_policy){:target="_blank" rel="nofollow noreferrer noopener"}
-
-- [https://docs.microsoft.com/en-us/azure/aks/use-network-policies](https://docs.microsoft.com/en-us/azure/aks/use-network-policies){:target="_blank" rel="nofollow noreferrer noopener"}
+- [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/kubernetes_cluster#network_policy](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/kubernetes_cluster#network_policy){:target="_blank" rel="nofollow noreferrer noopener"}
 
 - [https://kubernetes.io/docs/concepts/services-networking/network-policies](https://kubernetes.io/docs/concepts/services-networking/network-policies){:target="_blank" rel="nofollow noreferrer noopener"}
 

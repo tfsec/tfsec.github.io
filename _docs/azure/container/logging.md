@@ -57,7 +57,7 @@ resource "azurerm_kubernetes_cluster" "good_example" {
 ### Related Links
 
 
-- [https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster.html#oms_agent](https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster.html#oms_agent){:target="_blank" rel="nofollow noreferrer noopener"}
+- [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/kubernetes_cluster#oms_agent](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/kubernetes_cluster#oms_agent){:target="_blank" rel="nofollow noreferrer noopener"}
 
 - [https://docs.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-onboard](https://docs.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-onboard){:target="_blank" rel="nofollow noreferrer noopener"}
 

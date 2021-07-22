@@ -115,6 +115,8 @@ data "aws_iam_policy_document" "kms_policy" {
 ### Related Links
 
 
+- [https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document){:target="_blank" rel="nofollow noreferrer noopener"}
+
 - [https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-fsbp-controls.html#fsbp-kms-1](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-fsbp-controls.html#fsbp-kms-1){:target="_blank" rel="nofollow noreferrer noopener"}
 
 

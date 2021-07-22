@@ -73,10 +73,10 @@ resource "aws_dax_cluster" "good_example" {
 ### Related Links
 
 
+- [https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/dax_cluster#server_side_encryption](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/dax_cluster#server_side_encryption){:target="_blank" rel="nofollow noreferrer noopener"}
+
 - [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAXEncryptionAtRest.html](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAXEncryptionAtRest.html){:target="_blank" rel="nofollow noreferrer noopener"}
 
 - [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html){:target="_blank" rel="nofollow noreferrer noopener"}
-
-- [https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/dax_cluster#server_side_encryption](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/dax_cluster#server_side_encryption){:target="_blank" rel="nofollow noreferrer noopener"}
 
 

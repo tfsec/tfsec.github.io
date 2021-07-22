@@ -55,6 +55,8 @@ resource "aws_security_group_rule" "good_example" {
 ### Related Links
 
 
+- [https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule#cidr_blocks](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule#cidr_blocks){:target="_blank" rel="nofollow noreferrer noopener"}
+
 - [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules-reference.html](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules-reference.html){:target="_blank" rel="nofollow noreferrer noopener"}
 
 

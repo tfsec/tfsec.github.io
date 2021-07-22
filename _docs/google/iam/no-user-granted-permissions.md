@@ -68,10 +68,10 @@ resource "google_storage_bucket_iam_member" "good_example" {
 ### Related Links
 
 
+- [https://www.terraform.io/docs/providers/google/d/iam_policy.html#members](https://www.terraform.io/docs/providers/google/d/iam_policy.html#members){:target="_blank" rel="nofollow noreferrer noopener"}
+
 - [https://cloud.google.com/iam/docs/overview#permissions](https://cloud.google.com/iam/docs/overview#permissions){:target="_blank" rel="nofollow noreferrer noopener"}
 
 - [https://cloud.google.com/resource-manager/reference/rest/v1/projects/setIamPolicy](https://cloud.google.com/resource-manager/reference/rest/v1/projects/setIamPolicy){:target="_blank" rel="nofollow noreferrer noopener"}
-
-- [https://www.terraform.io/docs/providers/google/d/iam_policy.html#members](https://www.terraform.io/docs/providers/google/d/iam_policy.html#members){:target="_blank" rel="nofollow noreferrer noopener"}
 
 

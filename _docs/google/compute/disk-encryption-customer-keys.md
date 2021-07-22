@@ -57,8 +57,8 @@ resource "google_compute_disk" "good_example" {
 ### Related Links
 
 
-- [https://cloud.google.com/compute/docs/disks/customer-supplied-encryption](https://cloud.google.com/compute/docs/disks/customer-supplied-encryption){:target="_blank" rel="nofollow noreferrer noopener"}
+- [https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_disk](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_disk){:target="_blank" rel="nofollow noreferrer noopener"}
 
-- [https://www.terraform.io/docs/providers/google/r/compute_disk.html](https://www.terraform.io/docs/providers/google/r/compute_disk.html){:target="_blank" rel="nofollow noreferrer noopener"}
+- [https://cloud.google.com/compute/docs/disks/customer-supplied-encryption](https://cloud.google.com/compute/docs/disks/customer-supplied-encryption){:target="_blank" rel="nofollow noreferrer noopener"}
 
 

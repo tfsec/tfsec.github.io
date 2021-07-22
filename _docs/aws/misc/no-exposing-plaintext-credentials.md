@@ -53,6 +53,8 @@ provider "aws" {
 ### Related Links
 
 
+- [https://registry.terraform.io/providers/hashicorp/aws/latest/docs#argument-reference](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#argument-reference){:target="_blank" rel="nofollow noreferrer noopener"}
+
 - [https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html){:target="_blank" rel="nofollow noreferrer noopener"}
 
 

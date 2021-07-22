@@ -61,6 +61,8 @@ resource "aws_network_acl_rule" "good_example" {
 ### Related Links
 
 
+- [https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/network_acl_rule#to_port](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/network_acl_rule#to_port){:target="_blank" rel="nofollow noreferrer noopener"}
+
 - [https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html){:target="_blank" rel="nofollow noreferrer noopener"}
 
 

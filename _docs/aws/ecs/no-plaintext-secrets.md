@@ -78,6 +78,8 @@ EOF
 ### Related Links
 
 
+- [https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecs_task_definition](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecs_task_definition){:target="_blank" rel="nofollow noreferrer noopener"}
+
 - [https://docs.aws.amazon.com/systems-manager/latest/userguide/integration-ps-secretsmanager.html](https://docs.aws.amazon.com/systems-manager/latest/userguide/integration-ps-secretsmanager.html){:target="_blank" rel="nofollow noreferrer noopener"}
 
 - [https://www.vaultproject.io/](https://www.vaultproject.io/){:target="_blank" rel="nofollow noreferrer noopener"}

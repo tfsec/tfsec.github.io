@@ -71,10 +71,10 @@ resource "github_repository" "good_example" {
 ### Related Links
 
 
+- [https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository){:target="_blank" rel="nofollow noreferrer noopener"}
+
 - [https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-repository-visibility](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-repository-visibility){:target="_blank" rel="nofollow noreferrer noopener"}
 
 - [https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-repository-visibility#about-internal-repositories](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-repository-visibility#about-internal-repositories){:target="_blank" rel="nofollow noreferrer noopener"}
-
-- [https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository){:target="_blank" rel="nofollow noreferrer noopener"}
 
 
