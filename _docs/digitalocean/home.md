@@ -7,7 +7,7 @@ has_toc: false
 
 The included Digital Ocean checks are listed below. For more information about each check, see the link provided.
 
-|  Digital Ocean Checks |
+| Checks |
 |:------------|
 |[digitalocean-compute-no-public-egress](/docs/digitalocean/compute/no-public-egress)<br>The firewall has an outbound rule with open access|
 |[digitalocean-compute-no-public-ingress](/docs/digitalocean/compute/no-public-ingress)<br>The firewall has an inbound rule with open access|

@@ -7,7 +7,7 @@ has_toc: false
 
 The included AWS checks are listed below. For more information about each check, see the link provided.
 
-|  AWS Checks |
+| Checks |
 |:------------|
 |[aws-api-gateway-enable-access-logging](/docs/aws/api-gateway/enable-access-logging)<br>API Gateway stages for V1 and V2 should have access logging enabled|
 |[aws-api-gateway-use-secure-tls-policy](/docs/aws/api-gateway/use-secure-tls-policy)<br>API Gateway domain name uses outdated SSL/TLS protocols.|

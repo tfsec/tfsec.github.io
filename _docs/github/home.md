@@ -7,6 +7,6 @@ has_toc: false
 
 The included Github checks are listed below. For more information about each check, see the link provided.
 
-|  Github Checks |
+| Checks |
 |:------------|
 |[github-repositories-private](/docs/github/repositories/private)<br>Github repository shouldn't be public.|

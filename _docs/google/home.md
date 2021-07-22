@@ -7,7 +7,7 @@ has_toc: false
 
 The included Google checks are listed below. For more information about each check, see the link provided.
 
-|  Google Checks |
+| Checks |
 |:------------|
 |[google-compute-disk-encryption-customer-keys](/docs/google/compute/disk-encryption-customer-keys)<br>Encrypted compute disk with unmanaged keys.|
 |[google-compute-disk-encryption-required](/docs/google/compute/disk-encryption-required)<br>The encryption key used to encrypt a compute disk has been specified in plaintext.|

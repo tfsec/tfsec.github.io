@@ -7,7 +7,7 @@ has_toc: false
 
 The included Azure checks are listed below. For more information about each check, see the link provided.
 
-|  Azure Checks |
+| Checks |
 |:------------|
 |[azure-appservice-enforce-https](/docs/azure/appservice/enforce-https)<br>Ensure the Function App can only be accessed via HTTPS. The default is false.|
 |[azure-compute-diable-password-authentication](/docs/azure/compute/diable-password-authentication)<br>Password authentication should be disabled on Azure virtual machines|
