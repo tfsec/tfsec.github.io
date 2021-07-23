@@ -222,7 +222,10 @@
       service: azure/database
       docs:
       - azure/database/enable-audit
+      - azure/database/enable-ssl-enforcement
+      - azure/database/no-public-access
       - azure/database/retention-period-set
+      - azure/database/secure-tls-policy
     - title: datafactory
       service: azure/datafactory
       docs:
@@ -335,7 +338,7 @@
       docs:
       - google/storage/enable-ubla
       - google/storage/no-public-access
-  - title: Openstack
+  - title: OpenStack
     provider: openstack/
     services:
     - title: compute

@@ -19,7 +19,10 @@ The included Azure checks are listed below. For more information about each chec
 |[azure-container-logging](/docs/azure/container/logging)<br>Ensure AKS logging to Azure Monitoring is Configured|
 |[azure-container-use-rbac-permissions](/docs/azure/container/use-rbac-permissions)<br>Ensure RBAC is enabled on AKS clusters|
 |[azure-database-enable-audit](/docs/azure/database/enable-audit)<br>Auditing should be enabled on Azure SQL Databases|
+|[azure-database-enable-ssl-enforcement](/docs/azure/database/enable-ssl-enforcement)<br>SSL should be enforced on database connections where applicable|
+|[azure-database-no-public-access](/docs/azure/database/no-public-access)<br>Ensure databases are not publicly accessible|
 |[azure-database-retention-period-set](/docs/azure/database/retention-period-set)<br>Database auditing rentention period should be longer than 90 days|
+|[azure-database-secure-tls-policy](/docs/azure/database/secure-tls-policy)<br>Databases should have the minimum TLS set for connections|
 |[azure-datafactory-no-public-access](/docs/azure/datafactory/no-public-access)<br>Data Factory should have public access disabled, the default is enabled.|
 |[azure-datalake-enable-at-rest-encryption](/docs/azure/datalake/enable-at-rest-encryption)<br>Unencrypted data lake storage.|
 |[azure-keyvault-content-type-for-secret](/docs/azure/keyvault/content-type-for-secret)<br>Key vault Secret should have a content type set|

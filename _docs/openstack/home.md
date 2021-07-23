@@ -1,11 +1,11 @@
 ---
-title: Openstack Checks
+title: OpenStack Checks
 permalink: /docs/openstack/home/
 has_children: true
 has_toc: false
 ---
 
-The included Openstack checks are listed below. For more information about each check, see the link provided.
+The included OpenStack checks are listed below. For more information about each check, see the link provided.
 
 | Checks |
 |:------------|
