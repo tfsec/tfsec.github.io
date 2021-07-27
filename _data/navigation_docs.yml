@@ -224,6 +224,7 @@
       - azure/database/enable-audit
       - azure/database/enable-ssl-enforcement
       - azure/database/no-public-access
+      - azure/database/no-public-firewall-access
       - azure/database/retention-period-set
       - azure/database/secure-tls-policy
     - title: datafactory
@@ -242,6 +243,12 @@
       - azure/keyvault/ensure-secret-expiry
       - azure/keyvault/no-purge
       - azure/keyvault/specify-network-acl
+    - title: monitor
+      service: azure/monitor
+      docs:
+      - azure/monitor/activity-log-retention-set
+      - azure/monitor/capture-all-activities
+      - azure/monitor/capture-all-regions
     - title: network
       service: azure/network
       docs:
@@ -332,6 +339,7 @@
     - title: iam
       service: google/iam
       docs:
+      - google/iam/no-privileged-service-accounts
       - google/iam/no-user-granted-permissions
     - title: storage
       service: google/storage

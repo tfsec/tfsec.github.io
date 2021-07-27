@@ -21,6 +21,7 @@ The included Azure checks are listed below. For more information about each chec
 |[azure-database-enable-audit](/docs/azure/database/enable-audit)<br>Auditing should be enabled on Azure SQL Databases|
 |[azure-database-enable-ssl-enforcement](/docs/azure/database/enable-ssl-enforcement)<br>SSL should be enforced on database connections where applicable|
 |[azure-database-no-public-access](/docs/azure/database/no-public-access)<br>Ensure databases are not publicly accessible|
+|[azure-database-no-public-firewall-access](/docs/azure/database/no-public-firewall-access)<br>Ensure database firewalls do not permit public access|
 |[azure-database-retention-period-set](/docs/azure/database/retention-period-set)<br>Database auditing rentention period should be longer than 90 days|
 |[azure-database-secure-tls-policy](/docs/azure/database/secure-tls-policy)<br>Databases should have the minimum TLS set for connections|
 |[azure-datafactory-no-public-access](/docs/azure/datafactory/no-public-access)<br>Data Factory should have public access disabled, the default is enabled.|
@@ -30,6 +31,9 @@ The included Azure checks are listed below. For more information about each chec
 |[azure-keyvault-ensure-secret-expiry](/docs/azure/keyvault/ensure-secret-expiry)<br>Key Vault Secret should have an expiration date set|
 |[azure-keyvault-no-purge](/docs/azure/keyvault/no-purge)<br>Key vault should have purge protection enabled|
 |[azure-keyvault-specify-network-acl](/docs/azure/keyvault/specify-network-acl)<br>Key vault should have the network acl block specified|
+|[azure-monitor-activity-log-retention-set](/docs/azure/monitor/activity-log-retention-set)<br>Ensure the activity retention log is set to at least a year|
+|[azure-monitor-capture-all-activities](/docs/azure/monitor/capture-all-activities)<br>Ensure log profile captures all activities|
+|[azure-monitor-capture-all-regions](/docs/azure/monitor/capture-all-regions)<br>Ensure activitys are captured for all locations|
 |[azure-network-disable-rdp-from-internet](/docs/azure/network/disable-rdp-from-internet)<br>RDP access should not be accessible from the Internet, should be blocked on port 3389|
 |[azure-network-no-public-egress](/docs/azure/network/no-public-egress)<br>An outbound network security rule allows traffic to /0.|
 |[azure-network-no-public-ingress](/docs/azure/network/no-public-ingress)<br>An inbound network security rule allows traffic from /0.|

@@ -63,6 +63,7 @@ data "aws_iam_policy_document" "kms_policy" {
   }
 }
 
+
 {% endhighlight %}
 
 
@@ -72,6 +73,10 @@ data "aws_iam_policy_document" "kms_policy" {
 The following example will pass the aws-iam-block-kms-policy-wildcard check.
 
 {% highlight terraform %}
+
+resource "aws_kms_key" "main" {
+	enable_key_rotation = true
+}
 
 resource "aws_iam_role_policy" "test_policy" {
 	name = "test_policy"
