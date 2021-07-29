@@ -27,7 +27,7 @@ The config file can be used to specify overrides for any check identifier to rep
 {
   "severity_overrides": {
     "CUS002": "ERROR",
-    "AWS025": "WARNING"
+    "aws-s3-enable-versioning": "LOW"
   }
 }
 ```
@@ -38,7 +38,7 @@ or in yaml
 ---
 severity_overrides:
   CUS002: ERROR
-  AWS025: INFO
+  aws-s3-enable-versioning: HIGH
 ```
 
 ### Excluding checks
@@ -49,7 +49,7 @@ entry `exclude` to list them all out.
 
 ```json
 {
-  "exclude": ["CUS002", "AWS025"]
+  "exclude": ["CUS002", "aws-s3-enable-versioning"]
 }
 ```
 
@@ -59,5 +59,5 @@ or in yaml
 ---
 exclude:
   - CUS002
-  - AWS025
+  - aws-s3-enable-versioning
 ```
