@@ -10,6 +10,8 @@ The included AWS checks are listed below. For more information about each check,
 | Checks |
 |:------------|
 |[aws-api-gateway-enable-access-logging](/docs/aws/api-gateway/enable-access-logging)<br>API Gateway stages for V1 and V2 should have access logging enabled|
+|[aws-api-gateway-enable-cache-encryption](/docs/aws/api-gateway/enable-cache-encryption)<br>API Gateway must have cache enabled|
+|[aws-api-gateway-enable-tracing](/docs/aws/api-gateway/enable-tracing)<br>API Gateway must have X-Ray tracing enabled|
 |[aws-api-gateway-use-secure-tls-policy](/docs/aws/api-gateway/use-secure-tls-policy)<br>API Gateway domain name uses outdated SSL/TLS protocols.|
 |[aws-athena-enable-at-rest-encryption](/docs/aws/athena/enable-at-rest-encryption)<br>Athena databases and workgroup configurations are created unencrypted at rest by default, they should be encrypted|
 |[aws-athena-no-encryption-override](/docs/aws/athena/no-encryption-override)<br>Athena workgroups should enforce configuration to prevent client disabling encryption|
@@ -48,6 +50,7 @@ The included AWS checks are listed below. For more information about each check,
 |[aws-elastic-search-enforce-https](/docs/aws/elastic-search/enforce-https)<br>Elasticsearch doesn't enforce HTTPS traffic.|
 |[aws-elastic-search-use-secure-tls-policy](/docs/aws/elastic-search/use-secure-tls-policy)<br>Elasticsearch domain endpoint is using outdated TLS policy.|
 |[aws-elastic-service-enable-domain-encryption](/docs/aws/elastic-service/enable-domain-encryption)<br>Elasticsearch domain isn't encrypted at rest.|
+|[aws-elasticache-add-description-for-security-group](/docs/aws/elasticache/add-description-for-security-group)<br>Missing description for security group/security group rule.|
 |[aws-elasticache-enable-backup-retention](/docs/aws/elasticache/enable-backup-retention)<br>Redis cluster should have backup retention turned on|
 |[aws-elasticache-enable-in-transit-encryption](/docs/aws/elasticache/enable-in-transit-encryption)<br>Elasticache Replication Group uses unencrypted traffic.|
 |[aws-elb-drop-invalid-headers](/docs/aws/elb/drop-invalid-headers)<br>Load balancers should drop invalid headers|
@@ -64,6 +67,7 @@ The included AWS checks are listed below. For more information about each check,
 |[aws-iam-set-minimum-password-length](/docs/aws/iam/set-minimum-password-length)<br>IAM Password policy should have minimum password length of 14 or more characters.|
 |[aws-kinesis-enable-in-transit-encryption](/docs/aws/kinesis/enable-in-transit-encryption)<br>Kinesis stream is unencrypted.|
 |[aws-kms-auto-rotate-keys](/docs/aws/kms/auto-rotate-keys)<br>A KMS key is not configured to auto-rotate.|
+|[aws-lambda-enable-tracing](/docs/aws/lambda/enable-tracing)<br>Lambda functions should have X-Ray tracing enabled|
 |[aws-lambda-restrict-source-arn](/docs/aws/lambda/restrict-source-arn)<br>Ensure that lambda function permission has a source arn specified|
 |[aws-misc-no-exposing-plaintext-credentials](/docs/aws/misc/no-exposing-plaintext-credentials)<br>AWS provider has access credentials specified.|
 |[aws-msk-enable-in-transit-encryption](/docs/aws/msk/enable-in-transit-encryption)<br>A MSK cluster allows unencrypted data in transit.|

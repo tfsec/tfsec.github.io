@@ -20,7 +20,9 @@ The included Google checks are listed below. For more information about each che
 |[google-gke-node-shielding-enabled](/docs/google/gke/node-shielding-enabled)<br>Shielded GKE nodes not enabled.|
 |[google-gke-use-rbac-permissions](/docs/google/gke/use-rbac-permissions)<br>Legacy ABAC permissions are enabled.|
 |[google-gke-use-service-account](/docs/google/gke/use-service-account)<br>Checks for service account defined for GKE nodes|
+|[google-iam-no-default-service-account-assignment](/docs/google/iam/no-default-service-account-assignment)<br>Roles should not be assigned to default service accounts|
 |[google-iam-no-privileged-service-accounts](/docs/google/iam/no-privileged-service-accounts)<br>Service accounts should not have roles assigned with excessive privileges|
+|[google-iam-no-project-level-service-account-impersonation](/docs/google/iam/no-project-level-service-account-impersonation)<br>Users should not be granted service account access at the project level|
 |[google-iam-no-user-granted-permissions](/docs/google/iam/no-user-granted-permissions)<br>IAM granted directly to user.|
 |[google-storage-enable-ubla](/docs/google/storage/enable-ubla)<br>Ensure that Cloud Storage buckets have uniform bucket-level access enabled|
 |[google-storage-no-public-access](/docs/google/storage/no-public-access)<br>Ensure that Cloud Storage bucket is not anonymously or publicly accessible.|

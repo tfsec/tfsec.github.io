@@ -3,7 +3,6 @@
   state: open
   docs:
     - installation
-    - usage
 
 - title: Provider Checks
   providers:
@@ -14,6 +13,8 @@
       service: aws/api-gateway
       docs:
       - aws/api-gateway/enable-access-logging
+      - aws/api-gateway/enable-cache-encryption
+      - aws/api-gateway/enable-tracing
       - aws/api-gateway/use-secure-tls-policy
     - title: athena
       service: aws/athena
@@ -100,6 +101,7 @@
     - title: elasticache
       service: aws/elasticache
       docs:
+      - aws/elasticache/add-description-for-security-group
       - aws/elasticache/enable-backup-retention
       - aws/elasticache/enable-in-transit-encryption
     - title: elb
@@ -134,6 +136,7 @@
     - title: lambda
       service: aws/lambda
       docs:
+      - aws/lambda/enable-tracing
       - aws/lambda/restrict-source-arn
     - title: misc
       service: aws/misc
@@ -270,7 +273,6 @@
       - azure/storage/allow-microsoft-service-bypass
       - azure/storage/default-action-deny
       - azure/storage/enforce-https
-      - azure/storage/ensure-https
       - azure/storage/no-public-access
       - azure/storage/queue-services-logging-enabled
       - azure/storage/use-secure-tls-policy
@@ -340,7 +342,9 @@
     - title: iam
       service: google/iam
       docs:
+      - google/iam/no-default-service-account-assignment
       - google/iam/no-privileged-service-accounts
+      - google/iam/no-project-level-service-account-impersonation
       - google/iam/no-user-granted-permissions
     - title: storage
       service: google/storage

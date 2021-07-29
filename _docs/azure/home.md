@@ -45,7 +45,6 @@ The included Azure checks are listed below. For more information about each chec
 |[azure-storage-allow-microsoft-service-bypass](/docs/azure/storage/allow-microsoft-service-bypass)<br>Trusted Microsoft Services should have bypass access to Storage accounts|
 |[azure-storage-default-action-deny](/docs/azure/storage/default-action-deny)<br>The default action on Storage account network rules should be set to deny|
 |[azure-storage-enforce-https](/docs/azure/storage/enforce-https)<br>Storage accounts should be configured to only accept transfers that are over secure connections|
-|[azure-storage-ensure-https](/docs/azure/storage/ensure-https)<br>Ensure HTTPS is enabled on Azure Storage Account|
 |[azure-storage-no-public-access](/docs/azure/storage/no-public-access)<br>Storage containers in blob storage mode should not have public access|
 |[azure-storage-queue-services-logging-enabled](/docs/azure/storage/queue-services-logging-enabled)<br>When using Queue Services for a storage account, logging should be enabled.|
 |[azure-storage-use-secure-tls-policy](/docs/azure/storage/use-secure-tls-policy)<br>The minimum TLS version for Storage Accounts should be TLS1_2|
