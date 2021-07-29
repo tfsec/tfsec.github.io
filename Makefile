@@ -58,3 +58,7 @@ typos:
 .PHONY: fix-typos
 fix-typos:
 	./scripts/typos.sh fix
+
+.PHONY: serve
+serve:
+	bundle exec jekyll serve

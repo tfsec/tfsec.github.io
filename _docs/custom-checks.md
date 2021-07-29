@@ -56,7 +56,7 @@ Taking the previous example of a required cost centre, the check file might look
 
 or 
 
-```yml
+```yaml
 ---
 checks:
 - code: CUS001

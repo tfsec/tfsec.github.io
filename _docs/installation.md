@@ -2,7 +2,7 @@
 title: Installation
 subtitle: Installing tfsec on your local machine
 author: tfsec
-tags: [installation]
+tags: [installation, quickstart]
 ---
 
 Install with brew/linuxbrew:

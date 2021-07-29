@@ -3,6 +3,7 @@
   state: open
   docs:
     - installation
+    - usage
 
 - title: Provider Checks
   providers:
