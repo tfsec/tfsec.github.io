@@ -27,9 +27,14 @@ The included AWS checks are listed below. For more information about each check,
 |[aws-cloudwatch-log-group-customer-key](/docs/aws/cloudwatch/log-group-customer-key)<br>CloudWatch log groups should be encrypted using CMK|
 |[aws-codebuild-enable-encryption](/docs/aws/codebuild/enable-encryption)<br>CodeBuild Project artifacts encryption should not be disabled|
 |[aws-config-aggregate-all-regions](/docs/aws/config/aggregate-all-regions)<br>Config configuration aggregator should be using all regions for source|
+|[aws-documentdb-enable-log-export](/docs/aws/documentdb/enable-log-export)<br>DocumentDB logs export should be enabled|
+|[aws-documentdb-enable-storage-encryption](/docs/aws/documentdb/enable-storage-encryption)<br>DocumentDB storage must be encrypted|
+|[aws-documentdb-encryption-customer-key](/docs/aws/documentdb/encryption-customer-key)<br>DocumentDB encryption should use Customer Managed Keys|
 |[aws-dynamodb-enable-at-rest-encryption](/docs/aws/dynamodb/enable-at-rest-encryption)<br>DAX Cluster should always encrypt data at rest|
 |[aws-dynamodb-enable-recovery](/docs/aws/dynamodb/enable-recovery)<br>Point in time recovery should be enabled to protect DynamoDB table|
 |[aws-dynamodb-table-customer-key](/docs/aws/dynamodb/table-customer-key)<br>DynamoDB tables should use at rest encryption with a Customer Managed Key|
+|[aws-ebs-enable-volume-encryption](/docs/aws/ebs/enable-volume-encryption)<br>EBS volumes must be encrypted|
+|[aws-ebs-encryption-customer-key](/docs/aws/ebs/encryption-customer-key)<br>EBS volume encryption should use Customer Managed Keys|
 |[aws-ec2-enforce-http-token-imds](/docs/aws/ec2/enforce-http-token-imds)<br>aws_instance should activate session tokens for Instance Metadata Service.|
 |[aws-ec2-no-secrets-in-user-data](/docs/aws/ec2/no-secrets-in-user-data)<br>User data for EC2 instances must not contain sensitive AWS keys|
 |[aws-ecr-enable-image-scans](/docs/aws/ecr/enable-image-scans)<br>ECR repository has image scans disabled.|
@@ -70,9 +75,15 @@ The included AWS checks are listed below. For more information about each check,
 |[aws-kms-auto-rotate-keys](/docs/aws/kms/auto-rotate-keys)<br>A KMS key is not configured to auto-rotate.|
 |[aws-lambda-enable-tracing](/docs/aws/lambda/enable-tracing)<br>Lambda functions should have X-Ray tracing enabled|
 |[aws-lambda-restrict-source-arn](/docs/aws/lambda/restrict-source-arn)<br>Ensure that lambda function permission has a source arn specified|
+|[aws-launch-no-sensitive-info](/docs/aws/launch/no-sensitive-info)<br>Ensure all data stored in the Launch configuration EBS is securely encrypted|
 |[aws-misc-no-exposing-plaintext-credentials](/docs/aws/misc/no-exposing-plaintext-credentials)<br>AWS provider has access credentials specified.|
+|[aws-mq-enable-audit-logging](/docs/aws/mq/enable-audit-logging)<br>MQ Broker should have audit logging enabled|
+|[aws-mq-enable-general-logging](/docs/aws/mq/enable-general-logging)<br>MQ Broker should have general logging enabled|
+|[aws-mq-no-public-access](/docs/aws/mq/no-public-access)<br>Ensure MQ Broker is not publicly exposed|
 |[aws-msk-enable-in-transit-encryption](/docs/aws/msk/enable-in-transit-encryption)<br>A MSK cluster allows unencrypted data in transit.|
 |[aws-msk-enable-logging](/docs/aws/msk/enable-logging)<br>Ensure MSK Cluster logging is enabled|
+|[aws-neptune-enable-log-export](/docs/aws/neptune/enable-log-export)<br>Nepture logs export should be enabled|
+|[aws-neptune-enable-storage-encryption](/docs/aws/neptune/enable-storage-encryption)<br>Neptune storage must be encrypted at rest|
 |[aws-rds-backup-retention-specified](/docs/aws/rds/backup-retention-specified)<br>RDS Cluster and RDS instance should have backup retention longer than default 1 day|
 |[aws-rds-enable-performance-insights](/docs/aws/rds/enable-performance-insights)<br>Encryption for RDS Performance Insights should be enabled.|
 |[aws-rds-encrypt-cluster-storage-data](/docs/aws/rds/encrypt-cluster-storage-data)<br>There is no encryption specified or encryption is disabled on the RDS Cluster.|

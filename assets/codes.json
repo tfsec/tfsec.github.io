@@ -1,126 +1,6 @@
 {
  "checks": [
   {
-   "code": "digitalocean-compute-no-public-egress",
-   "legacy_code": "DIG002",
-   "service": "compute",
-   "provider": "digitalocean",
-   "description": "The firewall has an outbound rule with open access",
-   "impact": "The port is exposed for ingress from the internet",
-   "resolution": "Set a more restrictive cidr range",
-   "doc_url": "https://tfsec.dev/docs/digitalocean/compute/no-public-egress/"
-  },
-  {
-   "code": "digitalocean-compute-no-public-ingress",
-   "legacy_code": "DIG001",
-   "service": "compute",
-   "provider": "digitalocean",
-   "description": "The firewall has an inbound rule with open access",
-   "impact": "Your port is exposed to the internet",
-   "resolution": "Set a more restrictive CIRDR range",
-   "doc_url": "https://tfsec.dev/docs/digitalocean/compute/no-public-ingress/"
-  },
-  {
-   "code": "digitalocean-droplet-use-ssh-keys",
-   "legacy_code": "DIG003",
-   "service": "droplet",
-   "provider": "digitalocean",
-   "description": "SSH Keys are the preferred way to connect to your droplet, no keys are supplied",
-   "impact": "Logging in with username and password is easier to compromise",
-   "resolution": "Use ssh keys for login",
-   "doc_url": "https://tfsec.dev/docs/digitalocean/droplet/use-ssh-keys/"
-  },
-  {
-   "code": "digitalocean-loadbalancing-enforce-https",
-   "legacy_code": "DIG004",
-   "service": "loadbalancing",
-   "provider": "digitalocean",
-   "description": "The load balancer forwarding rule is using an insecure protocol as an entrypoint",
-   "impact": "Your inbound traffic is not protected",
-   "resolution": "Switch to HTTPS to benefit from TLS security features",
-   "doc_url": "https://tfsec.dev/docs/digitalocean/loadbalancing/enforce-https/"
-  },
-  {
-   "code": "digitalocean-spaces-acl-no-public-read",
-   "legacy_code": "DIG005",
-   "service": "spaces",
-   "provider": "digitalocean",
-   "description": "Spaces bucket or bucket object has public read acl set",
-   "impact": "The contents of the space can be accessed publicly",
-   "resolution": "Apply a more restrictive ACL",
-   "doc_url": "https://tfsec.dev/docs/digitalocean/spaces/acl-no-public-read/"
-  },
-  {
-   "code": "digitalocean-spaces-disable-force-destroy",
-   "legacy_code": "DIG007",
-   "service": "spaces",
-   "provider": "digitalocean",
-   "description": "Force destroy is enabled on Spaces bucket which is dangerous",
-   "impact": "Accidental deletion of bucket objects",
-   "resolution": "Don't use force destroy on bucket configuration",
-   "doc_url": "https://tfsec.dev/docs/digitalocean/spaces/disable-force-destroy/"
-  },
-  {
-   "code": "digitalocean-spaces-versioning-enabled",
-   "legacy_code": "DIG006",
-   "service": "spaces",
-   "provider": "digitalocean",
-   "description": "Spaces buckets should have versioning enabled",
-   "impact": "Deleted or modified data would not be recoverable",
-   "resolution": "Enable versioning to protect against accidental or malicious removal or modification",
-   "doc_url": "https://tfsec.dev/docs/digitalocean/spaces/versioning-enabled/"
-  },
-  {
-   "code": "general-secrets-sensitive-in-attribute",
-   "legacy_code": "GEN003",
-   "service": "secrets",
-   "provider": "general",
-   "description": "Potentially sensitive data stored in block attribute.",
-   "impact": "Block attribute could be leaking secrets",
-   "resolution": "Don't include sensitive data in blocks",
-   "doc_url": "https://tfsec.dev/docs/general/secrets/sensitive-in-attribute/"
-  },
-  {
-   "code": "general-secrets-sensitive-in-attribute-value",
-   "legacy_code": "GEN005",
-   "service": "secrets",
-   "provider": "general",
-   "description": "The attribute has potentially sensitive data, passwords, tokens or keys in it",
-   "impact": "Sensitive credentials may be compromised",
-   "resolution": "Check the code for vulnerabilities and move to variables",
-   "doc_url": "https://tfsec.dev/docs/general/secrets/sensitive-in-attribute-value/"
-  },
-  {
-   "code": "general-secrets-sensitive-in-local",
-   "legacy_code": "GEN002",
-   "service": "secrets",
-   "provider": "general",
-   "description": "Potentially sensitive data stored in local value.",
-   "impact": "Local value could be leaking secrets",
-   "resolution": "Don't include sensitive data in locals",
-   "doc_url": "https://tfsec.dev/docs/general/secrets/sensitive-in-local/"
-  },
-  {
-   "code": "general-secrets-sensitive-in-variable",
-   "legacy_code": "GEN001",
-   "service": "secrets",
-   "provider": "general",
-   "description": "Potentially sensitive data stored in \"default\" value of variable.",
-   "impact": "Default values could be exposing sensitive data",
-   "resolution": "Don't include sensitive data in variable defaults",
-   "doc_url": "https://tfsec.dev/docs/general/secrets/sensitive-in-variable/"
-  },
-  {
-   "code": "github-repositories-private",
-   "legacy_code": "GIT001",
-   "service": "repositories",
-   "provider": "github",
-   "description": "Github repository shouldn't be public.",
-   "impact": "Anyone can read the contents of the GitHub repository and leak IP",
-   "resolution": "Make sensitive or commercially important repositories private",
-   "doc_url": "https://tfsec.dev/docs/github/repositories/private/"
-  },
-  {
    "code": "google-compute-disk-encryption-customer-keys",
    "legacy_code": "GCP001",
    "service": "compute",
@@ -311,6 +191,136 @@
    "doc_url": "https://tfsec.dev/docs/google/iam/no-user-granted-permissions/"
   },
   {
+   "code": "google-sql-enable-backup",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "Enable automated backups to recover from data-loss",
+   "impact": "No recovery of lost or corrupted data",
+   "resolution": "Enable automated backups",
+   "doc_url": "https://tfsec.dev/docs/google/sql/enable-backup/"
+  },
+  {
+   "code": "google-sql-enable-pg-temp-file-logging",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "Temporary file logging should be enabled for all temporary files.",
+   "impact": "Use of temporary files will not be logged",
+   "resolution": "Enable temporary file logging for all files",
+   "doc_url": "https://tfsec.dev/docs/google/sql/enable-pg-temp-file-logging/"
+  },
+  {
+   "code": "google-sql-encrypt-in-transit-data",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "SSL connections to a SQL database instance should be enforced.",
+   "impact": "Intercepted data can be read in transit",
+   "resolution": "Enforce SSL for all connections",
+   "doc_url": "https://tfsec.dev/docs/google/sql/encrypt-in-transit-data/"
+  },
+  {
+   "code": "google-sql-mysql-no-local-infile",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "Disable local_infile setting in MySQL",
+   "impact": "Arbitrary files read by attackers when combined with a SQL injection vulnerability.",
+   "resolution": "Disable the local infile setting",
+   "doc_url": "https://tfsec.dev/docs/google/sql/mysql-no-local-infile/"
+  },
+  {
+   "code": "google-sql-no-contained-db-auth",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "Contained database authentication should be disabled",
+   "impact": "Access can be granted without knowledge of the database administrator",
+   "resolution": "Disable contained database authentication",
+   "doc_url": "https://tfsec.dev/docs/google/sql/no-contained-db-auth/"
+  },
+  {
+   "code": "google-sql-no-cross-db-ownership-chaining",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "Cross-database ownership chaining should be disabled",
+   "impact": "Unintended access to sensitive data",
+   "resolution": "Disable cross database ownership chaining",
+   "doc_url": "https://tfsec.dev/docs/google/sql/no-cross-db-ownership-chaining/"
+  },
+  {
+   "code": "google-sql-no-public-access",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "Ensure that Cloud SQL Database Instances are not publicly exposed",
+   "impact": "Public exposure of sensitive data",
+   "resolution": "Remove public access from database instances",
+   "doc_url": "https://tfsec.dev/docs/google/sql/no-public-access/"
+  },
+  {
+   "code": "google-sql-pg-log-checkpoints",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "Ensure that logging of checkpoints is enabled.",
+   "impact": "Insufficient diagnostic data.",
+   "resolution": "Enable checkpoints logging.",
+   "doc_url": "https://tfsec.dev/docs/google/sql/pg-log-checkpoints/"
+  },
+  {
+   "code": "google-sql-pg-log-connections",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "Ensure that logging of connections is enabled.",
+   "impact": "Insufficient diagnostic data.",
+   "resolution": "Enable connection logging.",
+   "doc_url": "https://tfsec.dev/docs/google/sql/pg-log-connections/"
+  },
+  {
+   "code": "google-sql-pg-log-disconnections",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "Ensure that logging of disconnections is enabled.",
+   "impact": "Insufficient diagnostic data.",
+   "resolution": "Enable disconnection logging.",
+   "doc_url": "https://tfsec.dev/docs/google/sql/pg-log-disconnections/"
+  },
+  {
+   "code": "google-sql-pg-log-errors",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "Ensure that Postgres errors are logged",
+   "impact": "Loss of error logging",
+   "resolution": "Set the minimum log severity to at least ERROR",
+   "doc_url": "https://tfsec.dev/docs/google/sql/pg-log-errors/"
+  },
+  {
+   "code": "google-sql-pg-log-lock-waits",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "Ensure that logging of lock waits is enabled.",
+   "impact": "Issues leading to denial of service may not be identified.",
+   "resolution": "Enable lock wait logging.",
+   "doc_url": "https://tfsec.dev/docs/google/sql/pg-log-lock-waits/"
+  },
+  {
+   "code": "google-sql-pg-no-min-statement-logging",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "Ensure that logging of long statements is disabled.",
+   "impact": "Sensitive data could be exposed in the database logs.",
+   "resolution": "Disable minimum duration statement logging completely",
+   "doc_url": "https://tfsec.dev/docs/google/sql/pg-no-min-statement-logging/"
+  },
+  {
    "code": "google-storage-enable-ubla",
    "legacy_code": "",
    "service": "storage",
@@ -329,26 +339,6 @@
    "impact": "Public exposure of sensitive data.",
    "resolution": "Restrict public access to the bucket.",
    "doc_url": "https://tfsec.dev/docs/google/storage/no-public-access/"
-  },
-  {
-   "code": "openstack-compute-no-plaintext-password",
-   "legacy_code": "",
-   "service": "compute",
-   "provider": "openstack",
-   "description": "No plaintext password for compute instance",
-   "impact": "Including a plaintext password could lead to compromised instance",
-   "resolution": "Do not use plaintext passwords in terraform files",
-   "doc_url": "https://tfsec.dev/docs/openstack/compute/no-plaintext-password/"
-  },
-  {
-   "code": "openstack-fw-no-public-access",
-   "legacy_code": "",
-   "service": "fw",
-   "provider": "openstack",
-   "description": "A firewall rule allows traffic from/to the public internet",
-   "impact": "Exposure of infrastructure to the public internet",
-   "resolution": "Employ more restrictive firewall rules",
-   "doc_url": "https://tfsec.dev/docs/openstack/fw/no-public-access/"
   },
   {
    "code": "oracle-compute-no-public-ip",
@@ -541,6 +531,36 @@
    "doc_url": "https://tfsec.dev/docs/aws/config/aggregate-all-regions/"
   },
   {
+   "code": "aws-documentdb-enable-log-export",
+   "legacy_code": "",
+   "service": "documentdb",
+   "provider": "aws",
+   "description": "DocumentDB logs export should be enabled",
+   "impact": "Limited visibility of audit trail for changes to the DocumentDB",
+   "resolution": "Enable export logs",
+   "doc_url": "https://tfsec.dev/docs/aws/documentdb/enable-log-export/"
+  },
+  {
+   "code": "aws-documentdb-enable-storage-encryption",
+   "legacy_code": "",
+   "service": "documentdb",
+   "provider": "aws",
+   "description": "DocumentDB storage must be encrypted",
+   "impact": "Unencrypted sensitive data is vulnerable to compromise.",
+   "resolution": "Enable storage encryption",
+   "doc_url": "https://tfsec.dev/docs/aws/documentdb/enable-storage-encryption/"
+  },
+  {
+   "code": "aws-documentdb-encryption-customer-key",
+   "legacy_code": "",
+   "service": "documentdb",
+   "provider": "aws",
+   "description": "DocumentDB encryption should use Customer Managed Keys",
+   "impact": "Using AWS managed keys does not allow for fine grained control",
+   "resolution": "Enable encryption using customer managed keys",
+   "doc_url": "https://tfsec.dev/docs/aws/documentdb/encryption-customer-key/"
+  },
+  {
    "code": "aws-dynamodb-enable-at-rest-encryption",
    "legacy_code": "AWS081",
    "service": "dynamodb",
@@ -569,6 +589,26 @@
    "impact": "Using AWS managed keys does not allow for fine grained control",
    "resolution": "Enable server side encryption with a customer managed key",
    "doc_url": "https://tfsec.dev/docs/aws/dynamodb/table-customer-key/"
+  },
+  {
+   "code": "aws-ebs-enable-volume-encryption",
+   "legacy_code": "",
+   "service": "ebs",
+   "provider": "aws",
+   "description": "EBS volumes must be encrypted",
+   "impact": "Unencrypted sensitive data is vulnerable to compromise.",
+   "resolution": "Enable encryption of EBS volumes",
+   "doc_url": "https://tfsec.dev/docs/aws/ebs/enable-volume-encryption/"
+  },
+  {
+   "code": "aws-ebs-encryption-customer-key",
+   "legacy_code": "",
+   "service": "ebs",
+   "provider": "aws",
+   "description": "EBS volume encryption should use Customer Managed Keys",
+   "impact": "Using AWS managed keys does not allow for fine grained control",
+   "resolution": "Enable encryption using customer managed keys",
+   "doc_url": "https://tfsec.dev/docs/aws/ebs/encryption-customer-key/"
   },
   {
    "code": "aws-ec2-enforce-http-token-imds",
@@ -971,6 +1011,16 @@
    "doc_url": "https://tfsec.dev/docs/aws/lambda/restrict-source-arn/"
   },
   {
+   "code": "aws-launch-no-sensitive-info",
+   "legacy_code": "",
+   "service": "launch",
+   "provider": "aws",
+   "description": "Ensure all data stored in the Launch configuration EBS is securely encrypted",
+   "impact": "Sensitive credentials in user data can be leaked",
+   "resolution": "Don't use sensitive data in user data",
+   "doc_url": "https://tfsec.dev/docs/aws/launch/no-sensitive-info/"
+  },
+  {
    "code": "aws-misc-no-exposing-plaintext-credentials",
    "legacy_code": "AWS044",
    "service": "misc",
@@ -979,6 +1029,36 @@
    "impact": "Exposing the credentials in the Terraform provider increases the risk of secret leakage",
    "resolution": "Don't include access credentials in plain text",
    "doc_url": "https://tfsec.dev/docs/aws/misc/no-exposing-plaintext-credentials/"
+  },
+  {
+   "code": "aws-mq-enable-audit-logging",
+   "legacy_code": "",
+   "service": "mq",
+   "provider": "aws",
+   "description": "MQ Broker should have audit logging enabled",
+   "impact": "Without audit logging it is difficult to trace activity in the MQ broker",
+   "resolution": "Enable audit logging",
+   "doc_url": "https://tfsec.dev/docs/aws/mq/enable-audit-logging/"
+  },
+  {
+   "code": "aws-mq-enable-general-logging",
+   "legacy_code": "",
+   "service": "mq",
+   "provider": "aws",
+   "description": "MQ Broker should have general logging enabled",
+   "impact": "Without logging it is difficult to trace issues",
+   "resolution": "Enable general logging",
+   "doc_url": "https://tfsec.dev/docs/aws/mq/enable-general-logging/"
+  },
+  {
+   "code": "aws-mq-no-public-access",
+   "legacy_code": "",
+   "service": "mq",
+   "provider": "aws",
+   "description": "Ensure MQ Broker is not publicly exposed",
+   "impact": "Publicly accessible MQ Broker may be vulnerable to compromise",
+   "resolution": "Disable public access when not required",
+   "doc_url": "https://tfsec.dev/docs/aws/mq/no-public-access/"
   },
   {
    "code": "aws-msk-enable-in-transit-encryption",
@@ -999,6 +1079,26 @@
    "impact": "Without logging it is difficult to trace issues",
    "resolution": "Enable logging",
    "doc_url": "https://tfsec.dev/docs/aws/msk/enable-logging/"
+  },
+  {
+   "code": "aws-neptune-enable-log-export",
+   "legacy_code": "",
+   "service": "neptune",
+   "provider": "aws",
+   "description": "Nepture logs export should be enabled",
+   "impact": "Limited visibility of audit trail for changes to Neptune",
+   "resolution": "Enable export logs",
+   "doc_url": "https://tfsec.dev/docs/aws/neptune/enable-log-export/"
+  },
+  {
+   "code": "aws-neptune-enable-storage-encryption",
+   "legacy_code": "",
+   "service": "neptune",
+   "provider": "aws",
+   "description": "Neptune storage must be encrypted at rest",
+   "impact": "Unencrypted sensitive data is vulnerable to compromise.",
+   "resolution": "Enable encryption of Neptune storage",
+   "doc_url": "https://tfsec.dev/docs/aws/neptune/enable-storage-encryption/"
   },
   {
    "code": "aws-rds-backup-retention-specified",
@@ -1709,6 +1809,176 @@
    "impact": "Your Synapse workspace is not using the private endpoints",
    "resolution": "Set manage virtual network to enabled",
    "doc_url": "https://tfsec.dev/docs/azure/synapse/virtual-network-enabled/"
+  },
+  {
+   "code": "cloudstack-compute-no-sensitive-info",
+   "legacy_code": "",
+   "service": "compute",
+   "provider": "cloudstack",
+   "description": "No sensitive data stored in user_data",
+   "impact": "Sensitive credentials in the user data can be leaked",
+   "resolution": "Don't use sensitive data in the user data section",
+   "doc_url": "https://tfsec.dev/docs/cloudstack/compute/no-sensitive-info/"
+  },
+  {
+   "code": "digitalocean-compute-no-public-egress",
+   "legacy_code": "DIG002",
+   "service": "compute",
+   "provider": "digitalocean",
+   "description": "The firewall has an outbound rule with open access",
+   "impact": "The port is exposed for ingress from the internet",
+   "resolution": "Set a more restrictive cidr range",
+   "doc_url": "https://tfsec.dev/docs/digitalocean/compute/no-public-egress/"
+  },
+  {
+   "code": "digitalocean-compute-no-public-ingress",
+   "legacy_code": "DIG001",
+   "service": "compute",
+   "provider": "digitalocean",
+   "description": "The firewall has an inbound rule with open access",
+   "impact": "Your port is exposed to the internet",
+   "resolution": "Set a more restrictive CIRDR range",
+   "doc_url": "https://tfsec.dev/docs/digitalocean/compute/no-public-ingress/"
+  },
+  {
+   "code": "digitalocean-droplet-use-ssh-keys",
+   "legacy_code": "DIG003",
+   "service": "droplet",
+   "provider": "digitalocean",
+   "description": "SSH Keys are the preferred way to connect to your droplet, no keys are supplied",
+   "impact": "Logging in with username and password is easier to compromise",
+   "resolution": "Use ssh keys for login",
+   "doc_url": "https://tfsec.dev/docs/digitalocean/droplet/use-ssh-keys/"
+  },
+  {
+   "code": "digitalocean-loadbalancing-enforce-https",
+   "legacy_code": "DIG004",
+   "service": "loadbalancing",
+   "provider": "digitalocean",
+   "description": "The load balancer forwarding rule is using an insecure protocol as an entrypoint",
+   "impact": "Your inbound traffic is not protected",
+   "resolution": "Switch to HTTPS to benefit from TLS security features",
+   "doc_url": "https://tfsec.dev/docs/digitalocean/loadbalancing/enforce-https/"
+  },
+  {
+   "code": "digitalocean-spaces-acl-no-public-read",
+   "legacy_code": "DIG005",
+   "service": "spaces",
+   "provider": "digitalocean",
+   "description": "Spaces bucket or bucket object has public read acl set",
+   "impact": "The contents of the space can be accessed publicly",
+   "resolution": "Apply a more restrictive ACL",
+   "doc_url": "https://tfsec.dev/docs/digitalocean/spaces/acl-no-public-read/"
+  },
+  {
+   "code": "digitalocean-spaces-disable-force-destroy",
+   "legacy_code": "DIG007",
+   "service": "spaces",
+   "provider": "digitalocean",
+   "description": "Force destroy is enabled on Spaces bucket which is dangerous",
+   "impact": "Accidental deletion of bucket objects",
+   "resolution": "Don't use force destroy on bucket configuration",
+   "doc_url": "https://tfsec.dev/docs/digitalocean/spaces/disable-force-destroy/"
+  },
+  {
+   "code": "digitalocean-spaces-versioning-enabled",
+   "legacy_code": "DIG006",
+   "service": "spaces",
+   "provider": "digitalocean",
+   "description": "Spaces buckets should have versioning enabled",
+   "impact": "Deleted or modified data would not be recoverable",
+   "resolution": "Enable versioning to protect against accidental or malicious removal or modification",
+   "doc_url": "https://tfsec.dev/docs/digitalocean/spaces/versioning-enabled/"
+  },
+  {
+   "code": "general-secrets-sensitive-in-attribute",
+   "legacy_code": "GEN003",
+   "service": "secrets",
+   "provider": "general",
+   "description": "Potentially sensitive data stored in block attribute.",
+   "impact": "Block attribute could be leaking secrets",
+   "resolution": "Don't include sensitive data in blocks",
+   "doc_url": "https://tfsec.dev/docs/general/secrets/sensitive-in-attribute/"
+  },
+  {
+   "code": "general-secrets-sensitive-in-attribute-value",
+   "legacy_code": "GEN005",
+   "service": "secrets",
+   "provider": "general",
+   "description": "The attribute has potentially sensitive data, passwords, tokens or keys in it",
+   "impact": "Sensitive credentials may be compromised",
+   "resolution": "Check the code for vulnerabilities and move to variables",
+   "doc_url": "https://tfsec.dev/docs/general/secrets/sensitive-in-attribute-value/"
+  },
+  {
+   "code": "general-secrets-sensitive-in-local",
+   "legacy_code": "GEN002",
+   "service": "secrets",
+   "provider": "general",
+   "description": "Potentially sensitive data stored in local value.",
+   "impact": "Local value could be leaking secrets",
+   "resolution": "Don't include sensitive data in locals",
+   "doc_url": "https://tfsec.dev/docs/general/secrets/sensitive-in-local/"
+  },
+  {
+   "code": "general-secrets-sensitive-in-variable",
+   "legacy_code": "GEN001",
+   "service": "secrets",
+   "provider": "general",
+   "description": "Potentially sensitive data stored in \"default\" value of variable.",
+   "impact": "Default values could be exposing sensitive data",
+   "resolution": "Don't include sensitive data in variable defaults",
+   "doc_url": "https://tfsec.dev/docs/general/secrets/sensitive-in-variable/"
+  },
+  {
+   "code": "github-repositories-private",
+   "legacy_code": "GIT001",
+   "service": "repositories",
+   "provider": "github",
+   "description": "Github repository shouldn't be public.",
+   "impact": "Anyone can read the contents of the GitHub repository and leak IP",
+   "resolution": "Make sensitive or commercially important repositories private",
+   "doc_url": "https://tfsec.dev/docs/github/repositories/private/"
+  },
+  {
+   "code": "kubernetes-network-no-public-egress",
+   "legacy_code": "",
+   "service": "network",
+   "provider": "kubernetes",
+   "description": "Public egress should not be allowed via network policies",
+   "impact": "Exfiltration of data to the public internet",
+   "resolution": "Remove public access except where explicitly required",
+   "doc_url": "https://tfsec.dev/docs/kubernetes/network/no-public-egress/"
+  },
+  {
+   "code": "kubernetes-network-no-public-ingress",
+   "legacy_code": "",
+   "service": "network",
+   "provider": "kubernetes",
+   "description": "Public ingress should not be allowed via network policies",
+   "impact": "Exposure of infrastructure to the public internet",
+   "resolution": "Remove public access except where explicitly required",
+   "doc_url": "https://tfsec.dev/docs/kubernetes/network/no-public-ingress/"
+  },
+  {
+   "code": "openstack-compute-no-plaintext-password",
+   "legacy_code": "",
+   "service": "compute",
+   "provider": "openstack",
+   "description": "No plaintext password for compute instance",
+   "impact": "Including a plaintext password could lead to compromised instance",
+   "resolution": "Do not use plaintext passwords in terraform files",
+   "doc_url": "https://tfsec.dev/docs/openstack/compute/no-plaintext-password/"
+  },
+  {
+   "code": "openstack-fw-no-public-access",
+   "legacy_code": "",
+   "service": "fw",
+   "provider": "openstack",
+   "description": "A firewall rule allows traffic from/to the public internet",
+   "impact": "Exposure of infrastructure to the public internet",
+   "resolution": "Employ more restrictive firewall rules",
+   "doc_url": "https://tfsec.dev/docs/openstack/fw/no-public-access/"
   }
  ]
 }
