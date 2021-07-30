@@ -2,7 +2,8 @@
 - title: Getting Started
   state: open
   docs:
-    - installation
+  	- installation
+	- usage
 
 - title: Provider Checks
   providers:
