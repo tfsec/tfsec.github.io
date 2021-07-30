@@ -20,6 +20,16 @@
   icon: digitalocean
   doc: digitalocean/home  
 
+- title: OpenStack
+  desc: Browse checks for the OpenStack provider
+  icon: openstack
+  doc: openstack/home  
+
+- title: CloudStack
+  desc: Browse checks for the Cloud Stack provider
+  icon: cloudstack
+  doc: cloudstack/home  
+
 # - title: Oracle
 #   desc: Browse checks for the Oracle Cloud provider
 #   icon: oci

@@ -10,7 +10,7 @@ hero:
 ---
 
 
-{% include boxes.html columns="4" title="Browse Checks" subtitle="Chose an option that you need help with or search above" %}
+{% include boxes.html columns="3" title="Browse Checks" subtitle="Chose an option that you need help with or search above" %}
 
 {% include faqs.html multiple="true" title="Frequently asked questions" category="faq" subtitle="Answers to the questions most commonly asked" %}
 

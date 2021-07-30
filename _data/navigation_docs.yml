@@ -309,7 +309,7 @@
       service: azure/synapse
       docs:
       - azure/synapse/virtual-network-enabled
-  - title: Cloudstack
+  - title: CloudStack
     provider: cloudstack/
     services:
     - title: compute
