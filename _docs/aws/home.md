@@ -34,6 +34,7 @@ The included AWS checks are listed below. For more information about each check,
 |[aws-ec2-no-secrets-in-user-data](/docs/aws/ec2/no-secrets-in-user-data)<br>User data for EC2 instances must not contain sensitive AWS keys|
 |[aws-ecr-enable-image-scans](/docs/aws/ecr/enable-image-scans)<br>ECR repository has image scans disabled.|
 |[aws-ecr-enforce-immutable-repository](/docs/aws/ecr/enforce-immutable-repository)<br>ECR images tags shouldn't be mutable.|
+|[aws-ecr-no-public-access](/docs/aws/ecr/no-public-access)<br>ECR repository policy must block public access|
 |[aws-ecr-repository-customer-key](/docs/aws/ecr/repository-customer-key)<br>ECR Repository should use customer managed keys to allow more control|
 |[aws-ecs-enable-container-insight](/docs/aws/ecs/enable-container-insight)<br>ECS clusters should have container insights enabled|
 |[aws-ecs-enable-in-transit-encryption](/docs/aws/ecs/enable-in-transit-encryption)<br>ECS Task Definitions with EFS volumes should use in-transit encryption|
@@ -71,6 +72,7 @@ The included AWS checks are listed below. For more information about each check,
 |[aws-lambda-restrict-source-arn](/docs/aws/lambda/restrict-source-arn)<br>Ensure that lambda function permission has a source arn specified|
 |[aws-misc-no-exposing-plaintext-credentials](/docs/aws/misc/no-exposing-plaintext-credentials)<br>AWS provider has access credentials specified.|
 |[aws-msk-enable-in-transit-encryption](/docs/aws/msk/enable-in-transit-encryption)<br>A MSK cluster allows unencrypted data in transit.|
+|[aws-msk-enable-logging](/docs/aws/msk/enable-logging)<br>Ensure MSK Cluster logging is enabled|
 |[aws-rds-backup-retention-specified](/docs/aws/rds/backup-retention-specified)<br>RDS Cluster and RDS instance should have backup retention longer than default 1 day|
 |[aws-rds-enable-performance-insights](/docs/aws/rds/enable-performance-insights)<br>Encryption for RDS Performance Insights should be enabled.|
 |[aws-rds-encrypt-cluster-storage-data](/docs/aws/rds/encrypt-cluster-storage-data)<br>There is no encryption specified or encryption is disabled on the RDS Cluster.|

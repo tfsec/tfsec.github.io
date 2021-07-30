@@ -1,6 +1,116 @@
 {
  "checks": [
   {
+   "code": "digitalocean-compute-no-public-egress",
+   "legacy_code": "DIG002",
+   "service": "compute",
+   "provider": "digitalocean",
+   "description": "The firewall has an outbound rule with open access",
+   "impact": "The port is exposed for ingress from the internet",
+   "resolution": "Set a more restrictive cidr range",
+   "doc_url": "https://tfsec.dev/docs/digitalocean/compute/no-public-egress/"
+  },
+  {
+   "code": "digitalocean-compute-no-public-ingress",
+   "legacy_code": "DIG001",
+   "service": "compute",
+   "provider": "digitalocean",
+   "description": "The firewall has an inbound rule with open access",
+   "impact": "Your port is exposed to the internet",
+   "resolution": "Set a more restrictive CIRDR range",
+   "doc_url": "https://tfsec.dev/docs/digitalocean/compute/no-public-ingress/"
+  },
+  {
+   "code": "digitalocean-droplet-use-ssh-keys",
+   "legacy_code": "DIG003",
+   "service": "droplet",
+   "provider": "digitalocean",
+   "description": "SSH Keys are the preferred way to connect to your droplet, no keys are supplied",
+   "impact": "Logging in with username and password is easier to compromise",
+   "resolution": "Use ssh keys for login",
+   "doc_url": "https://tfsec.dev/docs/digitalocean/droplet/use-ssh-keys/"
+  },
+  {
+   "code": "digitalocean-loadbalancing-enforce-https",
+   "legacy_code": "DIG004",
+   "service": "loadbalancing",
+   "provider": "digitalocean",
+   "description": "The load balancer forwarding rule is using an insecure protocol as an entrypoint",
+   "impact": "Your inbound traffic is not protected",
+   "resolution": "Switch to HTTPS to benefit from TLS security features",
+   "doc_url": "https://tfsec.dev/docs/digitalocean/loadbalancing/enforce-https/"
+  },
+  {
+   "code": "digitalocean-spaces-acl-no-public-read",
+   "legacy_code": "DIG005",
+   "service": "spaces",
+   "provider": "digitalocean",
+   "description": "Spaces bucket or bucket object has public read acl set",
+   "impact": "The contents of the space can be accessed publicly",
+   "resolution": "Apply a more restrictive ACL",
+   "doc_url": "https://tfsec.dev/docs/digitalocean/spaces/acl-no-public-read/"
+  },
+  {
+   "code": "digitalocean-spaces-disable-force-destroy",
+   "legacy_code": "DIG007",
+   "service": "spaces",
+   "provider": "digitalocean",
+   "description": "Force destroy is enabled on Spaces bucket which is dangerous",
+   "impact": "Accidental deletion of bucket objects",
+   "resolution": "Don't use force destroy on bucket configuration",
+   "doc_url": "https://tfsec.dev/docs/digitalocean/spaces/disable-force-destroy/"
+  },
+  {
+   "code": "digitalocean-spaces-versioning-enabled",
+   "legacy_code": "DIG006",
+   "service": "spaces",
+   "provider": "digitalocean",
+   "description": "Spaces buckets should have versioning enabled",
+   "impact": "Deleted or modified data would not be recoverable",
+   "resolution": "Enable versioning to protect against accidental or malicious removal or modification",
+   "doc_url": "https://tfsec.dev/docs/digitalocean/spaces/versioning-enabled/"
+  },
+  {
+   "code": "general-secrets-sensitive-in-attribute",
+   "legacy_code": "GEN003",
+   "service": "secrets",
+   "provider": "general",
+   "description": "Potentially sensitive data stored in block attribute.",
+   "impact": "Block attribute could be leaking secrets",
+   "resolution": "Don't include sensitive data in blocks",
+   "doc_url": "https://tfsec.dev/docs/general/secrets/sensitive-in-attribute/"
+  },
+  {
+   "code": "general-secrets-sensitive-in-attribute-value",
+   "legacy_code": "GEN005",
+   "service": "secrets",
+   "provider": "general",
+   "description": "The attribute has potentially sensitive data, passwords, tokens or keys in it",
+   "impact": "Sensitive credentials may be compromised",
+   "resolution": "Check the code for vulnerabilities and move to variables",
+   "doc_url": "https://tfsec.dev/docs/general/secrets/sensitive-in-attribute-value/"
+  },
+  {
+   "code": "general-secrets-sensitive-in-local",
+   "legacy_code": "GEN002",
+   "service": "secrets",
+   "provider": "general",
+   "description": "Potentially sensitive data stored in local value.",
+   "impact": "Local value could be leaking secrets",
+   "resolution": "Don't include sensitive data in locals",
+   "doc_url": "https://tfsec.dev/docs/general/secrets/sensitive-in-local/"
+  },
+  {
+   "code": "general-secrets-sensitive-in-variable",
+   "legacy_code": "GEN001",
+   "service": "secrets",
+   "provider": "general",
+   "description": "Potentially sensitive data stored in \"default\" value of variable.",
+   "impact": "Default values could be exposing sensitive data",
+   "resolution": "Don't include sensitive data in variable defaults",
+   "doc_url": "https://tfsec.dev/docs/general/secrets/sensitive-in-variable/"
+  },
+  {
    "code": "github-repositories-private",
    "legacy_code": "GIT001",
    "service": "repositories",
@@ -121,14 +231,44 @@
    "doc_url": "https://tfsec.dev/docs/google/gke/use-service-account/"
   },
   {
-   "code": "google-iam-no-default-service-account-assignment",
+   "code": "google-iam-no-folder-level-default-service-account-assignment",
    "legacy_code": "",
    "service": "iam",
    "provider": "google",
    "description": "Roles should not be assigned to default service accounts",
    "impact": "Violation of principal of least privilege",
    "resolution": "Use specialised service accounts for specific purposes.",
-   "doc_url": "https://tfsec.dev/docs/google/iam/no-default-service-account-assignment/"
+   "doc_url": "https://tfsec.dev/docs/google/iam/no-folder-level-default-service-account-assignment/"
+  },
+  {
+   "code": "google-iam-no-folder-level-service-account-impersonation",
+   "legacy_code": "",
+   "service": "iam",
+   "provider": "google",
+   "description": "Users should not be granted service account access at the folder level",
+   "impact": "Privilege escalation, impersonation of any/all services",
+   "resolution": "Provide access at the service-level instead of folder-level, if required",
+   "doc_url": "https://tfsec.dev/docs/google/iam/no-folder-level-service-account-impersonation/"
+  },
+  {
+   "code": "google-iam-no-org-level-default-service-account-assignment",
+   "legacy_code": "",
+   "service": "iam",
+   "provider": "google",
+   "description": "Roles should not be assigned to default service accounts",
+   "impact": "Violation of principal of least privilege",
+   "resolution": "Use specialised service accounts for specific purposes.",
+   "doc_url": "https://tfsec.dev/docs/google/iam/no-org-level-default-service-account-assignment/"
+  },
+  {
+   "code": "google-iam-no-org-level-service-account-impersonation",
+   "legacy_code": "",
+   "service": "iam",
+   "provider": "google",
+   "description": "Users should not be granted service account access at the organization level",
+   "impact": "Privilege escalation, impersonation of any/all services",
+   "resolution": "Provide access at the service-level instead of organization-level, if required",
+   "doc_url": "https://tfsec.dev/docs/google/iam/no-org-level-service-account-impersonation/"
   },
   {
    "code": "google-iam-no-privileged-service-accounts",
@@ -139,6 +279,16 @@
    "impact": "Cloud account takeover if a resource using a service account is compromised",
    "resolution": "Limit service account access to minimal required set",
    "doc_url": "https://tfsec.dev/docs/google/iam/no-privileged-service-accounts/"
+  },
+  {
+   "code": "google-iam-no-project-level-default-service-account-assignment",
+   "legacy_code": "",
+   "service": "iam",
+   "provider": "google",
+   "description": "Roles should not be assigned to default service accounts",
+   "impact": "Violation of principal of least privilege",
+   "resolution": "Use specialised service accounts for specific purposes.",
+   "doc_url": "https://tfsec.dev/docs/google/iam/no-project-level-default-service-account-assignment/"
   },
   {
    "code": "google-iam-no-project-level-service-account-impersonation",
@@ -459,6 +609,16 @@
    "impact": "Image tags could be overwritten with compromised images",
    "resolution": "Only use immutable images in ECR",
    "doc_url": "https://tfsec.dev/docs/aws/ecr/enforce-immutable-repository/"
+  },
+  {
+   "code": "aws-ecr-no-public-access",
+   "legacy_code": "",
+   "service": "ecr",
+   "provider": "aws",
+   "description": "ECR repository policy must block public access",
+   "impact": "Risk of potential data leakage of sensitive artifacts",
+   "resolution": "Do not allow public access in the policy",
+   "doc_url": "https://tfsec.dev/docs/aws/ecr/no-public-access/"
   },
   {
    "code": "aws-ecr-repository-customer-key",
@@ -829,6 +989,16 @@
    "impact": "Intercepted data can be read in transit",
    "resolution": "Enable in transit encryption",
    "doc_url": "https://tfsec.dev/docs/aws/msk/enable-in-transit-encryption/"
+  },
+  {
+   "code": "aws-msk-enable-logging",
+   "legacy_code": "",
+   "service": "msk",
+   "provider": "aws",
+   "description": "Ensure MSK Cluster logging is enabled",
+   "impact": "Without logging it is difficult to trace issues",
+   "resolution": "Enable logging",
+   "doc_url": "https://tfsec.dev/docs/aws/msk/enable-logging/"
   },
   {
    "code": "aws-rds-backup-retention-specified",
@@ -1539,116 +1709,6 @@
    "impact": "Your Synapse workspace is not using the private endpoints",
    "resolution": "Set manage virtual network to enabled",
    "doc_url": "https://tfsec.dev/docs/azure/synapse/virtual-network-enabled/"
-  },
-  {
-   "code": "digitalocean-compute-no-public-egress",
-   "legacy_code": "DIG002",
-   "service": "compute",
-   "provider": "digitalocean",
-   "description": "The firewall has an outbound rule with open access",
-   "impact": "The port is exposed for ingress from the internet",
-   "resolution": "Set a more restrictive cidr range",
-   "doc_url": "https://tfsec.dev/docs/digitalocean/compute/no-public-egress/"
-  },
-  {
-   "code": "digitalocean-compute-no-public-ingress",
-   "legacy_code": "DIG001",
-   "service": "compute",
-   "provider": "digitalocean",
-   "description": "The firewall has an inbound rule with open access",
-   "impact": "Your port is exposed to the internet",
-   "resolution": "Set a more restrictive CIRDR range",
-   "doc_url": "https://tfsec.dev/docs/digitalocean/compute/no-public-ingress/"
-  },
-  {
-   "code": "digitalocean-droplet-use-ssh-keys",
-   "legacy_code": "DIG003",
-   "service": "droplet",
-   "provider": "digitalocean",
-   "description": "SSH Keys are the preferred way to connect to your droplet, no keys are supplied",
-   "impact": "Logging in with username and password is easier to compromise",
-   "resolution": "Use ssh keys for login",
-   "doc_url": "https://tfsec.dev/docs/digitalocean/droplet/use-ssh-keys/"
-  },
-  {
-   "code": "digitalocean-loadbalancing-enforce-https",
-   "legacy_code": "DIG004",
-   "service": "loadbalancing",
-   "provider": "digitalocean",
-   "description": "The load balancer forwarding rule is using an insecure protocol as an entrypoint",
-   "impact": "Your inbound traffic is not protected",
-   "resolution": "Switch to HTTPS to benefit from TLS security features",
-   "doc_url": "https://tfsec.dev/docs/digitalocean/loadbalancing/enforce-https/"
-  },
-  {
-   "code": "digitalocean-spaces-acl-no-public-read",
-   "legacy_code": "DIG005",
-   "service": "spaces",
-   "provider": "digitalocean",
-   "description": "Spaces bucket or bucket object has public read acl set",
-   "impact": "The contents of the space can be accessed publicly",
-   "resolution": "Apply a more restrictive ACL",
-   "doc_url": "https://tfsec.dev/docs/digitalocean/spaces/acl-no-public-read/"
-  },
-  {
-   "code": "digitalocean-spaces-disable-force-destroy",
-   "legacy_code": "DIG007",
-   "service": "spaces",
-   "provider": "digitalocean",
-   "description": "Force destroy is enabled on Spaces bucket which is dangerous",
-   "impact": "Accidental deletion of bucket objects",
-   "resolution": "Don't use force destroy on bucket configuration",
-   "doc_url": "https://tfsec.dev/docs/digitalocean/spaces/disable-force-destroy/"
-  },
-  {
-   "code": "digitalocean-spaces-versioning-enabled",
-   "legacy_code": "DIG006",
-   "service": "spaces",
-   "provider": "digitalocean",
-   "description": "Spaces buckets should have versioning enabled",
-   "impact": "Deleted or modified data would not be recoverable",
-   "resolution": "Enable versioning to protect against accidental or malicious removal or modification",
-   "doc_url": "https://tfsec.dev/docs/digitalocean/spaces/versioning-enabled/"
-  },
-  {
-   "code": "general-secrets-sensitive-in-attribute",
-   "legacy_code": "GEN003",
-   "service": "secrets",
-   "provider": "general",
-   "description": "Potentially sensitive data stored in block attribute.",
-   "impact": "Block attribute could be leaking secrets",
-   "resolution": "Don't include sensitive data in blocks",
-   "doc_url": "https://tfsec.dev/docs/general/secrets/sensitive-in-attribute/"
-  },
-  {
-   "code": "general-secrets-sensitive-in-attribute-value",
-   "legacy_code": "GEN005",
-   "service": "secrets",
-   "provider": "general",
-   "description": "The attribute has potentially sensitive data, passwords, tokens or keys in it",
-   "impact": "Sensitive credentials may be compromised",
-   "resolution": "Check the code for vulnerabilities and move to variables",
-   "doc_url": "https://tfsec.dev/docs/general/secrets/sensitive-in-attribute-value/"
-  },
-  {
-   "code": "general-secrets-sensitive-in-local",
-   "legacy_code": "GEN002",
-   "service": "secrets",
-   "provider": "general",
-   "description": "Potentially sensitive data stored in local value.",
-   "impact": "Local value could be leaking secrets",
-   "resolution": "Don't include sensitive data in locals",
-   "doc_url": "https://tfsec.dev/docs/general/secrets/sensitive-in-local/"
-  },
-  {
-   "code": "general-secrets-sensitive-in-variable",
-   "legacy_code": "GEN001",
-   "service": "secrets",
-   "provider": "general",
-   "description": "Potentially sensitive data stored in \"default\" value of variable.",
-   "impact": "Default values could be exposing sensitive data",
-   "resolution": "Don't include sensitive data in variable defaults",
-   "doc_url": "https://tfsec.dev/docs/general/secrets/sensitive-in-variable/"
   }
  ]
 }

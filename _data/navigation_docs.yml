@@ -68,6 +68,7 @@
       docs:
       - aws/ecr/enable-image-scans
       - aws/ecr/enforce-immutable-repository
+      - aws/ecr/no-public-access
       - aws/ecr/repository-customer-key
     - title: ecs
       service: aws/ecs
@@ -147,6 +148,7 @@
       service: aws/msk
       docs:
       - aws/msk/enable-in-transit-encryption
+      - aws/msk/enable-logging
     - title: rds
       service: aws/rds
       docs:
@@ -343,8 +345,12 @@
     - title: iam
       service: google/iam
       docs:
-      - google/iam/no-default-service-account-assignment
+      - google/iam/no-folder-level-default-service-account-assignment
+      - google/iam/no-folder-level-service-account-impersonation
+      - google/iam/no-org-level-default-service-account-assignment
+      - google/iam/no-org-level-service-account-impersonation
       - google/iam/no-privileged-service-accounts
+      - google/iam/no-project-level-default-service-account-assignment
       - google/iam/no-project-level-service-account-impersonation
       - google/iam/no-user-granted-permissions
     - title: storage
