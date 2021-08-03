@@ -16,7 +16,7 @@ Blocks devices should be encrypted to ensure sensitive data is held securely at 
 
 
 ### Possible Impact
-The block device is could be compromised and read from
+The block device could be compromised and read from
 
 ### Suggested Resolution
 Turn on encryption for all block devices
