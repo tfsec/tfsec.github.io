@@ -358,13 +358,26 @@
   - title: Google
     provider: google/
     services:
+    - title: bigquery
+      service: google/bigquery
+      docs:
+      - google/bigquery/no-public-access
     - title: compute
       service: google/compute
       docs:
+      - google/compute/disk-encryption-customer-key
       - google/compute/disk-encryption-customer-keys
       - google/compute/disk-encryption-required
+      - google/compute/enable-vpc-flow-logs
+      - google/compute/no-plaintext-disk-keys
+      - google/compute/no-plaintext-vm-disk-keys
+      - google/compute/no-project-wide-ssh-keys
       - google/compute/no-public-egress
       - google/compute/no-public-ingress
+      - google/compute/no-serial-port
+      - google/compute/project-level-oslogin
+      - google/compute/use-secure-tls-policy
+      - google/compute/vm-disk-encryption-customer-key
     - title: gke
       service: google/gke
       docs:
@@ -386,6 +399,10 @@
       - google/iam/no-project-level-default-service-account-assignment
       - google/iam/no-project-level-service-account-impersonation
       - google/iam/no-user-granted-permissions
+    - title: project
+      service: google/project
+      docs:
+      - google/project/no-default-network
     - title: sql
       service: google/sql
       docs:

@@ -9,10 +9,20 @@ The included Google checks are listed below. For more information about each che
 
 | Checks |
 |:------------|
+|[google-bigquery-no-public-access](/docs/google/bigquery/no-public-access)<br>BigQuery datasets should only be accessible within the organisation|
+|[google-compute-disk-encryption-customer-key](/docs/google/compute/disk-encryption-customer-key)<br>Disks should be encrypted with Customer Supplied Encryption Keys|
 |[google-compute-disk-encryption-customer-keys](/docs/google/compute/disk-encryption-customer-keys)<br>Encrypted compute disk with unmanaged keys.|
 |[google-compute-disk-encryption-required](/docs/google/compute/disk-encryption-required)<br>The encryption key used to encrypt a compute disk has been specified in plaintext.|
+|[google-compute-enable-vpc-flow-logs](/docs/google/compute/enable-vpc-flow-logs)<br>VPC flow logs should be enabled for all subnets|
+|[google-compute-no-plaintext-disk-keys](/docs/google/compute/no-plaintext-disk-keys)<br>Disk encryption keys should not be provided in plaintext|
+|[google-compute-no-plaintext-vm-disk-keys](/docs/google/compute/no-plaintext-vm-disk-keys)<br>VM disk encryption keys should not be provided in plaintext|
+|[google-compute-no-project-wide-ssh-keys](/docs/google/compute/no-project-wide-ssh-keys)<br>Disable project-wide SSH keys for all instances|
 |[google-compute-no-public-egress](/docs/google/compute/no-public-egress)<br>An outbound firewall rule allows traffic to /0.|
 |[google-compute-no-public-ingress](/docs/google/compute/no-public-ingress)<br>An inbound firewall rule allows traffic from /0.|
+|[google-compute-no-serial-port](/docs/google/compute/no-serial-port)<br>Disable serial port connectivity for all instances|
+|[google-compute-project-level-oslogin](/docs/google/compute/project-level-oslogin)<br>OS Login should be enabled at project level|
+|[google-compute-use-secure-tls-policy](/docs/google/compute/use-secure-tls-policy)<br>SSL policies should enforce secure versions of TLS|
+|[google-compute-vm-disk-encryption-customer-key](/docs/google/compute/vm-disk-encryption-customer-key)<br>VM disks should be encrypted with Customer Supplied Encryption Keys|
 |[google-gke-enforce-pod-security-policy](/docs/google/gke/enforce-pod-security-policy)<br>Pod security policy enforcement not defined.|
 |[google-gke-metadata-endpoints-disabled](/docs/google/gke/metadata-endpoints-disabled)<br>Legacy metadata endpoints enabled.|
 |[google-gke-no-legacy-authentication](/docs/google/gke/no-legacy-authentication)<br>Legacy client authentication methods utilized.|
@@ -28,6 +38,7 @@ The included Google checks are listed below. For more information about each che
 |[google-iam-no-project-level-default-service-account-assignment](/docs/google/iam/no-project-level-default-service-account-assignment)<br>Roles should not be assigned to default service accounts|
 |[google-iam-no-project-level-service-account-impersonation](/docs/google/iam/no-project-level-service-account-impersonation)<br>Users should not be granted service account access at the project level|
 |[google-iam-no-user-granted-permissions](/docs/google/iam/no-user-granted-permissions)<br>IAM granted directly to user.|
+|[google-project-no-default-network](/docs/google/project/no-default-network)<br>Default network should not be created at project level|
 |[google-sql-enable-backup](/docs/google/sql/enable-backup)<br>Enable automated backups to recover from data-loss|
 |[google-sql-enable-pg-temp-file-logging](/docs/google/sql/enable-pg-temp-file-logging)<br>Temporary file logging should be enabled for all temporary files.|
 |[google-sql-encrypt-in-transit-data](/docs/google/sql/encrypt-in-transit-data)<br>SSL connections to a SQL database instance should be enforced.|
