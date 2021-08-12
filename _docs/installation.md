@@ -3,6 +3,8 @@ title: Installation
 subtitle: Installing tfsec on your local machine
 author: tfsec
 tags: [installation, quickstart]
+redirect_from: 
+  - /docs/home/
 ---
 
 Install with brew/linuxbrew:

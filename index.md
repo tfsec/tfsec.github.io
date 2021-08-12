@@ -2,7 +2,6 @@
 layout: page
 width: expand
 hero:
-    title: tfsec
     subtitle: A static analysis security scanner for your Terraform code
     image: logo.png
     search: true
