@@ -3,7 +3,7 @@ title: DocumentDB storage must be encrypted
 shortcode: aws-documentdb-enable-storage-encryption
 legacy: 
 summary: DocumentDB storage must be encrypted 
-resources: [aws_docdb_cluster aws_docdb_cluster_instance] 
+resources: [aws_docdb_cluster] 
 permalink: /docs/aws/documentdb/enable-storage-encryption/
 redirect_from: 
   - /docs/aws//
