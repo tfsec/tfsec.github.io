@@ -40,12 +40,12 @@ The included Google checks are listed below. For more information about each che
 |[google-gke-enable-stackdriver-monitoring](/docs/google/gke/enable-stackdriver-monitoring)<br>Stackdriver Monitoring should be enabled|
 |[google-gke-enforce-pod-security-policy](/docs/google/gke/enforce-pod-security-policy)<br>Pod security policy enforcement not defined.|
 |[google-gke-metadata-endpoints-disabled](/docs/google/gke/metadata-endpoints-disabled)<br>Legacy metadata endpoints enabled.|
+|[google-gke-no-legacy-auth](/docs/google/gke/no-legacy-auth)<br>Clusters should use client certificates for authentication|
 |[google-gke-no-legacy-authentication](/docs/google/gke/no-legacy-authentication)<br>Legacy client authentication methods utilized.|
 |[google-gke-no-public-control-plane](/docs/google/gke/no-public-control-plane)<br>GKE Control Plane should not be publicly accessible|
 |[google-gke-node-metadata-security](/docs/google/gke/node-metadata-security)<br>Node metadata value disables metadata concealment.|
 |[google-gke-node-pool-uses-cos](/docs/google/gke/node-pool-uses-cos)<br>Ensure Container-Optimized OS (cos) is used for Kubernetes Engine Clusters Node image|
 |[google-gke-node-shielding-enabled](/docs/google/gke/node-shielding-enabled)<br>Shielded GKE nodes not enabled.|
-|[google-gke-use-client-cert-auth](/docs/google/gke/use-client-cert-auth)<br>Clusters should use client certificates for authentication|
 |[google-gke-use-cluster-labels](/docs/google/gke/use-cluster-labels)<br>Clusters should be configured with Labels|
 |[google-gke-use-rbac-permissions](/docs/google/gke/use-rbac-permissions)<br>Legacy ABAC permissions are enabled.|
 |[google-gke-use-service-account](/docs/google/gke/use-service-account)<br>Checks for service account defined for GKE nodes|
