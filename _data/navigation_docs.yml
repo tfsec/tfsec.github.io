@@ -16,6 +16,7 @@
       - aws/api-gateway/enable-access-logging
       - aws/api-gateway/enable-cache-encryption
       - aws/api-gateway/enable-tracing
+      - aws/api-gateway/no-public-access
       - aws/api-gateway/use-secure-tls-policy
     - title: athena
       service: aws/athena
@@ -187,6 +188,7 @@
     - title: redshift
       service: aws/redshift
       docs:
+      - aws/redshift/add-description-to-security-group
       - aws/redshift/encryption-customer-key
       - aws/redshift/non-default-vpc-deployment
     - title: s3
@@ -217,7 +219,8 @@
     - title: vpc
       service: aws/vpc
       docs:
-      - aws/vpc/add-decription-to-security-group
+      - aws/vpc/add-description-to-security-group
+      - aws/vpc/disallow-mixed-sgr
       - aws/vpc/no-default-vpc
       - aws/vpc/no-excessive-port-access
       - aws/vpc/no-public-egress-sg
@@ -236,7 +239,16 @@
     - title: appservice
       service: azure/appservice
       docs:
+      - azure/appservice/account-identity-registered
+      - azure/appservice/authentication-enabled
+      - azure/appservice/enable-http2
       - azure/appservice/enforce-https
+      - azure/appservice/require-client-cert
+      - azure/appservice/use-secure-tls-policy
+    - title: authorization
+      service: azure/authorization
+      docs:
+      - azure/authorization/limit-role-actions
     - title: compute
       service: azure/compute
       docs:
@@ -258,6 +270,9 @@
       - azure/database/enable-ssl-enforcement
       - azure/database/no-public-access
       - azure/database/no-public-firewall-access
+      - azure/database/postgres-configuration-log-checkpoints
+      - azure/database/postgres-configuration-log-connection-throttling
+      - azure/database/postgres-configuration-log-connections
       - azure/database/retention-period-set
       - azure/database/secure-tls-policy
     - title: datafactory
@@ -282,6 +297,12 @@
       - azure/monitor/activity-log-retention-set
       - azure/monitor/capture-all-activities
       - azure/monitor/capture-all-regions
+    - title: mssql
+      service: azure/mssql
+      docs:
+      - azure/mssql/all-threat-alerts-enabled
+      - azure/mssql/threat-alert-email-set
+      - azure/mssql/threat-alert-email-to-owner
     - title: network
       service: azure/network
       docs:

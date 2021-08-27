@@ -9,7 +9,13 @@ The included Azure checks are listed below. For more information about each chec
 
 | Checks |
 |:------------|
+|[azure-appservice-account-identity-registered](/docs/azure/appservice/account-identity-registered)<br>Web App has registration with AD enabled|
+|[azure-appservice-authentication-enabled](/docs/azure/appservice/authentication-enabled)<br>App Service authentication is activated|
+|[azure-appservice-enable-http2](/docs/azure/appservice/enable-http2)<br>Web App uses the latest HTTP version|
 |[azure-appservice-enforce-https](/docs/azure/appservice/enforce-https)<br>Ensure the Function App can only be accessed via HTTPS. The default is false.|
+|[azure-appservice-require-client-cert](/docs/azure/appservice/require-client-cert)<br>Web App accepts incoming client certificate|
+|[azure-appservice-use-secure-tls-policy](/docs/azure/appservice/use-secure-tls-policy)<br>Web App uses latest TLS version|
+|[azure-authorization-limit-role-actions](/docs/azure/authorization/limit-role-actions)<br>Roles limited to the required actions|
 |[azure-compute-disable-password-authentication](/docs/azure/compute/disable-password-authentication)<br>Password authentication should be disabled on Azure virtual machines|
 |[azure-compute-enable-disk-encryption](/docs/azure/compute/enable-disk-encryption)<br>Enable disk encryption on managed disk|
 |[azure-compute-no-secrets-in-custom-data](/docs/azure/compute/no-secrets-in-custom-data)<br>Ensure that no sensitive credentials are exposed in VM custom_data|
@@ -22,6 +28,9 @@ The included Azure checks are listed below. For more information about each chec
 |[azure-database-enable-ssl-enforcement](/docs/azure/database/enable-ssl-enforcement)<br>SSL should be enforced on database connections where applicable|
 |[azure-database-no-public-access](/docs/azure/database/no-public-access)<br>Ensure databases are not publicly accessible|
 |[azure-database-no-public-firewall-access](/docs/azure/database/no-public-firewall-access)<br>Ensure database firewalls do not permit public access|
+|[azure-database-postgres-configuration-log-checkpoints](/docs/azure/database/postgres-configuration-log-checkpoints)<br>Ensure server parameter 'log_checkpoints' is set to 'ON' for PostgreSQL Database Server|
+|[azure-database-postgres-configuration-log-connection-throttling](/docs/azure/database/postgres-configuration-log-connection-throttling)<br>Ensure server parameter 'connection_throttling' is set to 'ON' for PostgreSQL Database Server|
+|[azure-database-postgres-configuration-log-connections](/docs/azure/database/postgres-configuration-log-connections)<br>Ensure server parameter 'log_connections' is set to 'ON' for PostgreSQL Database Server|
 |[azure-database-retention-period-set](/docs/azure/database/retention-period-set)<br>Database auditing rentention period should be longer than 90 days|
 |[azure-database-secure-tls-policy](/docs/azure/database/secure-tls-policy)<br>Databases should have the minimum TLS set for connections|
 |[azure-datafactory-no-public-access](/docs/azure/datafactory/no-public-access)<br>Data Factory should have public access disabled, the default is enabled.|
@@ -34,6 +43,9 @@ The included Azure checks are listed below. For more information about each chec
 |[azure-monitor-activity-log-retention-set](/docs/azure/monitor/activity-log-retention-set)<br>Ensure the activity retention log is set to at least a year|
 |[azure-monitor-capture-all-activities](/docs/azure/monitor/capture-all-activities)<br>Ensure log profile captures all activities|
 |[azure-monitor-capture-all-regions](/docs/azure/monitor/capture-all-regions)<br>Ensure activitys are captured for all locations|
+|[azure-mssql-all-threat-alerts-enabled](/docs/azure/mssql/all-threat-alerts-enabled)<br>No threat detections are set|
+|[azure-mssql-threat-alert-email-set](/docs/azure/mssql/threat-alert-email-set)<br>At least one email address is set for threat alerts|
+|[azure-mssql-threat-alert-email-to-owner](/docs/azure/mssql/threat-alert-email-to-owner)<br>Security threat alerts go to subcription owners and co-administrators|
 |[azure-network-disable-rdp-from-internet](/docs/azure/network/disable-rdp-from-internet)<br>RDP access should not be accessible from the Internet, should be blocked on port 3389|
 |[azure-network-no-public-egress](/docs/azure/network/no-public-egress)<br>An outbound network security rule allows traffic to /0.|
 |[azure-network-no-public-ingress](/docs/azure/network/no-public-ingress)<br>An inbound network security rule allows traffic from /0.|

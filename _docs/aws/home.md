@@ -12,6 +12,7 @@ The included AWS checks are listed below. For more information about each check,
 |[aws-api-gateway-enable-access-logging](/docs/aws/api-gateway/enable-access-logging)<br>API Gateway stages for V1 and V2 should have access logging enabled|
 |[aws-api-gateway-enable-cache-encryption](/docs/aws/api-gateway/enable-cache-encryption)<br>API Gateway must have cache enabled|
 |[aws-api-gateway-enable-tracing](/docs/aws/api-gateway/enable-tracing)<br>API Gateway must have X-Ray tracing enabled|
+|[aws-api-gateway-no-public-access](/docs/aws/api-gateway/no-public-access)<br>No public access to API Gateway methods|
 |[aws-api-gateway-use-secure-tls-policy](/docs/aws/api-gateway/use-secure-tls-policy)<br>API Gateway domain name uses outdated SSL/TLS protocols.|
 |[aws-athena-enable-at-rest-encryption](/docs/aws/athena/enable-at-rest-encryption)<br>Athena databases and workgroup configurations are created unencrypted at rest by default, they should be encrypted|
 |[aws-athena-no-encryption-override](/docs/aws/athena/no-encryption-override)<br>Athena workgroups should enforce configuration to prevent client disabling encryption|
@@ -90,6 +91,7 @@ The included AWS checks are listed below. For more information about each check,
 |[aws-rds-encrypt-instance-storage-data](/docs/aws/rds/encrypt-instance-storage-data)<br>RDS encryption has not been enabled at a DB Instance level.|
 |[aws-rds-no-classic-resources](/docs/aws/rds/no-classic-resources)<br>AWS Classic resource usage.|
 |[aws-rds-no-public-db-access](/docs/aws/rds/no-public-db-access)<br>A database resource is marked as publicly accessible.|
+|[aws-redshift-add-description-to-security-group](/docs/aws/redshift/add-description-to-security-group)<br>Missing description for security group/security group rule.|
 |[aws-redshift-encryption-customer-key](/docs/aws/redshift/encryption-customer-key)<br>Redshift clusters should use at rest encryption|
 |[aws-redshift-non-default-vpc-deployment](/docs/aws/redshift/non-default-vpc-deployment)<br>Redshift cluster should be deployed into a specific VPC|
 |[aws-s3-block-public-acls](/docs/aws/s3/block-public-acls)<br>S3 Access block should block public ACL|
@@ -105,7 +107,8 @@ The included AWS checks are listed below. For more information about each check,
 |[aws-sqs-enable-queue-encryption](/docs/aws/sqs/enable-queue-encryption)<br>Unencrypted SQS queue.|
 |[aws-sqs-no-wildcards-in-policy-documents](/docs/aws/sqs/no-wildcards-in-policy-documents)<br>AWS SQS policy document has wildcard action statement.|
 |[aws-ssm-secret-use-customer-key](/docs/aws/ssm/secret-use-customer-key)<br>Secrets Manager should use customer managed keys|
-|[aws-vpc-add-decription-to-security-group](/docs/aws/vpc/add-decription-to-security-group)<br>Missing description for security group/security group rule.|
+|[aws-vpc-add-description-to-security-group](/docs/aws/vpc/add-description-to-security-group)<br>Missing description for security group/security group rule.|
+|[aws-vpc-disallow-mixed-sgr](/docs/aws/vpc/disallow-mixed-sgr)<br>Ensures that usage of security groups with inline rules and security group rule resources are not mixed.|
 |[aws-vpc-no-default-vpc](/docs/aws/vpc/no-default-vpc)<br>AWS best practice to not use the default VPC for workflows|
 |[aws-vpc-no-excessive-port-access](/docs/aws/vpc/no-excessive-port-access)<br>An ingress Network ACL rule allows ALL ports.|
 |[aws-vpc-no-public-egress-sg](/docs/aws/vpc/no-public-egress-sg)<br>An inline egress security group rule allows traffic to /0.|
