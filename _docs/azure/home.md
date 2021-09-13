@@ -11,8 +11,15 @@ The included Azure checks are listed below. For more information about each chec
 |:------------|
 |[azure-appservice-account-identity-registered](/docs/azure/appservice/account-identity-registered)<br>Web App has registration with AD enabled|
 |[azure-appservice-authentication-enabled](/docs/azure/appservice/authentication-enabled)<br>App Service authentication is activated|
+|[azure-appservice-detailed-error-messages-enabled](/docs/azure/appservice/detailed-error-messages-enabled)<br>App service disables detailed error messages|
+|[azure-appservice-dotnet-framework-version](/docs/azure/appservice/dotnet-framework-version)<br>Azure App Service Web app does not use the latest .Net Core version|
 |[azure-appservice-enable-http2](/docs/azure/appservice/enable-http2)<br>Web App uses the latest HTTP version|
 |[azure-appservice-enforce-https](/docs/azure/appservice/enforce-https)<br>Ensure the Function App can only be accessed via HTTPS. The default is false.|
+|[azure-appservice-failed-request-tracing-enabled](/docs/azure/appservice/failed-request-tracing-enabled)<br>App service does not enable failed request tracing|
+|[azure-appservice-ftp-deployments-disabled](/docs/azure/appservice/ftp-deployments-disabled)<br>Ensure FTP Deployments are disabled|
+|[azure-appservice-http-logs-enabled](/docs/azure/appservice/http-logs-enabled)<br>App service does not enable HTTP logging|
+|[azure-appservice-php-version](/docs/azure/appservice/php-version)<br>Azure App Service Web app does not use the latest PHP version|
+|[azure-appservice-python-version](/docs/azure/appservice/python-version)<br>Azure App Service Web app does not use the latest Python version|
 |[azure-appservice-require-client-cert](/docs/azure/appservice/require-client-cert)<br>Web App accepts incoming client certificate|
 |[azure-appservice-use-secure-tls-policy](/docs/azure/appservice/use-secure-tls-policy)<br>Web App uses latest TLS version|
 |[azure-authorization-limit-role-actions](/docs/azure/authorization/limit-role-actions)<br>Roles limited to the required actions|
@@ -35,6 +42,8 @@ The included Azure checks are listed below. For more information about each chec
 |[azure-database-secure-tls-policy](/docs/azure/database/secure-tls-policy)<br>Databases should have the minimum TLS set for connections|
 |[azure-datafactory-no-public-access](/docs/azure/datafactory/no-public-access)<br>Data Factory should have public access disabled, the default is enabled.|
 |[azure-datalake-enable-at-rest-encryption](/docs/azure/datalake/enable-at-rest-encryption)<br>Unencrypted data lake storage.|
+|[azure-functionapp-authentication-enabled](/docs/azure/functionapp/authentication-enabled)<br>Function App authentication is activated|
+|[azure-functionapp-enable-http2](/docs/azure/functionapp/enable-http2)<br>Web App uses the latest HTTP version|
 |[azure-keyvault-content-type-for-secret](/docs/azure/keyvault/content-type-for-secret)<br>Key vault Secret should have a content type set|
 |[azure-keyvault-ensure-key-expiry](/docs/azure/keyvault/ensure-key-expiry)<br>Ensure that the expiration date is set on all keys|
 |[azure-keyvault-ensure-secret-expiry](/docs/azure/keyvault/ensure-secret-expiry)<br>Key Vault Secret should have an expiration date set|
@@ -52,9 +61,11 @@ The included Azure checks are listed below. For more information about each chec
 |[azure-network-retention-policy-set](/docs/azure/network/retention-policy-set)<br>Retention policy for flow logs should be enabled and set to greater than 90 days|
 |[azure-network-ssh-blocked-from-internet](/docs/azure/network/ssh-blocked-from-internet)<br>SSH access should not be accessible from the Internet, should be blocked on port 22|
 |[azure-security-center-alert-on-severe-notifications](/docs/azure/security-center/alert-on-severe-notifications)<br>Send notification emails for high severity alerts|
+|[azure-security-center-defender-on-container](/docs/azure/security-center/defender-on-container)<br>Ensure Azure Defender is set to On for container registries|
 |[azure-security-center-enable-standard-subscription](/docs/azure/security-center/enable-standard-subscription)<br>Enable the standard security center subscription tier|
 |[azure-security-center-set-required-contact-details](/docs/azure/security-center/set-required-contact-details)<br>The required contact details should be set for security center|
 |[azure-storage-allow-microsoft-service-bypass](/docs/azure/storage/allow-microsoft-service-bypass)<br>Trusted Microsoft Services should have bypass access to Storage accounts|
+|[azure-storage-container-activity-logs-not-public](/docs/azure/storage/container-activity-logs-not-public)<br>Ensure public access level for Blob Containers is set to private|
 |[azure-storage-default-action-deny](/docs/azure/storage/default-action-deny)<br>The default action on Storage account network rules should be set to deny|
 |[azure-storage-enforce-https](/docs/azure/storage/enforce-https)<br>Storage accounts should be configured to only accept transfers that are over secure connections|
 |[azure-storage-no-public-access](/docs/azure/storage/no-public-access)<br>Storage containers in blob storage mode should not have public access|

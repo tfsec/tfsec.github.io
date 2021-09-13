@@ -241,8 +241,15 @@
       docs:
       - azure/appservice/account-identity-registered
       - azure/appservice/authentication-enabled
+      - azure/appservice/detailed-error-messages-enabled
+      - azure/appservice/dotnet-framework-version
       - azure/appservice/enable-http2
       - azure/appservice/enforce-https
+      - azure/appservice/failed-request-tracing-enabled
+      - azure/appservice/ftp-deployments-disabled
+      - azure/appservice/http-logs-enabled
+      - azure/appservice/php-version
+      - azure/appservice/python-version
       - azure/appservice/require-client-cert
       - azure/appservice/use-secure-tls-policy
     - title: authorization
@@ -283,6 +290,11 @@
       service: azure/datalake
       docs:
       - azure/datalake/enable-at-rest-encryption
+    - title: functionapp
+      service: azure/functionapp
+      docs:
+      - azure/functionapp/authentication-enabled
+      - azure/functionapp/enable-http2
     - title: keyvault
       service: azure/keyvault
       docs:
@@ -315,12 +327,14 @@
       service: azure/security-center
       docs:
       - azure/security-center/alert-on-severe-notifications
+      - azure/security-center/defender-on-container
       - azure/security-center/enable-standard-subscription
       - azure/security-center/set-required-contact-details
     - title: storage
       service: azure/storage
       docs:
       - azure/storage/allow-microsoft-service-bypass
+      - azure/storage/container-activity-logs-not-public
       - azure/storage/default-action-deny
       - azure/storage/enforce-https
       - azure/storage/no-public-access

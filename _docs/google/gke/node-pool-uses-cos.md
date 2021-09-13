@@ -100,7 +100,7 @@ resource "google_container_node_pool" "good_example" {
     oauth_scopes = [
       "https://www.googleapis.com/auth/cloud-platform"
     ]
-    image_type = "COS"
+    image_type = "COS_CONTAINERD"
   }
 }
 
