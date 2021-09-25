@@ -30,7 +30,7 @@ The following example will fail the aws-cloudfront-use-secure-tls-policy check.
 
 resource "aws_cloudfront_distribution" "bad_example" {
   viewer_certificate {
-    cloudfront_default_certificate = true
+    cloudfront_default_certificate = false
     minimum_protocol_version = "TLSv1.0"
   }
 }
@@ -47,7 +47,7 @@ The following example will pass the aws-cloudfront-use-secure-tls-policy check.
 
 resource "aws_cloudfront_distribution" "good_example" {
   viewer_certificate {
-    cloudfront_default_certificate = true
+    cloudfront_default_certificate = false
     minimum_protocol_version = "TLSv1.2_2021"
   }
 }

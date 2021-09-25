@@ -34,12 +34,11 @@ resource "aws_security_group" "bad_example" {
   name        = "http"
 
   ingress {
-    description = "HTTP from VPC"
-    from_port   = 80
-    to_port     = 80
-    protocol    = "tcp"
-    cidr_blocks = [aws_vpc.main.cidr_block]
-  }
+		from_port   = 80
+		to_port     = 80
+		protocol    = "tcp"
+		cidr_blocks = [aws_vpc.main.cidr_block]
+	  }
 }
 
 {% endhighlight %}
@@ -57,12 +56,12 @@ resource "aws_security_group" "good_example" {
   description = "Allow inbound HTTP traffic"
 
   ingress {
-    description = "HTTP from VPC"
-    from_port   = 80
-    to_port     = 80
-    protocol    = "tcp"
-    cidr_blocks = [aws_vpc.main.cidr_block]
-  }
+		description = "HTTP from VPC"
+		from_port   = 80
+		to_port     = 80
+		protocol    = "tcp"
+		cidr_blocks = [aws_vpc.main.cidr_block]
+  	}
 }
 
 {% endhighlight %}
