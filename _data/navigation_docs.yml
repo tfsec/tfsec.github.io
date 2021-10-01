@@ -327,7 +327,14 @@
       service: azure/security-center
       docs:
       - azure/security-center/alert-on-severe-notifications
-      - azure/security-center/defender-on-container
+      - azure/security-center/defender-on-appservices
+      - azure/security-center/defender-on-container-registry
+      - azure/security-center/defender-on-keyvault
+      - azure/security-center/defender-on-kubernetes
+      - azure/security-center/defender-on-servers
+      - azure/security-center/defender-on-sql-servers
+      - azure/security-center/defender-on-sql-servers-vms
+      - azure/security-center/defender-on-storage
       - azure/security-center/enable-standard-subscription
       - azure/security-center/set-required-contact-details
     - title: storage

@@ -44,11 +44,14 @@ The following example will pass the azure-appservice-ftp-deployments-disabled ch
 {% highlight terraform %}
 
 resource "azurerm_app_service" "good_example" {
-  name                = "example-app-service"
-  location            = azurerm_resource_group.example.location
-  resource_group_name = azurerm_resource_group.example.name
-  app_service_plan_id = azurerm_app_service_plan.example.id
-  ftps_state = "Disabled"
+	name                = "example-app-service"
+	location            = azurerm_resource_group.example.location
+	resource_group_name = azurerm_resource_group.example.name
+	app_service_plan_id = azurerm_app_service_plan.example.id
+
+	site_config {
+		ftps_state = "Disabled"
+	}
 }
 
 {% endhighlight %}

@@ -61,7 +61,14 @@ The included Azure checks are listed below. For more information about each chec
 |[azure-network-retention-policy-set](/docs/azure/network/retention-policy-set)<br>Retention policy for flow logs should be enabled and set to greater than 90 days|
 |[azure-network-ssh-blocked-from-internet](/docs/azure/network/ssh-blocked-from-internet)<br>SSH access should not be accessible from the Internet, should be blocked on port 22|
 |[azure-security-center-alert-on-severe-notifications](/docs/azure/security-center/alert-on-severe-notifications)<br>Send notification emails for high severity alerts|
-|[azure-security-center-defender-on-container](/docs/azure/security-center/defender-on-container)<br>Ensure Azure Defender is set to On for container registries|
+|[azure-security-center-defender-on-appservices](/docs/azure/security-center/defender-on-appservices)<br>Ensure Azure Defender is set to On for container registries|
+|[azure-security-center-defender-on-container-registry](/docs/azure/security-center/defender-on-container-registry)<br>Ensure Azure Defender is set to On for container registries|
+|[azure-security-center-defender-on-keyvault](/docs/azure/security-center/defender-on-keyvault)<br>Ensure Azure Defender is set to On for key vaults|
+|[azure-security-center-defender-on-kubernetes](/docs/azure/security-center/defender-on-kubernetes)<br>Ensure Azure Defender is set to On for Kubernetes|
+|[azure-security-center-defender-on-servers](/docs/azure/security-center/defender-on-servers)<br>Ensure Azure Defender is set to On for Servers|
+|[azure-security-center-defender-on-sql-servers](/docs/azure/security-center/defender-on-sql-servers)<br>Ensure Azure Defender is set to On for SQL Servers|
+|[azure-security-center-defender-on-sql-servers-vms](/docs/azure/security-center/defender-on-sql-servers-vms)<br>Ensure Azure Defender is set to On for Sql Server on Machines|
+|[azure-security-center-defender-on-storage](/docs/azure/security-center/defender-on-storage)<br>Ensure Azure Defender is set to On for storage accounts|
 |[azure-security-center-enable-standard-subscription](/docs/azure/security-center/enable-standard-subscription)<br>Enable the standard security center subscription tier|
 |[azure-security-center-set-required-contact-details](/docs/azure/security-center/set-required-contact-details)<br>The required contact details should be set for security center|
 |[azure-storage-allow-microsoft-service-bypass](/docs/azure/storage/allow-microsoft-service-bypass)<br>Trusted Microsoft Services should have bypass access to Storage accounts|

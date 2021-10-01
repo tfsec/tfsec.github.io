@@ -1,6 +1,1536 @@
 {
  "checks": [
   {
+   "code": "general-secrets-sensitive-in-attribute",
+   "legacy_code": "GEN003",
+   "service": "secrets",
+   "provider": "general",
+   "description": "Potentially sensitive data stored in block attribute.",
+   "impact": "Block attribute could be leaking secrets",
+   "resolution": "Don't include sensitive data in blocks",
+   "doc_url": "https://tfsec.dev/docs/general/secrets/sensitive-in-attribute/"
+  },
+  {
+   "code": "general-secrets-sensitive-in-attribute-value",
+   "legacy_code": "GEN005",
+   "service": "secrets",
+   "provider": "general",
+   "description": "The attribute has potentially sensitive data, passwords, tokens or keys in it",
+   "impact": "Sensitive credentials may be compromised",
+   "resolution": "Check the code for vulnerabilities and move to variables",
+   "doc_url": "https://tfsec.dev/docs/general/secrets/sensitive-in-attribute-value/"
+  },
+  {
+   "code": "general-secrets-sensitive-in-local",
+   "legacy_code": "GEN002",
+   "service": "secrets",
+   "provider": "general",
+   "description": "Potentially sensitive data stored in local value.",
+   "impact": "Local value could be leaking secrets",
+   "resolution": "Don't include sensitive data in locals",
+   "doc_url": "https://tfsec.dev/docs/general/secrets/sensitive-in-local/"
+  },
+  {
+   "code": "general-secrets-sensitive-in-variable",
+   "legacy_code": "GEN001",
+   "service": "secrets",
+   "provider": "general",
+   "description": "Potentially sensitive data stored in \"default\" value of variable.",
+   "impact": "Default values could be exposing sensitive data",
+   "resolution": "Don't include sensitive data in variable defaults",
+   "doc_url": "https://tfsec.dev/docs/general/secrets/sensitive-in-variable/"
+  },
+  {
+   "code": "google-bigquery-no-public-access",
+   "legacy_code": "",
+   "service": "bigquery",
+   "provider": "google",
+   "description": "BigQuery datasets should only be accessible within the organisation",
+   "impact": "Exposure of sensitive data to the public iniernet",
+   "resolution": "Configure access permissions with higher granularity",
+   "doc_url": "https://tfsec.dev/docs/google/bigquery/no-public-access/"
+  },
+  {
+   "code": "google-compute-disk-encryption-customer-key",
+   "legacy_code": "",
+   "service": "compute",
+   "provider": "google",
+   "description": "Disks should be encrypted with Customer Supplied Encryption Keys",
+   "impact": "Using unmanaged keys does not allow for proper management",
+   "resolution": "Use managed keys ",
+   "doc_url": "https://tfsec.dev/docs/google/compute/disk-encryption-customer-key/"
+  },
+  {
+   "code": "google-compute-disk-encryption-customer-keys",
+   "legacy_code": "GCP001",
+   "service": "compute",
+   "provider": "google",
+   "description": "Encrypted compute disk with unmanaged keys.",
+   "impact": "Encryption of disk using unmanaged keys.",
+   "resolution": "Enable encryption using a customer-managed key.",
+   "doc_url": "https://tfsec.dev/docs/google/compute/disk-encryption-customer-keys/"
+  },
+  {
+   "code": "google-compute-disk-encryption-required",
+   "legacy_code": "GCP013",
+   "service": "compute",
+   "provider": "google",
+   "description": "The encryption key used to encrypt a compute disk has been specified in plaintext.",
+   "impact": "The encryption key should be considered compromised as it is not stored securely.",
+   "resolution": "Reference a managed key rather than include the key in raw format.",
+   "doc_url": "https://tfsec.dev/docs/google/compute/disk-encryption-required/"
+  },
+  {
+   "code": "google-compute-enable-shielded-vm",
+   "legacy_code": "",
+   "service": "compute",
+   "provider": "google",
+   "description": "Instances should have Shielded VM enabled",
+   "impact": "Unable to detect rootkits",
+   "resolution": "Enable Shielded VM",
+   "doc_url": "https://tfsec.dev/docs/google/compute/enable-shielded-vm/"
+  },
+  {
+   "code": "google-compute-enable-vpc-flow-logs",
+   "legacy_code": "",
+   "service": "compute",
+   "provider": "google",
+   "description": "VPC flow logs should be enabled for all subnets",
+   "impact": "Limited auditing capability and awareness",
+   "resolution": "Enable VPC flow logs",
+   "doc_url": "https://tfsec.dev/docs/google/compute/enable-vpc-flow-logs/"
+  },
+  {
+   "code": "google-compute-no-default-service-account",
+   "legacy_code": "",
+   "service": "compute",
+   "provider": "google",
+   "description": "Instances should not use the default service account",
+   "impact": "Instance has full access to the project",
+   "resolution": "Remove use of default service account",
+   "doc_url": "https://tfsec.dev/docs/google/compute/no-default-service-account/"
+  },
+  {
+   "code": "google-compute-no-ip-forwarding",
+   "legacy_code": "",
+   "service": "compute",
+   "provider": "google",
+   "description": "Instances should not have IP forwarding enabled",
+   "impact": "Instance can send/receive packets without the explicit instance address",
+   "resolution": "Disable IP forwarding",
+   "doc_url": "https://tfsec.dev/docs/google/compute/no-ip-forwarding/"
+  },
+  {
+   "code": "google-compute-no-oslogin-override",
+   "legacy_code": "",
+   "service": "compute",
+   "provider": "google",
+   "description": "Instances should not override the project setting for OS Login",
+   "impact": "Access via SSH key cannot be revoked automatically when an IAM user is removed.",
+   "resolution": "Enable OS Login at project level and remove instance-level overrides",
+   "doc_url": "https://tfsec.dev/docs/google/compute/no-oslogin-override/"
+  },
+  {
+   "code": "google-compute-no-plaintext-disk-keys",
+   "legacy_code": "",
+   "service": "compute",
+   "provider": "google",
+   "description": "Disk encryption keys should not be provided in plaintext",
+   "impact": "Compromise of encryption keys",
+   "resolution": "Use managed keys or provide the raw key via a secrets manager ",
+   "doc_url": "https://tfsec.dev/docs/google/compute/no-plaintext-disk-keys/"
+  },
+  {
+   "code": "google-compute-no-plaintext-vm-disk-keys",
+   "legacy_code": "",
+   "service": "compute",
+   "provider": "google",
+   "description": "VM disk encryption keys should not be provided in plaintext",
+   "impact": "Compromise of encryption keys",
+   "resolution": "Use managed keys or provide the raw key via a secrets manager ",
+   "doc_url": "https://tfsec.dev/docs/google/compute/no-plaintext-vm-disk-keys/"
+  },
+  {
+   "code": "google-compute-no-project-wide-ssh-keys",
+   "legacy_code": "",
+   "service": "compute",
+   "provider": "google",
+   "description": "Disable project-wide SSH keys for all instances",
+   "impact": "Compromise of a single key pair compromises all instances",
+   "resolution": "Disable project-wide SSH keys",
+   "doc_url": "https://tfsec.dev/docs/google/compute/no-project-wide-ssh-keys/"
+  },
+  {
+   "code": "google-compute-no-public-egress",
+   "legacy_code": "GCP004",
+   "service": "compute",
+   "provider": "google",
+   "description": "An outbound firewall rule allows traffic to /0.",
+   "impact": "The port is exposed for egress to the internet",
+   "resolution": "Set a more restrictive cidr range",
+   "doc_url": "https://tfsec.dev/docs/google/compute/no-public-egress/"
+  },
+  {
+   "code": "google-compute-no-public-ingress",
+   "legacy_code": "GCP003",
+   "service": "compute",
+   "provider": "google",
+   "description": "An inbound firewall rule allows traffic from /0.",
+   "impact": "The port is exposed for ingress from the internet",
+   "resolution": "Set a more restrictive cidr range",
+   "doc_url": "https://tfsec.dev/docs/google/compute/no-public-ingress/"
+  },
+  {
+   "code": "google-compute-no-public-ip",
+   "legacy_code": "",
+   "service": "compute",
+   "provider": "google",
+   "description": "Instances should not have public IP addresses",
+   "impact": "Direct exposure of an instance to the public internet",
+   "resolution": "Remove public IP",
+   "doc_url": "https://tfsec.dev/docs/google/compute/no-public-ip/"
+  },
+  {
+   "code": "google-compute-no-serial-port",
+   "legacy_code": "",
+   "service": "compute",
+   "provider": "google",
+   "description": "Disable serial port connectivity for all instances",
+   "impact": "Unrestricted network access to the serial console of the instance",
+   "resolution": "Disable serial port access",
+   "doc_url": "https://tfsec.dev/docs/google/compute/no-serial-port/"
+  },
+  {
+   "code": "google-compute-project-level-oslogin",
+   "legacy_code": "",
+   "service": "compute",
+   "provider": "google",
+   "description": "OS Login should be enabled at project level",
+   "impact": "Access via SSH key cannot be revoked automatically when an IAM user is removed.",
+   "resolution": "Enable OS Login at project level",
+   "doc_url": "https://tfsec.dev/docs/google/compute/project-level-oslogin/"
+  },
+  {
+   "code": "google-compute-use-secure-tls-policy",
+   "legacy_code": "",
+   "service": "compute",
+   "provider": "google",
+   "description": "SSL policies should enforce secure versions of TLS",
+   "impact": "Data in transit is not sufficiently secured",
+   "resolution": "Enforce a minimum TLS version of 1.2",
+   "doc_url": "https://tfsec.dev/docs/google/compute/use-secure-tls-policy/"
+  },
+  {
+   "code": "google-compute-vm-disk-encryption-customer-key",
+   "legacy_code": "",
+   "service": "compute",
+   "provider": "google",
+   "description": "VM disks should be encrypted with Customer Supplied Encryption Keys",
+   "impact": "Using unmanaged keys does not allow for proper management",
+   "resolution": "Use managed keys ",
+   "doc_url": "https://tfsec.dev/docs/google/compute/vm-disk-encryption-customer-key/"
+  },
+  {
+   "code": "google-dns-enable-dnssec",
+   "legacy_code": "",
+   "service": "dns",
+   "provider": "google",
+   "description": "Cloud DNS should use DNSSEC",
+   "impact": "Unverified DNS responses could lead to man-in-the-middle attacks",
+   "resolution": "Enable DNSSEC",
+   "doc_url": "https://tfsec.dev/docs/google/dns/enable-dnssec/"
+  },
+  {
+   "code": "google-dns-no-rsa-sha1",
+   "legacy_code": "",
+   "service": "dns",
+   "provider": "google",
+   "description": "Zone signing should not use RSA SHA1",
+   "impact": "Less secure encryption algorithm than others available",
+   "resolution": "Use RSA SHA512",
+   "doc_url": "https://tfsec.dev/docs/google/dns/no-rsa-sha1/"
+  },
+  {
+   "code": "google-gke-enable-auto-repair",
+   "legacy_code": "",
+   "service": "gke",
+   "provider": "google",
+   "description": "Kubernetes should have 'Automatic repair' enabled",
+   "impact": "Failing nodes will require manual repair.",
+   "resolution": "Enable automatic repair",
+   "doc_url": "https://tfsec.dev/docs/google/gke/enable-auto-repair/"
+  },
+  {
+   "code": "google-gke-enable-auto-upgrade",
+   "legacy_code": "",
+   "service": "gke",
+   "provider": "google",
+   "description": "Kubernetes should have 'Automatic upgrade' enabled",
+   "impact": "Nodes will need the cluster master version manually updating",
+   "resolution": "Enable automatic upgrades",
+   "doc_url": "https://tfsec.dev/docs/google/gke/enable-auto-upgrade/"
+  },
+  {
+   "code": "google-gke-enable-ip-aliasing",
+   "legacy_code": "",
+   "service": "gke",
+   "provider": "google",
+   "description": "Clusters should have IP aliasing enabled",
+   "impact": "Nodes need a NAT gateway to access local services",
+   "resolution": "Enable IP aliasing",
+   "doc_url": "https://tfsec.dev/docs/google/gke/enable-ip-aliasing/"
+  },
+  {
+   "code": "google-gke-enable-master-networks",
+   "legacy_code": "",
+   "service": "gke",
+   "provider": "google",
+   "description": "Master authorized networks should be configured on GKE clusters",
+   "impact": "Unrestricted network access to the master",
+   "resolution": "Enable master authorized networks",
+   "doc_url": "https://tfsec.dev/docs/google/gke/enable-master-networks/"
+  },
+  {
+   "code": "google-gke-enable-network-policy",
+   "legacy_code": "",
+   "service": "gke",
+   "provider": "google",
+   "description": "Network Policy should be enabled on GKE clusters",
+   "impact": "Unrestricted inter-cluster communication",
+   "resolution": "Enable network policy",
+   "doc_url": "https://tfsec.dev/docs/google/gke/enable-network-policy/"
+  },
+  {
+   "code": "google-gke-enable-private-cluster",
+   "legacy_code": "",
+   "service": "gke",
+   "provider": "google",
+   "description": "Clusters should be set to private",
+   "impact": "Nodes may be exposed to the public internet",
+   "resolution": "Enable private cluster",
+   "doc_url": "https://tfsec.dev/docs/google/gke/enable-private-cluster/"
+  },
+  {
+   "code": "google-gke-enable-stackdriver-logging",
+   "legacy_code": "",
+   "service": "gke",
+   "provider": "google",
+   "description": "Stackdriver Logging should be enabled",
+   "impact": "Visibility will be reduced",
+   "resolution": "Enable StackDriver logging",
+   "doc_url": "https://tfsec.dev/docs/google/gke/enable-stackdriver-logging/"
+  },
+  {
+   "code": "google-gke-enable-stackdriver-monitoring",
+   "legacy_code": "",
+   "service": "gke",
+   "provider": "google",
+   "description": "Stackdriver Monitoring should be enabled",
+   "impact": "Visibility will be reduced",
+   "resolution": "Enable StackDriver monitoring",
+   "doc_url": "https://tfsec.dev/docs/google/gke/enable-stackdriver-monitoring/"
+  },
+  {
+   "code": "google-gke-enforce-pod-security-policy",
+   "legacy_code": "GCP009",
+   "service": "gke",
+   "provider": "google",
+   "description": "Pod security policy enforcement not defined.",
+   "impact": "Pods could be operating with more permissions than required to be effective",
+   "resolution": "Use security policies for pods to restrict permissions to those needed to be effective",
+   "doc_url": "https://tfsec.dev/docs/google/gke/enforce-pod-security-policy/"
+  },
+  {
+   "code": "google-gke-metadata-endpoints-disabled",
+   "legacy_code": "GCP007",
+   "service": "gke",
+   "provider": "google",
+   "description": "Legacy metadata endpoints enabled.",
+   "impact": "Legacy metadata endpoints don't require metadata headers",
+   "resolution": "Disable legacy metadata endpoints",
+   "doc_url": "https://tfsec.dev/docs/google/gke/metadata-endpoints-disabled/"
+  },
+  {
+   "code": "google-gke-no-legacy-auth",
+   "legacy_code": "",
+   "service": "gke",
+   "provider": "google",
+   "description": "Clusters should use client certificates for authentication",
+   "impact": "Less secure authentication method in use",
+   "resolution": "Use client certificates for authentication",
+   "doc_url": "https://tfsec.dev/docs/google/gke/no-legacy-auth/"
+  },
+  {
+   "code": "google-gke-no-legacy-authentication",
+   "legacy_code": "GCP008",
+   "service": "gke",
+   "provider": "google",
+   "description": "Legacy client authentication methods utilized.",
+   "impact": "Username and password authentication methods are less secure",
+   "resolution": "Use service account or OAuth for authentication",
+   "doc_url": "https://tfsec.dev/docs/google/gke/no-legacy-authentication/"
+  },
+  {
+   "code": "google-gke-no-public-control-plane",
+   "legacy_code": "",
+   "service": "gke",
+   "provider": "google",
+   "description": "GKE Control Plane should not be publicly accessible",
+   "impact": "GKE control plane exposed to public internet",
+   "resolution": "Use private nodes and master authorised networks to prevent exposure",
+   "doc_url": "https://tfsec.dev/docs/google/gke/no-public-control-plane/"
+  },
+  {
+   "code": "google-gke-node-metadata-security",
+   "legacy_code": "GCP006",
+   "service": "gke",
+   "provider": "google",
+   "description": "Node metadata value disables metadata concealment.",
+   "impact": "Metadata that isn't concealed potentially risks leakage of sensitive data",
+   "resolution": "Set node metadata to SECURE or GKE_METADATA_SERVER",
+   "doc_url": "https://tfsec.dev/docs/google/gke/node-metadata-security/"
+  },
+  {
+   "code": "google-gke-node-pool-uses-cos",
+   "legacy_code": "",
+   "service": "gke",
+   "provider": "google",
+   "description": "Ensure Container-Optimized OS (cos) is used for Kubernetes Engine Clusters Node image",
+   "impact": "COS is the recommended OS image to use on cluster nodes",
+   "resolution": "Use the COS image type",
+   "doc_url": "https://tfsec.dev/docs/google/gke/node-pool-uses-cos/"
+  },
+  {
+   "code": "google-gke-node-shielding-enabled",
+   "legacy_code": "GCP010",
+   "service": "gke",
+   "provider": "google",
+   "description": "Shielded GKE nodes not enabled.",
+   "impact": "Node identity and integrity can't be verified without shielded GKE nodes",
+   "resolution": "Enable node shielding",
+   "doc_url": "https://tfsec.dev/docs/google/gke/node-shielding-enabled/"
+  },
+  {
+   "code": "google-gke-use-cluster-labels",
+   "legacy_code": "",
+   "service": "gke",
+   "provider": "google",
+   "description": "Clusters should be configured with Labels",
+   "impact": "Asset management can be limited/more difficult",
+   "resolution": "Set cluster resource labels",
+   "doc_url": "https://tfsec.dev/docs/google/gke/use-cluster-labels/"
+  },
+  {
+   "code": "google-gke-use-rbac-permissions",
+   "legacy_code": "GCP005",
+   "service": "gke",
+   "provider": "google",
+   "description": "Legacy ABAC permissions are enabled.",
+   "impact": "ABAC permissions are less secure than RBAC permissions",
+   "resolution": "Switch to using RBAC permissions",
+   "doc_url": "https://tfsec.dev/docs/google/gke/use-rbac-permissions/"
+  },
+  {
+   "code": "google-gke-use-service-account",
+   "legacy_code": "GCP012",
+   "service": "gke",
+   "provider": "google",
+   "description": "Checks for service account defined for GKE nodes",
+   "impact": "Service accounts with wide permissions can increase the risk of compromise",
+   "resolution": "Use limited permissions for service accounts to be effective",
+   "doc_url": "https://tfsec.dev/docs/google/gke/use-service-account/"
+  },
+  {
+   "code": "google-iam-no-folder-level-default-service-account-assignment",
+   "legacy_code": "",
+   "service": "iam",
+   "provider": "google",
+   "description": "Roles should not be assigned to default service accounts",
+   "impact": "Violation of principal of least privilege",
+   "resolution": "Use specialised service accounts for specific purposes.",
+   "doc_url": "https://tfsec.dev/docs/google/iam/no-folder-level-default-service-account-assignment/"
+  },
+  {
+   "code": "google-iam-no-folder-level-service-account-impersonation",
+   "legacy_code": "",
+   "service": "iam",
+   "provider": "google",
+   "description": "Users should not be granted service account access at the folder level",
+   "impact": "Privilege escalation, impersonation of any/all services",
+   "resolution": "Provide access at the service-level instead of folder-level, if required",
+   "doc_url": "https://tfsec.dev/docs/google/iam/no-folder-level-service-account-impersonation/"
+  },
+  {
+   "code": "google-iam-no-org-level-default-service-account-assignment",
+   "legacy_code": "",
+   "service": "iam",
+   "provider": "google",
+   "description": "Roles should not be assigned to default service accounts",
+   "impact": "Violation of principal of least privilege",
+   "resolution": "Use specialised service accounts for specific purposes.",
+   "doc_url": "https://tfsec.dev/docs/google/iam/no-org-level-default-service-account-assignment/"
+  },
+  {
+   "code": "google-iam-no-org-level-service-account-impersonation",
+   "legacy_code": "",
+   "service": "iam",
+   "provider": "google",
+   "description": "Users should not be granted service account access at the organization level",
+   "impact": "Privilege escalation, impersonation of any/all services",
+   "resolution": "Provide access at the service-level instead of organization-level, if required",
+   "doc_url": "https://tfsec.dev/docs/google/iam/no-org-level-service-account-impersonation/"
+  },
+  {
+   "code": "google-iam-no-privileged-service-accounts",
+   "legacy_code": "",
+   "service": "iam",
+   "provider": "google",
+   "description": "Service accounts should not have roles assigned with excessive privileges",
+   "impact": "Cloud account takeover if a resource using a service account is compromised",
+   "resolution": "Limit service account access to minimal required set",
+   "doc_url": "https://tfsec.dev/docs/google/iam/no-privileged-service-accounts/"
+  },
+  {
+   "code": "google-iam-no-project-level-default-service-account-assignment",
+   "legacy_code": "",
+   "service": "iam",
+   "provider": "google",
+   "description": "Roles should not be assigned to default service accounts",
+   "impact": "Violation of principal of least privilege",
+   "resolution": "Use specialised service accounts for specific purposes.",
+   "doc_url": "https://tfsec.dev/docs/google/iam/no-project-level-default-service-account-assignment/"
+  },
+  {
+   "code": "google-iam-no-project-level-service-account-impersonation",
+   "legacy_code": "",
+   "service": "iam",
+   "provider": "google",
+   "description": "Users should not be granted service account access at the project level",
+   "impact": "Privilege escalation, impersonation of any/all services",
+   "resolution": "Provide access at the service-level instead of project-level, if required",
+   "doc_url": "https://tfsec.dev/docs/google/iam/no-project-level-service-account-impersonation/"
+  },
+  {
+   "code": "google-iam-no-user-granted-permissions",
+   "legacy_code": "GCP011",
+   "service": "iam",
+   "provider": "google",
+   "description": "IAM granted directly to user.",
+   "impact": "Users shouldn't have permissions granted to them directly",
+   "resolution": "Roles should be granted permissions and assigned to users",
+   "doc_url": "https://tfsec.dev/docs/google/iam/no-user-granted-permissions/"
+  },
+  {
+   "code": "google-kms-rotate-kms-keys",
+   "legacy_code": "",
+   "service": "kms",
+   "provider": "google",
+   "description": "KMS keys should be rotated at least every 90 days",
+   "impact": "Exposure is greater if the same keys are used over a long period",
+   "resolution": "Set key rotation period to 90 days",
+   "doc_url": "https://tfsec.dev/docs/google/kms/rotate-kms-keys/"
+  },
+  {
+   "code": "google-project-no-default-network",
+   "legacy_code": "",
+   "service": "project",
+   "provider": "google",
+   "description": "Default network should not be created at project level",
+   "impact": "Exposure of internal infrastructure/services to public internet",
+   "resolution": "Disable automatic default network creation",
+   "doc_url": "https://tfsec.dev/docs/google/project/no-default-network/"
+  },
+  {
+   "code": "google-sql-enable-backup",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "Enable automated backups to recover from data-loss",
+   "impact": "No recovery of lost or corrupted data",
+   "resolution": "Enable automated backups",
+   "doc_url": "https://tfsec.dev/docs/google/sql/enable-backup/"
+  },
+  {
+   "code": "google-sql-enable-pg-temp-file-logging",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "Temporary file logging should be enabled for all temporary files.",
+   "impact": "Use of temporary files will not be logged",
+   "resolution": "Enable temporary file logging for all files",
+   "doc_url": "https://tfsec.dev/docs/google/sql/enable-pg-temp-file-logging/"
+  },
+  {
+   "code": "google-sql-encrypt-in-transit-data",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "SSL connections to a SQL database instance should be enforced.",
+   "impact": "Intercepted data can be read in transit",
+   "resolution": "Enforce SSL for all connections",
+   "doc_url": "https://tfsec.dev/docs/google/sql/encrypt-in-transit-data/"
+  },
+  {
+   "code": "google-sql-mysql-no-local-infile",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "Disable local_infile setting in MySQL",
+   "impact": "Arbitrary files read by attackers when combined with a SQL injection vulnerability.",
+   "resolution": "Disable the local infile setting",
+   "doc_url": "https://tfsec.dev/docs/google/sql/mysql-no-local-infile/"
+  },
+  {
+   "code": "google-sql-no-contained-db-auth",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "Contained database authentication should be disabled",
+   "impact": "Access can be granted without knowledge of the database administrator",
+   "resolution": "Disable contained database authentication",
+   "doc_url": "https://tfsec.dev/docs/google/sql/no-contained-db-auth/"
+  },
+  {
+   "code": "google-sql-no-cross-db-ownership-chaining",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "Cross-database ownership chaining should be disabled",
+   "impact": "Unintended access to sensitive data",
+   "resolution": "Disable cross database ownership chaining",
+   "doc_url": "https://tfsec.dev/docs/google/sql/no-cross-db-ownership-chaining/"
+  },
+  {
+   "code": "google-sql-no-public-access",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "Ensure that Cloud SQL Database Instances are not publicly exposed",
+   "impact": "Public exposure of sensitive data",
+   "resolution": "Remove public access from database instances",
+   "doc_url": "https://tfsec.dev/docs/google/sql/no-public-access/"
+  },
+  {
+   "code": "google-sql-pg-log-checkpoints",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "Ensure that logging of checkpoints is enabled.",
+   "impact": "Insufficient diagnostic data.",
+   "resolution": "Enable checkpoints logging.",
+   "doc_url": "https://tfsec.dev/docs/google/sql/pg-log-checkpoints/"
+  },
+  {
+   "code": "google-sql-pg-log-connections",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "Ensure that logging of connections is enabled.",
+   "impact": "Insufficient diagnostic data.",
+   "resolution": "Enable connection logging.",
+   "doc_url": "https://tfsec.dev/docs/google/sql/pg-log-connections/"
+  },
+  {
+   "code": "google-sql-pg-log-disconnections",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "Ensure that logging of disconnections is enabled.",
+   "impact": "Insufficient diagnostic data.",
+   "resolution": "Enable disconnection logging.",
+   "doc_url": "https://tfsec.dev/docs/google/sql/pg-log-disconnections/"
+  },
+  {
+   "code": "google-sql-pg-log-errors",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "Ensure that Postgres errors are logged",
+   "impact": "Loss of error logging",
+   "resolution": "Set the minimum log severity to at least ERROR",
+   "doc_url": "https://tfsec.dev/docs/google/sql/pg-log-errors/"
+  },
+  {
+   "code": "google-sql-pg-log-lock-waits",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "Ensure that logging of lock waits is enabled.",
+   "impact": "Issues leading to denial of service may not be identified.",
+   "resolution": "Enable lock wait logging.",
+   "doc_url": "https://tfsec.dev/docs/google/sql/pg-log-lock-waits/"
+  },
+  {
+   "code": "google-sql-pg-no-min-statement-logging",
+   "legacy_code": "",
+   "service": "sql",
+   "provider": "google",
+   "description": "Ensure that logging of long statements is disabled.",
+   "impact": "Sensitive data could be exposed in the database logs.",
+   "resolution": "Disable minimum duration statement logging completely",
+   "doc_url": "https://tfsec.dev/docs/google/sql/pg-no-min-statement-logging/"
+  },
+  {
+   "code": "google-storage-enable-ubla",
+   "legacy_code": "",
+   "service": "storage",
+   "provider": "google",
+   "description": "Ensure that Cloud Storage buckets have uniform bucket-level access enabled",
+   "impact": "ACLs are difficult to manage and often lead to incorrect/unintended configurations.",
+   "resolution": "Enable uniform bucket level access to provide a uniform permissioning system.",
+   "doc_url": "https://tfsec.dev/docs/google/storage/enable-ubla/"
+  },
+  {
+   "code": "google-storage-no-public-access",
+   "legacy_code": "",
+   "service": "storage",
+   "provider": "google",
+   "description": "Ensure that Cloud Storage bucket is not anonymously or publicly accessible.",
+   "impact": "Public exposure of sensitive data.",
+   "resolution": "Restrict public access to the bucket.",
+   "doc_url": "https://tfsec.dev/docs/google/storage/no-public-access/"
+  },
+  {
+   "code": "cloudstack-compute-no-sensitive-info",
+   "legacy_code": "",
+   "service": "compute",
+   "provider": "cloudstack",
+   "description": "No sensitive data stored in user_data",
+   "impact": "Sensitive credentials in the user data can be leaked",
+   "resolution": "Don't use sensitive data in the user data section",
+   "doc_url": "https://tfsec.dev/docs/cloudstack/compute/no-sensitive-info/"
+  },
+  {
+   "code": "azure-appservice-account-identity-registered",
+   "legacy_code": "",
+   "service": "appservice",
+   "provider": "azure",
+   "description": "Web App has registration with AD enabled",
+   "impact": "Interaction between services can't easily be achieved without username/password",
+   "resolution": "Register the app identity with AD",
+   "doc_url": "https://tfsec.dev/docs/azure/appservice/account-identity-registered/"
+  },
+  {
+   "code": "azure-appservice-authentication-enabled",
+   "legacy_code": "",
+   "service": "appservice",
+   "provider": "azure",
+   "description": "App Service authentication is activated",
+   "impact": "Anonymous HTTP requests will be accepted",
+   "resolution": "Enable authentication to prevent anonymous request being accepted",
+   "doc_url": "https://tfsec.dev/docs/azure/appservice/authentication-enabled/"
+  },
+  {
+   "code": "azure-appservice-detailed-error-messages-enabled",
+   "legacy_code": "",
+   "service": "appservice",
+   "provider": "azure",
+   "description": "App service disables detailed error messages",
+   "impact": "Missing crucial details in the error messages",
+   "resolution": "Enable detailed_error_messages_enabled",
+   "doc_url": "https://tfsec.dev/docs/azure/appservice/detailed-error-messages-enabled/"
+  },
+  {
+   "code": "azure-appservice-dotnet-framework-version",
+   "legacy_code": "",
+   "service": "appservice",
+   "provider": "azure",
+   "description": "Azure App Service Web app does not use the latest .Net Core version",
+   "impact": "Outdated .NET could contain open vulnerabilities",
+   "resolution": "Use the latest version of the .NET framework",
+   "doc_url": "https://tfsec.dev/docs/azure/appservice/dotnet-framework-version/"
+  },
+  {
+   "code": "azure-appservice-enable-http2",
+   "legacy_code": "",
+   "service": "appservice",
+   "provider": "azure",
+   "description": "Web App uses the latest HTTP version",
+   "impact": "Outdated versions of HTTP has security vulnerabilities",
+   "resolution": "Use the latest version of HTTP",
+   "doc_url": "https://tfsec.dev/docs/azure/appservice/enable-http2/"
+  },
+  {
+   "code": "azure-appservice-enforce-https",
+   "legacy_code": "AZU028",
+   "service": "appservice",
+   "provider": "azure",
+   "description": "Ensure the Function App can only be accessed via HTTPS. The default is false.",
+   "impact": "Anyone can access the Function App using HTTP.",
+   "resolution": "You can redirect all HTTP requests to the HTTPS port.",
+   "doc_url": "https://tfsec.dev/docs/azure/appservice/enforce-https/"
+  },
+  {
+   "code": "azure-appservice-failed-request-tracing-enabled",
+   "legacy_code": "",
+   "service": "appservice",
+   "provider": "azure",
+   "description": "App service does not enable failed request tracing",
+   "impact": "Logging of failed request tracing will not be logged",
+   "resolution": "Enable failed_request_tracing_enabled",
+   "doc_url": "https://tfsec.dev/docs/azure/appservice/failed-request-tracing-enabled/"
+  },
+  {
+   "code": "azure-appservice-ftp-deployments-disabled",
+   "legacy_code": "",
+   "service": "appservice",
+   "provider": "azure",
+   "description": "Ensure FTP Deployments are disabled",
+   "impact": "FTP is insecure and can lead to loss of data",
+   "resolution": "Disable FTP",
+   "doc_url": "https://tfsec.dev/docs/azure/appservice/ftp-deployments-disabled/"
+  },
+  {
+   "code": "azure-appservice-http-logs-enabled",
+   "legacy_code": "",
+   "service": "appservice",
+   "provider": "azure",
+   "description": "App service does not enable HTTP logging",
+   "impact": "Missed logs related to HTTP requests",
+   "resolution": "Enable http_logs",
+   "doc_url": "https://tfsec.dev/docs/azure/appservice/http-logs-enabled/"
+  },
+  {
+   "code": "azure-appservice-php-version",
+   "legacy_code": "",
+   "service": "appservice",
+   "provider": "azure",
+   "description": "Azure App Service Web app does not use the latest PHP version",
+   "impact": "Old PHP Versions can contain vulnerabilities which lead to compromised Web Applications",
+   "resolution": "Ensure Latest PHP Version is being used",
+   "doc_url": "https://tfsec.dev/docs/azure/appservice/php-version/"
+  },
+  {
+   "code": "azure-appservice-python-version",
+   "legacy_code": "",
+   "service": "appservice",
+   "provider": "azure",
+   "description": "Azure App Service Web app does not use the latest Python version",
+   "impact": "Old Python Versions can contain vulnerabilities which lead to compromised Web Applications",
+   "resolution": "Ensure Latest Python Version is being used",
+   "doc_url": "https://tfsec.dev/docs/azure/appservice/python-version/"
+  },
+  {
+   "code": "azure-appservice-require-client-cert",
+   "legacy_code": "",
+   "service": "appservice",
+   "provider": "azure",
+   "description": "Web App accepts incoming client certificate",
+   "impact": "Mutual TLS is not being used",
+   "resolution": "Enable incoming certificates for clients",
+   "doc_url": "https://tfsec.dev/docs/azure/appservice/require-client-cert/"
+  },
+  {
+   "code": "azure-appservice-use-secure-tls-policy",
+   "legacy_code": "",
+   "service": "appservice",
+   "provider": "azure",
+   "description": "Web App uses latest TLS version",
+   "impact": "The minimum TLS version for apps should be TLS1_2",
+   "resolution": "The TLS version being outdated and has known vulnerabilities",
+   "doc_url": "https://tfsec.dev/docs/azure/appservice/use-secure-tls-policy/"
+  },
+  {
+   "code": "azure-authorization-limit-role-actions",
+   "legacy_code": "",
+   "service": "authorization",
+   "provider": "azure",
+   "description": "Roles limited to the required actions",
+   "impact": "Open permissions for subscriptions could result in an easily compromisable account",
+   "resolution": "Use targeted permissions for roles",
+   "doc_url": "https://tfsec.dev/docs/azure/authorization/limit-role-actions/"
+  },
+  {
+   "code": "azure-compute-disable-password-authentication",
+   "legacy_code": "",
+   "service": "compute",
+   "provider": "azure",
+   "description": "Password authentication should be disabled on Azure virtual machines",
+   "impact": "Using password authentication is less secure that ssh keys may result in compromised servers",
+   "resolution": "Use ssh authentication for virtual machines",
+   "doc_url": "https://tfsec.dev/docs/azure/compute/disable-password-authentication/"
+  },
+  {
+   "code": "azure-compute-enable-disk-encryption",
+   "legacy_code": "AZU003",
+   "service": "compute",
+   "provider": "azure",
+   "description": "Enable disk encryption on managed disk",
+   "impact": "Data could be read if compromised",
+   "resolution": "Enable encryption on managed disks",
+   "doc_url": "https://tfsec.dev/docs/azure/compute/enable-disk-encryption/"
+  },
+  {
+   "code": "azure-compute-no-secrets-in-custom-data",
+   "legacy_code": "",
+   "service": "compute",
+   "provider": "azure",
+   "description": "Ensure that no sensitive credentials are exposed in VM custom_data",
+   "impact": "Sensitive credentials in custom_data can be leaked",
+   "resolution": "Don't use sensitive credentials in the VM custom_data",
+   "doc_url": "https://tfsec.dev/docs/azure/compute/no-secrets-in-custom-data/"
+  },
+  {
+   "code": "azure-compute-ssh-authentication",
+   "legacy_code": "AZU005",
+   "service": "compute",
+   "provider": "azure",
+   "description": "Password authentication in use instead of SSH keys.",
+   "impact": "Passwords are potentially easier to compromise than SSH Keys",
+   "resolution": "Use SSH keys for authentication",
+   "doc_url": "https://tfsec.dev/docs/azure/compute/ssh-authentication/"
+  },
+  {
+   "code": "azure-container-configured-network-policy",
+   "legacy_code": "AZU006",
+   "service": "container",
+   "provider": "azure",
+   "description": "Ensure AKS cluster has Network Policy configured",
+   "impact": "No network policy is protecting the AKS cluster",
+   "resolution": "Configure a network policy",
+   "doc_url": "https://tfsec.dev/docs/azure/container/configured-network-policy/"
+  },
+  {
+   "code": "azure-container-limit-authorized-ips",
+   "legacy_code": "AZU008",
+   "service": "container",
+   "provider": "azure",
+   "description": "Ensure AKS has an API Server Authorized IP Ranges enabled",
+   "impact": "Any IP can interact with the API server",
+   "resolution": "Limit the access to the API server to a limited IP range",
+   "doc_url": "https://tfsec.dev/docs/azure/container/limit-authorized-ips/"
+  },
+  {
+   "code": "azure-container-logging",
+   "legacy_code": "AZU009",
+   "service": "container",
+   "provider": "azure",
+   "description": "Ensure AKS logging to Azure Monitoring is Configured",
+   "impact": "Logging provides valuable information about access and usage",
+   "resolution": "Enable logging for AKS",
+   "doc_url": "https://tfsec.dev/docs/azure/container/logging/"
+  },
+  {
+   "code": "azure-container-use-rbac-permissions",
+   "legacy_code": "AZU007",
+   "service": "container",
+   "provider": "azure",
+   "description": "Ensure RBAC is enabled on AKS clusters",
+   "impact": "No role based access control is in place for the AKS cluster",
+   "resolution": "Enable RBAC",
+   "doc_url": "https://tfsec.dev/docs/azure/container/use-rbac-permissions/"
+  },
+  {
+   "code": "azure-database-enable-audit",
+   "legacy_code": "AZU018",
+   "service": "database",
+   "provider": "azure",
+   "description": "Auditing should be enabled on Azure SQL Databases",
+   "impact": "Auditing provides valuable information about access and usage",
+   "resolution": "Enable auditing on Azure SQL databases",
+   "doc_url": "https://tfsec.dev/docs/azure/database/enable-audit/"
+  },
+  {
+   "code": "azure-database-enable-ssl-enforcement",
+   "legacy_code": "",
+   "service": "database",
+   "provider": "azure",
+   "description": "SSL should be enforced on database connections where applicable",
+   "impact": "Insecure connections could lead to data loss and other vulnerabilities",
+   "resolution": "Enable SSL enforcement",
+   "doc_url": "https://tfsec.dev/docs/azure/database/enable-ssl-enforcement/"
+  },
+  {
+   "code": "azure-database-no-public-access",
+   "legacy_code": "",
+   "service": "database",
+   "provider": "azure",
+   "description": "Ensure databases are not publicly accessible",
+   "impact": "Publicly accessible database could lead to compromised data",
+   "resolution": "Disable public access to database when not required",
+   "doc_url": "https://tfsec.dev/docs/azure/database/no-public-access/"
+  },
+  {
+   "code": "azure-database-no-public-firewall-access",
+   "legacy_code": "",
+   "service": "database",
+   "provider": "azure",
+   "description": "Ensure database firewalls do not permit public access",
+   "impact": "Publicly accessible databases could lead to compromised data",
+   "resolution": "Don't use wide ip ranges for the sql firewall",
+   "doc_url": "https://tfsec.dev/docs/azure/database/no-public-firewall-access/"
+  },
+  {
+   "code": "azure-database-postgres-configuration-log-checkpoints",
+   "legacy_code": "",
+   "service": "database",
+   "provider": "azure",
+   "description": "Ensure server parameter 'log_checkpoints' is set to 'ON' for PostgreSQL Database Server",
+   "impact": "No error and query logs generated on checkpoint",
+   "resolution": "Enable checkpoint logging",
+   "doc_url": "https://tfsec.dev/docs/azure/database/postgres-configuration-log-checkpoints/"
+  },
+  {
+   "code": "azure-database-postgres-configuration-log-connection-throttling",
+   "legacy_code": "",
+   "service": "database",
+   "provider": "azure",
+   "description": "Ensure server parameter 'connection_throttling' is set to 'ON' for PostgreSQL Database Server",
+   "impact": "No log information to help diagnosing connection contention issues",
+   "resolution": "Enable connection throttling logging",
+   "doc_url": "https://tfsec.dev/docs/azure/database/postgres-configuration-log-connection-throttling/"
+  },
+  {
+   "code": "azure-database-postgres-configuration-log-connections",
+   "legacy_code": "",
+   "service": "database",
+   "provider": "azure",
+   "description": "Ensure server parameter 'log_connections' is set to 'ON' for PostgreSQL Database Server",
+   "impact": "No visibility of successful connections",
+   "resolution": "Enable connection logging",
+   "doc_url": "https://tfsec.dev/docs/azure/database/postgres-configuration-log-connections/"
+  },
+  {
+   "code": "azure-database-retention-period-set",
+   "legacy_code": "AZU019",
+   "service": "database",
+   "provider": "azure",
+   "description": "Database auditing rentention period should be longer than 90 days",
+   "impact": "Short logging retention could result in missing valuable historical information",
+   "resolution": "Set retention periods of database auditing to greater than 90 days",
+   "doc_url": "https://tfsec.dev/docs/azure/database/retention-period-set/"
+  },
+  {
+   "code": "azure-database-secure-tls-policy",
+   "legacy_code": "",
+   "service": "database",
+   "provider": "azure",
+   "description": "Databases should have the minimum TLS set for connections",
+   "impact": "Outdated TLS policies increase exposure to known issues",
+   "resolution": "Use the most modern TLS policies available",
+   "doc_url": "https://tfsec.dev/docs/azure/database/secure-tls-policy/"
+  },
+  {
+   "code": "azure-datafactory-no-public-access",
+   "legacy_code": "AZU025",
+   "service": "datafactory",
+   "provider": "azure",
+   "description": "Data Factory should have public access disabled, the default is enabled.",
+   "impact": "Data factory is publicly accessible",
+   "resolution": "Set public access to disabled for Data Factory",
+   "doc_url": "https://tfsec.dev/docs/azure/datafactory/no-public-access/"
+  },
+  {
+   "code": "azure-datalake-enable-at-rest-encryption",
+   "legacy_code": "AZU004",
+   "service": "datalake",
+   "provider": "azure",
+   "description": "Unencrypted data lake storage.",
+   "impact": "Data could be read if compromised",
+   "resolution": "Enable encryption of data lake storage",
+   "doc_url": "https://tfsec.dev/docs/azure/datalake/enable-at-rest-encryption/"
+  },
+  {
+   "code": "azure-functionapp-authentication-enabled",
+   "legacy_code": "",
+   "service": "functionapp",
+   "provider": "azure",
+   "description": "Function App authentication is activated",
+   "impact": "Anonymous HTTP requests will be accepted",
+   "resolution": "Enable authentication to prevent anonymous request being accepted",
+   "doc_url": "https://tfsec.dev/docs/azure/functionapp/authentication-enabled/"
+  },
+  {
+   "code": "azure-functionapp-enable-http2",
+   "legacy_code": "",
+   "service": "functionapp",
+   "provider": "azure",
+   "description": "Web App uses the latest HTTP version",
+   "impact": "Outdated versions of HTTP has security vulnerabilities",
+   "resolution": "Use the latest version of HTTP",
+   "doc_url": "https://tfsec.dev/docs/azure/functionapp/enable-http2/"
+  },
+  {
+   "code": "azure-keyvault-content-type-for-secret",
+   "legacy_code": "AZU022",
+   "service": "keyvault",
+   "provider": "azure",
+   "description": "Key vault Secret should have a content type set",
+   "impact": "The secret's type is unclear without a content type",
+   "resolution": "Provide content type for secrets to aid interpretation on retrieval",
+   "doc_url": "https://tfsec.dev/docs/azure/keyvault/content-type-for-secret/"
+  },
+  {
+   "code": "azure-keyvault-ensure-key-expiry",
+   "legacy_code": "AZU026",
+   "service": "keyvault",
+   "provider": "azure",
+   "description": "Ensure that the expiration date is set on all keys",
+   "impact": "Long life keys increase the attack surface when compromised",
+   "resolution": "Set an expiration date on the vault key",
+   "doc_url": "https://tfsec.dev/docs/azure/keyvault/ensure-key-expiry/"
+  },
+  {
+   "code": "azure-keyvault-ensure-secret-expiry",
+   "legacy_code": "AZU023",
+   "service": "keyvault",
+   "provider": "azure",
+   "description": "Key Vault Secret should have an expiration date set",
+   "impact": "Long life secrets increase the opportunity for compromise",
+   "resolution": "Set an expiry for secrets",
+   "doc_url": "https://tfsec.dev/docs/azure/keyvault/ensure-secret-expiry/"
+  },
+  {
+   "code": "azure-keyvault-no-purge",
+   "legacy_code": "AZU021",
+   "service": "keyvault",
+   "provider": "azure",
+   "description": "Key vault should have purge protection enabled",
+   "impact": "Keys could be purged from the vault without protection",
+   "resolution": "Enable purge protection for key vaults",
+   "doc_url": "https://tfsec.dev/docs/azure/keyvault/no-purge/"
+  },
+  {
+   "code": "azure-keyvault-specify-network-acl",
+   "legacy_code": "AZU020",
+   "service": "keyvault",
+   "provider": "azure",
+   "description": "Key vault should have the network acl block specified",
+   "impact": "Without a network ACL the key vault is freely accessible",
+   "resolution": "Set a network ACL for the key vault",
+   "doc_url": "https://tfsec.dev/docs/azure/keyvault/specify-network-acl/"
+  },
+  {
+   "code": "azure-monitor-activity-log-retention-set",
+   "legacy_code": "",
+   "service": "monitor",
+   "provider": "azure",
+   "description": "Ensure the activity retention log is set to at least a year",
+   "impact": "Short life activity logs can lead to missing records when investigating a breach",
+   "resolution": "Set a retention period that will allow for delayed investigation",
+   "doc_url": "https://tfsec.dev/docs/azure/monitor/activity-log-retention-set/"
+  },
+  {
+   "code": "azure-monitor-capture-all-activities",
+   "legacy_code": "",
+   "service": "monitor",
+   "provider": "azure",
+   "description": "Ensure log profile captures all activities",
+   "impact": "Log profile must capture all activity to be able to ensure that all relevant information possible is available for an investigation",
+   "resolution": "Configure log profile to capture all activities",
+   "doc_url": "https://tfsec.dev/docs/azure/monitor/capture-all-activities/"
+  },
+  {
+   "code": "azure-monitor-capture-all-regions",
+   "legacy_code": "",
+   "service": "monitor",
+   "provider": "azure",
+   "description": "Ensure activitys are captured for all locations",
+   "impact": "Activity may be occurring in locations that aren't being monitored",
+   "resolution": "Enable capture for all locations",
+   "doc_url": "https://tfsec.dev/docs/azure/monitor/capture-all-regions/"
+  },
+  {
+   "code": "azure-mssql-all-threat-alerts-enabled",
+   "legacy_code": "",
+   "service": "mssql",
+   "provider": "azure",
+   "description": "No threat detections are set",
+   "impact": "Disabling threat alerts means you are not getting the full benefit of server security protection",
+   "resolution": "Use all provided threat alerts",
+   "doc_url": "https://tfsec.dev/docs/azure/mssql/all-threat-alerts-enabled/"
+  },
+  {
+   "code": "azure-mssql-threat-alert-email-set",
+   "legacy_code": "",
+   "service": "mssql",
+   "provider": "azure",
+   "description": "At least one email address is set for threat alerts",
+   "impact": "Nobody will be prompty alerted in the case of a threat being detected",
+   "resolution": "Provide at least one email address for threat alerts",
+   "doc_url": "https://tfsec.dev/docs/azure/mssql/threat-alert-email-set/"
+  },
+  {
+   "code": "azure-mssql-threat-alert-email-to-owner",
+   "legacy_code": "",
+   "service": "mssql",
+   "provider": "azure",
+   "description": "Security threat alerts go to subcription owners and co-administrators",
+   "impact": "Administrators and subscription owners may have a delayed response",
+   "resolution": "Enable email to subscription owners",
+   "doc_url": "https://tfsec.dev/docs/azure/mssql/threat-alert-email-to-owner/"
+  },
+  {
+   "code": "azure-network-disable-rdp-from-internet",
+   "legacy_code": "AZU024",
+   "service": "network",
+   "provider": "azure",
+   "description": "RDP access should not be accessible from the Internet, should be blocked on port 3389",
+   "impact": "Anyone from the internet can potentially RDP onto an instance",
+   "resolution": "Block RDP port from internet",
+   "doc_url": "https://tfsec.dev/docs/azure/network/disable-rdp-from-internet/"
+  },
+  {
+   "code": "azure-network-no-public-egress",
+   "legacy_code": "AZU002",
+   "service": "network",
+   "provider": "azure",
+   "description": "An outbound network security rule allows traffic to /0.",
+   "impact": "The port is exposed for egress to the internet",
+   "resolution": "Set a more restrictive cidr range",
+   "doc_url": "https://tfsec.dev/docs/azure/network/no-public-egress/"
+  },
+  {
+   "code": "azure-network-no-public-ingress",
+   "legacy_code": "AZU001",
+   "service": "network",
+   "provider": "azure",
+   "description": "An inbound network security rule allows traffic from /0.",
+   "impact": "The port is exposed for ingress from the internet",
+   "resolution": "Set a more restrictive cidr range",
+   "doc_url": "https://tfsec.dev/docs/azure/network/no-public-ingress/"
+  },
+  {
+   "code": "azure-network-retention-policy-set",
+   "legacy_code": "",
+   "service": "network",
+   "provider": "azure",
+   "description": "Retention policy for flow logs should be enabled and set to greater than 90 days",
+   "impact": "Not enabling retention or having short expiry on flow logs could lead to compromise being undetected limiting time for analysis",
+   "resolution": "Ensure flow log retention is turned on with an expiry of \u003e90 days",
+   "doc_url": "https://tfsec.dev/docs/azure/network/retention-policy-set/"
+  },
+  {
+   "code": "azure-network-ssh-blocked-from-internet",
+   "legacy_code": "AZU017",
+   "service": "network",
+   "provider": "azure",
+   "description": "SSH access should not be accessible from the Internet, should be blocked on port 22",
+   "impact": "Its dangerous to allow SSH access from the internet",
+   "resolution": "Block port 22 access from the internet",
+   "doc_url": "https://tfsec.dev/docs/azure/network/ssh-blocked-from-internet/"
+  },
+  {
+   "code": "azure-security-center-alert-on-severe-notifications",
+   "legacy_code": "",
+   "service": "security-center",
+   "provider": "azure",
+   "description": "Send notification emails for high severity alerts",
+   "impact": "The ability to react to high severity notifications could be delayed",
+   "resolution": " Set alert notifications to be on",
+   "doc_url": "https://tfsec.dev/docs/azure/security-center/alert-on-severe-notifications/"
+  },
+  {
+   "code": "azure-security-center-defender-on-appservices",
+   "legacy_code": "",
+   "service": "security-center",
+   "provider": "azure",
+   "description": "Ensure Azure Defender is set to On for container registries",
+   "impact": "Azure Defender for App Service detects attacks targeting applications running over App Service.",
+   "resolution": "Enable AppServices in Azure Defender",
+   "doc_url": "https://tfsec.dev/docs/azure/security-center/defender-on-appservices/"
+  },
+  {
+   "code": "azure-security-center-defender-on-container-registry",
+   "legacy_code": "",
+   "service": "security-center",
+   "provider": "azure",
+   "description": "Ensure Azure Defender is set to On for container registries",
+   "impact": "Not enabling defender for container registries could lead to compromised account",
+   "resolution": "Enable ContainerRegistry in Azure Defender",
+   "doc_url": "https://tfsec.dev/docs/azure/security-center/defender-on-container-registry/"
+  },
+  {
+   "code": "azure-security-center-defender-on-keyvault",
+   "legacy_code": "",
+   "service": "security-center",
+   "provider": "azure",
+   "description": "Ensure Azure Defender is set to On for key vaults",
+   "impact": "Azure Defender detects unusual and potentially harmful attempts to access or exploit Key Vault accounts.",
+   "resolution": "Enable KeyVaults in Azure Defender",
+   "doc_url": "https://tfsec.dev/docs/azure/security-center/defender-on-keyvault/"
+  },
+  {
+   "code": "azure-security-center-defender-on-kubernetes",
+   "legacy_code": "",
+   "service": "security-center",
+   "provider": "azure",
+   "description": "Ensure Azure Defender is set to On for Kubernetes",
+   "impact": "Not enabling defender for container registries could lead to compromised account",
+   "resolution": "Enable KubernetesService in Azure Defender",
+   "doc_url": "https://tfsec.dev/docs/azure/security-center/defender-on-kubernetes/"
+  },
+  {
+   "code": "azure-security-center-defender-on-servers",
+   "legacy_code": "",
+   "service": "security-center",
+   "provider": "azure",
+   "description": "Ensure Azure Defender is set to On for Servers",
+   "impact": "Azure Defender for servers adds threat detection and advanced defenses for Windows and Linux machines.",
+   "resolution": "Enable VirtualMachines in Azure Defender",
+   "doc_url": "https://tfsec.dev/docs/azure/security-center/defender-on-servers/"
+  },
+  {
+   "code": "azure-security-center-defender-on-sql-servers",
+   "legacy_code": "",
+   "service": "security-center",
+   "provider": "azure",
+   "description": "Ensure Azure Defender is set to On for SQL Servers",
+   "impact": "Azure Defender for SQL servers on machines extends the protections for your Azure-native SQL Servers to fully support hybrid environments and protect SQL servers (all supported version) hosted in Azure",
+   "resolution": "Enable SqlServers in Azure Defender",
+   "doc_url": "https://tfsec.dev/docs/azure/security-center/defender-on-sql-servers/"
+  },
+  {
+   "code": "azure-security-center-defender-on-sql-servers-vms",
+   "legacy_code": "",
+   "service": "security-center",
+   "provider": "azure",
+   "description": "Ensure Azure Defender is set to On for Sql Server on Machines",
+   "impact": "Azure Defender for SQL servers on machines extends the protections for your Azure-native SQL Servers to fully support hybrid environments and protect SQL servers (all supported version) hosted in Azure.",
+   "resolution": "Enable ContainerRegistry in Azure Defender",
+   "doc_url": "https://tfsec.dev/docs/azure/security-center/defender-on-sql-servers-vms/"
+  },
+  {
+   "code": "azure-security-center-defender-on-storage",
+   "legacy_code": "",
+   "service": "security-center",
+   "provider": "azure",
+   "description": "Ensure Azure Defender is set to On for storage accounts",
+   "impact": "Azure Defender for Storage detects unusual and potentially harmful attempts to access or exploit storage accounts.",
+   "resolution": "Enable StorageAccounts in Azure Defender",
+   "doc_url": "https://tfsec.dev/docs/azure/security-center/defender-on-storage/"
+  },
+  {
+   "code": "azure-security-center-enable-standard-subscription",
+   "legacy_code": "",
+   "service": "security-center",
+   "provider": "azure",
+   "description": "Enable the standard security center subscription tier",
+   "impact": "Using free subscription does not enable Azure Defender for the resource type",
+   "resolution": "Enable standard subscription tier to benefit from Azure Defender",
+   "doc_url": "https://tfsec.dev/docs/azure/security-center/enable-standard-subscription/"
+  },
+  {
+   "code": "azure-security-center-set-required-contact-details",
+   "legacy_code": "",
+   "service": "security-center",
+   "provider": "azure",
+   "description": "The required contact details should be set for security center",
+   "impact": "Without a telephone number set, Azure support can't contact",
+   "resolution": "Set a telephone number for security center contact",
+   "doc_url": "https://tfsec.dev/docs/azure/security-center/set-required-contact-details/"
+  },
+  {
+   "code": "azure-storage-allow-microsoft-service-bypass",
+   "legacy_code": "AZU013",
+   "service": "storage",
+   "provider": "azure",
+   "description": "Trusted Microsoft Services should have bypass access to Storage accounts",
+   "impact": "Trusted Microsoft Services won't be able to access storage account unless rules set to allow",
+   "resolution": "Allow Trusted Microsoft Services to bypass",
+   "doc_url": "https://tfsec.dev/docs/azure/storage/allow-microsoft-service-bypass/"
+  },
+  {
+   "code": "azure-storage-container-activity-logs-not-public",
+   "legacy_code": "",
+   "service": "storage",
+   "provider": "azure",
+   "description": "Ensure public access level for Blob Containers is set to private",
+   "impact": "Data in the storage container could be exposed publicly",
+   "resolution": "Disable public access to storage containers",
+   "doc_url": "https://tfsec.dev/docs/azure/storage/container-activity-logs-not-public/"
+  },
+  {
+   "code": "azure-storage-default-action-deny",
+   "legacy_code": "AZU012",
+   "service": "storage",
+   "provider": "azure",
+   "description": "The default action on Storage account network rules should be set to deny",
+   "impact": "Network rules that allow could cause data to be exposed publicly",
+   "resolution": "Set network rules to deny",
+   "doc_url": "https://tfsec.dev/docs/azure/storage/default-action-deny/"
+  },
+  {
+   "code": "azure-storage-enforce-https",
+   "legacy_code": "AZU014",
+   "service": "storage",
+   "provider": "azure",
+   "description": "Storage accounts should be configured to only accept transfers that are over secure connections",
+   "impact": "Insecure transfer of data into secure accounts could be read if intercepted",
+   "resolution": "Only allow secure connection for transferring data into storage accounts",
+   "doc_url": "https://tfsec.dev/docs/azure/storage/enforce-https/"
+  },
+  {
+   "code": "azure-storage-no-public-access",
+   "legacy_code": "AZU011",
+   "service": "storage",
+   "provider": "azure",
+   "description": "Storage containers in blob storage mode should not have public access",
+   "impact": "Data in the storage container could be exposed publicly",
+   "resolution": "Disable public access to storage containers",
+   "doc_url": "https://tfsec.dev/docs/azure/storage/no-public-access/"
+  },
+  {
+   "code": "azure-storage-queue-services-logging-enabled",
+   "legacy_code": "AZU016",
+   "service": "storage",
+   "provider": "azure",
+   "description": "When using Queue Services for a storage account, logging should be enabled.",
+   "impact": "Logging provides valuable information about access and usage",
+   "resolution": "Enable logging for Queue Services",
+   "doc_url": "https://tfsec.dev/docs/azure/storage/queue-services-logging-enabled/"
+  },
+  {
+   "code": "azure-storage-use-secure-tls-policy",
+   "legacy_code": "AZU015",
+   "service": "storage",
+   "provider": "azure",
+   "description": "The minimum TLS version for Storage Accounts should be TLS1_2",
+   "impact": "The TLS version being outdated and has known vulnerabilities",
+   "resolution": "Use a more recent TLS/SSL policy for the load balancer",
+   "doc_url": "https://tfsec.dev/docs/azure/storage/use-secure-tls-policy/"
+  },
+  {
+   "code": "azure-synapse-virtual-network-enabled",
+   "legacy_code": "AZU027",
+   "service": "synapse",
+   "provider": "azure",
+   "description": "Synapse Workspace should have managed virtual network enabled, the default is disabled.",
+   "impact": "Your Synapse workspace is not using the private endpoints",
+   "resolution": "Set manage virtual network to enabled",
+   "doc_url": "https://tfsec.dev/docs/azure/synapse/virtual-network-enabled/"
+  },
+  {
+   "code": "digitalocean-compute-no-public-egress",
+   "legacy_code": "DIG002",
+   "service": "compute",
+   "provider": "digitalocean",
+   "description": "The firewall has an outbound rule with open access",
+   "impact": "The port is exposed for ingress from the internet",
+   "resolution": "Set a more restrictive cidr range",
+   "doc_url": "https://tfsec.dev/docs/digitalocean/compute/no-public-egress/"
+  },
+  {
+   "code": "digitalocean-compute-no-public-ingress",
+   "legacy_code": "DIG001",
+   "service": "compute",
+   "provider": "digitalocean",
+   "description": "The firewall has an inbound rule with open access",
+   "impact": "Your port is exposed to the internet",
+   "resolution": "Set a more restrictive CIRDR range",
+   "doc_url": "https://tfsec.dev/docs/digitalocean/compute/no-public-ingress/"
+  },
+  {
+   "code": "digitalocean-droplet-use-ssh-keys",
+   "legacy_code": "DIG003",
+   "service": "droplet",
+   "provider": "digitalocean",
+   "description": "SSH Keys are the preferred way to connect to your droplet, no keys are supplied",
+   "impact": "Logging in with username and password is easier to compromise",
+   "resolution": "Use ssh keys for login",
+   "doc_url": "https://tfsec.dev/docs/digitalocean/droplet/use-ssh-keys/"
+  },
+  {
+   "code": "digitalocean-loadbalancing-enforce-https",
+   "legacy_code": "DIG004",
+   "service": "loadbalancing",
+   "provider": "digitalocean",
+   "description": "The load balancer forwarding rule is using an insecure protocol as an entrypoint",
+   "impact": "Your inbound traffic is not protected",
+   "resolution": "Switch to HTTPS to benefit from TLS security features",
+   "doc_url": "https://tfsec.dev/docs/digitalocean/loadbalancing/enforce-https/"
+  },
+  {
+   "code": "digitalocean-spaces-acl-no-public-read",
+   "legacy_code": "DIG005",
+   "service": "spaces",
+   "provider": "digitalocean",
+   "description": "Spaces bucket or bucket object has public read acl set",
+   "impact": "The contents of the space can be accessed publicly",
+   "resolution": "Apply a more restrictive ACL",
+   "doc_url": "https://tfsec.dev/docs/digitalocean/spaces/acl-no-public-read/"
+  },
+  {
+   "code": "digitalocean-spaces-disable-force-destroy",
+   "legacy_code": "DIG007",
+   "service": "spaces",
+   "provider": "digitalocean",
+   "description": "Force destroy is enabled on Spaces bucket which is dangerous",
+   "impact": "Accidental deletion of bucket objects",
+   "resolution": "Don't use force destroy on bucket configuration",
+   "doc_url": "https://tfsec.dev/docs/digitalocean/spaces/disable-force-destroy/"
+  },
+  {
+   "code": "digitalocean-spaces-versioning-enabled",
+   "legacy_code": "DIG006",
+   "service": "spaces",
+   "provider": "digitalocean",
+   "description": "Spaces buckets should have versioning enabled",
+   "impact": "Deleted or modified data would not be recoverable",
+   "resolution": "Enable versioning to protect against accidental or malicious removal or modification",
+   "doc_url": "https://tfsec.dev/docs/digitalocean/spaces/versioning-enabled/"
+  },
+  {
+   "code": "github-repositories-private",
+   "legacy_code": "GIT001",
+   "service": "repositories",
+   "provider": "github",
+   "description": "Github repository shouldn't be public.",
+   "impact": "Anyone can read the contents of the GitHub repository and leak IP",
+   "resolution": "Make sensitive or commercially important repositories private",
+   "doc_url": "https://tfsec.dev/docs/github/repositories/private/"
+  },
+  {
+   "code": "kubernetes-network-no-public-egress",
+   "legacy_code": "",
+   "service": "network",
+   "provider": "kubernetes",
+   "description": "Public egress should not be allowed via network policies",
+   "impact": "Exfiltration of data to the public internet",
+   "resolution": "Remove public access except where explicitly required",
+   "doc_url": "https://tfsec.dev/docs/kubernetes/network/no-public-egress/"
+  },
+  {
+   "code": "kubernetes-network-no-public-ingress",
+   "legacy_code": "",
+   "service": "network",
+   "provider": "kubernetes",
+   "description": "Public ingress should not be allowed via network policies",
+   "impact": "Exposure of infrastructure to the public internet",
+   "resolution": "Remove public access except where explicitly required",
+   "doc_url": "https://tfsec.dev/docs/kubernetes/network/no-public-ingress/"
+  },
+  {
+   "code": "openstack-compute-no-plaintext-password",
+   "legacy_code": "",
+   "service": "compute",
+   "provider": "openstack",
+   "description": "No plaintext password for compute instance",
+   "impact": "Including a plaintext password could lead to compromised instance",
+   "resolution": "Do not use plaintext passwords in terraform files",
+   "doc_url": "https://tfsec.dev/docs/openstack/compute/no-plaintext-password/"
+  },
+  {
+   "code": "openstack-fw-no-public-access",
+   "legacy_code": "",
+   "service": "fw",
+   "provider": "openstack",
+   "description": "A firewall rule allows traffic from/to the public internet",
+   "impact": "Exposure of infrastructure to the public internet",
+   "resolution": "Employ more restrictive firewall rules",
+   "doc_url": "https://tfsec.dev/docs/openstack/fw/no-public-access/"
+  },
+  {
+   "code": "oracle-compute-no-public-ip",
+   "legacy_code": "OCI001",
+   "service": "compute",
+   "provider": "oracle",
+   "description": "Compute instance requests an IP reservation from a public pool",
+   "impact": "The compute instance has the ability to be reached from outside",
+   "resolution": "Reconsider the use of an public IP",
+   "doc_url": "https://tfsec.dev/docs/oracle/compute/no-public-ip/"
+  },
+  {
    "code": "aws-api-gateway-enable-access-logging",
    "legacy_code": "AWS061",
    "service": "api-gateway",
@@ -1089,1466 +2619,6 @@
    "impact": "Data can be freely read if compromised",
    "resolution": "Root and user volume encryption should be enabled",
    "doc_url": "https://tfsec.dev/docs/aws/workspace/enable-disk-encryption/"
-  },
-  {
-   "code": "cloudstack-compute-no-sensitive-info",
-   "legacy_code": "",
-   "service": "compute",
-   "provider": "cloudstack",
-   "description": "No sensitive data stored in user_data",
-   "impact": "Sensitive credentials in the user data can be leaked",
-   "resolution": "Don't use sensitive data in the user data section",
-   "doc_url": "https://tfsec.dev/docs/cloudstack/compute/no-sensitive-info/"
-  },
-  {
-   "code": "general-secrets-sensitive-in-attribute",
-   "legacy_code": "GEN003",
-   "service": "secrets",
-   "provider": "general",
-   "description": "Potentially sensitive data stored in block attribute.",
-   "impact": "Block attribute could be leaking secrets",
-   "resolution": "Don't include sensitive data in blocks",
-   "doc_url": "https://tfsec.dev/docs/general/secrets/sensitive-in-attribute/"
-  },
-  {
-   "code": "general-secrets-sensitive-in-attribute-value",
-   "legacy_code": "GEN005",
-   "service": "secrets",
-   "provider": "general",
-   "description": "The attribute has potentially sensitive data, passwords, tokens or keys in it",
-   "impact": "Sensitive credentials may be compromised",
-   "resolution": "Check the code for vulnerabilities and move to variables",
-   "doc_url": "https://tfsec.dev/docs/general/secrets/sensitive-in-attribute-value/"
-  },
-  {
-   "code": "general-secrets-sensitive-in-local",
-   "legacy_code": "GEN002",
-   "service": "secrets",
-   "provider": "general",
-   "description": "Potentially sensitive data stored in local value.",
-   "impact": "Local value could be leaking secrets",
-   "resolution": "Don't include sensitive data in locals",
-   "doc_url": "https://tfsec.dev/docs/general/secrets/sensitive-in-local/"
-  },
-  {
-   "code": "general-secrets-sensitive-in-variable",
-   "legacy_code": "GEN001",
-   "service": "secrets",
-   "provider": "general",
-   "description": "Potentially sensitive data stored in \"default\" value of variable.",
-   "impact": "Default values could be exposing sensitive data",
-   "resolution": "Don't include sensitive data in variable defaults",
-   "doc_url": "https://tfsec.dev/docs/general/secrets/sensitive-in-variable/"
-  },
-  {
-   "code": "oracle-compute-no-public-ip",
-   "legacy_code": "OCI001",
-   "service": "compute",
-   "provider": "oracle",
-   "description": "Compute instance requests an IP reservation from a public pool",
-   "impact": "The compute instance has the ability to be reached from outside",
-   "resolution": "Reconsider the use of an public IP",
-   "doc_url": "https://tfsec.dev/docs/oracle/compute/no-public-ip/"
-  },
-  {
-   "code": "azure-appservice-account-identity-registered",
-   "legacy_code": "",
-   "service": "appservice",
-   "provider": "azure",
-   "description": "Web App has registration with AD enabled",
-   "impact": "Interaction between services can't easily be achieved without username/password",
-   "resolution": "Register the app identity with AD",
-   "doc_url": "https://tfsec.dev/docs/azure/appservice/account-identity-registered/"
-  },
-  {
-   "code": "azure-appservice-authentication-enabled",
-   "legacy_code": "",
-   "service": "appservice",
-   "provider": "azure",
-   "description": "App Service authentication is activated",
-   "impact": "Anonymous HTTP requests will be accepted",
-   "resolution": "Enable authentication to prevent anonymous request being accepted",
-   "doc_url": "https://tfsec.dev/docs/azure/appservice/authentication-enabled/"
-  },
-  {
-   "code": "azure-appservice-detailed-error-messages-enabled",
-   "legacy_code": "",
-   "service": "appservice",
-   "provider": "azure",
-   "description": "App service disables detailed error messages",
-   "impact": "Missing crucial details in the error messages",
-   "resolution": "Enable detailed_error_messages_enabled",
-   "doc_url": "https://tfsec.dev/docs/azure/appservice/detailed-error-messages-enabled/"
-  },
-  {
-   "code": "azure-appservice-dotnet-framework-version",
-   "legacy_code": "",
-   "service": "appservice",
-   "provider": "azure",
-   "description": "Azure App Service Web app does not use the latest .Net Core version",
-   "impact": "Outdated .NET could contain open vulnerabilities",
-   "resolution": "Use the latest version of the .NET framework",
-   "doc_url": "https://tfsec.dev/docs/azure/appservice/dotnet-framework-version/"
-  },
-  {
-   "code": "azure-appservice-enable-http2",
-   "legacy_code": "",
-   "service": "appservice",
-   "provider": "azure",
-   "description": "Web App uses the latest HTTP version",
-   "impact": "Outdated versions of HTTP has security vulnerabilities",
-   "resolution": "Use the latest version of HTTP",
-   "doc_url": "https://tfsec.dev/docs/azure/appservice/enable-http2/"
-  },
-  {
-   "code": "azure-appservice-enforce-https",
-   "legacy_code": "AZU028",
-   "service": "appservice",
-   "provider": "azure",
-   "description": "Ensure the Function App can only be accessed via HTTPS. The default is false.",
-   "impact": "Anyone can access the Function App using HTTP.",
-   "resolution": "You can redirect all HTTP requests to the HTTPS port.",
-   "doc_url": "https://tfsec.dev/docs/azure/appservice/enforce-https/"
-  },
-  {
-   "code": "azure-appservice-failed-request-tracing-enabled",
-   "legacy_code": "",
-   "service": "appservice",
-   "provider": "azure",
-   "description": "App service does not enable failed request tracing",
-   "impact": "Logging of failed request tracing will not be logged",
-   "resolution": "Enable failed_request_tracing_enabled",
-   "doc_url": "https://tfsec.dev/docs/azure/appservice/failed-request-tracing-enabled/"
-  },
-  {
-   "code": "azure-appservice-ftp-deployments-disabled",
-   "legacy_code": "",
-   "service": "appservice",
-   "provider": "azure",
-   "description": "Ensure FTP Deployments are disabled",
-   "impact": "FTP is insecure and can lead to loss of data",
-   "resolution": "Disable FTP",
-   "doc_url": "https://tfsec.dev/docs/azure/appservice/ftp-deployments-disabled/"
-  },
-  {
-   "code": "azure-appservice-http-logs-enabled",
-   "legacy_code": "",
-   "service": "appservice",
-   "provider": "azure",
-   "description": "App service does not enable HTTP logging",
-   "impact": "Missed logs related to HTTP requests",
-   "resolution": "Enable http_logs",
-   "doc_url": "https://tfsec.dev/docs/azure/appservice/http-logs-enabled/"
-  },
-  {
-   "code": "azure-appservice-php-version",
-   "legacy_code": "",
-   "service": "appservice",
-   "provider": "azure",
-   "description": "Azure App Service Web app does not use the latest PHP version",
-   "impact": "Old PHP Versions can contain vulnerabilities which lead to compromised Web Applications",
-   "resolution": "Ensure Latest PHP Version is being used",
-   "doc_url": "https://tfsec.dev/docs/azure/appservice/php-version/"
-  },
-  {
-   "code": "azure-appservice-python-version",
-   "legacy_code": "",
-   "service": "appservice",
-   "provider": "azure",
-   "description": "Azure App Service Web app does not use the latest Python version",
-   "impact": "Old Python Versions can contain vulnerabilities which lead to compromised Web Applications",
-   "resolution": "Ensure Latest Python Version is being used",
-   "doc_url": "https://tfsec.dev/docs/azure/appservice/python-version/"
-  },
-  {
-   "code": "azure-appservice-require-client-cert",
-   "legacy_code": "",
-   "service": "appservice",
-   "provider": "azure",
-   "description": "Web App accepts incoming client certificate",
-   "impact": "Mutual TLS is not being used",
-   "resolution": "Enable incoming certificates for clients",
-   "doc_url": "https://tfsec.dev/docs/azure/appservice/require-client-cert/"
-  },
-  {
-   "code": "azure-appservice-use-secure-tls-policy",
-   "legacy_code": "",
-   "service": "appservice",
-   "provider": "azure",
-   "description": "Web App uses latest TLS version",
-   "impact": "The minimum TLS version for apps should be TLS1_2",
-   "resolution": "The TLS version being outdated and has known vulnerabilities",
-   "doc_url": "https://tfsec.dev/docs/azure/appservice/use-secure-tls-policy/"
-  },
-  {
-   "code": "azure-authorization-limit-role-actions",
-   "legacy_code": "",
-   "service": "authorization",
-   "provider": "azure",
-   "description": "Roles limited to the required actions",
-   "impact": "Open permissions for subscriptions could result in an easily compromisable account",
-   "resolution": "Use targeted permissions for roles",
-   "doc_url": "https://tfsec.dev/docs/azure/authorization/limit-role-actions/"
-  },
-  {
-   "code": "azure-compute-disable-password-authentication",
-   "legacy_code": "",
-   "service": "compute",
-   "provider": "azure",
-   "description": "Password authentication should be disabled on Azure virtual machines",
-   "impact": "Using password authentication is less secure that ssh keys may result in compromised servers",
-   "resolution": "Use ssh authentication for virtual machines",
-   "doc_url": "https://tfsec.dev/docs/azure/compute/disable-password-authentication/"
-  },
-  {
-   "code": "azure-compute-enable-disk-encryption",
-   "legacy_code": "AZU003",
-   "service": "compute",
-   "provider": "azure",
-   "description": "Enable disk encryption on managed disk",
-   "impact": "Data could be read if compromised",
-   "resolution": "Enable encryption on managed disks",
-   "doc_url": "https://tfsec.dev/docs/azure/compute/enable-disk-encryption/"
-  },
-  {
-   "code": "azure-compute-no-secrets-in-custom-data",
-   "legacy_code": "",
-   "service": "compute",
-   "provider": "azure",
-   "description": "Ensure that no sensitive credentials are exposed in VM custom_data",
-   "impact": "Sensitive credentials in custom_data can be leaked",
-   "resolution": "Don't use sensitive credentials in the VM custom_data",
-   "doc_url": "https://tfsec.dev/docs/azure/compute/no-secrets-in-custom-data/"
-  },
-  {
-   "code": "azure-compute-ssh-authentication",
-   "legacy_code": "AZU005",
-   "service": "compute",
-   "provider": "azure",
-   "description": "Password authentication in use instead of SSH keys.",
-   "impact": "Passwords are potentially easier to compromise than SSH Keys",
-   "resolution": "Use SSH keys for authentication",
-   "doc_url": "https://tfsec.dev/docs/azure/compute/ssh-authentication/"
-  },
-  {
-   "code": "azure-container-configured-network-policy",
-   "legacy_code": "AZU006",
-   "service": "container",
-   "provider": "azure",
-   "description": "Ensure AKS cluster has Network Policy configured",
-   "impact": "No network policy is protecting the AKS cluster",
-   "resolution": "Configure a network policy",
-   "doc_url": "https://tfsec.dev/docs/azure/container/configured-network-policy/"
-  },
-  {
-   "code": "azure-container-limit-authorized-ips",
-   "legacy_code": "AZU008",
-   "service": "container",
-   "provider": "azure",
-   "description": "Ensure AKS has an API Server Authorized IP Ranges enabled",
-   "impact": "Any IP can interact with the API server",
-   "resolution": "Limit the access to the API server to a limited IP range",
-   "doc_url": "https://tfsec.dev/docs/azure/container/limit-authorized-ips/"
-  },
-  {
-   "code": "azure-container-logging",
-   "legacy_code": "AZU009",
-   "service": "container",
-   "provider": "azure",
-   "description": "Ensure AKS logging to Azure Monitoring is Configured",
-   "impact": "Logging provides valuable information about access and usage",
-   "resolution": "Enable logging for AKS",
-   "doc_url": "https://tfsec.dev/docs/azure/container/logging/"
-  },
-  {
-   "code": "azure-container-use-rbac-permissions",
-   "legacy_code": "AZU007",
-   "service": "container",
-   "provider": "azure",
-   "description": "Ensure RBAC is enabled on AKS clusters",
-   "impact": "No role based access control is in place for the AKS cluster",
-   "resolution": "Enable RBAC",
-   "doc_url": "https://tfsec.dev/docs/azure/container/use-rbac-permissions/"
-  },
-  {
-   "code": "azure-database-enable-audit",
-   "legacy_code": "AZU018",
-   "service": "database",
-   "provider": "azure",
-   "description": "Auditing should be enabled on Azure SQL Databases",
-   "impact": "Auditing provides valuable information about access and usage",
-   "resolution": "Enable auditing on Azure SQL databases",
-   "doc_url": "https://tfsec.dev/docs/azure/database/enable-audit/"
-  },
-  {
-   "code": "azure-database-enable-ssl-enforcement",
-   "legacy_code": "",
-   "service": "database",
-   "provider": "azure",
-   "description": "SSL should be enforced on database connections where applicable",
-   "impact": "Insecure connections could lead to data loss and other vulnerabilities",
-   "resolution": "Enable SSL enforcement",
-   "doc_url": "https://tfsec.dev/docs/azure/database/enable-ssl-enforcement/"
-  },
-  {
-   "code": "azure-database-no-public-access",
-   "legacy_code": "",
-   "service": "database",
-   "provider": "azure",
-   "description": "Ensure databases are not publicly accessible",
-   "impact": "Publicly accessible database could lead to compromised data",
-   "resolution": "Disable public access to database when not required",
-   "doc_url": "https://tfsec.dev/docs/azure/database/no-public-access/"
-  },
-  {
-   "code": "azure-database-no-public-firewall-access",
-   "legacy_code": "",
-   "service": "database",
-   "provider": "azure",
-   "description": "Ensure database firewalls do not permit public access",
-   "impact": "Publicly accessible databases could lead to compromised data",
-   "resolution": "Don't use wide ip ranges for the sql firewall",
-   "doc_url": "https://tfsec.dev/docs/azure/database/no-public-firewall-access/"
-  },
-  {
-   "code": "azure-database-postgres-configuration-log-checkpoints",
-   "legacy_code": "",
-   "service": "database",
-   "provider": "azure",
-   "description": "Ensure server parameter 'log_checkpoints' is set to 'ON' for PostgreSQL Database Server",
-   "impact": "No error and query logs generated on checkpoint",
-   "resolution": "Enable checkpoint logging",
-   "doc_url": "https://tfsec.dev/docs/azure/database/postgres-configuration-log-checkpoints/"
-  },
-  {
-   "code": "azure-database-postgres-configuration-log-connection-throttling",
-   "legacy_code": "",
-   "service": "database",
-   "provider": "azure",
-   "description": "Ensure server parameter 'connection_throttling' is set to 'ON' for PostgreSQL Database Server",
-   "impact": "No log information to help diagnosing connection contention issues",
-   "resolution": "Enable connection throttling logging",
-   "doc_url": "https://tfsec.dev/docs/azure/database/postgres-configuration-log-connection-throttling/"
-  },
-  {
-   "code": "azure-database-postgres-configuration-log-connections",
-   "legacy_code": "",
-   "service": "database",
-   "provider": "azure",
-   "description": "Ensure server parameter 'log_connections' is set to 'ON' for PostgreSQL Database Server",
-   "impact": "No visibility of successful connections",
-   "resolution": "Enable connection logging",
-   "doc_url": "https://tfsec.dev/docs/azure/database/postgres-configuration-log-connections/"
-  },
-  {
-   "code": "azure-database-retention-period-set",
-   "legacy_code": "AZU019",
-   "service": "database",
-   "provider": "azure",
-   "description": "Database auditing rentention period should be longer than 90 days",
-   "impact": "Short logging retention could result in missing valuable historical information",
-   "resolution": "Set retention periods of database auditing to greater than 90 days",
-   "doc_url": "https://tfsec.dev/docs/azure/database/retention-period-set/"
-  },
-  {
-   "code": "azure-database-secure-tls-policy",
-   "legacy_code": "",
-   "service": "database",
-   "provider": "azure",
-   "description": "Databases should have the minimum TLS set for connections",
-   "impact": "Outdated TLS policies increase exposure to known issues",
-   "resolution": "Use the most modern TLS policies available",
-   "doc_url": "https://tfsec.dev/docs/azure/database/secure-tls-policy/"
-  },
-  {
-   "code": "azure-datafactory-no-public-access",
-   "legacy_code": "AZU025",
-   "service": "datafactory",
-   "provider": "azure",
-   "description": "Data Factory should have public access disabled, the default is enabled.",
-   "impact": "Data factory is publicly accessible",
-   "resolution": "Set public access to disabled for Data Factory",
-   "doc_url": "https://tfsec.dev/docs/azure/datafactory/no-public-access/"
-  },
-  {
-   "code": "azure-datalake-enable-at-rest-encryption",
-   "legacy_code": "AZU004",
-   "service": "datalake",
-   "provider": "azure",
-   "description": "Unencrypted data lake storage.",
-   "impact": "Data could be read if compromised",
-   "resolution": "Enable encryption of data lake storage",
-   "doc_url": "https://tfsec.dev/docs/azure/datalake/enable-at-rest-encryption/"
-  },
-  {
-   "code": "azure-functionapp-authentication-enabled",
-   "legacy_code": "",
-   "service": "functionapp",
-   "provider": "azure",
-   "description": "Function App authentication is activated",
-   "impact": "Anonymous HTTP requests will be accepted",
-   "resolution": "Enable authentication to prevent anonymous request being accepted",
-   "doc_url": "https://tfsec.dev/docs/azure/functionapp/authentication-enabled/"
-  },
-  {
-   "code": "azure-functionapp-enable-http2",
-   "legacy_code": "",
-   "service": "functionapp",
-   "provider": "azure",
-   "description": "Web App uses the latest HTTP version",
-   "impact": "Outdated versions of HTTP has security vulnerabilities",
-   "resolution": "Use the latest version of HTTP",
-   "doc_url": "https://tfsec.dev/docs/azure/functionapp/enable-http2/"
-  },
-  {
-   "code": "azure-keyvault-content-type-for-secret",
-   "legacy_code": "AZU022",
-   "service": "keyvault",
-   "provider": "azure",
-   "description": "Key vault Secret should have a content type set",
-   "impact": "The secret's type is unclear without a content type",
-   "resolution": "Provide content type for secrets to aid interpretation on retrieval",
-   "doc_url": "https://tfsec.dev/docs/azure/keyvault/content-type-for-secret/"
-  },
-  {
-   "code": "azure-keyvault-ensure-key-expiry",
-   "legacy_code": "AZU026",
-   "service": "keyvault",
-   "provider": "azure",
-   "description": "Ensure that the expiration date is set on all keys",
-   "impact": "Long life keys increase the attack surface when compromised",
-   "resolution": "Set an expiration date on the vault key",
-   "doc_url": "https://tfsec.dev/docs/azure/keyvault/ensure-key-expiry/"
-  },
-  {
-   "code": "azure-keyvault-ensure-secret-expiry",
-   "legacy_code": "AZU023",
-   "service": "keyvault",
-   "provider": "azure",
-   "description": "Key Vault Secret should have an expiration date set",
-   "impact": "Long life secrets increase the opportunity for compromise",
-   "resolution": "Set an expiry for secrets",
-   "doc_url": "https://tfsec.dev/docs/azure/keyvault/ensure-secret-expiry/"
-  },
-  {
-   "code": "azure-keyvault-no-purge",
-   "legacy_code": "AZU021",
-   "service": "keyvault",
-   "provider": "azure",
-   "description": "Key vault should have purge protection enabled",
-   "impact": "Keys could be purged from the vault without protection",
-   "resolution": "Enable purge protection for key vaults",
-   "doc_url": "https://tfsec.dev/docs/azure/keyvault/no-purge/"
-  },
-  {
-   "code": "azure-keyvault-specify-network-acl",
-   "legacy_code": "AZU020",
-   "service": "keyvault",
-   "provider": "azure",
-   "description": "Key vault should have the network acl block specified",
-   "impact": "Without a network ACL the key vault is freely accessible",
-   "resolution": "Set a network ACL for the key vault",
-   "doc_url": "https://tfsec.dev/docs/azure/keyvault/specify-network-acl/"
-  },
-  {
-   "code": "azure-monitor-activity-log-retention-set",
-   "legacy_code": "",
-   "service": "monitor",
-   "provider": "azure",
-   "description": "Ensure the activity retention log is set to at least a year",
-   "impact": "Short life activity logs can lead to missing records when investigating a breach",
-   "resolution": "Set a retention period that will allow for delayed investigation",
-   "doc_url": "https://tfsec.dev/docs/azure/monitor/activity-log-retention-set/"
-  },
-  {
-   "code": "azure-monitor-capture-all-activities",
-   "legacy_code": "",
-   "service": "monitor",
-   "provider": "azure",
-   "description": "Ensure log profile captures all activities",
-   "impact": "Log profile must capture all activity to be able to ensure that all relevant information possible is available for an investigation",
-   "resolution": "Configure log profile to capture all activities",
-   "doc_url": "https://tfsec.dev/docs/azure/monitor/capture-all-activities/"
-  },
-  {
-   "code": "azure-monitor-capture-all-regions",
-   "legacy_code": "",
-   "service": "monitor",
-   "provider": "azure",
-   "description": "Ensure activitys are captured for all locations",
-   "impact": "Activity may be occurring in locations that aren't being monitored",
-   "resolution": "Enable capture for all locations",
-   "doc_url": "https://tfsec.dev/docs/azure/monitor/capture-all-regions/"
-  },
-  {
-   "code": "azure-mssql-all-threat-alerts-enabled",
-   "legacy_code": "",
-   "service": "mssql",
-   "provider": "azure",
-   "description": "No threat detections are set",
-   "impact": "Disabling threat alerts means you are not getting the full benefit of server security protection",
-   "resolution": "Use all provided threat alerts",
-   "doc_url": "https://tfsec.dev/docs/azure/mssql/all-threat-alerts-enabled/"
-  },
-  {
-   "code": "azure-mssql-threat-alert-email-set",
-   "legacy_code": "",
-   "service": "mssql",
-   "provider": "azure",
-   "description": "At least one email address is set for threat alerts",
-   "impact": "Nobody will be prompty alerted in the case of a threat being detected",
-   "resolution": "Provide at least one email address for threat alerts",
-   "doc_url": "https://tfsec.dev/docs/azure/mssql/threat-alert-email-set/"
-  },
-  {
-   "code": "azure-mssql-threat-alert-email-to-owner",
-   "legacy_code": "",
-   "service": "mssql",
-   "provider": "azure",
-   "description": "Security threat alerts go to subcription owners and co-administrators",
-   "impact": "Administrators and subscription owners may have a delayed response",
-   "resolution": "Enable email to subscription owners",
-   "doc_url": "https://tfsec.dev/docs/azure/mssql/threat-alert-email-to-owner/"
-  },
-  {
-   "code": "azure-network-disable-rdp-from-internet",
-   "legacy_code": "AZU024",
-   "service": "network",
-   "provider": "azure",
-   "description": "RDP access should not be accessible from the Internet, should be blocked on port 3389",
-   "impact": "Anyone from the internet can potentially RDP onto an instance",
-   "resolution": "Block RDP port from internet",
-   "doc_url": "https://tfsec.dev/docs/azure/network/disable-rdp-from-internet/"
-  },
-  {
-   "code": "azure-network-no-public-egress",
-   "legacy_code": "AZU002",
-   "service": "network",
-   "provider": "azure",
-   "description": "An outbound network security rule allows traffic to /0.",
-   "impact": "The port is exposed for egress to the internet",
-   "resolution": "Set a more restrictive cidr range",
-   "doc_url": "https://tfsec.dev/docs/azure/network/no-public-egress/"
-  },
-  {
-   "code": "azure-network-no-public-ingress",
-   "legacy_code": "AZU001",
-   "service": "network",
-   "provider": "azure",
-   "description": "An inbound network security rule allows traffic from /0.",
-   "impact": "The port is exposed for ingress from the internet",
-   "resolution": "Set a more restrictive cidr range",
-   "doc_url": "https://tfsec.dev/docs/azure/network/no-public-ingress/"
-  },
-  {
-   "code": "azure-network-retention-policy-set",
-   "legacy_code": "",
-   "service": "network",
-   "provider": "azure",
-   "description": "Retention policy for flow logs should be enabled and set to greater than 90 days",
-   "impact": "Not enabling retention or having short expiry on flow logs could lead to compromise being undetected limiting time for analysis",
-   "resolution": "Ensure flow log retention is turned on with an expiry of \u003e90 days",
-   "doc_url": "https://tfsec.dev/docs/azure/network/retention-policy-set/"
-  },
-  {
-   "code": "azure-network-ssh-blocked-from-internet",
-   "legacy_code": "AZU017",
-   "service": "network",
-   "provider": "azure",
-   "description": "SSH access should not be accessible from the Internet, should be blocked on port 22",
-   "impact": "Its dangerous to allow SSH access from the internet",
-   "resolution": "Block port 22 access from the internet",
-   "doc_url": "https://tfsec.dev/docs/azure/network/ssh-blocked-from-internet/"
-  },
-  {
-   "code": "azure-security-center-alert-on-severe-notifications",
-   "legacy_code": "",
-   "service": "security-center",
-   "provider": "azure",
-   "description": "Send notification emails for high severity alerts",
-   "impact": "The ability to react to high severity notifications could be delayed",
-   "resolution": " Set alert notifications to be on",
-   "doc_url": "https://tfsec.dev/docs/azure/security-center/alert-on-severe-notifications/"
-  },
-  {
-   "code": "azure-security-center-defender-on-container",
-   "legacy_code": "",
-   "service": "security-center",
-   "provider": "azure",
-   "description": "Ensure Azure Defender is set to On for container registries",
-   "impact": "Not enabling defender for container registries could lead to compromised account",
-   "resolution": "Enable ContainerRegistry in Azure Defender",
-   "doc_url": "https://tfsec.dev/docs/azure/security-center/defender-on-container/"
-  },
-  {
-   "code": "azure-security-center-enable-standard-subscription",
-   "legacy_code": "",
-   "service": "security-center",
-   "provider": "azure",
-   "description": "Enable the standard security center subscription tier",
-   "impact": "Using free subscription does not enable Azure Defender for the resource type",
-   "resolution": "Enable standard subscription tier to benefit from Azure Defender",
-   "doc_url": "https://tfsec.dev/docs/azure/security-center/enable-standard-subscription/"
-  },
-  {
-   "code": "azure-security-center-set-required-contact-details",
-   "legacy_code": "",
-   "service": "security-center",
-   "provider": "azure",
-   "description": "The required contact details should be set for security center",
-   "impact": "Without a telephone number set, Azure support can't contact",
-   "resolution": "Set a telephone number for security center contact",
-   "doc_url": "https://tfsec.dev/docs/azure/security-center/set-required-contact-details/"
-  },
-  {
-   "code": "azure-storage-allow-microsoft-service-bypass",
-   "legacy_code": "AZU013",
-   "service": "storage",
-   "provider": "azure",
-   "description": "Trusted Microsoft Services should have bypass access to Storage accounts",
-   "impact": "Trusted Microsoft Services won't be able to access storage account unless rules set to allow",
-   "resolution": "Allow Trusted Microsoft Services to bypass",
-   "doc_url": "https://tfsec.dev/docs/azure/storage/allow-microsoft-service-bypass/"
-  },
-  {
-   "code": "azure-storage-container-activity-logs-not-public",
-   "legacy_code": "",
-   "service": "storage",
-   "provider": "azure",
-   "description": "Ensure public access level for Blob Containers is set to private",
-   "impact": "Data in the storage container could be exposed publicly",
-   "resolution": "Disable public access to storage containers",
-   "doc_url": "https://tfsec.dev/docs/azure/storage/container-activity-logs-not-public/"
-  },
-  {
-   "code": "azure-storage-default-action-deny",
-   "legacy_code": "AZU012",
-   "service": "storage",
-   "provider": "azure",
-   "description": "The default action on Storage account network rules should be set to deny",
-   "impact": "Network rules that allow could cause data to be exposed publicly",
-   "resolution": "Set network rules to deny",
-   "doc_url": "https://tfsec.dev/docs/azure/storage/default-action-deny/"
-  },
-  {
-   "code": "azure-storage-enforce-https",
-   "legacy_code": "AZU014",
-   "service": "storage",
-   "provider": "azure",
-   "description": "Storage accounts should be configured to only accept transfers that are over secure connections",
-   "impact": "Insecure transfer of data into secure accounts could be read if intercepted",
-   "resolution": "Only allow secure connection for transferring data into storage accounts",
-   "doc_url": "https://tfsec.dev/docs/azure/storage/enforce-https/"
-  },
-  {
-   "code": "azure-storage-no-public-access",
-   "legacy_code": "AZU011",
-   "service": "storage",
-   "provider": "azure",
-   "description": "Storage containers in blob storage mode should not have public access",
-   "impact": "Data in the storage container could be exposed publicly",
-   "resolution": "Disable public access to storage containers",
-   "doc_url": "https://tfsec.dev/docs/azure/storage/no-public-access/"
-  },
-  {
-   "code": "azure-storage-queue-services-logging-enabled",
-   "legacy_code": "AZU016",
-   "service": "storage",
-   "provider": "azure",
-   "description": "When using Queue Services for a storage account, logging should be enabled.",
-   "impact": "Logging provides valuable information about access and usage",
-   "resolution": "Enable logging for Queue Services",
-   "doc_url": "https://tfsec.dev/docs/azure/storage/queue-services-logging-enabled/"
-  },
-  {
-   "code": "azure-storage-use-secure-tls-policy",
-   "legacy_code": "AZU015",
-   "service": "storage",
-   "provider": "azure",
-   "description": "The minimum TLS version for Storage Accounts should be TLS1_2",
-   "impact": "The TLS version being outdated and has known vulnerabilities",
-   "resolution": "Use a more recent TLS/SSL policy for the load balancer",
-   "doc_url": "https://tfsec.dev/docs/azure/storage/use-secure-tls-policy/"
-  },
-  {
-   "code": "azure-synapse-virtual-network-enabled",
-   "legacy_code": "AZU027",
-   "service": "synapse",
-   "provider": "azure",
-   "description": "Synapse Workspace should have managed virtual network enabled, the default is disabled.",
-   "impact": "Your Synapse workspace is not using the private endpoints",
-   "resolution": "Set manage virtual network to enabled",
-   "doc_url": "https://tfsec.dev/docs/azure/synapse/virtual-network-enabled/"
-  },
-  {
-   "code": "digitalocean-compute-no-public-egress",
-   "legacy_code": "DIG002",
-   "service": "compute",
-   "provider": "digitalocean",
-   "description": "The firewall has an outbound rule with open access",
-   "impact": "The port is exposed for ingress from the internet",
-   "resolution": "Set a more restrictive cidr range",
-   "doc_url": "https://tfsec.dev/docs/digitalocean/compute/no-public-egress/"
-  },
-  {
-   "code": "digitalocean-compute-no-public-ingress",
-   "legacy_code": "DIG001",
-   "service": "compute",
-   "provider": "digitalocean",
-   "description": "The firewall has an inbound rule with open access",
-   "impact": "Your port is exposed to the internet",
-   "resolution": "Set a more restrictive CIRDR range",
-   "doc_url": "https://tfsec.dev/docs/digitalocean/compute/no-public-ingress/"
-  },
-  {
-   "code": "digitalocean-droplet-use-ssh-keys",
-   "legacy_code": "DIG003",
-   "service": "droplet",
-   "provider": "digitalocean",
-   "description": "SSH Keys are the preferred way to connect to your droplet, no keys are supplied",
-   "impact": "Logging in with username and password is easier to compromise",
-   "resolution": "Use ssh keys for login",
-   "doc_url": "https://tfsec.dev/docs/digitalocean/droplet/use-ssh-keys/"
-  },
-  {
-   "code": "digitalocean-loadbalancing-enforce-https",
-   "legacy_code": "DIG004",
-   "service": "loadbalancing",
-   "provider": "digitalocean",
-   "description": "The load balancer forwarding rule is using an insecure protocol as an entrypoint",
-   "impact": "Your inbound traffic is not protected",
-   "resolution": "Switch to HTTPS to benefit from TLS security features",
-   "doc_url": "https://tfsec.dev/docs/digitalocean/loadbalancing/enforce-https/"
-  },
-  {
-   "code": "digitalocean-spaces-acl-no-public-read",
-   "legacy_code": "DIG005",
-   "service": "spaces",
-   "provider": "digitalocean",
-   "description": "Spaces bucket or bucket object has public read acl set",
-   "impact": "The contents of the space can be accessed publicly",
-   "resolution": "Apply a more restrictive ACL",
-   "doc_url": "https://tfsec.dev/docs/digitalocean/spaces/acl-no-public-read/"
-  },
-  {
-   "code": "digitalocean-spaces-disable-force-destroy",
-   "legacy_code": "DIG007",
-   "service": "spaces",
-   "provider": "digitalocean",
-   "description": "Force destroy is enabled on Spaces bucket which is dangerous",
-   "impact": "Accidental deletion of bucket objects",
-   "resolution": "Don't use force destroy on bucket configuration",
-   "doc_url": "https://tfsec.dev/docs/digitalocean/spaces/disable-force-destroy/"
-  },
-  {
-   "code": "digitalocean-spaces-versioning-enabled",
-   "legacy_code": "DIG006",
-   "service": "spaces",
-   "provider": "digitalocean",
-   "description": "Spaces buckets should have versioning enabled",
-   "impact": "Deleted or modified data would not be recoverable",
-   "resolution": "Enable versioning to protect against accidental or malicious removal or modification",
-   "doc_url": "https://tfsec.dev/docs/digitalocean/spaces/versioning-enabled/"
-  },
-  {
-   "code": "github-repositories-private",
-   "legacy_code": "GIT001",
-   "service": "repositories",
-   "provider": "github",
-   "description": "Github repository shouldn't be public.",
-   "impact": "Anyone can read the contents of the GitHub repository and leak IP",
-   "resolution": "Make sensitive or commercially important repositories private",
-   "doc_url": "https://tfsec.dev/docs/github/repositories/private/"
-  },
-  {
-   "code": "google-bigquery-no-public-access",
-   "legacy_code": "",
-   "service": "bigquery",
-   "provider": "google",
-   "description": "BigQuery datasets should only be accessible within the organisation",
-   "impact": "Exposure of sensitive data to the public iniernet",
-   "resolution": "Configure access permissions with higher granularity",
-   "doc_url": "https://tfsec.dev/docs/google/bigquery/no-public-access/"
-  },
-  {
-   "code": "google-compute-disk-encryption-customer-key",
-   "legacy_code": "",
-   "service": "compute",
-   "provider": "google",
-   "description": "Disks should be encrypted with Customer Supplied Encryption Keys",
-   "impact": "Using unmanaged keys does not allow for proper management",
-   "resolution": "Use managed keys ",
-   "doc_url": "https://tfsec.dev/docs/google/compute/disk-encryption-customer-key/"
-  },
-  {
-   "code": "google-compute-disk-encryption-customer-keys",
-   "legacy_code": "GCP001",
-   "service": "compute",
-   "provider": "google",
-   "description": "Encrypted compute disk with unmanaged keys.",
-   "impact": "Encryption of disk using unmanaged keys.",
-   "resolution": "Enable encryption using a customer-managed key.",
-   "doc_url": "https://tfsec.dev/docs/google/compute/disk-encryption-customer-keys/"
-  },
-  {
-   "code": "google-compute-disk-encryption-required",
-   "legacy_code": "GCP013",
-   "service": "compute",
-   "provider": "google",
-   "description": "The encryption key used to encrypt a compute disk has been specified in plaintext.",
-   "impact": "The encryption key should be considered compromised as it is not stored securely.",
-   "resolution": "Reference a managed key rather than include the key in raw format.",
-   "doc_url": "https://tfsec.dev/docs/google/compute/disk-encryption-required/"
-  },
-  {
-   "code": "google-compute-enable-shielded-vm",
-   "legacy_code": "",
-   "service": "compute",
-   "provider": "google",
-   "description": "Instances should have Shielded VM enabled",
-   "impact": "Unable to detect rootkits",
-   "resolution": "Enable Shielded VM",
-   "doc_url": "https://tfsec.dev/docs/google/compute/enable-shielded-vm/"
-  },
-  {
-   "code": "google-compute-enable-vpc-flow-logs",
-   "legacy_code": "",
-   "service": "compute",
-   "provider": "google",
-   "description": "VPC flow logs should be enabled for all subnets",
-   "impact": "Limited auditing capability and awareness",
-   "resolution": "Enable VPC flow logs",
-   "doc_url": "https://tfsec.dev/docs/google/compute/enable-vpc-flow-logs/"
-  },
-  {
-   "code": "google-compute-no-default-service-account",
-   "legacy_code": "",
-   "service": "compute",
-   "provider": "google",
-   "description": "Instances should not use the default service account",
-   "impact": "Instance has full access to the project",
-   "resolution": "Remove use of default service account",
-   "doc_url": "https://tfsec.dev/docs/google/compute/no-default-service-account/"
-  },
-  {
-   "code": "google-compute-no-ip-forwarding",
-   "legacy_code": "",
-   "service": "compute",
-   "provider": "google",
-   "description": "Instances should not have IP forwarding enabled",
-   "impact": "Instance can send/receive packets without the explicit instance address",
-   "resolution": "Disable IP forwarding",
-   "doc_url": "https://tfsec.dev/docs/google/compute/no-ip-forwarding/"
-  },
-  {
-   "code": "google-compute-no-oslogin-override",
-   "legacy_code": "",
-   "service": "compute",
-   "provider": "google",
-   "description": "Instances should not override the project setting for OS Login",
-   "impact": "Access via SSH key cannot be revoked automatically when an IAM user is removed.",
-   "resolution": "Enable OS Login at project level and remove instance-level overrides",
-   "doc_url": "https://tfsec.dev/docs/google/compute/no-oslogin-override/"
-  },
-  {
-   "code": "google-compute-no-plaintext-disk-keys",
-   "legacy_code": "",
-   "service": "compute",
-   "provider": "google",
-   "description": "Disk encryption keys should not be provided in plaintext",
-   "impact": "Compromise of encryption keys",
-   "resolution": "Use managed keys or provide the raw key via a secrets manager ",
-   "doc_url": "https://tfsec.dev/docs/google/compute/no-plaintext-disk-keys/"
-  },
-  {
-   "code": "google-compute-no-plaintext-vm-disk-keys",
-   "legacy_code": "",
-   "service": "compute",
-   "provider": "google",
-   "description": "VM disk encryption keys should not be provided in plaintext",
-   "impact": "Compromise of encryption keys",
-   "resolution": "Use managed keys or provide the raw key via a secrets manager ",
-   "doc_url": "https://tfsec.dev/docs/google/compute/no-plaintext-vm-disk-keys/"
-  },
-  {
-   "code": "google-compute-no-project-wide-ssh-keys",
-   "legacy_code": "",
-   "service": "compute",
-   "provider": "google",
-   "description": "Disable project-wide SSH keys for all instances",
-   "impact": "Compromise of a single key pair compromises all instances",
-   "resolution": "Disable project-wide SSH keys",
-   "doc_url": "https://tfsec.dev/docs/google/compute/no-project-wide-ssh-keys/"
-  },
-  {
-   "code": "google-compute-no-public-egress",
-   "legacy_code": "GCP004",
-   "service": "compute",
-   "provider": "google",
-   "description": "An outbound firewall rule allows traffic to /0.",
-   "impact": "The port is exposed for egress to the internet",
-   "resolution": "Set a more restrictive cidr range",
-   "doc_url": "https://tfsec.dev/docs/google/compute/no-public-egress/"
-  },
-  {
-   "code": "google-compute-no-public-ingress",
-   "legacy_code": "GCP003",
-   "service": "compute",
-   "provider": "google",
-   "description": "An inbound firewall rule allows traffic from /0.",
-   "impact": "The port is exposed for ingress from the internet",
-   "resolution": "Set a more restrictive cidr range",
-   "doc_url": "https://tfsec.dev/docs/google/compute/no-public-ingress/"
-  },
-  {
-   "code": "google-compute-no-public-ip",
-   "legacy_code": "",
-   "service": "compute",
-   "provider": "google",
-   "description": "Instances should not have public IP addresses",
-   "impact": "Direct exposure of an instance to the public internet",
-   "resolution": "Remove public IP",
-   "doc_url": "https://tfsec.dev/docs/google/compute/no-public-ip/"
-  },
-  {
-   "code": "google-compute-no-serial-port",
-   "legacy_code": "",
-   "service": "compute",
-   "provider": "google",
-   "description": "Disable serial port connectivity for all instances",
-   "impact": "Unrestricted network access to the serial console of the instance",
-   "resolution": "Disable serial port access",
-   "doc_url": "https://tfsec.dev/docs/google/compute/no-serial-port/"
-  },
-  {
-   "code": "google-compute-project-level-oslogin",
-   "legacy_code": "",
-   "service": "compute",
-   "provider": "google",
-   "description": "OS Login should be enabled at project level",
-   "impact": "Access via SSH key cannot be revoked automatically when an IAM user is removed.",
-   "resolution": "Enable OS Login at project level",
-   "doc_url": "https://tfsec.dev/docs/google/compute/project-level-oslogin/"
-  },
-  {
-   "code": "google-compute-use-secure-tls-policy",
-   "legacy_code": "",
-   "service": "compute",
-   "provider": "google",
-   "description": "SSL policies should enforce secure versions of TLS",
-   "impact": "Data in transit is not sufficiently secured",
-   "resolution": "Enforce a minimum TLS version of 1.2",
-   "doc_url": "https://tfsec.dev/docs/google/compute/use-secure-tls-policy/"
-  },
-  {
-   "code": "google-compute-vm-disk-encryption-customer-key",
-   "legacy_code": "",
-   "service": "compute",
-   "provider": "google",
-   "description": "VM disks should be encrypted with Customer Supplied Encryption Keys",
-   "impact": "Using unmanaged keys does not allow for proper management",
-   "resolution": "Use managed keys ",
-   "doc_url": "https://tfsec.dev/docs/google/compute/vm-disk-encryption-customer-key/"
-  },
-  {
-   "code": "google-dns-enable-dnssec",
-   "legacy_code": "",
-   "service": "dns",
-   "provider": "google",
-   "description": "Cloud DNS should use DNSSEC",
-   "impact": "Unverified DNS responses could lead to man-in-the-middle attacks",
-   "resolution": "Enable DNSSEC",
-   "doc_url": "https://tfsec.dev/docs/google/dns/enable-dnssec/"
-  },
-  {
-   "code": "google-dns-no-rsa-sha1",
-   "legacy_code": "",
-   "service": "dns",
-   "provider": "google",
-   "description": "Zone signing should not use RSA SHA1",
-   "impact": "Less secure encryption algorithm than others available",
-   "resolution": "Use RSA SHA512",
-   "doc_url": "https://tfsec.dev/docs/google/dns/no-rsa-sha1/"
-  },
-  {
-   "code": "google-gke-enable-auto-repair",
-   "legacy_code": "",
-   "service": "gke",
-   "provider": "google",
-   "description": "Kubernetes should have 'Automatic repair' enabled",
-   "impact": "Failing nodes will require manual repair.",
-   "resolution": "Enable automatic repair",
-   "doc_url": "https://tfsec.dev/docs/google/gke/enable-auto-repair/"
-  },
-  {
-   "code": "google-gke-enable-auto-upgrade",
-   "legacy_code": "",
-   "service": "gke",
-   "provider": "google",
-   "description": "Kubernetes should have 'Automatic upgrade' enabled",
-   "impact": "Nodes will need the cluster master version manually updating",
-   "resolution": "Enable automatic upgrades",
-   "doc_url": "https://tfsec.dev/docs/google/gke/enable-auto-upgrade/"
-  },
-  {
-   "code": "google-gke-enable-ip-aliasing",
-   "legacy_code": "",
-   "service": "gke",
-   "provider": "google",
-   "description": "Clusters should have IP aliasing enabled",
-   "impact": "Nodes need a NAT gateway to access local services",
-   "resolution": "Enable IP aliasing",
-   "doc_url": "https://tfsec.dev/docs/google/gke/enable-ip-aliasing/"
-  },
-  {
-   "code": "google-gke-enable-master-networks",
-   "legacy_code": "",
-   "service": "gke",
-   "provider": "google",
-   "description": "Master authorized networks should be configured on GKE clusters",
-   "impact": "Unrestricted network access to the master",
-   "resolution": "Enable master authorized networks",
-   "doc_url": "https://tfsec.dev/docs/google/gke/enable-master-networks/"
-  },
-  {
-   "code": "google-gke-enable-network-policy",
-   "legacy_code": "",
-   "service": "gke",
-   "provider": "google",
-   "description": "Network Policy should be enabled on GKE clusters",
-   "impact": "Unrestricted inter-cluster communication",
-   "resolution": "Enable network policy",
-   "doc_url": "https://tfsec.dev/docs/google/gke/enable-network-policy/"
-  },
-  {
-   "code": "google-gke-enable-private-cluster",
-   "legacy_code": "",
-   "service": "gke",
-   "provider": "google",
-   "description": "Clusters should be set to private",
-   "impact": "Nodes may be exposed to the public internet",
-   "resolution": "Enable private cluster",
-   "doc_url": "https://tfsec.dev/docs/google/gke/enable-private-cluster/"
-  },
-  {
-   "code": "google-gke-enable-stackdriver-logging",
-   "legacy_code": "",
-   "service": "gke",
-   "provider": "google",
-   "description": "Stackdriver Logging should be enabled",
-   "impact": "Visibility will be reduced",
-   "resolution": "Enable StackDriver logging",
-   "doc_url": "https://tfsec.dev/docs/google/gke/enable-stackdriver-logging/"
-  },
-  {
-   "code": "google-gke-enable-stackdriver-monitoring",
-   "legacy_code": "",
-   "service": "gke",
-   "provider": "google",
-   "description": "Stackdriver Monitoring should be enabled",
-   "impact": "Visibility will be reduced",
-   "resolution": "Enable StackDriver monitoring",
-   "doc_url": "https://tfsec.dev/docs/google/gke/enable-stackdriver-monitoring/"
-  },
-  {
-   "code": "google-gke-enforce-pod-security-policy",
-   "legacy_code": "GCP009",
-   "service": "gke",
-   "provider": "google",
-   "description": "Pod security policy enforcement not defined.",
-   "impact": "Pods could be operating with more permissions than required to be effective",
-   "resolution": "Use security policies for pods to restrict permissions to those needed to be effective",
-   "doc_url": "https://tfsec.dev/docs/google/gke/enforce-pod-security-policy/"
-  },
-  {
-   "code": "google-gke-metadata-endpoints-disabled",
-   "legacy_code": "GCP007",
-   "service": "gke",
-   "provider": "google",
-   "description": "Legacy metadata endpoints enabled.",
-   "impact": "Legacy metadata endpoints don't require metadata headers",
-   "resolution": "Disable legacy metadata endpoints",
-   "doc_url": "https://tfsec.dev/docs/google/gke/metadata-endpoints-disabled/"
-  },
-  {
-   "code": "google-gke-no-legacy-auth",
-   "legacy_code": "",
-   "service": "gke",
-   "provider": "google",
-   "description": "Clusters should use client certificates for authentication",
-   "impact": "Less secure authentication method in use",
-   "resolution": "Use client certificates for authentication",
-   "doc_url": "https://tfsec.dev/docs/google/gke/no-legacy-auth/"
-  },
-  {
-   "code": "google-gke-no-legacy-authentication",
-   "legacy_code": "GCP008",
-   "service": "gke",
-   "provider": "google",
-   "description": "Legacy client authentication methods utilized.",
-   "impact": "Username and password authentication methods are less secure",
-   "resolution": "Use service account or OAuth for authentication",
-   "doc_url": "https://tfsec.dev/docs/google/gke/no-legacy-authentication/"
-  },
-  {
-   "code": "google-gke-no-public-control-plane",
-   "legacy_code": "",
-   "service": "gke",
-   "provider": "google",
-   "description": "GKE Control Plane should not be publicly accessible",
-   "impact": "GKE control plane exposed to public internet",
-   "resolution": "Use private nodes and master authorised networks to prevent exposure",
-   "doc_url": "https://tfsec.dev/docs/google/gke/no-public-control-plane/"
-  },
-  {
-   "code": "google-gke-node-metadata-security",
-   "legacy_code": "GCP006",
-   "service": "gke",
-   "provider": "google",
-   "description": "Node metadata value disables metadata concealment.",
-   "impact": "Metadata that isn't concealed potentially risks leakage of sensitive data",
-   "resolution": "Set node metadata to SECURE or GKE_METADATA_SERVER",
-   "doc_url": "https://tfsec.dev/docs/google/gke/node-metadata-security/"
-  },
-  {
-   "code": "google-gke-node-pool-uses-cos",
-   "legacy_code": "",
-   "service": "gke",
-   "provider": "google",
-   "description": "Ensure Container-Optimized OS (cos) is used for Kubernetes Engine Clusters Node image",
-   "impact": "COS is the recommended OS image to use on cluster nodes",
-   "resolution": "Use the COS image type",
-   "doc_url": "https://tfsec.dev/docs/google/gke/node-pool-uses-cos/"
-  },
-  {
-   "code": "google-gke-node-shielding-enabled",
-   "legacy_code": "GCP010",
-   "service": "gke",
-   "provider": "google",
-   "description": "Shielded GKE nodes not enabled.",
-   "impact": "Node identity and integrity can't be verified without shielded GKE nodes",
-   "resolution": "Enable node shielding",
-   "doc_url": "https://tfsec.dev/docs/google/gke/node-shielding-enabled/"
-  },
-  {
-   "code": "google-gke-use-cluster-labels",
-   "legacy_code": "",
-   "service": "gke",
-   "provider": "google",
-   "description": "Clusters should be configured with Labels",
-   "impact": "Asset management can be limited/more difficult",
-   "resolution": "Set cluster resource labels",
-   "doc_url": "https://tfsec.dev/docs/google/gke/use-cluster-labels/"
-  },
-  {
-   "code": "google-gke-use-rbac-permissions",
-   "legacy_code": "GCP005",
-   "service": "gke",
-   "provider": "google",
-   "description": "Legacy ABAC permissions are enabled.",
-   "impact": "ABAC permissions are less secure than RBAC permissions",
-   "resolution": "Switch to using RBAC permissions",
-   "doc_url": "https://tfsec.dev/docs/google/gke/use-rbac-permissions/"
-  },
-  {
-   "code": "google-gke-use-service-account",
-   "legacy_code": "GCP012",
-   "service": "gke",
-   "provider": "google",
-   "description": "Checks for service account defined for GKE nodes",
-   "impact": "Service accounts with wide permissions can increase the risk of compromise",
-   "resolution": "Use limited permissions for service accounts to be effective",
-   "doc_url": "https://tfsec.dev/docs/google/gke/use-service-account/"
-  },
-  {
-   "code": "google-iam-no-folder-level-default-service-account-assignment",
-   "legacy_code": "",
-   "service": "iam",
-   "provider": "google",
-   "description": "Roles should not be assigned to default service accounts",
-   "impact": "Violation of principal of least privilege",
-   "resolution": "Use specialised service accounts for specific purposes.",
-   "doc_url": "https://tfsec.dev/docs/google/iam/no-folder-level-default-service-account-assignment/"
-  },
-  {
-   "code": "google-iam-no-folder-level-service-account-impersonation",
-   "legacy_code": "",
-   "service": "iam",
-   "provider": "google",
-   "description": "Users should not be granted service account access at the folder level",
-   "impact": "Privilege escalation, impersonation of any/all services",
-   "resolution": "Provide access at the service-level instead of folder-level, if required",
-   "doc_url": "https://tfsec.dev/docs/google/iam/no-folder-level-service-account-impersonation/"
-  },
-  {
-   "code": "google-iam-no-org-level-default-service-account-assignment",
-   "legacy_code": "",
-   "service": "iam",
-   "provider": "google",
-   "description": "Roles should not be assigned to default service accounts",
-   "impact": "Violation of principal of least privilege",
-   "resolution": "Use specialised service accounts for specific purposes.",
-   "doc_url": "https://tfsec.dev/docs/google/iam/no-org-level-default-service-account-assignment/"
-  },
-  {
-   "code": "google-iam-no-org-level-service-account-impersonation",
-   "legacy_code": "",
-   "service": "iam",
-   "provider": "google",
-   "description": "Users should not be granted service account access at the organization level",
-   "impact": "Privilege escalation, impersonation of any/all services",
-   "resolution": "Provide access at the service-level instead of organization-level, if required",
-   "doc_url": "https://tfsec.dev/docs/google/iam/no-org-level-service-account-impersonation/"
-  },
-  {
-   "code": "google-iam-no-privileged-service-accounts",
-   "legacy_code": "",
-   "service": "iam",
-   "provider": "google",
-   "description": "Service accounts should not have roles assigned with excessive privileges",
-   "impact": "Cloud account takeover if a resource using a service account is compromised",
-   "resolution": "Limit service account access to minimal required set",
-   "doc_url": "https://tfsec.dev/docs/google/iam/no-privileged-service-accounts/"
-  },
-  {
-   "code": "google-iam-no-project-level-default-service-account-assignment",
-   "legacy_code": "",
-   "service": "iam",
-   "provider": "google",
-   "description": "Roles should not be assigned to default service accounts",
-   "impact": "Violation of principal of least privilege",
-   "resolution": "Use specialised service accounts for specific purposes.",
-   "doc_url": "https://tfsec.dev/docs/google/iam/no-project-level-default-service-account-assignment/"
-  },
-  {
-   "code": "google-iam-no-project-level-service-account-impersonation",
-   "legacy_code": "",
-   "service": "iam",
-   "provider": "google",
-   "description": "Users should not be granted service account access at the project level",
-   "impact": "Privilege escalation, impersonation of any/all services",
-   "resolution": "Provide access at the service-level instead of project-level, if required",
-   "doc_url": "https://tfsec.dev/docs/google/iam/no-project-level-service-account-impersonation/"
-  },
-  {
-   "code": "google-iam-no-user-granted-permissions",
-   "legacy_code": "GCP011",
-   "service": "iam",
-   "provider": "google",
-   "description": "IAM granted directly to user.",
-   "impact": "Users shouldn't have permissions granted to them directly",
-   "resolution": "Roles should be granted permissions and assigned to users",
-   "doc_url": "https://tfsec.dev/docs/google/iam/no-user-granted-permissions/"
-  },
-  {
-   "code": "google-kms-rotate-kms-keys",
-   "legacy_code": "",
-   "service": "kms",
-   "provider": "google",
-   "description": "KMS keys should be rotated at least every 90 days",
-   "impact": "Exposure is greater if the same keys are used over a long period",
-   "resolution": "Set key rotation period to 90 days",
-   "doc_url": "https://tfsec.dev/docs/google/kms/rotate-kms-keys/"
-  },
-  {
-   "code": "google-project-no-default-network",
-   "legacy_code": "",
-   "service": "project",
-   "provider": "google",
-   "description": "Default network should not be created at project level",
-   "impact": "Exposure of internal infrastructure/services to public internet",
-   "resolution": "Disable automatic default network creation",
-   "doc_url": "https://tfsec.dev/docs/google/project/no-default-network/"
-  },
-  {
-   "code": "google-sql-enable-backup",
-   "legacy_code": "",
-   "service": "sql",
-   "provider": "google",
-   "description": "Enable automated backups to recover from data-loss",
-   "impact": "No recovery of lost or corrupted data",
-   "resolution": "Enable automated backups",
-   "doc_url": "https://tfsec.dev/docs/google/sql/enable-backup/"
-  },
-  {
-   "code": "google-sql-enable-pg-temp-file-logging",
-   "legacy_code": "",
-   "service": "sql",
-   "provider": "google",
-   "description": "Temporary file logging should be enabled for all temporary files.",
-   "impact": "Use of temporary files will not be logged",
-   "resolution": "Enable temporary file logging for all files",
-   "doc_url": "https://tfsec.dev/docs/google/sql/enable-pg-temp-file-logging/"
-  },
-  {
-   "code": "google-sql-encrypt-in-transit-data",
-   "legacy_code": "",
-   "service": "sql",
-   "provider": "google",
-   "description": "SSL connections to a SQL database instance should be enforced.",
-   "impact": "Intercepted data can be read in transit",
-   "resolution": "Enforce SSL for all connections",
-   "doc_url": "https://tfsec.dev/docs/google/sql/encrypt-in-transit-data/"
-  },
-  {
-   "code": "google-sql-mysql-no-local-infile",
-   "legacy_code": "",
-   "service": "sql",
-   "provider": "google",
-   "description": "Disable local_infile setting in MySQL",
-   "impact": "Arbitrary files read by attackers when combined with a SQL injection vulnerability.",
-   "resolution": "Disable the local infile setting",
-   "doc_url": "https://tfsec.dev/docs/google/sql/mysql-no-local-infile/"
-  },
-  {
-   "code": "google-sql-no-contained-db-auth",
-   "legacy_code": "",
-   "service": "sql",
-   "provider": "google",
-   "description": "Contained database authentication should be disabled",
-   "impact": "Access can be granted without knowledge of the database administrator",
-   "resolution": "Disable contained database authentication",
-   "doc_url": "https://tfsec.dev/docs/google/sql/no-contained-db-auth/"
-  },
-  {
-   "code": "google-sql-no-cross-db-ownership-chaining",
-   "legacy_code": "",
-   "service": "sql",
-   "provider": "google",
-   "description": "Cross-database ownership chaining should be disabled",
-   "impact": "Unintended access to sensitive data",
-   "resolution": "Disable cross database ownership chaining",
-   "doc_url": "https://tfsec.dev/docs/google/sql/no-cross-db-ownership-chaining/"
-  },
-  {
-   "code": "google-sql-no-public-access",
-   "legacy_code": "",
-   "service": "sql",
-   "provider": "google",
-   "description": "Ensure that Cloud SQL Database Instances are not publicly exposed",
-   "impact": "Public exposure of sensitive data",
-   "resolution": "Remove public access from database instances",
-   "doc_url": "https://tfsec.dev/docs/google/sql/no-public-access/"
-  },
-  {
-   "code": "google-sql-pg-log-checkpoints",
-   "legacy_code": "",
-   "service": "sql",
-   "provider": "google",
-   "description": "Ensure that logging of checkpoints is enabled.",
-   "impact": "Insufficient diagnostic data.",
-   "resolution": "Enable checkpoints logging.",
-   "doc_url": "https://tfsec.dev/docs/google/sql/pg-log-checkpoints/"
-  },
-  {
-   "code": "google-sql-pg-log-connections",
-   "legacy_code": "",
-   "service": "sql",
-   "provider": "google",
-   "description": "Ensure that logging of connections is enabled.",
-   "impact": "Insufficient diagnostic data.",
-   "resolution": "Enable connection logging.",
-   "doc_url": "https://tfsec.dev/docs/google/sql/pg-log-connections/"
-  },
-  {
-   "code": "google-sql-pg-log-disconnections",
-   "legacy_code": "",
-   "service": "sql",
-   "provider": "google",
-   "description": "Ensure that logging of disconnections is enabled.",
-   "impact": "Insufficient diagnostic data.",
-   "resolution": "Enable disconnection logging.",
-   "doc_url": "https://tfsec.dev/docs/google/sql/pg-log-disconnections/"
-  },
-  {
-   "code": "google-sql-pg-log-errors",
-   "legacy_code": "",
-   "service": "sql",
-   "provider": "google",
-   "description": "Ensure that Postgres errors are logged",
-   "impact": "Loss of error logging",
-   "resolution": "Set the minimum log severity to at least ERROR",
-   "doc_url": "https://tfsec.dev/docs/google/sql/pg-log-errors/"
-  },
-  {
-   "code": "google-sql-pg-log-lock-waits",
-   "legacy_code": "",
-   "service": "sql",
-   "provider": "google",
-   "description": "Ensure that logging of lock waits is enabled.",
-   "impact": "Issues leading to denial of service may not be identified.",
-   "resolution": "Enable lock wait logging.",
-   "doc_url": "https://tfsec.dev/docs/google/sql/pg-log-lock-waits/"
-  },
-  {
-   "code": "google-sql-pg-no-min-statement-logging",
-   "legacy_code": "",
-   "service": "sql",
-   "provider": "google",
-   "description": "Ensure that logging of long statements is disabled.",
-   "impact": "Sensitive data could be exposed in the database logs.",
-   "resolution": "Disable minimum duration statement logging completely",
-   "doc_url": "https://tfsec.dev/docs/google/sql/pg-no-min-statement-logging/"
-  },
-  {
-   "code": "google-storage-enable-ubla",
-   "legacy_code": "",
-   "service": "storage",
-   "provider": "google",
-   "description": "Ensure that Cloud Storage buckets have uniform bucket-level access enabled",
-   "impact": "ACLs are difficult to manage and often lead to incorrect/unintended configurations.",
-   "resolution": "Enable uniform bucket level access to provide a uniform permissioning system.",
-   "doc_url": "https://tfsec.dev/docs/google/storage/enable-ubla/"
-  },
-  {
-   "code": "google-storage-no-public-access",
-   "legacy_code": "",
-   "service": "storage",
-   "provider": "google",
-   "description": "Ensure that Cloud Storage bucket is not anonymously or publicly accessible.",
-   "impact": "Public exposure of sensitive data.",
-   "resolution": "Restrict public access to the bucket.",
-   "doc_url": "https://tfsec.dev/docs/google/storage/no-public-access/"
-  },
-  {
-   "code": "kubernetes-network-no-public-egress",
-   "legacy_code": "",
-   "service": "network",
-   "provider": "kubernetes",
-   "description": "Public egress should not be allowed via network policies",
-   "impact": "Exfiltration of data to the public internet",
-   "resolution": "Remove public access except where explicitly required",
-   "doc_url": "https://tfsec.dev/docs/kubernetes/network/no-public-egress/"
-  },
-  {
-   "code": "kubernetes-network-no-public-ingress",
-   "legacy_code": "",
-   "service": "network",
-   "provider": "kubernetes",
-   "description": "Public ingress should not be allowed via network policies",
-   "impact": "Exposure of infrastructure to the public internet",
-   "resolution": "Remove public access except where explicitly required",
-   "doc_url": "https://tfsec.dev/docs/kubernetes/network/no-public-ingress/"
-  },
-  {
-   "code": "openstack-compute-no-plaintext-password",
-   "legacy_code": "",
-   "service": "compute",
-   "provider": "openstack",
-   "description": "No plaintext password for compute instance",
-   "impact": "Including a plaintext password could lead to compromised instance",
-   "resolution": "Do not use plaintext passwords in terraform files",
-   "doc_url": "https://tfsec.dev/docs/openstack/compute/no-plaintext-password/"
-  },
-  {
-   "code": "openstack-fw-no-public-access",
-   "legacy_code": "",
-   "service": "fw",
-   "provider": "openstack",
-   "description": "A firewall rule allows traffic from/to the public internet",
-   "impact": "Exposure of infrastructure to the public internet",
-   "resolution": "Employ more restrictive firewall rules",
-   "doc_url": "https://tfsec.dev/docs/openstack/fw/no-public-access/"
   }
  ]
 }
