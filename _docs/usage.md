@@ -31,7 +31,7 @@ For a richer experience, there are many additional command line arguments that y
 | --include-passed                                   |            | Include passed checks in the result output                                               |
 | --no-color                                         |            | Disable colored output (American style!)                                                 |
 | --no-colour                                        |            | Disable coloured output                                                                  |
-| --out [path to output to]                          |            | Set output file                                                                          |
+| --out [filepath to output to]                          |            | Set output file                                                                          |
 | --run-statistics                                   |            | View statistics table of current findings.                                               |
 | --soft-fail                                        | -s         | Runs checks but suppresses error code                                                    |
 | --tfvars-file strings                              |            | Path to .tfvars file, can be used multiple times and evaluated in order of specification |
