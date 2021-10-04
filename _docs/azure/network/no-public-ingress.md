@@ -1,5 +1,6 @@
 ---
-title: An inbound network security rule allows traffic from /0.
+title: azure-network-no-public-ingress
+description: An inbound network security rule allows traffic from /0.
 shortcode: azure-network-no-public-ingress
 legacy: AZU001
 summary: An inbound network security rule allows traffic from /0. 

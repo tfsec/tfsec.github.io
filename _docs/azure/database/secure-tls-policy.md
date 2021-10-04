@@ -1,5 +1,6 @@
 ---
-title: Databases should have the minimum TLS set for connections
+title: azure-database-secure-tls-policy
+description: Databases should have the minimum TLS set for connections
 shortcode: azure-database-secure-tls-policy
 legacy: 
 summary: Databases should have the minimum TLS set for connections 

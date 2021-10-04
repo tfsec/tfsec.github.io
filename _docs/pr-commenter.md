@@ -1,6 +1,8 @@
 ---
 title: Github Action - PR Commenter
+description: Github Action - PR Commenter
 subtitle: Adding tfsec PR commenter to your GitHub project
+description: Adding tfsec PR commenter to your GitHub project
 author: tfsec
 tags: [installation, github action, PR commenting]
 ---

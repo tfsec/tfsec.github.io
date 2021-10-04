@@ -1,5 +1,6 @@
 ---
-title: Encrypted compute disk with unmanaged keys.
+title: google-compute-disk-encryption-customer-keys
+description: Encrypted compute disk with unmanaged keys.
 shortcode: google-compute-disk-encryption-customer-keys
 legacy: GCP001
 summary: Encrypted compute disk with unmanaged keys. 

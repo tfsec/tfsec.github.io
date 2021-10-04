@@ -1,5 +1,6 @@
 ---
-title: IAM granted directly to user.
+title: google-iam-no-user-granted-permissions
+description: IAM granted directly to user.
 shortcode: google-iam-no-user-granted-permissions
 legacy: GCP011
 summary: IAM granted directly to user. 

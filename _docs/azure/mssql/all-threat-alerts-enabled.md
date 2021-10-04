@@ -1,5 +1,6 @@
 ---
-title: No threat detections are set
+title: azure-mssql-all-threat-alerts-enabled
+description: No threat detections are set
 shortcode: azure-mssql-all-threat-alerts-enabled
 legacy: 
 summary: No threat detections are set 

@@ -1,5 +1,6 @@
 ---
-title: Redis cluster should have backup retention turned on
+title: aws-elasticache-enable-backup-retention
+description: Redis cluster should have backup retention turned on
 shortcode: aws-elasticache-enable-backup-retention
 legacy: AWS088
 summary: Redis cluster should have backup retention turned on 

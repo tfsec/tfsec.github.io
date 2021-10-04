@@ -1,5 +1,6 @@
 ---
-title: Ensure AKS has an API Server Authorized IP Ranges enabled
+title: azure-container-limit-authorized-ips
+description: Ensure AKS has an API Server Authorized IP Ranges enabled
 shortcode: azure-container-limit-authorized-ips
 legacy: AZU008
 summary: Ensure AKS has an API Server Authorized IP Ranges enabled 

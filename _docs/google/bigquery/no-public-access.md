@@ -1,5 +1,6 @@
 ---
-title: BigQuery datasets should only be accessible within the organisation
+title: google-bigquery-no-public-access
+description: BigQuery datasets should only be accessible within the organisation
 shortcode: google-bigquery-no-public-access
 legacy: 
 summary: BigQuery datasets should only be accessible within the organisation 

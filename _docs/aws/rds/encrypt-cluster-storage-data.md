@@ -1,5 +1,6 @@
 ---
-title: There is no encryption specified or encryption is disabled on the RDS Cluster.
+title: aws-rds-encrypt-cluster-storage-data
+description: There is no encryption specified or encryption is disabled on the RDS Cluster.
 shortcode: aws-rds-encrypt-cluster-storage-data
 legacy: AWS051
 summary: There is no encryption specified or encryption is disabled on the RDS Cluster. 

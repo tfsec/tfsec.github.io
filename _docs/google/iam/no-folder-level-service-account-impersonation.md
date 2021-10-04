@@ -1,5 +1,6 @@
 ---
-title: Users should not be granted service account access at the folder level
+title: google-iam-no-folder-level-service-account-impersonation
+description: Users should not be granted service account access at the folder level
 shortcode: google-iam-no-folder-level-service-account-impersonation
 legacy: 
 summary: Users should not be granted service account access at the folder level 

@@ -1,5 +1,6 @@
 ---
-title: CloudFront distribution allows unencrypted (HTTP) communications.
+title: aws-cloudfront-enforce-https
+description: CloudFront distribution allows unencrypted (HTTP) communications.
 shortcode: aws-cloudfront-enforce-https
 legacy: AWS020
 summary: CloudFront distribution allows unencrypted (HTTP) communications. 

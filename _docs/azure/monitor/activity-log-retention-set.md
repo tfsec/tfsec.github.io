@@ -1,5 +1,6 @@
 ---
-title: Ensure the activity retention log is set to at least a year
+title: azure-monitor-activity-log-retention-set
+description: Ensure the activity retention log is set to at least a year
 shortcode: azure-monitor-activity-log-retention-set
 legacy: 
 summary: Ensure the activity retention log is set to at least a year 

@@ -1,5 +1,6 @@
 ---
-title: Ensure Azure Defender is set to On for SQL Servers
+title: azure-security-center-defender-on-sql-servers
+description: Ensure Azure Defender is set to On for SQL Servers
 shortcode: azure-security-center-defender-on-sql-servers
 legacy: 
 summary: Ensure Azure Defender is set to On for SQL Servers 

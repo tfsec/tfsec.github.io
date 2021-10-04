@@ -1,5 +1,6 @@
 ---
-title: At least one email address is set for threat alerts
+title: azure-mssql-threat-alert-email-set
+description: At least one email address is set for threat alerts
 shortcode: azure-mssql-threat-alert-email-set
 legacy: 
 summary: At least one email address is set for threat alerts 

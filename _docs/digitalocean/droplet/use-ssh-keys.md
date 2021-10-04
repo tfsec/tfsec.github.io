@@ -1,5 +1,6 @@
 ---
-title: SSH Keys are the preferred way to connect to your droplet, no keys are supplied
+title: digitalocean-droplet-use-ssh-keys
+description: SSH Keys are the preferred way to connect to your droplet, no keys are supplied
 shortcode: digitalocean-droplet-use-ssh-keys
 legacy: DIG003
 summary: SSH Keys are the preferred way to connect to your droplet, no keys are supplied 

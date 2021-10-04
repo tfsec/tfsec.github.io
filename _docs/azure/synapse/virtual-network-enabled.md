@@ -1,5 +1,6 @@
 ---
-title: Synapse Workspace should have managed virtual network enabled, the default is disabled.
+title: azure-synapse-virtual-network-enabled
+description: Synapse Workspace should have managed virtual network enabled, the default is disabled.
 shortcode: azure-synapse-virtual-network-enabled
 legacy: AZU027
 summary: Synapse Workspace should have managed virtual network enabled, the default is disabled. 

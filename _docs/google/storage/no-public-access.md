@@ -1,5 +1,6 @@
 ---
-title: Ensure that Cloud Storage bucket is not anonymously or publicly accessible.
+title: google-storage-no-public-access
+description: Ensure that Cloud Storage bucket is not anonymously or publicly accessible.
 shortcode: google-storage-no-public-access
 legacy: 
 summary: Ensure that Cloud Storage bucket is not anonymously or publicly accessible. 

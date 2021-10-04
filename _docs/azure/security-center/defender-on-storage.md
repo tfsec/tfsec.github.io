@@ -1,5 +1,6 @@
 ---
-title: Ensure Azure Defender is set to On for storage accounts
+title: azure-security-center-defender-on-storage
+description: Ensure Azure Defender is set to On for storage accounts
 shortcode: azure-security-center-defender-on-storage
 legacy: 
 summary: Ensure Azure Defender is set to On for storage accounts 

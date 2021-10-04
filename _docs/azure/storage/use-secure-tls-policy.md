@@ -1,5 +1,6 @@
 ---
-title: The minimum TLS version for Storage Accounts should be TLS1_2
+title: azure-storage-use-secure-tls-policy
+description: The minimum TLS version for Storage Accounts should be TLS1_2
 shortcode: azure-storage-use-secure-tls-policy
 legacy: AZU015
 summary: The minimum TLS version for Storage Accounts should be TLS1_2 

@@ -1,5 +1,6 @@
 ---
-title: The attribute has potentially sensitive data, passwords, tokens or keys in it
+title: general-secrets-sensitive-in-attribute-value
+description: The attribute has potentially sensitive data, passwords, tokens or keys in it
 shortcode: general-secrets-sensitive-in-attribute-value
 legacy: GEN005
 summary: The attribute has potentially sensitive data, passwords, tokens or keys in it 

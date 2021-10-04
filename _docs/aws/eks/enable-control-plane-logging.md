@@ -1,5 +1,6 @@
 ---
-title: EKS Clusters should have cluster control plane logging turned on
+title: aws-eks-enable-control-plane-logging
+description: EKS Clusters should have cluster control plane logging turned on
 shortcode: aws-eks-enable-control-plane-logging
 legacy: AWS067
 summary: EKS Clusters should have cluster control plane logging turned on 

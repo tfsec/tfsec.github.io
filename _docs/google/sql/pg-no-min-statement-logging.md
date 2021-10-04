@@ -1,5 +1,6 @@
 ---
-title: Ensure that logging of long statements is disabled.
+title: google-sql-pg-no-min-statement-logging
+description: Ensure that logging of long statements is disabled.
 shortcode: google-sql-pg-no-min-statement-logging
 legacy: 
 summary: Ensure that logging of long statements is disabled. 

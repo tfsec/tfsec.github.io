@@ -1,5 +1,6 @@
 ---
-title: Ensure that logging of connections is enabled.
+title: google-sql-pg-log-connections
+description: Ensure that logging of connections is enabled.
 shortcode: google-sql-pg-log-connections
 legacy: 
 summary: Ensure that logging of connections is enabled. 

@@ -1,5 +1,6 @@
 ---
-title: Instances should not have public IP addresses
+title: google-compute-no-public-ip
+description: Instances should not have public IP addresses
 shortcode: google-compute-no-public-ip
 legacy: 
 summary: Instances should not have public IP addresses 

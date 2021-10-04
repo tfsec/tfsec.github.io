@@ -1,6 +1,8 @@
 ---
 title: Github Action - Code Scanning
+description: Github Action - Code Scanning
 subtitle: Adding tfsec to your public GitHub project
+description: Adding tfsec to your public GitHub project
 author: tfsec
 tags: [installation, github action, code scanning, security analysis]
 ---

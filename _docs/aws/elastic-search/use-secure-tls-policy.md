@@ -1,5 +1,6 @@
 ---
-title: Elasticsearch domain endpoint is using outdated TLS policy.
+title: aws-elastic-search-use-secure-tls-policy
+description: Elasticsearch domain endpoint is using outdated TLS policy.
 shortcode: aws-elastic-search-use-secure-tls-policy
 legacy: AWS034
 summary: Elasticsearch domain endpoint is using outdated TLS policy. 

@@ -1,5 +1,6 @@
 ---
-title: Disable project-wide SSH keys for all instances
+title: google-compute-no-project-wide-ssh-keys
+description: Disable project-wide SSH keys for all instances
 shortcode: google-compute-no-project-wide-ssh-keys
 legacy: 
 summary: Disable project-wide SSH keys for all instances 

@@ -1,5 +1,6 @@
 ---
-title: Ensure server parameter 'log_checkpoints' is set to 'ON' for PostgreSQL Database Server
+title: azure-database-postgres-configuration-log-checkpoints
+description: Ensure server parameter 'log_checkpoints' is set to 'ON' for PostgreSQL Database Server
 shortcode: azure-database-postgres-configuration-log-checkpoints
 legacy: 
 summary: Ensure server parameter 'log_checkpoints' is set to 'ON' for PostgreSQL Database Server 

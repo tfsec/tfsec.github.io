@@ -1,5 +1,6 @@
 ---
-title: Ensure AKS cluster has Network Policy configured
+title: azure-container-configured-network-policy
+description: Ensure AKS cluster has Network Policy configured
 shortcode: azure-container-configured-network-policy
 legacy: AZU006
 summary: Ensure AKS cluster has Network Policy configured 

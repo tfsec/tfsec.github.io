@@ -1,5 +1,6 @@
 ---
-title: Ensure that no sensitive credentials are exposed in VM custom_data
+title: azure-compute-no-secrets-in-custom-data
+description: Ensure that no sensitive credentials are exposed in VM custom_data
 shortcode: azure-compute-no-secrets-in-custom-data
 legacy: 
 summary: Ensure that no sensitive credentials are exposed in VM custom_data 

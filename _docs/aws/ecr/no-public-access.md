@@ -1,5 +1,6 @@
 ---
-title: ECR repository policy must block public access
+title: aws-ecr-no-public-access
+description: ECR repository policy must block public access
 shortcode: aws-ecr-no-public-access
 legacy: 
 summary: ECR repository policy must block public access 

@@ -1,5 +1,6 @@
 ---
-title: Force destroy is enabled on Spaces bucket which is dangerous
+title: digitalocean-spaces-disable-force-destroy
+description: Force destroy is enabled on Spaces bucket which is dangerous
 shortcode: digitalocean-spaces-disable-force-destroy
 legacy: DIG007
 summary: Force destroy is enabled on Spaces bucket which is dangerous 

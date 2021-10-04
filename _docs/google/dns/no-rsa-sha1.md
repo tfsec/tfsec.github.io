@@ -1,5 +1,6 @@
 ---
-title: Zone signing should not use RSA SHA1
+title: google-dns-no-rsa-sha1
+description: Zone signing should not use RSA SHA1
 shortcode: google-dns-no-rsa-sha1
 legacy: 
 summary: Zone signing should not use RSA SHA1 

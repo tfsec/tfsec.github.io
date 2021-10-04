@@ -1,5 +1,6 @@
 ---
-title: VM disks should be encrypted with Customer Supplied Encryption Keys
+title: google-compute-vm-disk-encryption-customer-key
+description: VM disks should be encrypted with Customer Supplied Encryption Keys
 shortcode: google-compute-vm-disk-encryption-customer-key
 legacy: 
 summary: VM disks should be encrypted with Customer Supplied Encryption Keys 

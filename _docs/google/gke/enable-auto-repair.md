@@ -1,5 +1,6 @@
 ---
-title: Kubernetes should have 'Automatic repair' enabled
+title: google-gke-enable-auto-repair
+description: Kubernetes should have 'Automatic repair' enabled
 shortcode: google-gke-enable-auto-repair
 legacy: 
 summary: Kubernetes should have 'Automatic repair' enabled 

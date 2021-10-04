@@ -1,5 +1,6 @@
 ---
-title: Use of plain HTTP.
+title: aws-elbv2-http-not-used
+description: Use of plain HTTP.
 shortcode: aws-elbv2-http-not-used
 legacy: AWS004
 summary: Use of plain HTTP. 

@@ -1,5 +1,6 @@
 ---
-title: aws_instance should activate session tokens for Instance Metadata Service.
+title: aws-ec2-enforce-http-token-imds
+description: aws_instance should activate session tokens for Instance Metadata Service.
 shortcode: aws-ec2-enforce-http-token-imds
 legacy: AWS079
 summary: aws_instance should activate session tokens for Instance Metadata Service. 

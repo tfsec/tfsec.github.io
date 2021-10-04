@@ -1,5 +1,6 @@
 ---
-title: S3 buckets should each define an aws_s3_bucket_public_access_block
+title: aws-s3-specify-public-access-block
+description: S3 buckets should each define an aws_s3_bucket_public_access_block
 shortcode: aws-s3-specify-public-access-block
 legacy: AWS098
 summary: S3 buckets should each define an aws_s3_bucket_public_access_block 

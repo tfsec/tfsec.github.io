@@ -1,5 +1,6 @@
 ---
-title: S3 Bucket does not have logging enabled.
+title: aws-s3-enable-bucket-logging
+description: S3 Bucket does not have logging enabled.
 shortcode: aws-s3-enable-bucket-logging
 legacy: AWS002
 summary: S3 Bucket does not have logging enabled. 

@@ -1,5 +1,6 @@
 ---
-title: Potentially sensitive data stored in local value.
+title: general-secrets-sensitive-in-local
+description: Potentially sensitive data stored in local value.
 shortcode: general-secrets-sensitive-in-local
 legacy: GEN002
 summary: Potentially sensitive data stored in local value. 

@@ -1,5 +1,6 @@
 ---
-title: ECR Repository should use customer managed keys to allow more control
+title: aws-ecr-repository-customer-key
+description: ECR Repository should use customer managed keys to allow more control
 shortcode: aws-ecr-repository-customer-key
 legacy: AWS093
 summary: ECR Repository should use customer managed keys to allow more control 

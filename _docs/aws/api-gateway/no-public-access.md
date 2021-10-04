@@ -1,5 +1,6 @@
 ---
-title: No public access to API Gateway methods
+title: aws-api-gateway-no-public-access
+description: No public access to API Gateway methods
 shortcode: aws-api-gateway-no-public-access
 legacy: 
 summary: No public access to API Gateway methods 

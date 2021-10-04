@@ -1,5 +1,6 @@
 ---
-title: A KMS key is not configured to auto-rotate.
+title: aws-kms-auto-rotate-keys
+description: A KMS key is not configured to auto-rotate.
 shortcode: aws-kms-auto-rotate-keys
 legacy: AWS019
 summary: A KMS key is not configured to auto-rotate. 

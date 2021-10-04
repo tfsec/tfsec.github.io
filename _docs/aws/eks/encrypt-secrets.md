@@ -1,5 +1,6 @@
 ---
-title: EKS should have the encryption of secrets enabled
+title: aws-eks-encrypt-secrets
+description: EKS should have the encryption of secrets enabled
 shortcode: aws-eks-encrypt-secrets
 legacy: AWS066
 summary: EKS should have the encryption of secrets enabled 

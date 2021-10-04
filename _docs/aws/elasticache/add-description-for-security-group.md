@@ -1,5 +1,6 @@
 ---
-title: Missing description for security group/security group rule.
+title: aws-elasticache-add-description-for-security-group
+description: Missing description for security group/security group rule.
 shortcode: aws-elasticache-add-description-for-security-group
 legacy: 
 summary: Missing description for security group/security group rule. 

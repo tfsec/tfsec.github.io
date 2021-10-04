@@ -1,5 +1,6 @@
 ---
-title: Disk encryption keys should not be provided in plaintext
+title: google-compute-no-plaintext-disk-keys
+description: Disk encryption keys should not be provided in plaintext
 shortcode: google-compute-no-plaintext-disk-keys
 legacy: 
 summary: Disk encryption keys should not be provided in plaintext 

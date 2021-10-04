@@ -1,5 +1,6 @@
 ---
-title: Auditing should be enabled on Azure SQL Databases
+title: azure-database-enable-audit
+description: Auditing should be enabled on Azure SQL Databases
 shortcode: azure-database-enable-audit
 legacy: AZU018
 summary: Auditing should be enabled on Azure SQL Databases 

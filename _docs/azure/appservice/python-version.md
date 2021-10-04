@@ -1,5 +1,6 @@
 ---
-title: Azure App Service Web app does not use the latest Python version
+title: azure-appservice-python-version
+description: Azure App Service Web app does not use the latest Python version
 shortcode: azure-appservice-python-version
 legacy: 
 summary: Azure App Service Web app does not use the latest Python version 

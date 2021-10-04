@@ -1,6 +1,8 @@
 ---
 title: Installation
+description: Installation
 subtitle: Installing tfsec on your local machine
+description: Installing tfsec on your local machine
 author: tfsec
 tags: [installation, quickstart]
 ---
@@ -145,6 +147,6 @@ run tfsec in a Docker container.
 To run:
 
 ```bash
-docker run --rm -it -v "$(pwd):/src" tfsec/tfsec /src
+docker run --rm -it -v "$(pwd):/src" aquasec/tfsec /src
 ```
 

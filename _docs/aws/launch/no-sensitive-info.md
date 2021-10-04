@@ -1,5 +1,6 @@
 ---
-title: Ensure all data stored in the Launch configuration EBS is securely encrypted
+title: aws-launch-no-sensitive-info
+description: Ensure all data stored in the Launch configuration EBS is securely encrypted
 shortcode: aws-launch-no-sensitive-info
 legacy: 
 summary: Ensure all data stored in the Launch configuration EBS is securely encrypted 

@@ -1,5 +1,6 @@
 ---
-title: Unencrypted SNS topic.
+title: aws-sns-enable-topic-encryption
+description: Unencrypted SNS topic.
 shortcode: aws-sns-enable-topic-encryption
 legacy: AWS016
 summary: Unencrypted SNS topic. 

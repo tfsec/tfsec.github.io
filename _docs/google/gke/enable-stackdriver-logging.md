@@ -1,5 +1,6 @@
 ---
-title: Stackdriver Logging should be enabled
+title: google-gke-enable-stackdriver-logging
+description: Stackdriver Logging should be enabled
 shortcode: google-gke-enable-stackdriver-logging
 legacy: 
 summary: Stackdriver Logging should be enabled 

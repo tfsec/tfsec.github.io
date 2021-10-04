@@ -1,5 +1,6 @@
 ---
-title: DynamoDB tables should use at rest encryption with a Customer Managed Key
+title: aws-dynamodb-table-customer-key
+description: DynamoDB tables should use at rest encryption with a Customer Managed Key
 shortcode: aws-dynamodb-table-customer-key
 legacy: AWS092
 summary: DynamoDB tables should use at rest encryption with a Customer Managed Key 

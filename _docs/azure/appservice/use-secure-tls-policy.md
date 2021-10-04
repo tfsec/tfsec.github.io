@@ -1,5 +1,6 @@
 ---
-title: Web App uses latest TLS version
+title: azure-appservice-use-secure-tls-policy
+description: Web App uses latest TLS version
 shortcode: azure-appservice-use-secure-tls-policy
 legacy: 
 summary: Web App uses latest TLS version 

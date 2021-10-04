@@ -1,5 +1,6 @@
 ---
-title: Ensure Container-Optimized OS (cos) is used for Kubernetes Engine Clusters Node image
+title: google-gke-node-pool-uses-cos
+description: Ensure Container-Optimized OS (cos) is used for Kubernetes Engine Clusters Node image
 shortcode: google-gke-node-pool-uses-cos
 legacy: 
 summary: Ensure Container-Optimized OS (cos) is used for Kubernetes Engine Clusters Node image 

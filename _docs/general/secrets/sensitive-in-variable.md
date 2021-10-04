@@ -1,5 +1,6 @@
 ---
-title: Potentially sensitive data stored in "default" value of variable.
+title: general-secrets-sensitive-in-variable
+description: Potentially sensitive data stored in "default" value of variable.
 shortcode: general-secrets-sensitive-in-variable
 legacy: GEN001
 summary: Potentially sensitive data stored in "default" value of variable. 

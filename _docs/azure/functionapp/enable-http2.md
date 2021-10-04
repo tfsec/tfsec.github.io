@@ -1,5 +1,6 @@
 ---
-title: Web App uses the latest HTTP version
+title: azure-functionapp-enable-http2
+description: Web App uses the latest HTTP version
 shortcode: azure-functionapp-enable-http2
 legacy: 
 summary: Web App uses the latest HTTP version 

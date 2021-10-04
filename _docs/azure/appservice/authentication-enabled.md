@@ -1,5 +1,6 @@
 ---
-title: App Service authentication is activated
+title: azure-appservice-authentication-enabled
+description: App Service authentication is activated
 shortcode: azure-appservice-authentication-enabled
 legacy: 
 summary: App Service authentication is activated 

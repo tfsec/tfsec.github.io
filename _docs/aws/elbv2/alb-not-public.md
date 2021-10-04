@@ -1,5 +1,6 @@
 ---
-title: Load balancer is exposed to the internet.
+title: aws-elbv2-alb-not-public
+description: Load balancer is exposed to the internet.
 shortcode: aws-elbv2-alb-not-public
 legacy: AWS005
 summary: Load balancer is exposed to the internet. 

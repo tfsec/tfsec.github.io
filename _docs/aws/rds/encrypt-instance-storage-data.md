@@ -1,5 +1,6 @@
 ---
-title: RDS encryption has not been enabled at a DB Instance level.
+title: aws-rds-encrypt-instance-storage-data
+description: RDS encryption has not been enabled at a DB Instance level.
 shortcode: aws-rds-encrypt-instance-storage-data
 legacy: AWS052
 summary: RDS encryption has not been enabled at a DB Instance level. 

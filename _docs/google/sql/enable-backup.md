@@ -1,5 +1,6 @@
 ---
-title: Enable automated backups to recover from data-loss
+title: google-sql-enable-backup
+description: Enable automated backups to recover from data-loss
 shortcode: google-sql-enable-backup
 legacy: 
 summary: Enable automated backups to recover from data-loss 

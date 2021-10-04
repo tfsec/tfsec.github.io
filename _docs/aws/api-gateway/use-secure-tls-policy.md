@@ -1,5 +1,6 @@
 ---
-title: API Gateway domain name uses outdated SSL/TLS protocols.
+title: aws-api-gateway-use-secure-tls-policy
+description: API Gateway domain name uses outdated SSL/TLS protocols.
 shortcode: aws-api-gateway-use-secure-tls-policy
 legacy: AWS025
 summary: API Gateway domain name uses outdated SSL/TLS protocols. 

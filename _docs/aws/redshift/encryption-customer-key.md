@@ -1,5 +1,6 @@
 ---
-title: Redshift clusters should use at rest encryption
+title: aws-redshift-encryption-customer-key
+description: Redshift clusters should use at rest encryption
 shortcode: aws-redshift-encryption-customer-key
 legacy: AWS094
 summary: Redshift clusters should use at rest encryption 

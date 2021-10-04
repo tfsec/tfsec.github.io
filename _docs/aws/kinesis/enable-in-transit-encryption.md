@@ -1,5 +1,6 @@
 ---
-title: Kinesis stream is unencrypted.
+title: aws-kinesis-enable-in-transit-encryption
+description: Kinesis stream is unencrypted.
 shortcode: aws-kinesis-enable-in-transit-encryption
 legacy: AWS024
 summary: Kinesis stream is unencrypted. 

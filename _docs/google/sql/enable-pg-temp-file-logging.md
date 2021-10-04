@@ -1,5 +1,6 @@
 ---
-title: Temporary file logging should be enabled for all temporary files.
+title: google-sql-enable-pg-temp-file-logging
+description: Temporary file logging should be enabled for all temporary files.
 shortcode: google-sql-enable-pg-temp-file-logging
 legacy: 
 summary: Temporary file logging should be enabled for all temporary files. 

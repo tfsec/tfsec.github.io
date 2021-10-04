@@ -1,5 +1,6 @@
 ---
-title: Ensure public access level for Blob Containers is set to private
+title: azure-storage-container-activity-logs-not-public
+description: Ensure public access level for Blob Containers is set to private
 shortcode: azure-storage-container-activity-logs-not-public
 legacy: 
 summary: Ensure public access level for Blob Containers is set to private 

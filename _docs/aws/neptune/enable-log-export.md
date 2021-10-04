@@ -1,5 +1,6 @@
 ---
-title: Nepture logs export should be enabled
+title: aws-neptune-enable-log-export
+description: Nepture logs export should be enabled
 shortcode: aws-neptune-enable-log-export
 legacy: 
 summary: Nepture logs export should be enabled 

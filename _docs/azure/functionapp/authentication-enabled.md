@@ -1,5 +1,6 @@
 ---
-title: Function App authentication is activated
+title: azure-functionapp-authentication-enabled
+description: Function App authentication is activated
 shortcode: azure-functionapp-authentication-enabled
 legacy: 
 summary: Function App authentication is activated 

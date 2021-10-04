@@ -1,5 +1,6 @@
 ---
-title: S3 Bucket has an ACL defined which allows public access.
+title: aws-s3-no-public-access-with-acl
+description: S3 Bucket has an ACL defined which allows public access.
 shortcode: aws-s3-no-public-access-with-acl
 legacy: AWS001
 summary: S3 Bucket has an ACL defined which allows public access. 

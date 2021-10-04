@@ -1,5 +1,6 @@
 ---
-title: Point in time recovery should be enabled to protect DynamoDB table
+title: aws-dynamodb-enable-recovery
+description: Point in time recovery should be enabled to protect DynamoDB table
 shortcode: aws-dynamodb-enable-recovery
 legacy: AWS086
 summary: Point in time recovery should be enabled to protect DynamoDB table 

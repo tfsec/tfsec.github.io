@@ -1,5 +1,6 @@
 ---
-title: AWS provider has access credentials specified.
+title: aws-misc-no-exposing-plaintext-credentials
+description: AWS provider has access credentials specified.
 shortcode: aws-misc-no-exposing-plaintext-credentials
 legacy: AWS044
 summary: AWS provider has access credentials specified. 

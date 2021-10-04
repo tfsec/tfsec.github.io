@@ -1,5 +1,6 @@
 ---
-title: Potentially sensitive data stored in block attribute.
+title: general-secrets-sensitive-in-attribute
+description: Potentially sensitive data stored in block attribute.
 shortcode: general-secrets-sensitive-in-attribute
 legacy: GEN003
 summary: Potentially sensitive data stored in block attribute. 

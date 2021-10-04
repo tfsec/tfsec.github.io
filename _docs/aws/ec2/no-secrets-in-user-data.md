@@ -1,5 +1,6 @@
 ---
-title: User data for EC2 instances must not contain sensitive AWS keys
+title: aws-ec2-no-secrets-in-user-data
+description: User data for EC2 instances must not contain sensitive AWS keys
 shortcode: aws-ec2-no-secrets-in-user-data
 legacy: AWS062
 summary: User data for EC2 instances must not contain sensitive AWS keys 

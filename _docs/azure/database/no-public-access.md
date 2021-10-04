@@ -1,5 +1,6 @@
 ---
-title: Ensure databases are not publicly accessible
+title: azure-database-no-public-access
+description: Ensure databases are not publicly accessible
 shortcode: azure-database-no-public-access
 legacy: 
 summary: Ensure databases are not publicly accessible 

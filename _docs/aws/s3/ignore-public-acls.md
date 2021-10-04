@@ -1,5 +1,6 @@
 ---
-title: S3 Access Block should Ignore Public Acl
+title: aws-s3-ignore-public-acls
+description: S3 Access Block should Ignore Public Acl
 shortcode: aws-s3-ignore-public-acls
 legacy: AWS073
 summary: S3 Access Block should Ignore Public Acl 

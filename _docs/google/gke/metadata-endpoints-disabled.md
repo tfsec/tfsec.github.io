@@ -1,5 +1,6 @@
 ---
-title: Legacy metadata endpoints enabled.
+title: google-gke-metadata-endpoints-disabled
+description: Legacy metadata endpoints enabled.
 shortcode: google-gke-metadata-endpoints-disabled
 legacy: GCP007
 summary: Legacy metadata endpoints enabled. 

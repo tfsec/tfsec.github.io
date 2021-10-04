@@ -1,5 +1,6 @@
 ---
-title: Password authentication in use instead of SSH keys.
+title: azure-compute-ssh-authentication
+description: Password authentication in use instead of SSH keys.
 shortcode: azure-compute-ssh-authentication
 legacy: AZU005
 summary: Password authentication in use instead of SSH keys. 

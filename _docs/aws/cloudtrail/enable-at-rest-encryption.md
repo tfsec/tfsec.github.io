@@ -1,5 +1,6 @@
 ---
-title: Cloudtrail should be encrypted at rest to secure access to sensitive trail data
+title: aws-cloudtrail-enable-at-rest-encryption
+description: Cloudtrail should be encrypted at rest to secure access to sensitive trail data
 shortcode: aws-cloudtrail-enable-at-rest-encryption
 legacy: AWS065
 summary: Cloudtrail should be encrypted at rest to secure access to sensitive trail data 

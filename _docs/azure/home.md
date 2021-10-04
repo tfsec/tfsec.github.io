@@ -33,6 +33,7 @@ The included Azure checks are listed below. For more information about each chec
 |[azure-container-use-rbac-permissions](/docs/azure/container/use-rbac-permissions)<br>Ensure RBAC is enabled on AKS clusters|
 |[azure-database-enable-audit](/docs/azure/database/enable-audit)<br>Auditing should be enabled on Azure SQL Databases|
 |[azure-database-enable-ssl-enforcement](/docs/azure/database/enable-ssl-enforcement)<br>SSL should be enforced on database connections where applicable|
+|[azure-database-mysql-threat-detection-enabled](/docs/azure/database/mysql-threat-detection-enabled)<br>Ensure databases are not publicly accessible|
 |[azure-database-no-public-access](/docs/azure/database/no-public-access)<br>Ensure databases are not publicly accessible|
 |[azure-database-no-public-firewall-access](/docs/azure/database/no-public-firewall-access)<br>Ensure database firewalls do not permit public access|
 |[azure-database-postgres-configuration-log-checkpoints](/docs/azure/database/postgres-configuration-log-checkpoints)<br>Ensure server parameter 'log_checkpoints' is set to 'ON' for PostgreSQL Database Server|

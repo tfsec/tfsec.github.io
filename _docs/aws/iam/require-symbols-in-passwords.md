@@ -1,5 +1,6 @@
 ---
-title: IAM Password policy should have requirement for at least one symbol in the password.
+title: aws-iam-require-symbols-in-passwords
+description: IAM Password policy should have requirement for at least one symbol in the password.
 shortcode: aws-iam-require-symbols-in-passwords
 legacy: AWS040
 summary: IAM Password policy should have requirement for at least one symbol in the password. 

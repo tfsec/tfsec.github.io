@@ -1,5 +1,6 @@
 ---
-title: Ensure that Cloud SQL Database Instances are not publicly exposed
+title: google-sql-no-public-access
+description: Ensure that Cloud SQL Database Instances are not publicly exposed
 shortcode: google-sql-no-public-access
 legacy: 
 summary: Ensure that Cloud SQL Database Instances are not publicly exposed 

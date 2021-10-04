@@ -1,5 +1,6 @@
 ---
-title: Ensures that usage of security groups with inline rules and security group rule resources are not mixed.
+title: aws-vpc-disallow-mixed-sgr
+description: Ensures that usage of security groups with inline rules and security group rule resources are not mixed.
 shortcode: aws-vpc-disallow-mixed-sgr
 legacy: 
 summary: Ensures that usage of security groups with inline rules and security group rule resources are not mixed. 

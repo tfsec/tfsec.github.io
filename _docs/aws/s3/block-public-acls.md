@@ -1,5 +1,6 @@
 ---
-title: S3 Access block should block public ACL
+title: aws-s3-block-public-acls
+description: S3 Access block should block public ACL
 shortcode: aws-s3-block-public-acls
 legacy: AWS074
 summary: S3 Access block should block public ACL 

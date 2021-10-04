@@ -1,5 +1,6 @@
 ---
-title: KMS keys should be rotated at least every 90 days
+title: google-kms-rotate-kms-keys
+description: KMS keys should be rotated at least every 90 days
 shortcode: google-kms-rotate-kms-keys
 legacy: 
 summary: KMS keys should be rotated at least every 90 days 

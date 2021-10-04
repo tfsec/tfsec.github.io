@@ -1,5 +1,6 @@
 ---
-title: CodeBuild Project artifacts encryption should not be disabled
+title: aws-codebuild-enable-encryption
+description: CodeBuild Project artifacts encryption should not be disabled
 shortcode: aws-codebuild-enable-encryption
 legacy: AWS080
 summary: CodeBuild Project artifacts encryption should not be disabled 

@@ -1,5 +1,6 @@
 ---
-title: AWS Classic resource usage.
+title: aws-rds-no-classic-resources
+description: AWS Classic resource usage.
 shortcode: aws-rds-no-classic-resources
 legacy: AWS003
 summary: AWS Classic resource usage. 

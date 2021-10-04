@@ -1,5 +1,6 @@
 ---
-title: Elasticsearch doesn't enforce HTTPS traffic.
+title: aws-elastic-search-enforce-https
+description: Elasticsearch doesn't enforce HTTPS traffic.
 shortcode: aws-elastic-search-enforce-https
 legacy: AWS033
 summary: Elasticsearch doesn't enforce HTTPS traffic. 

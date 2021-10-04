@@ -1,5 +1,6 @@
 ---
-title: Public ingress should not be allowed via network policies
+title: kubernetes-network-no-public-ingress
+description: Public ingress should not be allowed via network policies
 shortcode: kubernetes-network-no-public-ingress
 legacy: 
 summary: Public ingress should not be allowed via network policies 

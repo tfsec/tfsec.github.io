@@ -1,5 +1,6 @@
 ---
-title: Security threat alerts go to subcription owners and co-administrators
+title: azure-mssql-threat-alert-email-to-owner
+description: Security threat alerts go to subcription owners and co-administrators
 shortcode: azure-mssql-threat-alert-email-to-owner
 legacy: 
 summary: Security threat alerts go to subcription owners and co-administrators 

@@ -1,5 +1,6 @@
 ---
-title: Missing description for security group/security group rule.
+title: aws-vpc-add-description-to-security-group
+description: Missing description for security group/security group rule.
 shortcode: aws-vpc-add-description-to-security-group
 legacy: AWS018
 summary: Missing description for security group/security group rule. 

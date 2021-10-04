@@ -1,5 +1,6 @@
 ---
-title: Contained database authentication should be disabled
+title: google-sql-no-contained-db-auth
+description: Contained database authentication should be disabled
 shortcode: google-sql-no-contained-db-auth
 legacy: 
 summary: Contained database authentication should be disabled 

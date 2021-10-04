@@ -1,5 +1,6 @@
 ---
-title: Checks for service account defined for GKE nodes
+title: google-gke-use-service-account
+description: Checks for service account defined for GKE nodes
 shortcode: google-gke-use-service-account
 legacy: GCP012
 summary: Checks for service account defined for GKE nodes 

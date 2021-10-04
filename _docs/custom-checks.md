@@ -1,6 +1,8 @@
 ---
 title: Custom Checks
+description: Custom Checks
 subtitle: Adding custom checks to your tfsec config
+description: Adding custom checks to your tfsec config
 author: tfsec
 tags: [installation, github action, code scanning, security analysis]
 ---
@@ -80,30 +82,30 @@ checks:
 
 The check contains up of the following attributes;
 
-| Attribute | Description |
-|:-----------|:-------------|
-| code | The custom code that your check will be known as |
-| description | A description for the code that will be included in the output|
-| impact | An optional detail about the consequences of not passing the check |
-| resolution | An optional brief description of how to satisfy the check |
-|requiredTypes | The block types to apply the check to - resource, data, module, variable |
-|requiredLabels | The resource type - aws_ec2_instance for example. This also supports wildcards using `*`, e.g. `aws_*` |
-|severity | How severe is the check |
-|matchSpec | See below for the MatchSpec attributes |
-|errorMessage | The error message that should be displayed in cases where the check fails |
-|relatedLinks | A list of related links for the check to be displayed in cases where the check fails |
+| Attribute      | Description                                                                                            |
+| :------------- | :----------------------------------------------------------------------------------------------------- |
+| code           | The custom code that your check will be known as                                                       |
+| description    | A description for the code that will be included in the output                                         |
+| impact         | An optional detail about the consequences of not passing the check                                     |
+| resolution     | An optional brief description of how to satisfy the check                                              |
+| requiredTypes  | The block types to apply the check to - resource, data, module, variable                               |
+| requiredLabels | The resource type - aws_ec2_instance for example. This also supports wildcards using `*`, e.g. `aws_*` |
+| severity       | How severe is the check                                                                                |
+| matchSpec      | See below for the MatchSpec attributes                                                                 |
+| errorMessage   | The error message that should be displayed in cases where the check fails                              |
+| relatedLinks   | A list of related links for the check to be displayed in cases where the check fails                   |
 
 
 The `MatchSpec` is the what will define the check itself - this is fairly basic and is made up of the following attributes
 
-| Attribute | Description |
-|:----------|:------------|
-| name | The name of the attribute or block to run the check on |
-| action | The check type - see below for more information |
-| value | In cases where a value is required, the value to look for |
-| ignoreUndefined | If the attribute is undefined, ignore and pass the check |
-|subMatch | A sub MatchSpec block for nested checking - think looking for `enabled` value in a `logging` block |
-|predicateMatchSpec | An array of MatchSpec blocks to be logically aggregated by either `and` or `or` actions |
+| Attribute          | Description                                                                                        |
+| :----------------- | :------------------------------------------------------------------------------------------------- |
+| name               | The name of the attribute or block to run the check on                                             |
+| action             | The check type - see below for more information                                                    |
+| value              | In cases where a value is required, the value to look for                                          |
+| ignoreUndefined    | If the attribute is undefined, ignore and pass the check                                           |
+| subMatch           | A sub MatchSpec block for nested checking - think looking for `enabled` value in a `logging` block |
+| predicateMatchSpec | An array of MatchSpec blocks to be logically aggregated by either `and` or `or` actions            |
 
 #### Check Actions
 There are a number of `CheckActions` available which should allow you to quickly put together most checks.

@@ -1,5 +1,6 @@
 ---
-title: Spaces buckets should have versioning enabled
+title: digitalocean-spaces-versioning-enabled
+description: Spaces buckets should have versioning enabled
 shortcode: digitalocean-spaces-versioning-enabled
 legacy: DIG006
 summary: Spaces buckets should have versioning enabled 

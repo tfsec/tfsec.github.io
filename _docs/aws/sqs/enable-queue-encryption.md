@@ -1,5 +1,6 @@
 ---
-title: Unencrypted SQS queue.
+title: aws-sqs-enable-queue-encryption
+description: Unencrypted SQS queue.
 shortcode: aws-sqs-enable-queue-encryption
 legacy: AWS015
 summary: Unencrypted SQS queue. 

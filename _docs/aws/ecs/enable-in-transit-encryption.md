@@ -1,5 +1,6 @@
 ---
-title: ECS Task Definitions with EFS volumes should use in-transit encryption
+title: aws-ecs-enable-in-transit-encryption
+description: ECS Task Definitions with EFS volumes should use in-transit encryption
 shortcode: aws-ecs-enable-in-transit-encryption
 legacy: AWS096
 summary: ECS Task Definitions with EFS volumes should use in-transit encryption 

@@ -1,5 +1,6 @@
 ---
-title: Ensure that logging of disconnections is enabled.
+title: google-sql-pg-log-disconnections
+description: Ensure that logging of disconnections is enabled.
 shortcode: google-sql-pg-log-disconnections
 legacy: 
 summary: Ensure that logging of disconnections is enabled. 

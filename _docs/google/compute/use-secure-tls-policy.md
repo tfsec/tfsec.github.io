@@ -1,5 +1,6 @@
 ---
-title: SSL policies should enforce secure versions of TLS
+title: google-compute-use-secure-tls-policy
+description: SSL policies should enforce secure versions of TLS
 shortcode: google-compute-use-secure-tls-policy
 legacy: 
 summary: SSL policies should enforce secure versions of TLS 

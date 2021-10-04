@@ -1,5 +1,6 @@
 ---
-title: Service accounts should not have roles assigned with excessive privileges
+title: google-iam-no-privileged-service-accounts
+description: Service accounts should not have roles assigned with excessive privileges
 shortcode: google-iam-no-privileged-service-accounts
 legacy: 
 summary: Service accounts should not have roles assigned with excessive privileges 

@@ -1,5 +1,6 @@
 ---
-title: Key vault Secret should have a content type set
+title: azure-keyvault-content-type-for-secret
+description: Key vault Secret should have a content type set
 shortcode: azure-keyvault-content-type-for-secret
 legacy: AZU022
 summary: Key vault Secret should have a content type set 

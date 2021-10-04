@@ -1,5 +1,6 @@
 ---
-title: Legacy ABAC permissions are enabled.
+title: google-gke-use-rbac-permissions
+description: Legacy ABAC permissions are enabled.
 shortcode: google-gke-use-rbac-permissions
 legacy: GCP005
 summary: Legacy ABAC permissions are enabled. 

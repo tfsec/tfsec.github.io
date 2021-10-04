@@ -1,5 +1,6 @@
 ---
-title: The required contact details should be set for security center
+title: azure-security-center-set-required-contact-details
+description: The required contact details should be set for security center
 shortcode: azure-security-center-set-required-contact-details
 legacy: 
 summary: The required contact details should be set for security center 
@@ -61,6 +62,8 @@ resource "azurerm_security_center_contact" "good_example" {
 
 
 - [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/security_center_contact#phone](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/security_center_contact#phone){:target="_blank" rel="nofollow noreferrer noopener"}
+
+- [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/security_center_contact#email](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/security_center_contact#email){:target="_blank" rel="nofollow noreferrer noopener"}
 
 - [https://azure.microsoft.com/en-us/services/security-center/](https://azure.microsoft.com/en-us/services/security-center/){:target="_blank" rel="nofollow noreferrer noopener"}
 

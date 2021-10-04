@@ -1,5 +1,6 @@
 ---
-title: Cloudtrail log validation should be enabled to prevent tampering of log data
+title: aws-cloudtrail-enable-log-validation
+description: Cloudtrail log validation should be enabled to prevent tampering of log data
 shortcode: aws-cloudtrail-enable-log-validation
 legacy: AWS064
 summary: Cloudtrail log validation should be enabled to prevent tampering of log data 

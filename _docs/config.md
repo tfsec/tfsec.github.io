@@ -1,5 +1,6 @@
 ---
 title:  Config File
+description:  Config File
 summary: Adding an optional config file
 author: tfec
 tags: [configuration]

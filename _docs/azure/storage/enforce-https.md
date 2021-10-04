@@ -1,5 +1,6 @@
 ---
-title: Storage accounts should be configured to only accept transfers that are over secure connections
+title: azure-storage-enforce-https
+description: Storage accounts should be configured to only accept transfers that are over secure connections
 shortcode: azure-storage-enforce-https
 legacy: AZU014
 summary: Storage accounts should be configured to only accept transfers that are over secure connections 

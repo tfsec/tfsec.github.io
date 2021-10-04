@@ -1,5 +1,6 @@
 ---
-title: No sensitive data stored in user_data
+title: cloudstack-compute-no-sensitive-info
+description: No sensitive data stored in user_data
 shortcode: cloudstack-compute-no-sensitive-info
 legacy: 
 summary: No sensitive data stored in user_data 

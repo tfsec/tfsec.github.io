@@ -1,5 +1,6 @@
 ---
-title: Public egress should not be allowed via network policies
+title: kubernetes-network-no-public-egress
+description: Public egress should not be allowed via network policies
 shortcode: kubernetes-network-no-public-egress
 legacy: 
 summary: Public egress should not be allowed via network policies 

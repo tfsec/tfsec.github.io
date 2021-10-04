@@ -1,5 +1,6 @@
 ---
-title: IAM Password policy should prevent password reuse.
+title: aws-iam-no-password-reuse
+description: IAM Password policy should prevent password reuse.
 shortcode: aws-iam-no-password-reuse
 legacy: AWS037
 summary: IAM Password policy should prevent password reuse. 
