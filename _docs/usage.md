@@ -27,8 +27,8 @@ For a richer experience, there are many additional command line arguments that y
 | --ignore-hcl-errors                                |            | Stop and report an error if an HCL parse error is encountered                            |
 | --ignore-info                                      |            | [DEPRECATED] Don't show info results in the output.                                      |
 | --ignore-warnings                                  |            | [DEPRECATED] Don't show warnings in the output.                                          |
-| --include-ignored                                  |            | Include ignored checks in the result output                                              |
-| --include-passed                                   |            | Include passed checks in the result output                                               |
+| --include-ignored                                  |            | Ignore comments with have no effect and all resources will be scanned                                              |
+| --include-passed                                   |            | Resources that pass checks are included in the result ouput                                               |
 | --no-color                                         |            | Disable colored output (American style!)                                                 |
 | --no-colour                                        |            | Disable coloured output                                                                  |
 | --out [filepath to output to]                          |            | Set output file                                                                          |
