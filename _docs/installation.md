@@ -4,19 +4,24 @@ subtitle: Installing tfsec on your local machine
 author: tfsec
 tags: [installation, quickstart]
 ---
+Install with [brew/linuxbrew](https://brew.sh)
 
-Install with brew/linuxbrew:
 
 ```bash
 brew install tfsec
 ```
 
-Install with Chocolatey:
+Install with [Chocolatey](https://chocolatey.org/)
 
 ```cmd
 choco install tfsec
 ```
 
+Install with [Scoop](https://scoop.sh/)
+
+```cmd
+scoop install tfsec
+```
 You can also grab the binary for your system from the [releases page](https://github.com/aquasecurity/tfsec/releases).
 
 Alternatively, install with Go:
