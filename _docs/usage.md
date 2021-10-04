@@ -28,7 +28,7 @@ For a richer experience, there are many additional command line arguments that y
 | --ignore-info                                      |            | [DEPRECATED] Don't show info results in the output.                                      |
 | --ignore-warnings                                  |            | [DEPRECATED] Don't show warnings in the output.                                          |
 | --include-ignored                                  |            | Ignore comments with have no effect and all resources will be scanned                                              |
-| --include-passed                                   |            | Resources that pass checks are included in the result ouput                                               |
+| --include-passed                                   |            | Resources that pass checks are included in the result output                                               |
 | --no-color                                         |            | Disable colored output (American style!)                                                 |
 | --no-colour                                        |            | Disable coloured output                                                                  |
 | --out [filepath to output to]                          |            | Set output file                                                                          |
