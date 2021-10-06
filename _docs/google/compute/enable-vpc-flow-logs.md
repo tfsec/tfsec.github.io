@@ -1,6 +1,5 @@
 ---
-title: google-compute-enable-vpc-flow-logs
-description: VPC flow logs should be enabled for all subnets
+title: VPC flow logs should be enabled for all subnets
 shortcode: google-compute-enable-vpc-flow-logs
 legacy: 
 summary: VPC flow logs should be enabled for all subnets 

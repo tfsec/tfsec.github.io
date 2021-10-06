@@ -1,6 +1,5 @@
 ---
-title: google-compute-disk-encryption-customer-key
-description: Disks should be encrypted with Customer Supplied Encryption Keys
+title: Disks should be encrypted with Customer Supplied Encryption Keys
 shortcode: google-compute-disk-encryption-customer-key
 legacy: 
 summary: Disks should be encrypted with Customer Supplied Encryption Keys 

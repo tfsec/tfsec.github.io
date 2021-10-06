@@ -1,6 +1,5 @@
 ---
-title: azure-appservice-dotnet-framework-version
-description: Azure App Service Web app does not use the latest .Net Core version
+title: Azure App Service Web app does not use the latest .Net Core version
 shortcode: azure-appservice-dotnet-framework-version
 legacy: 
 summary: Azure App Service Web app does not use the latest .Net Core version 

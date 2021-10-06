@@ -1,6 +1,5 @@
 ---
-title: aws-api-gateway-enable-cache-encryption
-description: API Gateway must have cache enabled
+title: API Gateway must have cache enabled
 shortcode: aws-api-gateway-enable-cache-encryption
 legacy: 
 summary: API Gateway must have cache enabled 

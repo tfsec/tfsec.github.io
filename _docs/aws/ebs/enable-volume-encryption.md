@@ -1,6 +1,5 @@
 ---
-title: aws-ebs-enable-volume-encryption
-description: EBS volumes must be encrypted
+title: EBS volumes must be encrypted
 shortcode: aws-ebs-enable-volume-encryption
 legacy: 
 summary: EBS volumes must be encrypted 

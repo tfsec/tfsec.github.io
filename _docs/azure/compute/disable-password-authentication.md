@@ -1,6 +1,5 @@
 ---
-title: azure-compute-disable-password-authentication
-description: Password authentication should be disabled on Azure virtual machines
+title: Password authentication should be disabled on Azure virtual machines
 shortcode: azure-compute-disable-password-authentication
 legacy: 
 summary: Password authentication should be disabled on Azure virtual machines 

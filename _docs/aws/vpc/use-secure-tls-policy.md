@@ -1,6 +1,5 @@
 ---
-title: aws-vpc-use-secure-tls-policy
-description: An outdated SSL policy is in use by a load balancer.
+title: An outdated SSL policy is in use by a load balancer.
 shortcode: aws-vpc-use-secure-tls-policy
 legacy: AWS010
 summary: An outdated SSL policy is in use by a load balancer. 

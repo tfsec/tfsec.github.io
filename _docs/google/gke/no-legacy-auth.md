@@ -1,6 +1,5 @@
 ---
-title: google-gke-no-legacy-auth
-description: Clusters should use client certificates for authentication
+title: Clusters should use client certificates for authentication
 shortcode: google-gke-no-legacy-auth
 legacy: 
 summary: Clusters should use client certificates for authentication 

@@ -1,6 +1,5 @@
 ---
-title: aws-rds-enable-performance-insights
-description: Encryption for RDS Performance Insights should be enabled.
+title: Encryption for RDS Performance Insights should be enabled.
 shortcode: aws-rds-enable-performance-insights
 legacy: AWS053
 summary: Encryption for RDS Performance Insights should be enabled. 

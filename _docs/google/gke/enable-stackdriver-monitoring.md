@@ -1,6 +1,5 @@
 ---
-title: google-gke-enable-stackdriver-monitoring
-description: Stackdriver Monitoring should be enabled
+title: Stackdriver Monitoring should be enabled
 shortcode: google-gke-enable-stackdriver-monitoring
 legacy: 
 summary: Stackdriver Monitoring should be enabled 

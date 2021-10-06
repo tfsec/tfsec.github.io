@@ -1,6 +1,5 @@
 ---
-title: google-compute-no-oslogin-override
-description: Instances should not override the project setting for OS Login
+title: Instances should not override the project setting for OS Login
 shortcode: google-compute-no-oslogin-override
 legacy: 
 summary: Instances should not override the project setting for OS Login 

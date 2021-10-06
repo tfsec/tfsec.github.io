@@ -1,6 +1,5 @@
 ---
-title: aws-s3-no-public-buckets
-description: S3 Access block should restrict public bucket to limit access
+title: S3 Access block should restrict public bucket to limit access
 shortcode: aws-s3-no-public-buckets
 legacy: AWS075
 summary: S3 Access block should restrict public bucket to limit access 

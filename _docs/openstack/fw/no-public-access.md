@@ -1,6 +1,5 @@
 ---
-title: openstack-fw-no-public-access
-description: A firewall rule allows traffic from/to the public internet
+title: A firewall rule allows traffic from/to the public internet
 shortcode: openstack-fw-no-public-access
 legacy: 
 summary: A firewall rule allows traffic from/to the public internet 

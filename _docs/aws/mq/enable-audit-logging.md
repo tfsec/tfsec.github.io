@@ -1,6 +1,5 @@
 ---
-title: aws-mq-enable-audit-logging
-description: MQ Broker should have audit logging enabled
+title: MQ Broker should have audit logging enabled
 shortcode: aws-mq-enable-audit-logging
 legacy: 
 summary: MQ Broker should have audit logging enabled 

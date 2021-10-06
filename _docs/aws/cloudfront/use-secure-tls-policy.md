@@ -1,6 +1,5 @@
 ---
-title: aws-cloudfront-use-secure-tls-policy
-description: CloudFront distribution uses outdated SSL/TLS protocols.
+title: CloudFront distribution uses outdated SSL/TLS protocols.
 shortcode: aws-cloudfront-use-secure-tls-policy
 legacy: AWS021
 summary: CloudFront distribution uses outdated SSL/TLS protocols. 

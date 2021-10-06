@@ -1,6 +1,5 @@
 ---
-title: google-dns-enable-dnssec
-description: Cloud DNS should use DNSSEC
+title: Cloud DNS should use DNSSEC
 shortcode: google-dns-enable-dnssec
 legacy: 
 summary: Cloud DNS should use DNSSEC 

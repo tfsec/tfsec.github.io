@@ -1,6 +1,5 @@
 ---
-title: aws-efs-enable-at-rest-encryption
-description: EFS Encryption has not been enabled
+title: EFS Encryption has not been enabled
 shortcode: aws-efs-enable-at-rest-encryption
 legacy: AWS048
 summary: EFS Encryption has not been enabled 

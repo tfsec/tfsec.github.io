@@ -1,6 +1,5 @@
 ---
-title: azure-security-center-defender-on-appservices
-description: Ensure Azure Defender is set to On for container registries
+title: Ensure Azure Defender is set to On for container registries
 shortcode: azure-security-center-defender-on-appservices
 legacy: 
 summary: Ensure Azure Defender is set to On for container registries 

@@ -1,6 +1,5 @@
 ---
-title: azure-authorization-limit-role-actions
-description: Roles limited to the required actions
+title: Roles limited to the required actions
 shortcode: azure-authorization-limit-role-actions
 legacy: 
 summary: Roles limited to the required actions 

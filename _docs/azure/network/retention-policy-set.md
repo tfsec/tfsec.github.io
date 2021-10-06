@@ -1,6 +1,5 @@
 ---
-title: azure-network-retention-policy-set
-description: Retention policy for flow logs should be enabled and set to greater than 90 days
+title: Retention policy for flow logs should be enabled and set to greater than 90 days
 shortcode: azure-network-retention-policy-set
 legacy: 
 summary: Retention policy for flow logs should be enabled and set to greater than 90 days 

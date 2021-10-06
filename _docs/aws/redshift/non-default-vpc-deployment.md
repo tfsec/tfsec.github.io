@@ -1,6 +1,5 @@
 ---
-title: aws-redshift-non-default-vpc-deployment
-description: Redshift cluster should be deployed into a specific VPC
+title: Redshift cluster should be deployed into a specific VPC
 shortcode: aws-redshift-non-default-vpc-deployment
 legacy: AWS087
 summary: Redshift cluster should be deployed into a specific VPC 

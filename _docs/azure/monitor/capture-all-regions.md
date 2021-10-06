@@ -1,6 +1,5 @@
 ---
-title: azure-monitor-capture-all-regions
-description: Ensure activitys are captured for all locations
+title: Ensure activitys are captured for all locations
 shortcode: azure-monitor-capture-all-regions
 legacy: 
 summary: Ensure activitys are captured for all locations 

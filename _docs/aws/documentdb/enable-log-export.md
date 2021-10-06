@@ -1,6 +1,5 @@
 ---
-title: aws-documentdb-enable-log-export
-description: DocumentDB logs export should be enabled
+title: DocumentDB logs export should be enabled
 shortcode: aws-documentdb-enable-log-export
 legacy: 
 summary: DocumentDB logs export should be enabled 

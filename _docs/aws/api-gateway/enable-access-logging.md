@@ -1,6 +1,5 @@
 ---
-title: aws-api-gateway-enable-access-logging
-description: API Gateway stages for V1 and V2 should have access logging enabled
+title: API Gateway stages for V1 and V2 should have access logging enabled
 shortcode: aws-api-gateway-enable-access-logging
 legacy: AWS061
 summary: API Gateway stages for V1 and V2 should have access logging enabled 

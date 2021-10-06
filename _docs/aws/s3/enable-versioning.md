@@ -1,6 +1,5 @@
 ---
-title: aws-s3-enable-versioning
-description: S3 Data should be versioned
+title: S3 Data should be versioned
 shortcode: aws-s3-enable-versioning
 legacy: AWS077
 summary: S3 Data should be versioned 

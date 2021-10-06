@@ -1,6 +1,5 @@
 ---
-title: aws-ebs-encryption-customer-key
-description: EBS volume encryption should use Customer Managed Keys
+title: EBS volume encryption should use Customer Managed Keys
 shortcode: aws-ebs-encryption-customer-key
 legacy: 
 summary: EBS volume encryption should use Customer Managed Keys 

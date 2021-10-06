@@ -1,6 +1,5 @@
 ---
-title: aws-ssm-secret-use-customer-key
-description: Secrets Manager should use customer managed keys
+title: Secrets Manager should use customer managed keys
 shortcode: aws-ssm-secret-use-customer-key
 legacy: AWS095
 summary: Secrets Manager should use customer managed keys 

@@ -1,6 +1,5 @@
 ---
-title: google-sql-pg-log-checkpoints
-description: Ensure that logging of checkpoints is enabled.
+title: Ensure that logging of checkpoints is enabled.
 shortcode: google-sql-pg-log-checkpoints
 legacy: 
 summary: Ensure that logging of checkpoints is enabled. 

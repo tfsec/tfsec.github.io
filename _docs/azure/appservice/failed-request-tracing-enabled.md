@@ -1,6 +1,5 @@
 ---
-title: azure-appservice-failed-request-tracing-enabled
-description: App service does not enable failed request tracing
+title: App service does not enable failed request tracing
 shortcode: azure-appservice-failed-request-tracing-enabled
 legacy: 
 summary: App service does not enable failed request tracing 

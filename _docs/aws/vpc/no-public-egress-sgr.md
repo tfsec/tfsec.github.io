@@ -1,6 +1,5 @@
 ---
-title: aws-vpc-no-public-egress-sgr
-description: An egress security group rule allows traffic to /0.
+title: An egress security group rule allows traffic to /0.
 shortcode: aws-vpc-no-public-egress-sgr
 legacy: AWS007
 summary: An egress security group rule allows traffic to /0. 

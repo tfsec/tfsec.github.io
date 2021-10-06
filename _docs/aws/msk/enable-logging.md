@@ -1,6 +1,5 @@
 ---
-title: aws-msk-enable-logging
-description: Ensure MSK Cluster logging is enabled
+title: Ensure MSK Cluster logging is enabled
 shortcode: aws-msk-enable-logging
 legacy: 
 summary: Ensure MSK Cluster logging is enabled 

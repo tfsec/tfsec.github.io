@@ -1,6 +1,5 @@
 ---
-title: aws-documentdb-encryption-customer-key
-description: DocumentDB encryption should use Customer Managed Keys
+title: DocumentDB encryption should use Customer Managed Keys
 shortcode: aws-documentdb-encryption-customer-key
 legacy: 
 summary: DocumentDB encryption should use Customer Managed Keys 

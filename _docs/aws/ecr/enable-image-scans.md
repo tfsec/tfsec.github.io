@@ -1,6 +1,5 @@
 ---
-title: aws-ecr-enable-image-scans
-description: ECR repository has image scans disabled.
+title: ECR repository has image scans disabled.
 shortcode: aws-ecr-enable-image-scans
 legacy: AWS023
 summary: ECR repository has image scans disabled. 

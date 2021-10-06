@@ -1,6 +1,5 @@
 ---
-title: github-repositories-private
-description: Github repository shouldn't be public.
+title: Github repository shouldn't be public.
 shortcode: github-repositories-private
 legacy: GIT001
 summary: Github repository shouldn't be public. 

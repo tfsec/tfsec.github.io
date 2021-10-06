@@ -1,6 +1,5 @@
 ---
-title: google-project-no-default-network
-description: Default network should not be created at project level
+title: Default network should not be created at project level
 shortcode: google-project-no-default-network
 legacy: 
 summary: Default network should not be created at project level 

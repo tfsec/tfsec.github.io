@@ -1,6 +1,5 @@
 ---
-title: azure-network-ssh-blocked-from-internet
-description: SSH access should not be accessible from the Internet, should be blocked on port 22
+title: SSH access should not be accessible from the Internet, should be blocked on port 22
 shortcode: azure-network-ssh-blocked-from-internet
 legacy: AZU017
 summary: SSH access should not be accessible from the Internet, should be blocked on port 22 

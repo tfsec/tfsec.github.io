@@ -1,6 +1,5 @@
 ---
-title: google-gke-enable-network-policy
-description: Network Policy should be enabled on GKE clusters
+title: Network Policy should be enabled on GKE clusters
 shortcode: google-gke-enable-network-policy
 legacy: 
 summary: Network Policy should be enabled on GKE clusters 

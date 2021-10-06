@@ -1,6 +1,5 @@
 ---
-title: azure-database-enable-ssl-enforcement
-description: SSL should be enforced on database connections where applicable
+title: SSL should be enforced on database connections where applicable
 shortcode: azure-database-enable-ssl-enforcement
 legacy: 
 summary: SSL should be enforced on database connections where applicable 

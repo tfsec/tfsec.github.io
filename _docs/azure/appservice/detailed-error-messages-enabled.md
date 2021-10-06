@@ -1,6 +1,5 @@
 ---
-title: azure-appservice-detailed-error-messages-enabled
-description: App service disables detailed error messages
+title: App service disables detailed error messages
 shortcode: azure-appservice-detailed-error-messages-enabled
 legacy: 
 summary: App service disables detailed error messages 

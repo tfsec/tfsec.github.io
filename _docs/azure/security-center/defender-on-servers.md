@@ -1,6 +1,5 @@
 ---
-title: azure-security-center-defender-on-servers
-description: Ensure Azure Defender is set to On for Servers
+title: Ensure Azure Defender is set to On for Servers
 shortcode: azure-security-center-defender-on-servers
 legacy: 
 summary: Ensure Azure Defender is set to On for Servers 

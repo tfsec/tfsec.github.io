@@ -1,6 +1,5 @@
 ---
-title: aws-mq-enable-general-logging
-description: MQ Broker should have general logging enabled
+title: MQ Broker should have general logging enabled
 shortcode: aws-mq-enable-general-logging
 legacy: 
 summary: MQ Broker should have general logging enabled 

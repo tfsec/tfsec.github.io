@@ -1,6 +1,5 @@
 ---
-title: azure-appservice-ftp-deployments-disabled
-description: Ensure FTP Deployments are disabled
+title: Ensure FTP Deployments are disabled
 shortcode: azure-appservice-ftp-deployments-disabled
 legacy: 
 summary: Ensure FTP Deployments are disabled 

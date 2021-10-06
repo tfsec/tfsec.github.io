@@ -1,6 +1,5 @@
 ---
-title: azure-database-postgres-configuration-log-connection-throttling
-description: Ensure server parameter 'connection_throttling' is set to 'ON' for PostgreSQL Database Server
+title: Ensure server parameter 'connection_throttling' is set to 'ON' for PostgreSQL Database Server
 shortcode: azure-database-postgres-configuration-log-connection-throttling
 legacy: 
 summary: Ensure server parameter 'connection_throttling' is set to 'ON' for PostgreSQL Database Server 

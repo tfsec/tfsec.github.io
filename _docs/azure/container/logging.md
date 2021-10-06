@@ -1,6 +1,5 @@
 ---
-title: azure-container-logging
-description: Ensure AKS logging to Azure Monitoring is Configured
+title: Ensure AKS logging to Azure Monitoring is Configured
 shortcode: azure-container-logging
 legacy: AZU009
 summary: Ensure AKS logging to Azure Monitoring is Configured 

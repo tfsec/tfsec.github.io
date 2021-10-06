@@ -275,6 +275,7 @@
       docs:
       - azure/database/enable-audit
       - azure/database/enable-ssl-enforcement
+      - azure/database/mysql-threat-detection-enabled
       - azure/database/no-public-access
       - azure/database/no-public-firewall-access
       - azure/database/postgres-configuration-log-checkpoints
@@ -397,6 +398,8 @@
       service: github/repositories
       docs:
       - github/repositories/private
+      - github/repositories/require-signed-commits
+      - github/repositories/vulnerability-alerts
   - title: Google
     provider: google/
     services:

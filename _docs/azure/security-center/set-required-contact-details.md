@@ -1,6 +1,5 @@
 ---
-title: azure-security-center-set-required-contact-details
-description: The required contact details should be set for security center
+title: The required contact details should be set for security center
 shortcode: azure-security-center-set-required-contact-details
 legacy: 
 summary: The required contact details should be set for security center 

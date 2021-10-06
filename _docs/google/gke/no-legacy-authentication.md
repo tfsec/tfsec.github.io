@@ -1,6 +1,5 @@
 ---
-title: google-gke-no-legacy-authentication
-description: Legacy client authentication methods utilized.
+title: Legacy client authentication methods utilized.
 shortcode: google-gke-no-legacy-authentication
 legacy: GCP008
 summary: Legacy client authentication methods utilized. 

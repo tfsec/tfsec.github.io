@@ -1,6 +1,5 @@
 ---
-title: google-sql-no-cross-db-ownership-chaining
-description: Cross-database ownership chaining should be disabled
+title: Cross-database ownership chaining should be disabled
 shortcode: google-sql-no-cross-db-ownership-chaining
 legacy: 
 summary: Cross-database ownership chaining should be disabled 

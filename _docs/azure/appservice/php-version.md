@@ -1,6 +1,5 @@
 ---
-title: azure-appservice-php-version
-description: Azure App Service Web app does not use the latest PHP version
+title: Azure App Service Web app does not use the latest PHP version
 shortcode: azure-appservice-php-version
 legacy: 
 summary: Azure App Service Web app does not use the latest PHP version 

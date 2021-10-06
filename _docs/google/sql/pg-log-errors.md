@@ -1,6 +1,5 @@
 ---
-title: google-sql-pg-log-errors
-description: Ensure that Postgres errors are logged
+title: Ensure that Postgres errors are logged
 shortcode: google-sql-pg-log-errors
 legacy: 
 summary: Ensure that Postgres errors are logged 

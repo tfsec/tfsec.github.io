@@ -1,6 +1,5 @@
 ---
-title: google-compute-no-default-service-account
-description: Instances should not use the default service account
+title: Instances should not use the default service account
 shortcode: google-compute-no-default-service-account
 legacy: 
 summary: Instances should not use the default service account 

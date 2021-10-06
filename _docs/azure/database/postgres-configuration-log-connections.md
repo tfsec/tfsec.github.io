@@ -1,6 +1,5 @@
 ---
-title: azure-database-postgres-configuration-log-connections
-description: Ensure server parameter 'log_connections' is set to 'ON' for PostgreSQL Database Server
+title: Ensure server parameter 'log_connections' is set to 'ON' for PostgreSQL Database Server
 shortcode: azure-database-postgres-configuration-log-connections
 legacy: 
 summary: Ensure server parameter 'log_connections' is set to 'ON' for PostgreSQL Database Server 

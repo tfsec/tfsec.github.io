@@ -1,6 +1,5 @@
 ---
-title: azure-datafactory-no-public-access
-description: Data Factory should have public access disabled, the default is enabled.
+title: Data Factory should have public access disabled, the default is enabled.
 shortcode: azure-datafactory-no-public-access
 legacy: AZU025
 summary: Data Factory should have public access disabled, the default is enabled. 

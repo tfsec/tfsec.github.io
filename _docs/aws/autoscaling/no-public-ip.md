@@ -1,6 +1,5 @@
 ---
-title: aws-autoscaling-no-public-ip
-description: A resource has a public IP address.
+title: A resource has a public IP address.
 shortcode: aws-autoscaling-no-public-ip
 legacy: AWS012
 summary: A resource has a public IP address. 

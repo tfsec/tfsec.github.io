@@ -1,6 +1,5 @@
 ---
-title: google-gke-node-shielding-enabled
-description: Shielded GKE nodes not enabled.
+title: Shielded GKE nodes not enabled.
 shortcode: google-gke-node-shielding-enabled
 legacy: GCP010
 summary: Shielded GKE nodes not enabled. 

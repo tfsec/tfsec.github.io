@@ -1,6 +1,5 @@
 ---
-title: google-gke-enable-ip-aliasing
-description: Clusters should have IP aliasing enabled
+title: Clusters should have IP aliasing enabled
 shortcode: google-gke-enable-ip-aliasing
 legacy: 
 summary: Clusters should have IP aliasing enabled 

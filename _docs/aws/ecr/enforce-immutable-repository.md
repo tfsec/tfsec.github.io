@@ -1,6 +1,5 @@
 ---
-title: aws-ecr-enforce-immutable-repository
-description: ECR images tags shouldn't be mutable.
+title: ECR images tags shouldn't be mutable.
 shortcode: aws-ecr-enforce-immutable-repository
 legacy: AWS078
 summary: ECR images tags shouldn't be mutable. 

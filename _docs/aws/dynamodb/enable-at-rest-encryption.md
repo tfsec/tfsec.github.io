@@ -1,6 +1,5 @@
 ---
-title: aws-dynamodb-enable-at-rest-encryption
-description: DAX Cluster should always encrypt data at rest
+title: DAX Cluster should always encrypt data at rest
 shortcode: aws-dynamodb-enable-at-rest-encryption
 legacy: AWS081
 summary: DAX Cluster should always encrypt data at rest 

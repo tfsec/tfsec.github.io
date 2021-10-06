@@ -1,6 +1,5 @@
 ---
-title: aws-s3-enable-bucket-encryption
-description: Unencrypted S3 bucket.
+title: Unencrypted S3 bucket.
 shortcode: aws-s3-enable-bucket-encryption
 legacy: AWS017
 summary: Unencrypted S3 bucket. 

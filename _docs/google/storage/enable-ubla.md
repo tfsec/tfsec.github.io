@@ -1,6 +1,5 @@
 ---
-title: google-storage-enable-ubla
-description: Ensure that Cloud Storage buckets have uniform bucket-level access enabled
+title: Ensure that Cloud Storage buckets have uniform bucket-level access enabled
 shortcode: google-storage-enable-ubla
 legacy: 
 summary: Ensure that Cloud Storage buckets have uniform bucket-level access enabled 

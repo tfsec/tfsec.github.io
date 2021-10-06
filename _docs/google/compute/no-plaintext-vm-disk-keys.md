@@ -1,6 +1,5 @@
 ---
-title: google-compute-no-plaintext-vm-disk-keys
-description: VM disk encryption keys should not be provided in plaintext
+title: VM disk encryption keys should not be provided in plaintext
 shortcode: google-compute-no-plaintext-vm-disk-keys
 legacy: 
 summary: VM disk encryption keys should not be provided in plaintext 

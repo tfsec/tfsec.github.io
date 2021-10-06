@@ -1,6 +1,5 @@
 ---
-title: azure-monitor-capture-all-activities
-description: Ensure log profile captures all activities
+title: Ensure log profile captures all activities
 shortcode: azure-monitor-capture-all-activities
 legacy: 
 summary: Ensure log profile captures all activities 

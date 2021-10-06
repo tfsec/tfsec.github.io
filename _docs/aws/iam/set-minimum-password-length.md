@@ -1,6 +1,5 @@
 ---
-title: aws-iam-set-minimum-password-length
-description: IAM Password policy should have minimum password length of 14 or more characters.
+title: IAM Password policy should have minimum password length of 14 or more characters.
 shortcode: aws-iam-set-minimum-password-length
 legacy: AWS039
 summary: IAM Password policy should have minimum password length of 14 or more characters. 

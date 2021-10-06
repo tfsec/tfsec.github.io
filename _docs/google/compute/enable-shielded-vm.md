@@ -1,6 +1,5 @@
 ---
-title: google-compute-enable-shielded-vm
-description: Instances should have Shielded VM enabled
+title: Instances should have Shielded VM enabled
 shortcode: google-compute-enable-shielded-vm
 legacy: 
 summary: Instances should have Shielded VM enabled 

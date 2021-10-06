@@ -1,6 +1,5 @@
 ---
-title: aws-s3-block-public-policy
-description: S3 Access block should block public policy
+title: S3 Access block should block public policy
 shortcode: aws-s3-block-public-policy
 legacy: AWS076
 summary: S3 Access block should block public policy 

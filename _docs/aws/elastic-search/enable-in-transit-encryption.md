@@ -1,6 +1,5 @@
 ---
-title: aws-elastic-search-enable-in-transit-encryption
-description: Elasticsearch domain uses plaintext traffic for node to node communication.
+title: Elasticsearch domain uses plaintext traffic for node to node communication.
 shortcode: aws-elastic-search-enable-in-transit-encryption
 legacy: AWS032
 summary: Elasticsearch domain uses plaintext traffic for node to node communication. 

@@ -1,6 +1,5 @@
 ---
-title: azure-container-use-rbac-permissions
-description: Ensure RBAC is enabled on AKS clusters
+title: Ensure RBAC is enabled on AKS clusters
 shortcode: azure-container-use-rbac-permissions
 legacy: AZU007
 summary: Ensure RBAC is enabled on AKS clusters 

@@ -1,6 +1,5 @@
 ---
-title: aws-vpc-no-public-egress-sg
-description: An inline egress security group rule allows traffic to /0.
+title: An inline egress security group rule allows traffic to /0.
 shortcode: aws-vpc-no-public-egress-sg
 legacy: AWS009
 summary: An inline egress security group rule allows traffic to /0. 

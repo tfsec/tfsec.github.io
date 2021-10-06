@@ -1,6 +1,5 @@
 ---
-title: aws-documentdb-enable-storage-encryption
-description: DocumentDB storage must be encrypted
+title: DocumentDB storage must be encrypted
 shortcode: aws-documentdb-enable-storage-encryption
 legacy: 
 summary: DocumentDB storage must be encrypted 

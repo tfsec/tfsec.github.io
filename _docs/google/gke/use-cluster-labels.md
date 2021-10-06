@@ -1,6 +1,5 @@
 ---
-title: google-gke-use-cluster-labels
-description: Clusters should be configured with Labels
+title: Clusters should be configured with Labels
 shortcode: google-gke-use-cluster-labels
 legacy: 
 summary: Clusters should be configured with Labels 

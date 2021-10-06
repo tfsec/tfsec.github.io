@@ -1,6 +1,5 @@
 ---
-title: google-gke-no-public-control-plane
-description: GKE Control Plane should not be publicly accessible
+title: GKE Control Plane should not be publicly accessible
 shortcode: google-gke-no-public-control-plane
 legacy: 
 summary: GKE Control Plane should not be publicly accessible 

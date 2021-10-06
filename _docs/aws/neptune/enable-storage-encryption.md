@@ -1,6 +1,5 @@
 ---
-title: aws-neptune-enable-storage-encryption
-description: Neptune storage must be encrypted at rest
+title: Neptune storage must be encrypted at rest
 shortcode: aws-neptune-enable-storage-encryption
 legacy: 
 summary: Neptune storage must be encrypted at rest 

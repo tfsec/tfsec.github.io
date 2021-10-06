@@ -1,6 +1,5 @@
 ---
-title: aws-api-gateway-enable-tracing
-description: API Gateway must have X-Ray tracing enabled
+title: API Gateway must have X-Ray tracing enabled
 shortcode: aws-api-gateway-enable-tracing
 legacy: 
 summary: API Gateway must have X-Ray tracing enabled 

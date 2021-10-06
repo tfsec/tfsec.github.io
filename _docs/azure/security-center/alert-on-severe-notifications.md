@@ -1,6 +1,5 @@
 ---
-title: azure-security-center-alert-on-severe-notifications
-description: Send notification emails for high severity alerts
+title: Send notification emails for high severity alerts
 shortcode: azure-security-center-alert-on-severe-notifications
 legacy: 
 summary: Send notification emails for high severity alerts 

@@ -1,6 +1,5 @@
 ---
-title: azure-security-center-defender-on-kubernetes
-description: Ensure Azure Defender is set to On for Kubernetes
+title: Ensure Azure Defender is set to On for Kubernetes
 shortcode: azure-security-center-defender-on-kubernetes
 legacy: 
 summary: Ensure Azure Defender is set to On for Kubernetes 

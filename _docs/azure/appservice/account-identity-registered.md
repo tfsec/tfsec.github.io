@@ -1,6 +1,5 @@
 ---
-title: azure-appservice-account-identity-registered
-description: Web App has registration with AD enabled
+title: Web App has registration with AD enabled
 shortcode: azure-appservice-account-identity-registered
 legacy: 
 summary: Web App has registration with AD enabled 

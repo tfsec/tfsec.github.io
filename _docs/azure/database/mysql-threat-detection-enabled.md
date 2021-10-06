@@ -1,6 +1,5 @@
 ---
-title: azure-database-mysql-threat-detection-enabled
-description: Ensure databases are not publicly accessible
+title: Ensure databases are not publicly accessible
 shortcode: azure-database-mysql-threat-detection-enabled
 legacy: 
 summary: Ensure databases are not publicly accessible 

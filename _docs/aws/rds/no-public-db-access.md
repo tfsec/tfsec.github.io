@@ -1,6 +1,5 @@
 ---
-title: aws-rds-no-public-db-access
-description: A database resource is marked as publicly accessible.
+title: A database resource is marked as publicly accessible.
 shortcode: aws-rds-no-public-db-access
 legacy: AWS011
 summary: A database resource is marked as publicly accessible. 

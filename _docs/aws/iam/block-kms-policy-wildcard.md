@@ -1,6 +1,5 @@
 ---
-title: aws-iam-block-kms-policy-wildcard
-description: IAM customer managed policies should not allow decryption actions on all KMS keys
+title: IAM customer managed policies should not allow decryption actions on all KMS keys
 shortcode: aws-iam-block-kms-policy-wildcard
 legacy: AWS097
 summary: IAM customer managed policies should not allow decryption actions on all KMS keys 

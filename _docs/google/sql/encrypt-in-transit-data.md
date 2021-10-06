@@ -1,6 +1,5 @@
 ---
-title: google-sql-encrypt-in-transit-data
-description: SSL connections to a SQL database instance should be enforced.
+title: SSL connections to a SQL database instance should be enforced.
 shortcode: google-sql-encrypt-in-transit-data
 legacy: 
 summary: SSL connections to a SQL database instance should be enforced. 

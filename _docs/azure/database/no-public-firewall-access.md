@@ -1,6 +1,5 @@
 ---
-title: azure-database-no-public-firewall-access
-description: Ensure database firewalls do not permit public access
+title: Ensure database firewalls do not permit public access
 shortcode: azure-database-no-public-firewall-access
 legacy: 
 summary: Ensure database firewalls do not permit public access 

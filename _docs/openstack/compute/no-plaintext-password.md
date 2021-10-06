@@ -1,6 +1,5 @@
 ---
-title: openstack-compute-no-plaintext-password
-description: No plaintext password for compute instance
+title: No plaintext password for compute instance
 shortcode: openstack-compute-no-plaintext-password
 legacy: 
 summary: No plaintext password for compute instance 

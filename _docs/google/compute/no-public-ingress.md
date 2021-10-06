@@ -1,6 +1,5 @@
 ---
-title: google-compute-no-public-ingress
-description: An inbound firewall rule allows traffic from /0.
+title: An inbound firewall rule allows traffic from /0.
 shortcode: google-compute-no-public-ingress
 legacy: GCP003
 summary: An inbound firewall rule allows traffic from /0. 

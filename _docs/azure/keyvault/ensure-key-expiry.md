@@ -1,6 +1,5 @@
 ---
-title: azure-keyvault-ensure-key-expiry
-description: Ensure that the expiration date is set on all keys
+title: Ensure that the expiration date is set on all keys
 shortcode: azure-keyvault-ensure-key-expiry
 legacy: AZU026
 summary: Ensure that the expiration date is set on all keys 

@@ -1,6 +1,5 @@
 ---
-title: aws-lambda-enable-tracing
-description: Lambda functions should have X-Ray tracing enabled
+title: Lambda functions should have X-Ray tracing enabled
 shortcode: aws-lambda-enable-tracing
 legacy: 
 summary: Lambda functions should have X-Ray tracing enabled 

@@ -1,6 +1,5 @@
 ---
-title: aws-mq-no-public-access
-description: Ensure MQ Broker is not publicly exposed
+title: Ensure MQ Broker is not publicly exposed
 shortcode: aws-mq-no-public-access
 legacy: 
 summary: Ensure MQ Broker is not publicly exposed 

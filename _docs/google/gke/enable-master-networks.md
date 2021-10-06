@@ -1,6 +1,5 @@
 ---
-title: google-gke-enable-master-networks
-description: Master authorized networks should be configured on GKE clusters
+title: Master authorized networks should be configured on GKE clusters
 shortcode: google-gke-enable-master-networks
 legacy: 
 summary: Master authorized networks should be configured on GKE clusters 

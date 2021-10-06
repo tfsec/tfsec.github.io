@@ -1,6 +1,5 @@
 ---
-title: google-iam-no-project-level-service-account-impersonation
-description: Users should not be granted service account access at the project level
+title: Users should not be granted service account access at the project level
 shortcode: google-iam-no-project-level-service-account-impersonation
 legacy: 
 summary: Users should not be granted service account access at the project level 

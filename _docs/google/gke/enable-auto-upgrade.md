@@ -1,6 +1,5 @@
 ---
-title: google-gke-enable-auto-upgrade
-description: Kubernetes should have 'Automatic upgrade' enabled
+title: Kubernetes should have 'Automatic upgrade' enabled
 shortcode: google-gke-enable-auto-upgrade
 legacy: 
 summary: Kubernetes should have 'Automatic upgrade' enabled 

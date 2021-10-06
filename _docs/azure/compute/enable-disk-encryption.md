@@ -1,6 +1,5 @@
 ---
-title: azure-compute-enable-disk-encryption
-description: Enable disk encryption on managed disk
+title: Enable disk encryption on managed disk
 shortcode: azure-compute-enable-disk-encryption
 legacy: AZU003
 summary: Enable disk encryption on managed disk 

@@ -1,6 +1,5 @@
 ---
-title: azure-appservice-require-client-cert
-description: Web App accepts incoming client certificate
+title: Web App accepts incoming client certificate
 shortcode: azure-appservice-require-client-cert
 legacy: 
 summary: Web App accepts incoming client certificate 

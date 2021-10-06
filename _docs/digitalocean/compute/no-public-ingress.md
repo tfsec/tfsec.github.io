@@ -1,6 +1,5 @@
 ---
-title: digitalocean-compute-no-public-ingress
-description: The firewall has an inbound rule with open access
+title: The firewall has an inbound rule with open access
 shortcode: digitalocean-compute-no-public-ingress
 legacy: DIG001
 summary: The firewall has an inbound rule with open access 

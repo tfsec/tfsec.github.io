@@ -1,6 +1,5 @@
 ---
-title: google-sql-mysql-no-local-infile
-description: Disable local_infile setting in MySQL
+title: Disable local_infile setting in MySQL
 shortcode: google-sql-mysql-no-local-infile
 legacy: 
 summary: Disable local_infile setting in MySQL 

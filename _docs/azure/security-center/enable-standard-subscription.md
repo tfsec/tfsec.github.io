@@ -1,6 +1,5 @@
 ---
-title: azure-security-center-enable-standard-subscription
-description: Enable the standard security center subscription tier
+title: Enable the standard security center subscription tier
 shortcode: azure-security-center-enable-standard-subscription
 legacy: 
 summary: Enable the standard security center subscription tier 

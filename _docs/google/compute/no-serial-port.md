@@ -1,6 +1,5 @@
 ---
-title: google-compute-no-serial-port
-description: Disable serial port connectivity for all instances
+title: Disable serial port connectivity for all instances
 shortcode: google-compute-no-serial-port
 legacy: 
 summary: Disable serial port connectivity for all instances 

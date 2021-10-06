@@ -1,6 +1,5 @@
 ---
-title: google-sql-pg-log-lock-waits
-description: Ensure that logging of lock waits is enabled.
+title: Ensure that logging of lock waits is enabled.
 shortcode: google-sql-pg-log-lock-waits
 legacy: 
 summary: Ensure that logging of lock waits is enabled. 

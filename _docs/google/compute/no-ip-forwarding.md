@@ -1,6 +1,5 @@
 ---
-title: google-compute-no-ip-forwarding
-description: Instances should not have IP forwarding enabled
+title: Instances should not have IP forwarding enabled
 shortcode: google-compute-no-ip-forwarding
 legacy: 
 summary: Instances should not have IP forwarding enabled 

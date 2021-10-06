@@ -1,6 +1,5 @@
 ---
-title: github-repositories-require-signed-commits
-description: Require signed commits should be enabled.
+title: Require signed commits should be enabled.
 shortcode: github-repositories-require-signed-commits
 legacy: 
 summary: Require signed commits should be enabled. 

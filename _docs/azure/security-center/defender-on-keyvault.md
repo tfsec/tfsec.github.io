@@ -1,6 +1,5 @@
 ---
-title: azure-security-center-defender-on-keyvault
-description: Ensure Azure Defender is set to On for key vaults
+title: Ensure Azure Defender is set to On for key vaults
 shortcode: azure-security-center-defender-on-keyvault
 legacy: 
 summary: Ensure Azure Defender is set to On for key vaults 

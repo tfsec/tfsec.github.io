@@ -1,6 +1,5 @@
 ---
-title: azure-storage-no-public-access
-description: Storage containers in blob storage mode should not have public access
+title: Storage containers in blob storage mode should not have public access
 shortcode: azure-storage-no-public-access
 legacy: AZU011
 summary: Storage containers in blob storage mode should not have public access 

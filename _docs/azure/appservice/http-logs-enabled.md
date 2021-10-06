@@ -1,6 +1,5 @@
 ---
-title: azure-appservice-http-logs-enabled
-description: App service does not enable HTTP logging
+title: App service does not enable HTTP logging
 shortcode: azure-appservice-http-logs-enabled
 legacy: 
 summary: App service does not enable HTTP logging 

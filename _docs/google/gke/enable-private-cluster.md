@@ -1,6 +1,5 @@
 ---
-title: google-gke-enable-private-cluster
-description: Clusters should be set to private
+title: Clusters should be set to private
 shortcode: google-gke-enable-private-cluster
 legacy: 
 summary: Clusters should be set to private 
