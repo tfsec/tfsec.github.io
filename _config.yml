@@ -76,6 +76,7 @@ plugins:
   - jekyll-gist
   - jekyll-avatar
   - jekyll-redirect-from
+  - jekyll-sitemap
 exclude:
   - Gemfile
   - Gemfile.lock
