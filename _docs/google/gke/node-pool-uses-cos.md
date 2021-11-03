@@ -111,6 +111,8 @@ resource "google_container_node_pool" "good_example" {
 ### Related Links
 
 
-- [https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/container_node_pool#image_type](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/container_node_pool#image_type){:target="_blank" rel="nofollow noreferrer noopener"}
+- [https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/container_cluster#image_type](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/container_cluster#image_type){:target="_blank" rel="nofollow noreferrer noopener"}
+
+- [https://cloud.google.com/kubernetes-engine/docs/concepts/node-images](https://cloud.google.com/kubernetes-engine/docs/concepts/node-images){:target="_blank" rel="nofollow noreferrer noopener"}
 
 

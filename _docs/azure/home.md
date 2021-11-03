@@ -14,7 +14,7 @@ The included Azure checks are listed below. For more information about each chec
 |[azure-appservice-detailed-error-messages-enabled](/docs/azure/appservice/detailed-error-messages-enabled)<br>App service disables detailed error messages|
 |[azure-appservice-dotnet-framework-version](/docs/azure/appservice/dotnet-framework-version)<br>Azure App Service Web app does not use the latest .Net Core version|
 |[azure-appservice-enable-http2](/docs/azure/appservice/enable-http2)<br>Web App uses the latest HTTP version|
-|[azure-appservice-enforce-https](/docs/azure/appservice/enforce-https)<br>Ensure the Function App can only be accessed via HTTPS. The default is false.|
+|[azure-appservice-enable-https-only](/docs/azure/appservice/enable-https-only)<br>Ensure App Service can only be accessed via HTTPS. The default is false|
 |[azure-appservice-failed-request-tracing-enabled](/docs/azure/appservice/failed-request-tracing-enabled)<br>App service does not enable failed request tracing|
 |[azure-appservice-ftp-deployments-disabled](/docs/azure/appservice/ftp-deployments-disabled)<br>Ensure FTP Deployments are disabled|
 |[azure-appservice-http-logs-enabled](/docs/azure/appservice/http-logs-enabled)<br>App service does not enable HTTP logging|

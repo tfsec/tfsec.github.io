@@ -244,7 +244,7 @@
       - azure/appservice/detailed-error-messages-enabled
       - azure/appservice/dotnet-framework-version
       - azure/appservice/enable-http2
-      - azure/appservice/enforce-https
+      - azure/appservice/enable-https-only
       - azure/appservice/failed-request-tracing-enabled
       - azure/appservice/ftp-deployments-disabled
       - azure/appservice/http-logs-enabled
