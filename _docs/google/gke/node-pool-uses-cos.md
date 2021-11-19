@@ -11,13 +11,13 @@ redirect_from:
 
 ### Explanation
 
-GKE supports several OS image types but COS is the recommended OS image to use on cluster nodes for enhanced security
+GKE supports several OS image types but COS_CONTAINERD is the recommended OS image to use on cluster nodes for enhanced security
 
 ### Possible Impact
-COS is the recommended OS image to use on cluster nodes
+COS_CONTAINERD is the recommended OS image to use on cluster nodes
 
 ### Suggested Resolution
-Use the COS image type
+Use the COS_CONTAINERD image type
 
 
 ### Insecure Example

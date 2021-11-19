@@ -447,7 +447,6 @@
       - google/gke/enforce-pod-security-policy
       - google/gke/metadata-endpoints-disabled
       - google/gke/no-legacy-auth
-      - google/gke/no-legacy-authentication
       - google/gke/no-public-control-plane
       - google/gke/node-metadata-security
       - google/gke/node-pool-uses-cos

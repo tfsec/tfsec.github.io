@@ -66,6 +66,17 @@ resource "google_kms_crypto_key" "example-key" {
   }
 }
 
+resource "google_kms_crypto_key" "example-key" {
+  name            = "crypto-key-example"
+  key_ring        = google_kms_key_ring.keyring.id
+  algorithm       = "EXTERNAL_SYMMETRIC_ENCRYPTION"
+  protectionLevel = "EXTERNAL"
+
+  lifecycle {
+    prevent_destroy = true
+  }
+}
+
 {% endhighlight %}
 
 
