@@ -20,7 +20,7 @@ To add the action, add tfsec_pr_commenter.yml into the .github/workflows directo
 
 The contents of tfsec_pr_commenter.yml should be;
 
-```yaml
+{% raw %}
 name: tfsec-pr-commenter
 on:
   pull_request:
@@ -37,7 +37,7 @@ jobs:
         uses: tfsec/tfsec-pr-commenter-action@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-```
+{% endraw %}
 
 
 On each pull request and subsequent commit, tfsec will run and add comments to the PR where tfsec has failed.
